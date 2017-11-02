@@ -50,3 +50,39 @@
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+
+## New (by Brian)
+
+* To install `libftdi` on Ubuntu (tested on 16.04):
+```bash
+$ sudo apt-get install libftdi-dev
+```
+
+* To install `libusb` on Ubuntu (tested on 16.04):
+```bash 
+$ sudo apt-get install libusb-dev
+```
+
+In this version, instead of using Makefiles, I created CMakeLists files and cmake modules to compile the C and python code.
+
+To compile it:
+```bash
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+```
+
+To launch `run_motion.py`, type the following commands from the `build` folder:
+```bash
+$ cd python/
+$ python run_motion.py
+```
+
+## Troubleshooting
+
+* ImportError: dynamic module does not define init function (init_pykondo)
+This is probably due to compiling the library with a specific version of Python, and trying to launch the code with another version. By default, in the CMakeLists, it is looking for python 2.7 (see the cmake command `find_package(PythonLibs 2.7)`). If you are using another version, please update accordingly the appropriate cmake line.
+
+* Error: kond_init_custom: device not found
