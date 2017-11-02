@@ -1,0 +1,1 @@
+This directory contains examples of serial read/write using termios which can be used as replacement for the libftdi functions in libkondo4. 

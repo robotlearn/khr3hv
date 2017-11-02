@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+ PCB drawings for ICS 3.0 Adapters
+ 
+ Christopher Vo
+ cvo1 at cs.gmu.edu
+ Autonomous Robotics Laboratory
+ George Mason University
+-------------------------------------------------------------------------------
+
+1. MANIFEST
+
+   This directory contains PCB drawings and schematics, in EAGLE format,
+   for Kondo ICS 3.0 adapters.
+   
+   usb2kondo: USB 2.0 to ICS 3.0 adapter. Similar to the ICS USB adapter
+      offered by Kondo, but has multiple ports. 
+       
+   ftdi2kondo: Provides a socket adapter for a FT4232H mini-module
+      which provides 4-channel serial; channels C and D are connected
+      to independent half-duplex ICS 3.0 circuits, and channels A and B
+      are broken out so that you can use them for other purposes. 
+
+2. LICENSE AND COPYRIGHT
+
+    Copyright 2010 - Christopher Vo (cvo1@cs.gmu.edu)
+    George Mason University - Autonomous Robotics Laboratory
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+    
+       http://www.apache.org/licenses/LICENSE-2.0
+    
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.

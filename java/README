@@ -1,0 +1,21 @@
+Java Bindings for libkondo4
+---------------------------
+
+This directory is an example of how to use swig to create a Java wrapper 
+for libkondo4.
+
+
+To Build and Test:
+------------------
+
+1. Edit the Makefile to set the proper paths for JDK and swig.
+
+2. Build the kondo library (libkondo.so) in the parent directory:
+   make -C ../
+
+3. Build Native Wrapper Library (libkondo_java.so):
+   make
+
+4. Test an example:
+   javac *.java
+   java -Djava.library.path=. ExamplePlayMotion
