@@ -37,20 +37,29 @@ int main(int argc, char *argv[])
 		printf("%s", ki.error);
 		exit(-1);
 	}
-	ki.debug = 1;
+	printf("Finish kondo_init.\n");
+	ki.debug = 0;
 
 	// play motion ------------------------------------------------------------
 	//
 	// it waits for at most max_wait (50 seconds) for the motion to finish,
 	// and returns immediately when either 50 seconds has passed, or
-	// the motion has finished. 
+	// the motion has finished.
 	//
-	// if you want this function to return immediately, 
+	// if you want this function to return immediately,
 	// just pass in 0 for max_wait.
-	// 
-	int motion_num = atoi(argv[1]);
-	long max_wait = 50 * 1000000;
-	ret = kondo_play_motion(&ki, motion_num, max_wait);
+	//
+
+	printf("Start to move.\n");
+	int joint_num = atoi(argv[1]);
+
+	int i=0;
+//	while(i<30){
+//		ret = kondo_play_motion(&ki, i, max_wait);
+//		printf("ret  %d %d\n", i,ret);
+//		i++;
+//	}
+	ret = kondo_move(&ki, joint_num);
 	if (ret < 0) {
 		printf("%s", ki.error);
 		exit(-1);

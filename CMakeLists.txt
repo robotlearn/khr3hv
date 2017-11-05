@@ -23,11 +23,3 @@ add_subdirectory(python)
 add_executable(run_motion utils/run_motion.c ${SOURCES})
 target_link_libraries(run_motion ${FTDI_LIBRARY}) #${LIBUSB_LIBRARIES})
 
-add_executable(test_ics utils/test_ics.c ${SOURCES})
-target_link_libraries(test_ics m ${FTDI_LIBRARY}) #${LIBUSB_LIBRARIES})
-
-add_executable(test_digital utils/test_digital.c ${SOURCES})
-target_link_libraries(test_digital ${FTDI_LIBRARY}) #${LIBUSB_LIBRARIES})
-
-add_executable(test_analog utils/test_analog.c ${SOURCES})
-target_link_libraries(test_analog ${FTDI_LIBRARY}) #${LIBUSB_LIBRARIES})

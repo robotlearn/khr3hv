@@ -34,12 +34,12 @@
 
 // communcation ---------------------------------------------------------------
 #define RCB4_USB_VID 0x165c
-#define RCB4_USB_PID 0x0007
+#define RCB4_USB_PID 0x0008
 //#define RCB4_USB_VID 0x0403 // FTDI Ltd. Devices
 //#define RCB4_USB_PID 0x6001 // FT232RL (Kondo USB-UART)
 //#define RCB4_USB_PID 0x6011 // FT4232H (4-port USB-UART)
 //#define RCB4_USB_PID 0x6010 // FT2232H/D (2-port USB-UART)
-#define RCB4_BAUD 115200
+#define RCB4_BAUD 1250000
 #define RCB4_SWAP_SIZE 256
 #define RCB4_RX_TIMEOUT 1000000
 
@@ -54,6 +54,23 @@
 #define RCB4_CMD_CALL  0x0C // CALL command
 #define RCB4_CMD_VERS  0xFD // Version command
 #define RCB4_CMD_ICS   0x10 // ICS frame command
+#define RCB4_CMD_SIN_MOVE   0x0F // single move command
+
+// moter ICS number
+#define SEVOR00 0x00
+#define SEVOR01 0x01
+#define SEVOR02 0x02
+#define SEVOR03 0x03
+#define SEVOR04 0x04
+#define SEVOR05 0x05
+#define SEVOR06 0x06
+#define SEVOR07 0x07
+#define SEVOR08 0x08
+#define SEVOR09 0x09
+#define SEVOR10 0x0A
+#define SEVOR11 0x0B
+
+
 // device types
 #define RCB4_DEV_RAM   0x00 // RAM
 #define RCB4_DEV_DEV   0x01 // Device
@@ -169,6 +186,7 @@ int kondo_purge(KondoRef ki);
 int kondo_trx(KondoRef ki, int out_bytes, int in_bytes);
 
 // rcb4 commands --------------------------------------------------------------
+int kondo_move(KondoRef ki, UINT num);
 int kondo_ack(KondoRef ki);
 int kondo_get_options(KondoRef ki);
 int kondo_play_motion(KondoRef ki, UINT num, long max_wait);
