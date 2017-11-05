@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 2.8)
 
 project(kondo)
 set(CMAKE_BUILD_TYPE Release)
+SET(CMAKE_CXX_FLAGS "-pthread -std=c++11")
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fPIC")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
@@ -27,6 +28,8 @@ target_link_libraries(test_kondo_move ${FTDI_LIBRARY}) #${LIBUSB_LIBRARIES})
 add_executable(test_kondo_set_angle utils/test_kondo_set_angle.cpp ${SOURCES})
 target_link_libraries(test_kondo_set_angle ${FTDI_LIBRARY}) #${LIBUSB_LIBRARIES})
 
+add_executable(test_kondo_set_angles utils/test_kondo_set_angles.cpp ${SOURCES})
+target_link_libraries(test_kondo_set_angles ${FTDI_LIBRARY}) #${LIBUSB_LIBRARIES})
 
 
 #add_executable(test_ics utils/test_ics.cpp ${SOURCES})
