@@ -11,7 +11,7 @@ ctypedef unsigned char UCHAR
 cdef extern from "kondo.h":
     
     # class
-    cdef cppclass Kondo:
+    cdef cppclass kondo:
         # Attributes
         cdef KondoInstance ki
 

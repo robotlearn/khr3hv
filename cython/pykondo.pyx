@@ -1,3 +1,75 @@
+# Let Cython knows where are the C++ classes, and their definitions
+# This file needs to be imported in the python wrapper file (.pyx)
+
+from libcpp.vector cimport vector
+
+# Typedef
+ctypedef unsigned int UINT
+ctypedef unsigned char UCHAR
+
+# Let Cython knows that the struct KondoInstance is in rcb4.h
+#cdef extern from "rcb4.h":
+
+    # struct
+#    ctypedef struct KondoInstance
+
+
+# Let Cython knows that the class kondo is in kondo.h
+cdef extern from "kondo.h":
+    
+    # class
+    cdef cppclass kondo:
+        # Attributes
+        #KondoInstance ki
+
+        # Methods
+        ## Set
+        int kondo_set_angle(UINT jointIndex, double angleInDegree, double fractionMaxSpeed)
+        int kondo_set_angles(vector[UINT] jointIndices, vector[double] anglesInDegree, double fractionMaxSpeed)
+
+        ## init
+        int kondo_init()
+        int kondo_init_custom(int, int, int, int)
+        int kondo_close()
+
+        ## basic communication
+        int kondo_write(int)
+        int kondo_read(int)
+        int kondo_read_timeout(int, long)
+        int kondo_purge()
+        int kondo_trx(int out_bytes, int in_bytes)
+
+        ## rcb4 commands
+        int kondo_move(UINT)
+        int kondo_ack()
+        int kondo_get_options()
+        int kondo_play_motion(UINT, long)
+        int kondo_stop_motion()
+        int kondo_krc3_buttons(UINT, UCHAR, UCHAR, UCHAR, UCHAR)
+        int kondo_read_analog(int*, UINT)
+        int kondo_set_pio_direction(UINT)
+        int kondo_get_pio_direction(UINT*)
+        int kondo_read_pio(UINT*)
+        int kondo_write_pio(UINT)
+        int kondo_set_counter(UINT, UCHAR)
+        int kondo_get_counter(UCHAR*, UINT)
+        int kondo_send_ics_pos(UCHAR[5], UINT)
+        int kondo_get_servo_data(UINT, UINT)
+        int kondo_get_servo_trim(UINT)
+        int kondo_get_servo_setpos(UINT)
+        int kondo_get_servo_pos(UINT)
+        int kondo_get_servo_id(UINT)
+
+        ## utility
+        UCHAR kondo_checksum(int)
+        int kondo_verify_checksum(int)
+        int kondo_load_asciihex(const char *)
+
+
+
+############################################################################
+############################################################################
+
 # Python Wrapper using Cython
 
 
@@ -6,11 +78,11 @@ import ckondo
 
 # Wrapper class
 cdef class pykondo:
-    cdef Kondo* C_Kondo
+    cdef kondo* C_Kondo
     cdef free_on_dealloc
 
     def __cinit__(self):
-        self.C_Kondo = new Kondo()
+        self.C_Kondo = new kondo()
 
         # The robots has initially 17 servos/DoFs.
         # However, 5 dummy servos can be replaced by real servos.
@@ -69,7 +141,7 @@ cdef class pykondo:
         """
         Set the specified angles (in degree) to the given multiple servo motors.
         """
-        return self.C_Kondo.kondo_set_angles(jointIndices, anglesInDegree, fractionMax)
+        return self.C_Kondo.kondo_set_angles(jointIndices, anglesInDegree, fractionMaxSpeed)
 
     
     ## init
@@ -84,7 +156,7 @@ cdef class pykondo:
         """
         return self.C_Kondo.kondo_init()
 
-    def init_custom(int baud, int vid, int pid, int interface):
+    def init_custom(self, int baud, int vid, int pid, int interface):
         """
         Open/Initialize the KondoInstance.
         Accepts baud rate, vid, pid, and interface arguments.
@@ -113,13 +185,13 @@ cdef class pykondo:
 
 
     ## rcb4 commands
-    def move(UINT num):
+    def move(self, UINT num):
         """
 
         """
         return self.C_Kondo.kondo_move(num)
 
-    def ack():
+    def ack(self):
         """
         ACK: Send a ping to the robot and get a response.
         
@@ -128,7 +200,7 @@ cdef class pykondo:
         """
         return self.C_Kondo.kondo_ack()
 
-    def get_options():
+    def get_options(self):
         """
         Get options from RCB-4
         
@@ -137,7 +209,7 @@ cdef class pykondo:
         """
         return self.C_Kondo.kondo_get_options()
     
-    def play_motion(UINT num, long max_wait):
+    def play_motion(self, UINT num, long max_wait):
         """
         Play a motion with given slot number.
         Blocks (does not return) until timeout time has elapsed or motion is done.
@@ -148,7 +220,7 @@ cdef class pykondo:
         """
         return self.C_Kondo.kondo_play_motion(num, max_wait)
 
-    def stop_motion():
+    def stop_motion(self):
         """
         Stop the currently playing motion, freezing the robot in place.
         
@@ -157,7 +229,7 @@ cdef class pykondo:
         """
         return self.C_Kondo.kondo_stop_motion()
 
-    def krc3_buttons(UINT cc, UCHAR a1, UCHAR a2, UCHAR a3, UCHAR a4):
+    def krc3_buttons(self, UINT cc, UCHAR a1, UCHAR a2, UCHAR a3, UCHAR a4):
         """
         Emulate a KRC-3 button state change
         See button codes in libkondo_rcb4.h
@@ -170,7 +242,8 @@ cdef class pykondo:
         """
         return self.C_Kondo.kondo_krc3_buttons(cc, a1, a2, a3, a4)
 
-    def read_analog(int * result, UINT num):
+    #def read_analog(self, int* result, UINT num):
+    def read_analog(self, UINT num):
         """
         Read an analog value (Battery, AD1, AD2, AD3, etc)
         Analog number 0 is the battery voltage.
@@ -179,9 +252,11 @@ cdef class pykondo:
         
         Returns: 0 if successful, < 0 if error.
         """
-        return self.C_Kondo.kondo_read_analog(result, num)
+        cdef int* result
+        res = self.C_Kondo.kondo_read_analog(result, num)
+        return *result, res
 
-    def set_pio_direction(UINT bitset):
+    def set_pio_direction(self, UINT bitset):
         """
         Set the direction for the digital (PIO) ports.
         
@@ -194,7 +269,7 @@ cdef class pykondo:
         """
         return self.C_Kondo.kondo_set_pio_direction(bitset)
 
-    def get_pio_direction(UINT * bitset):
+    def get_pio_direction(self, UINT* bitset):
         """
         Get the direction for the digital ports.
         Side effect: The direction for all the ports will be returned in bitfield.
@@ -207,7 +282,7 @@ cdef class pykondo:
         """
         return self.C_Kondo.kondo_get_pio_direction(bitset)
 
-    def read_pio(UINT * result):
+    def read_pio(self, UINT* result):
         """
         Read digital values (PIO1 to PIO10).
         The 'result' will be set to a 10-bit field of the digital values.
@@ -217,7 +292,7 @@ cdef class pykondo:
         """
         return self.C_Kondo.kondo_read_pio(result)
 
-    def write_pio(UINT bitset):
+    def write_pio(self, UINT bitset):
         """
         Write to the PIO port.
 
@@ -231,7 +306,7 @@ cdef class pykondo:
         """
         return self.C_Kondo.kondo_write_pio(bitset)
 
-    def set_counter(UINT num, UCHAR val):
+    def set_counter(self, UINT num, UCHAR val):
         """
         Set the counter value.
 
@@ -243,7 +318,7 @@ cdef class pykondo:
         """
         return self.C_Kondo.kondo_set_counter(num, val)
 
-    def get_counter(UCHAR * result, UINT num):
+    def get_counter(self, UCHAR* result, UINT num):
         """
         Read a counter value.
         
@@ -255,7 +330,7 @@ cdef class pykondo:
         """
         return self.C_Kondo.kondo_get_counter(result, num)
 
-    def send_ics_pos(UCHAR servos[5], UINT frame):
+    def send_ics_pos(self, UCHAR servos[5], UINT frame):
         """
         Send an ICS pos frame to all servos selected in the bitfield.
         
@@ -268,9 +343,9 @@ cdef class pykondo:
         
         Returns: < 0 if error, 0 if OK.
         """
-        return self.C_Kondo.kondo_send_ics_pos(servos[5], frame)
+        return self.C_Kondo.kondo_send_ics_pos(servos, frame)
     
-    def get_servo_data(UINT servo_idx, UINT offset):
+    def get_servo_data(self, UINT servo_idx, UINT offset):
         """
         Get the given 2-byte field of data from a servo.
         
@@ -278,7 +353,7 @@ cdef class pykondo:
         """
         return self.C_Kondo.kondo_get_servo_data(servo_idx, offset)
        
-    def get_servo_trim(UINT servo_idx):
+    def get_servo_trim(self, UINT servo_idx):
         """
         Get the trim of the selected servo.
         
@@ -286,7 +361,7 @@ cdef class pykondo:
         """
         return self.C_Kondo.kondo_get_servo_trim(servo_idx)
         
-    def get_servo_setpos(UINT servo_idx):
+    def get_servo_setpos(self, UINT servo_idx):
         """
         Get the set pos of the selected servo.
         
@@ -294,7 +369,7 @@ cdef class pykondo:
         """
         return self.C_Kondo.kondo_get_servo_setpos(servo_idx)
         
-    def get_servo_pos(UINT servo_idx):
+    def get_servo_pos(self, UINT servo_idx):
         """
         Get the position of the selected servo (single).
         
@@ -302,7 +377,7 @@ cdef class pykondo:
         """
         return self.C_Kondo.kondo_get_servo_pos(servo_idx)
         
-    def get_servo_id(UINT servo_idx):
+    def get_servo_id(self, UINT servo_idx):
         """
         Get the ID of the selected servo.
         
@@ -312,7 +387,7 @@ cdef class pykondo:
 
     
     ## basic communication
-    def write(int n):
+    def write(self, int n):
         """
         Write n bytes from the swap to the Kondo.
         
@@ -324,7 +399,7 @@ cdef class pykondo:
         """
         return self.C_Kondo.kondo_write(n)
 
-    def read(int n):
+    def read(self, int n):
         """
         Read n bytes from the RCB-4. Reads immediately from the serial buffer.
         See kondo_read_timeout for a version that blocks waiting for the data.
@@ -338,7 +413,7 @@ cdef class pykondo:
         """
         return self.C_Kondo.kondo_read(n)
 
-    def read_timeout(int n, long timeout):
+    def read_timeout(self, int n, long timeout):
         """
         Read n bytes from the RCB-4, waiting for at most timeout usecs for n bytes.
         Performs this by continuously polling the serial buffer until either
@@ -350,16 +425,16 @@ cdef class pykondo:
         """
         return self.C_Kondo.kondo_read_timeout(n, timeout)
 
-    def purge():
+    def purge(self):
         """
         Purge the TX and RX serial buffers.
         
         Return:
         Returns 0 if successful, < 0 if error.
         """
-        return self.C_Kondo.purge()
+        return self.C_Kondo.kondo_purge()
     
-    def trx(int out_bytes, int in_bytes):
+    def trx(self, int out_bytes, int in_bytes):
         """
         Transaction template: Purge, then send out_bytes, then receive in_bytes.
         
@@ -371,7 +446,7 @@ cdef class pykondo:
 
 
     ## utility
-    def checksum(int n):
+    def checksum(self, int n):
         """
         Compute checksum for n bytes (swap[0] to swap[n-1]).
         
@@ -380,7 +455,7 @@ cdef class pykondo:
         """
         return self.C_Kondo.kondo_checksum(n)
 
-    def verify_checksum(int n):
+    def verify_checksum(self, int n):
         """
         Verify checksum for n bytes (swap[0] to swap[n-1]).
         
@@ -389,7 +464,7 @@ cdef class pykondo:
         """
         return self.C_Kondo.kondo_verify_checksum(n)
 
-    def load_asciihex(const char * hex):
+    def load_asciihex(self, const char * hex):
         """
         Load the given data (from ASCII hex string) into swap.
         
