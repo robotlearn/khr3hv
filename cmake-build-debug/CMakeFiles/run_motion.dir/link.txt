@@ -1,1 +1,0 @@
-/usr/bin/cc -g  -rdynamic CMakeFiles/run_motion.dir/utils/run_motion.c.o  -o run_motion -Wl,-rpath,/home/xin/libkondo4/cmake-build-debug libkondo.so -lftdi1 

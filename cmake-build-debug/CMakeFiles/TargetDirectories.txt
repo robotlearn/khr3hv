@@ -1,7 +1,0 @@
-/home/xin/libkondo4/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/xin/libkondo4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/xin/libkondo4/cmake-build-debug/CMakeFiles/run_motion.dir
-/home/xin/libkondo4/cmake-build-debug/CMakeFiles/kondo.dir
-/home/xin/libkondo4/cmake-build-debug/python/CMakeFiles/rebuild_cache.dir
-/home/xin/libkondo4/cmake-build-debug/python/CMakeFiles/edit_cache.dir
-/home/xin/libkondo4/cmake-build-debug/python/CMakeFiles/_pykondo.dir

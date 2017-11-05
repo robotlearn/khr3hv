@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC -g  -shared  -o _pykondo.so CMakeFiles/_pykondo.dir/pykondoPYTHON_wrap.c.o CMakeFiles/_pykondo.dir/__/src/ics.c.o CMakeFiles/_pykondo.dir/__/src/rcb4.c.o  -L/home/xin/libkondo4/cmake-build-debug -Wl,-rpath,/home/xin/libkondo4/cmake-build-debug ../libkondo.so -lpython2.7 -lftdi1 
