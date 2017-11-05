@@ -77,53 +77,56 @@ cdef extern from "kondo.h":
 
 
 # Wrapper class
-cdef class pykondo:
+cdef class Kondo:
     cdef kondo* C_Kondo
     cdef free_on_dealloc
 
     def __cinit__(self):
+        """
+        Default Constructor.
+        """
         self.C_Kondo = new kondo()
 
         # The robots has initially 17 servos/DoFs.
         # However, 5 dummy servos can be replaced by real servos.
-        self.joints_idx = {'Neck': 0,
-                           # Right arm
-                           'RShoulderPitch': 1,
-                           'RShoulderRoll': 2,
-                           'RUpperArmYaw': None,
-                           'RElbow': 4,
-                           # Left arm
-                           'LShoulderPitch': 5,
-                           'LShoulderRoll': 6,
-                           'LUpperArmYaw': None, 
-                           'LElbow': 8,
-                           # Pelvis
-                           'PelvisYaw': None,
-                           # Right Leg
-                           'RHipYaw': None,
-                           'RHipRoll': 11,
-                           'RHipPitch': 12,
-                           'RKnee': 13,
-                           'RAnkPitch': 14,
-                           'RAnkYaw': 15,
-                           # Left Leg
-                           'LHipYaw': None,
-                           'LHipRoll': 17,
-                           'LHipPitch': 18,
-                           'LKnee': 19,
-                           'LAnkPitch': 20,
-                           'LAnkYaw': 21}
+        #self.joints_idx = {'Neck': 0,
+        #                   # Right arm
+        #                   'RShoulderPitch': 1,
+        #                   'RShoulderRoll': 2,
+        #                   'RUpperArmYaw': None,
+        #                   'RElbow': 4,
+        #                   # Left arm
+        #                   'LShoulderPitch': 5,
+        #                   'LShoulderRoll': 6,
+        #                   'LUpperArmYaw': None, 
+        #                   'LElbow': 8,
+        #                   # Pelvis
+        #                   'PelvisYaw': None,
+        #                   # Right Leg
+        #                   'RHipYaw': None,
+        #                   'RHipRoll': 11,
+        #                   'RHipPitch': 12,
+        #                   'RKnee': 13,
+        #                   'RAnkPitch': 14,
+        #                   'RAnkYaw': 15,
+        #                   # Left Leg
+        #                   'LHipYaw': None,
+        #                   'LHipRoll': 17,
+        #                   'LHipPitch': 18,
+        #                   'LKnee': 19,
+        #                   'LAnkPitch': 20,
+        #                   'LAnkYaw': 21}
 
         # Sensors
-        self.camera = None
-        self.imu = None
-        self.LFoot = None
-        self.RFoot = None
-        self.microphone = None
+        #self.camera = None
+        #self.imu = None
+        #self.LFoot = None
+        #self.RFoot = None
+        #self.microphone = None
 
         # Interfaces
-        self.speaker = None
-        self.screen = None
+        #self.speaker = None
+        #self.screen = None
 
 
     def __dealloc__(self):
@@ -187,7 +190,10 @@ cdef class pykondo:
     ## rcb4 commands
     def move(self, UINT num):
         """
+        Move the specified joint to the maximum positive joint limit.
 
+        Parameter:
+        num: joint id.
         """
         return self.C_Kondo.kondo_move(num)
 

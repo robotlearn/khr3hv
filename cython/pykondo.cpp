@@ -506,16 +506,16 @@ typedef unsigned int __pyx_t_7pykondo_UINT;
 typedef unsigned char __pyx_t_7pykondo_UCHAR;
 
 /*--- Type declarations ---*/
-struct __pyx_obj_7pykondo_pykondo;
+struct __pyx_obj_7pykondo_Kondo;
 
 /* "pykondo.pyx":80
  * 
  * # Wrapper class
- * cdef class pykondo:             # <<<<<<<<<<<<<<
+ * cdef class Kondo:             # <<<<<<<<<<<<<<
  *     cdef kondo* C_Kondo
  *     cdef free_on_dealloc
  */
-struct __pyx_obj_7pykondo_pykondo {
+struct __pyx_obj_7pykondo_Kondo {
   PyObject_HEAD
   kondo *C_Kondo;
   PyObject *free_on_dealloc;
@@ -589,23 +589,6 @@ static void __Pyx_RaiseArgtupleInvalid(const char* func_name, int exact,
     Py_ssize_t num_min, Py_ssize_t num_max, Py_ssize_t num_found);
 
 static CYTHON_INLINE int __Pyx_CheckKeywordStrings(PyObject *kwdict, const char* function_name, int kw_allowed);
-
-#if CYTHON_COMPILING_IN_CPYTHON
-#define __Pyx_PyObject_DelAttrStr(o,n) __Pyx_PyObject_SetAttrStr(o,n,NULL)
-static CYTHON_INLINE int __Pyx_PyObject_SetAttrStr(PyObject* obj, PyObject* attr_name, PyObject* value) {
-    PyTypeObject* tp = Py_TYPE(obj);
-    if (likely(tp->tp_setattro))
-        return tp->tp_setattro(obj, attr_name, value);
-#if PY_MAJOR_VERSION < 3
-    if (likely(tp->tp_setattr))
-        return tp->tp_setattr(obj, PyString_AS_STRING(attr_name), value);
-#endif
-    return PyObject_SetAttr(obj, attr_name, value);
-}
-#else
-#define __Pyx_PyObject_DelAttrStr(o,n)   PyObject_DelAttr(o,n)
-#define __Pyx_PyObject_SetAttrStr(o,n,v) PyObject_SetAttr(o,n,v)
-#endif
 
 static void __Pyx_RaiseDoubleKeywordsError(const char* func_name, PyObject* kw_name);
 
@@ -693,7 +676,7 @@ static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 /* Module declarations from 'libcpp.vector' */
 
 /* Module declarations from 'pykondo' */
-static PyTypeObject *__pyx_ptype_7pykondo_pykondo = 0;
+static PyTypeObject *__pyx_ptype_7pykondo_Kondo = 0;
 static std::vector<__pyx_t_7pykondo_UINT>  __pyx_convert_vector_from_py___pyx_t_7pykondo_UINT(PyObject *); /*proto*/
 static std::vector<double>  __pyx_convert_vector_from_py_double(PyObject *); /*proto*/
 #define __Pyx_MODULE_NAME "pykondo"
@@ -706,82 +689,28 @@ static char __pyx_k_a2[] = "a2";
 static char __pyx_k_a3[] = "a3";
 static char __pyx_k_a4[] = "a4";
 static char __pyx_k_cc[] = "cc";
-static char __pyx_k_imu[] = "imu";
 static char __pyx_k_num[] = "num";
 static char __pyx_k_pid[] = "pid";
 static char __pyx_k_val[] = "val";
 static char __pyx_k_vid[] = "vid";
-static char __pyx_k_Neck[] = "Neck";
 static char __pyx_k_baud[] = "baud";
 static char __pyx_k_main[] = "__main__";
 static char __pyx_k_test[] = "__test__";
-static char __pyx_k_LFoot[] = "LFoot";
-static char __pyx_k_LKnee[] = "LKnee";
-static char __pyx_k_RFoot[] = "RFoot";
-static char __pyx_k_RKnee[] = "RKnee";
 static char __pyx_k_frame[] = "frame";
-static char __pyx_k_LElbow[] = "LElbow";
-static char __pyx_k_RElbow[] = "RElbow";
-static char __pyx_k_camera[] = "camera";
 static char __pyx_k_offset[] = "offset";
 static char __pyx_k_result[] = "result";
-static char __pyx_k_screen[] = "screen";
 static char __pyx_k_servos[] = "servos";
-static char __pyx_k_LAnkYaw[] = "LAnkYaw";
-static char __pyx_k_LHipYaw[] = "LHipYaw";
-static char __pyx_k_RAnkYaw[] = "RAnkYaw";
-static char __pyx_k_RHipYaw[] = "RHipYaw";
-static char __pyx_k_speaker[] = "speaker";
 static char __pyx_k_timeout[] = "timeout";
-static char __pyx_k_LHipRoll[] = "LHipRoll";
-static char __pyx_k_RHipRoll[] = "RHipRoll";
 static char __pyx_k_in_bytes[] = "in_bytes";
 static char __pyx_k_max_wait[] = "max_wait";
-static char __pyx_k_LAnkPitch[] = "LAnkPitch";
-static char __pyx_k_LHipPitch[] = "LHipPitch";
-static char __pyx_k_PelvisYaw[] = "PelvisYaw";
-static char __pyx_k_RAnkPitch[] = "RAnkPitch";
-static char __pyx_k_RHipPitch[] = "RHipPitch";
 static char __pyx_k_interface[] = "interface";
 static char __pyx_k_out_bytes[] = "out_bytes";
 static char __pyx_k_servo_idx[] = "servo_idx";
 static char __pyx_k_jointIndex[] = "jointIndex";
-static char __pyx_k_joints_idx[] = "joints_idx";
-static char __pyx_k_microphone[] = "microphone";
-static char __pyx_k_LUpperArmYaw[] = "LUpperArmYaw";
-static char __pyx_k_RUpperArmYaw[] = "RUpperArmYaw";
 static char __pyx_k_jointIndices[] = "jointIndices";
-static char __pyx_k_LShoulderRoll[] = "LShoulderRoll";
-static char __pyx_k_RShoulderRoll[] = "RShoulderRoll";
 static char __pyx_k_angleInDegree[] = "angleInDegree";
-static char __pyx_k_LShoulderPitch[] = "LShoulderPitch";
-static char __pyx_k_RShoulderPitch[] = "RShoulderPitch";
 static char __pyx_k_anglesInDegree[] = "anglesInDegree";
 static char __pyx_k_fractionMaxSpeed[] = "fractionMaxSpeed";
-static PyObject *__pyx_n_s_LAnkPitch;
-static PyObject *__pyx_n_s_LAnkYaw;
-static PyObject *__pyx_n_s_LElbow;
-static PyObject *__pyx_n_s_LFoot;
-static PyObject *__pyx_n_s_LHipPitch;
-static PyObject *__pyx_n_s_LHipRoll;
-static PyObject *__pyx_n_s_LHipYaw;
-static PyObject *__pyx_n_s_LKnee;
-static PyObject *__pyx_n_s_LShoulderPitch;
-static PyObject *__pyx_n_s_LShoulderRoll;
-static PyObject *__pyx_n_s_LUpperArmYaw;
-static PyObject *__pyx_n_s_Neck;
-static PyObject *__pyx_n_s_PelvisYaw;
-static PyObject *__pyx_n_s_RAnkPitch;
-static PyObject *__pyx_n_s_RAnkYaw;
-static PyObject *__pyx_n_s_RElbow;
-static PyObject *__pyx_n_s_RFoot;
-static PyObject *__pyx_n_s_RHipPitch;
-static PyObject *__pyx_n_s_RHipRoll;
-static PyObject *__pyx_n_s_RHipYaw;
-static PyObject *__pyx_n_s_RKnee;
-static PyObject *__pyx_n_s_RShoulderPitch;
-static PyObject *__pyx_n_s_RShoulderRoll;
-static PyObject *__pyx_n_s_RUpperArmYaw;
 static PyObject *__pyx_n_s_a1;
 static PyObject *__pyx_n_s_a2;
 static PyObject *__pyx_n_s_a3;
@@ -789,123 +718,99 @@ static PyObject *__pyx_n_s_a4;
 static PyObject *__pyx_n_s_angleInDegree;
 static PyObject *__pyx_n_s_anglesInDegree;
 static PyObject *__pyx_n_s_baud;
-static PyObject *__pyx_n_s_camera;
 static PyObject *__pyx_n_s_cc;
 static PyObject *__pyx_n_s_fractionMaxSpeed;
 static PyObject *__pyx_n_s_frame;
-static PyObject *__pyx_n_s_imu;
 static PyObject *__pyx_n_s_in_bytes;
 static PyObject *__pyx_n_s_interface;
 static PyObject *__pyx_n_s_jointIndex;
 static PyObject *__pyx_n_s_jointIndices;
-static PyObject *__pyx_n_s_joints_idx;
 static PyObject *__pyx_n_s_main;
 static PyObject *__pyx_n_s_max_wait;
-static PyObject *__pyx_n_s_microphone;
 static PyObject *__pyx_n_s_n;
 static PyObject *__pyx_n_s_num;
 static PyObject *__pyx_n_s_offset;
 static PyObject *__pyx_n_s_out_bytes;
 static PyObject *__pyx_n_s_pid;
 static PyObject *__pyx_n_s_result;
-static PyObject *__pyx_n_s_screen;
 static PyObject *__pyx_n_s_servo_idx;
 static PyObject *__pyx_n_s_servos;
-static PyObject *__pyx_n_s_speaker;
 static PyObject *__pyx_n_s_test;
 static PyObject *__pyx_n_s_timeout;
 static PyObject *__pyx_n_s_val;
 static PyObject *__pyx_n_s_vid;
-static int __pyx_pf_7pykondo_7pykondo___cinit__(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self); /* proto */
-static void __pyx_pf_7pykondo_7pykondo_2__dealloc__(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_4set_angle(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_jointIndex, double __pyx_v_angleInDegree, double __pyx_v_fractionMaxSpeed); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_6set_angles(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, PyObject *__pyx_v_jointIndices, PyObject *__pyx_v_anglesInDegree, double __pyx_v_fractionMaxSpeed); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_8init(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_10init_custom(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, int __pyx_v_baud, int __pyx_v_vid, int __pyx_v_pid, int __pyx_v_interface); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_12close(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_14move(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_num); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_16ack(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_18get_options(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_20play_motion(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_num, long __pyx_v_max_wait); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_22stop_motion(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_24krc3_buttons(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_cc, __pyx_t_7pykondo_UCHAR __pyx_v_a1, __pyx_t_7pykondo_UCHAR __pyx_v_a2, __pyx_t_7pykondo_UCHAR __pyx_v_a3, __pyx_t_7pykondo_UCHAR __pyx_v_a4); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_26read_analog(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_num); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_28set_pio_direction(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_bitset); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_30get_pio_direction(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_32read_pio(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_34write_pio(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_bitset); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_36set_counter(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_num, __pyx_t_7pykondo_UCHAR __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_38get_counter(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UCHAR *__pyx_v_result, __pyx_t_7pykondo_UINT __pyx_v_num); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_40send_ics_pos(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UCHAR *__pyx_v_servos, __pyx_t_7pykondo_UINT __pyx_v_frame); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_42get_servo_data(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_servo_idx, __pyx_t_7pykondo_UINT __pyx_v_offset); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_44get_servo_trim(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_servo_idx); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_46get_servo_setpos(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_servo_idx); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_48get_servo_pos(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_servo_idx); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_50get_servo_id(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_servo_idx); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_52write(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, int __pyx_v_n); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_54read(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, int __pyx_v_n); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_56read_timeout(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, int __pyx_v_n, long __pyx_v_timeout); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_58purge(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_60trx(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, int __pyx_v_out_bytes, int __pyx_v_in_bytes); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_62checksum(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, int __pyx_v_n); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_64verify_checksum(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, int __pyx_v_n); /* proto */
-static PyObject *__pyx_pf_7pykondo_7pykondo_66load_asciihex(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, char const *__pyx_v_hex); /* proto */
-static PyObject *__pyx_tp_new_7pykondo_pykondo(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_int_0;
-static PyObject *__pyx_int_1;
-static PyObject *__pyx_int_2;
-static PyObject *__pyx_int_4;
-static PyObject *__pyx_int_5;
-static PyObject *__pyx_int_6;
-static PyObject *__pyx_int_8;
-static PyObject *__pyx_int_11;
-static PyObject *__pyx_int_12;
-static PyObject *__pyx_int_13;
-static PyObject *__pyx_int_14;
-static PyObject *__pyx_int_15;
-static PyObject *__pyx_int_17;
-static PyObject *__pyx_int_18;
-static PyObject *__pyx_int_19;
-static PyObject *__pyx_int_20;
-static PyObject *__pyx_int_21;
+static int __pyx_pf_7pykondo_5Kondo___cinit__(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self); /* proto */
+static void __pyx_pf_7pykondo_5Kondo_2__dealloc__(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_4set_angle(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_jointIndex, double __pyx_v_angleInDegree, double __pyx_v_fractionMaxSpeed); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_6set_angles(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, PyObject *__pyx_v_jointIndices, PyObject *__pyx_v_anglesInDegree, double __pyx_v_fractionMaxSpeed); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_8init(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_10init_custom(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, int __pyx_v_baud, int __pyx_v_vid, int __pyx_v_pid, int __pyx_v_interface); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_12close(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_14move(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_num); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_16ack(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_18get_options(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_20play_motion(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_num, long __pyx_v_max_wait); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_22stop_motion(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_24krc3_buttons(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_cc, __pyx_t_7pykondo_UCHAR __pyx_v_a1, __pyx_t_7pykondo_UCHAR __pyx_v_a2, __pyx_t_7pykondo_UCHAR __pyx_v_a3, __pyx_t_7pykondo_UCHAR __pyx_v_a4); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_26read_analog(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_num); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_28set_pio_direction(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_bitset); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_30get_pio_direction(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_32read_pio(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_34write_pio(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_bitset); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_36set_counter(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_num, __pyx_t_7pykondo_UCHAR __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_38get_counter(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UCHAR *__pyx_v_result, __pyx_t_7pykondo_UINT __pyx_v_num); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_40send_ics_pos(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UCHAR *__pyx_v_servos, __pyx_t_7pykondo_UINT __pyx_v_frame); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_42get_servo_data(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_servo_idx, __pyx_t_7pykondo_UINT __pyx_v_offset); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_44get_servo_trim(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_servo_idx); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_46get_servo_setpos(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_servo_idx); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_48get_servo_pos(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_servo_idx); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_50get_servo_id(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_servo_idx); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_52write(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, int __pyx_v_n); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_54read(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, int __pyx_v_n); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_56read_timeout(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, int __pyx_v_n, long __pyx_v_timeout); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_58purge(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_60trx(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, int __pyx_v_out_bytes, int __pyx_v_in_bytes); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_62checksum(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, int __pyx_v_n); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_64verify_checksum(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, int __pyx_v_n); /* proto */
+static PyObject *__pyx_pf_7pykondo_5Kondo_66load_asciihex(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, char const *__pyx_v_hex); /* proto */
+static PyObject *__pyx_tp_new_7pykondo_Kondo(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 
 /* "pykondo.pyx":84
  *     cdef free_on_dealloc
  * 
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
- *         self.C_Kondo = new kondo()
- * 
+ *         """
+ *         Default Constructor.
  */
 
 /* Python wrapper */
-static int __pyx_pw_7pykondo_7pykondo_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_7pykondo_7pykondo_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_7pykondo_5Kondo_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_7pykondo_5Kondo_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__cinit__ (wrapper)", 0);
   if (unlikely(PyTuple_GET_SIZE(__pyx_args) > 0)) {
     __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 0, 0, PyTuple_GET_SIZE(__pyx_args)); return -1;}
   if (unlikely(__pyx_kwds) && unlikely(PyDict_Size(__pyx_kwds) > 0) && unlikely(!__Pyx_CheckKeywordStrings(__pyx_kwds, "__cinit__", 0))) return -1;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo___cinit__(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7pykondo_5Kondo___cinit__(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_7pykondo_7pykondo___cinit__(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self) {
+static int __pyx_pf_7pykondo_5Kondo___cinit__(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   kondo *__pyx_t_1;
-  PyObject *__pyx_t_2 = NULL;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "pykondo.pyx":85
- * 
- *     def __cinit__(self):
+  /* "pykondo.pyx":88
+ *         Default Constructor.
+ *         """
  *         self.C_Kondo = new kondo()             # <<<<<<<<<<<<<<
  * 
  *         # The robots has initially 17 servos/DoFs.
@@ -914,176 +819,30 @@ static int __pyx_pf_7pykondo_7pykondo___cinit__(struct __pyx_obj_7pykondo_pykond
     __pyx_t_1 = new kondo();
   } catch(...) {
     __Pyx_CppExn2PyErr();
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 85; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 88; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
   __pyx_v_self->C_Kondo = __pyx_t_1;
-
-  /* "pykondo.pyx":89
- *         # The robots has initially 17 servos/DoFs.
- *         # However, 5 dummy servos can be replaced by real servos.
- *         self.joints_idx = {'Neck': 0,             # <<<<<<<<<<<<<<
- *                            # Right arm
- *                            'RShoulderPitch': 1,
- */
-  __pyx_t_2 = PyDict_New(); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_Neck, __pyx_int_0) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_RShoulderPitch, __pyx_int_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_RShoulderRoll, __pyx_int_2) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-
-  /* "pykondo.pyx":93
- *                            'RShoulderPitch': 1,
- *                            'RShoulderRoll': 2,
- *                            'RUpperArmYaw': None,             # <<<<<<<<<<<<<<
- *                            'RElbow': 4,
- *                            # Left arm
- */
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_RUpperArmYaw, Py_None) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_RElbow, __pyx_int_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_LShoulderPitch, __pyx_int_5) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_LShoulderRoll, __pyx_int_6) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-
-  /* "pykondo.pyx":98
- *                            'LShoulderPitch': 5,
- *                            'LShoulderRoll': 6,
- *                            'LUpperArmYaw': None,             # <<<<<<<<<<<<<<
- *                            'LElbow': 8,
- *                            # Pelvis
- */
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_LUpperArmYaw, Py_None) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_LElbow, __pyx_int_8) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-
-  /* "pykondo.pyx":101
- *                            'LElbow': 8,
- *                            # Pelvis
- *                            'PelvisYaw': None,             # <<<<<<<<<<<<<<
- *                            # Right Leg
- *                            'RHipYaw': None,
- */
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_PelvisYaw, Py_None) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-
-  /* "pykondo.pyx":103
- *                            'PelvisYaw': None,
- *                            # Right Leg
- *                            'RHipYaw': None,             # <<<<<<<<<<<<<<
- *                            'RHipRoll': 11,
- *                            'RHipPitch': 12,
- */
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_RHipYaw, Py_None) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_RHipRoll, __pyx_int_11) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_RHipPitch, __pyx_int_12) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_RKnee, __pyx_int_13) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_RAnkPitch, __pyx_int_14) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_RAnkYaw, __pyx_int_15) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-
-  /* "pykondo.pyx":110
- *                            'RAnkYaw': 15,
- *                            # Left Leg
- *                            'LHipYaw': None,             # <<<<<<<<<<<<<<
- *                            'LHipRoll': 17,
- *                            'LHipPitch': 18,
- */
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_LHipYaw, Py_None) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_LHipRoll, __pyx_int_17) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_LHipPitch, __pyx_int_18) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_LKnee, __pyx_int_19) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_LAnkPitch, __pyx_int_20) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_LAnkYaw, __pyx_int_21) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-
-  /* "pykondo.pyx":89
- *         # The robots has initially 17 servos/DoFs.
- *         # However, 5 dummy servos can be replaced by real servos.
- *         self.joints_idx = {'Neck': 0,             # <<<<<<<<<<<<<<
- *                            # Right arm
- *                            'RShoulderPitch': 1,
- */
-  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_joints_idx, __pyx_t_2) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-
-  /* "pykondo.pyx":118
- * 
- *         # Sensors
- *         self.camera = None             # <<<<<<<<<<<<<<
- *         self.imu = None
- *         self.LFoot = None
- */
-  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_camera, Py_None) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 118; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-
-  /* "pykondo.pyx":119
- *         # Sensors
- *         self.camera = None
- *         self.imu = None             # <<<<<<<<<<<<<<
- *         self.LFoot = None
- *         self.RFoot = None
- */
-  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_imu, Py_None) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 119; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-
-  /* "pykondo.pyx":120
- *         self.camera = None
- *         self.imu = None
- *         self.LFoot = None             # <<<<<<<<<<<<<<
- *         self.RFoot = None
- *         self.microphone = None
- */
-  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_LFoot, Py_None) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-
-  /* "pykondo.pyx":121
- *         self.imu = None
- *         self.LFoot = None
- *         self.RFoot = None             # <<<<<<<<<<<<<<
- *         self.microphone = None
- * 
- */
-  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_RFoot, Py_None) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 121; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-
-  /* "pykondo.pyx":122
- *         self.LFoot = None
- *         self.RFoot = None
- *         self.microphone = None             # <<<<<<<<<<<<<<
- * 
- *         # Interfaces
- */
-  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_microphone, Py_None) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 122; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-
-  /* "pykondo.pyx":125
- * 
- *         # Interfaces
- *         self.speaker = None             # <<<<<<<<<<<<<<
- *         self.screen = None
- * 
- */
-  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_speaker, Py_None) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 125; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-
-  /* "pykondo.pyx":126
- *         # Interfaces
- *         self.speaker = None
- *         self.screen = None             # <<<<<<<<<<<<<<
- * 
- * 
- */
-  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_screen, Py_None) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 126; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
   /* "pykondo.pyx":84
  *     cdef free_on_dealloc
  * 
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
- *         self.C_Kondo = new kondo()
- * 
+ *         """
+ *         Default Constructor.
  */
 
   /* function exit code */
   __pyx_r = 0;
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("pykondo.pykondo.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "pykondo.pyx":129
+/* "pykondo.pyx":132
  * 
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -1092,21 +851,21 @@ static int __pyx_pf_7pykondo_7pykondo___cinit__(struct __pyx_obj_7pykondo_pykond
  */
 
 /* Python wrapper */
-static void __pyx_pw_7pykondo_7pykondo_3__dealloc__(PyObject *__pyx_v_self); /*proto*/
-static void __pyx_pw_7pykondo_7pykondo_3__dealloc__(PyObject *__pyx_v_self) {
+static void __pyx_pw_7pykondo_5Kondo_3__dealloc__(PyObject *__pyx_v_self); /*proto*/
+static void __pyx_pw_7pykondo_5Kondo_3__dealloc__(PyObject *__pyx_v_self) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealloc__ (wrapper)", 0);
-  __pyx_pf_7pykondo_7pykondo_2__dealloc__(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self));
+  __pyx_pf_7pykondo_5Kondo_2__dealloc__(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
 }
 
-static void __pyx_pf_7pykondo_7pykondo_2__dealloc__(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self) {
+static void __pyx_pf_7pykondo_5Kondo_2__dealloc__(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "pykondo.pyx":130
+  /* "pykondo.pyx":133
  * 
  *     def __dealloc__(self):
  *         del self.C_Kondo             # <<<<<<<<<<<<<<
@@ -1115,7 +874,7 @@ static void __pyx_pf_7pykondo_7pykondo_2__dealloc__(struct __pyx_obj_7pykondo_py
  */
   delete __pyx_v_self->C_Kondo;
 
-  /* "pykondo.pyx":129
+  /* "pykondo.pyx":132
  * 
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -1127,7 +886,7 @@ static void __pyx_pf_7pykondo_7pykondo_2__dealloc__(struct __pyx_obj_7pykondo_py
   __Pyx_RefNannyFinishContext();
 }
 
-/* "pykondo.pyx":134
+/* "pykondo.pyx":137
  * 
  *     ## Set
  *     def set_angle(self, UINT jointIndex, double angleInDegree, double fractionMaxSpeed):             # <<<<<<<<<<<<<<
@@ -1136,9 +895,9 @@ static void __pyx_pf_7pykondo_7pykondo_2__dealloc__(struct __pyx_obj_7pykondo_py
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_5set_angle(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_4set_angle[] = "\n        Set the specified angle (in degree) to the given single servo motor.\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_5set_angle(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_5set_angle(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_4set_angle[] = "\n        Set the specified angle (in degree) to the given single servo motor.\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_5set_angle(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __pyx_t_7pykondo_UINT __pyx_v_jointIndex;
   double __pyx_v_angleInDegree;
   double __pyx_v_fractionMaxSpeed;
@@ -1169,16 +928,16 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_5set_angle(PyObject *__pyx_v_self, P
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_angleInDegree)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("set_angle", 1, 3, 3, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 134; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("set_angle", 1, 3, 3, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 137; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
         case  2:
         if (likely((values[2] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_fractionMaxSpeed)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("set_angle", 1, 3, 3, 2); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 134; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("set_angle", 1, 3, 3, 2); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 137; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "set_angle") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 134; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "set_angle") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 137; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -1187,26 +946,26 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_5set_angle(PyObject *__pyx_v_self, P
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
     }
-    __pyx_v_jointIndex = __Pyx_PyInt_As_unsigned_int(values[0]); if (unlikely((__pyx_v_jointIndex == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 134; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
-    __pyx_v_angleInDegree = __pyx_PyFloat_AsDouble(values[1]); if (unlikely((__pyx_v_angleInDegree == (double)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 134; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
-    __pyx_v_fractionMaxSpeed = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_fractionMaxSpeed == (double)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 134; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_jointIndex = __Pyx_PyInt_As_unsigned_int(values[0]); if (unlikely((__pyx_v_jointIndex == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 137; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_angleInDegree = __pyx_PyFloat_AsDouble(values[1]); if (unlikely((__pyx_v_angleInDegree == (double)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 137; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_fractionMaxSpeed = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_fractionMaxSpeed == (double)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 137; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("set_angle", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 134; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("set_angle", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 137; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.set_angle", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.set_angle", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_4set_angle(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), __pyx_v_jointIndex, __pyx_v_angleInDegree, __pyx_v_fractionMaxSpeed);
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_4set_angle(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), __pyx_v_jointIndex, __pyx_v_angleInDegree, __pyx_v_fractionMaxSpeed);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_4set_angle(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_jointIndex, double __pyx_v_angleInDegree, double __pyx_v_fractionMaxSpeed) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_4set_angle(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_jointIndex, double __pyx_v_angleInDegree, double __pyx_v_fractionMaxSpeed) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1215,7 +974,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_4set_angle(struct __pyx_obj_7pykondo
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("set_angle", 0);
 
-  /* "pykondo.pyx":138
+  /* "pykondo.pyx":141
  *         Set the specified angle (in degree) to the given single servo motor.
  *         """
  *         return self.C_Kondo.kondo_set_angle(jointIndex, angleInDegree, fractionMaxSpeed)             # <<<<<<<<<<<<<<
@@ -1223,13 +982,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_4set_angle(struct __pyx_obj_7pykondo
  *     def set_angles(self, jointIndices, anglesInDegree, double fractionMaxSpeed):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_set_angle(__pyx_v_jointIndex, __pyx_v_angleInDegree, __pyx_v_fractionMaxSpeed)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 138; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_set_angle(__pyx_v_jointIndex, __pyx_v_angleInDegree, __pyx_v_fractionMaxSpeed)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 141; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":134
+  /* "pykondo.pyx":137
  * 
  *     ## Set
  *     def set_angle(self, UINT jointIndex, double angleInDegree, double fractionMaxSpeed):             # <<<<<<<<<<<<<<
@@ -1240,7 +999,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_4set_angle(struct __pyx_obj_7pykondo
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.set_angle", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.set_angle", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -1248,7 +1007,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_4set_angle(struct __pyx_obj_7pykondo
   return __pyx_r;
 }
 
-/* "pykondo.pyx":140
+/* "pykondo.pyx":143
  *         return self.C_Kondo.kondo_set_angle(jointIndex, angleInDegree, fractionMaxSpeed)
  * 
  *     def set_angles(self, jointIndices, anglesInDegree, double fractionMaxSpeed):             # <<<<<<<<<<<<<<
@@ -1257,9 +1016,9 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_4set_angle(struct __pyx_obj_7pykondo
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_7set_angles(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_6set_angles[] = "\n        Set the specified angles (in degree) to the given multiple servo motors.\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_7set_angles(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_7set_angles(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_6set_angles[] = "\n        Set the specified angles (in degree) to the given multiple servo motors.\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_7set_angles(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_jointIndices = 0;
   PyObject *__pyx_v_anglesInDegree = 0;
   double __pyx_v_fractionMaxSpeed;
@@ -1290,16 +1049,16 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_7set_angles(PyObject *__pyx_v_self, 
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_anglesInDegree)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("set_angles", 1, 3, 3, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 140; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("set_angles", 1, 3, 3, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 143; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
         case  2:
         if (likely((values[2] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_fractionMaxSpeed)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("set_angles", 1, 3, 3, 2); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 140; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("set_angles", 1, 3, 3, 2); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 143; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "set_angles") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 140; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "set_angles") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 143; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -1310,24 +1069,24 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_7set_angles(PyObject *__pyx_v_self, 
     }
     __pyx_v_jointIndices = values[0];
     __pyx_v_anglesInDegree = values[1];
-    __pyx_v_fractionMaxSpeed = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_fractionMaxSpeed == (double)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 140; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_fractionMaxSpeed = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_fractionMaxSpeed == (double)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 143; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("set_angles", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 140; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("set_angles", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 143; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.set_angles", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.set_angles", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_6set_angles(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), __pyx_v_jointIndices, __pyx_v_anglesInDegree, __pyx_v_fractionMaxSpeed);
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_6set_angles(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), __pyx_v_jointIndices, __pyx_v_anglesInDegree, __pyx_v_fractionMaxSpeed);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_6set_angles(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, PyObject *__pyx_v_jointIndices, PyObject *__pyx_v_anglesInDegree, double __pyx_v_fractionMaxSpeed) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_6set_angles(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, PyObject *__pyx_v_jointIndices, PyObject *__pyx_v_anglesInDegree, double __pyx_v_fractionMaxSpeed) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   std::vector<__pyx_t_7pykondo_UINT>  __pyx_t_1;
@@ -1338,7 +1097,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_6set_angles(struct __pyx_obj_7pykond
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("set_angles", 0);
 
-  /* "pykondo.pyx":144
+  /* "pykondo.pyx":147
  *         Set the specified angles (in degree) to the given multiple servo motors.
  *         """
  *         return self.C_Kondo.kondo_set_angles(jointIndices, anglesInDegree, fractionMaxSpeed)             # <<<<<<<<<<<<<<
@@ -1346,15 +1105,15 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_6set_angles(struct __pyx_obj_7pykond
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_convert_vector_from_py___pyx_t_7pykondo_UINT(__pyx_v_jointIndices); if (unlikely(PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 144; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_t_2 = __pyx_convert_vector_from_py_double(__pyx_v_anglesInDegree); if (unlikely(PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 144; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_set_angles(__pyx_t_1, __pyx_t_2, __pyx_v_fractionMaxSpeed)); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 144; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __pyx_convert_vector_from_py___pyx_t_7pykondo_UINT(__pyx_v_jointIndices); if (unlikely(PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 147; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __pyx_convert_vector_from_py_double(__pyx_v_anglesInDegree); if (unlikely(PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 147; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_set_angles(__pyx_t_1, __pyx_t_2, __pyx_v_fractionMaxSpeed)); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 147; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_r = __pyx_t_3;
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":140
+  /* "pykondo.pyx":143
  *         return self.C_Kondo.kondo_set_angle(jointIndex, angleInDegree, fractionMaxSpeed)
  * 
  *     def set_angles(self, jointIndices, anglesInDegree, double fractionMaxSpeed):             # <<<<<<<<<<<<<<
@@ -1365,7 +1124,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_6set_angles(struct __pyx_obj_7pykond
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("pykondo.pykondo.set_angles", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.set_angles", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -1373,7 +1132,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_6set_angles(struct __pyx_obj_7pykond
   return __pyx_r;
 }
 
-/* "pykondo.pyx":148
+/* "pykondo.pyx":151
  * 
  *     ## init
  *     def init(self):             # <<<<<<<<<<<<<<
@@ -1382,20 +1141,20 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_6set_angles(struct __pyx_obj_7pykond
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_9init(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_8init[] = "\n        Open/Initialize the KondoInstance.\n        Uses the default parameters for baud, vid, and pid.\n        This consists mainly of initializing and opening the USB adapter.\n        \n        Return:\n        Returns 0 if successful, error code otherwise.\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_9init(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_9init(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_8init[] = "\n        Open/Initialize the KondoInstance.\n        Uses the default parameters for baud, vid, and pid.\n        This consists mainly of initializing and opening the USB adapter.\n        \n        Return:\n        Returns 0 if successful, error code otherwise.\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_9init(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("init (wrapper)", 0);
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_8init(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_8init(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_8init(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_8init(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1404,7 +1163,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_8init(struct __pyx_obj_7pykondo_pyko
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("init", 0);
 
-  /* "pykondo.pyx":157
+  /* "pykondo.pyx":160
  *         Returns 0 if successful, error code otherwise.
  *         """
  *         return self.C_Kondo.kondo_init()             # <<<<<<<<<<<<<<
@@ -1412,13 +1171,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_8init(struct __pyx_obj_7pykondo_pyko
  *     def init_custom(self, int baud, int vid, int pid, int interface):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_init()); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 157; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_init()); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 160; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":148
+  /* "pykondo.pyx":151
  * 
  *     ## init
  *     def init(self):             # <<<<<<<<<<<<<<
@@ -1429,7 +1188,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_8init(struct __pyx_obj_7pykondo_pyko
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.init", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.init", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -1437,7 +1196,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_8init(struct __pyx_obj_7pykondo_pyko
   return __pyx_r;
 }
 
-/* "pykondo.pyx":159
+/* "pykondo.pyx":162
  *         return self.C_Kondo.kondo_init()
  * 
  *     def init_custom(self, int baud, int vid, int pid, int interface):             # <<<<<<<<<<<<<<
@@ -1446,9 +1205,9 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_8init(struct __pyx_obj_7pykondo_pyko
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_11init_custom(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_10init_custom[] = "\n        Open/Initialize the KondoInstance.\n        Accepts baud rate, vid, pid, and interface arguments.\n        This consists mainly of initializing and opening the USB adapter.\n        \n        Parameters:\n        baud: the baud rate - e.g. 115200\n        vid: the USB vendor ID. See rcb4.h for some examples.\n        pid: the USB product ID. See rcb4.h for some examples.\n        interface: defined in ftdi.h. possible values: \n            INTERFACE_ANY, INTERFACE_A, INTERFACE_B, INTERFACE_C, INTERFACE_D\n        \n        Return:\n        Returns 0 if successful, error code otherwise.\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_11init_custom(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_11init_custom(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_10init_custom[] = "\n        Open/Initialize the KondoInstance.\n        Accepts baud rate, vid, pid, and interface arguments.\n        This consists mainly of initializing and opening the USB adapter.\n        \n        Parameters:\n        baud: the baud rate - e.g. 115200\n        vid: the USB vendor ID. See rcb4.h for some examples.\n        pid: the USB product ID. See rcb4.h for some examples.\n        interface: defined in ftdi.h. possible values: \n            INTERFACE_ANY, INTERFACE_A, INTERFACE_B, INTERFACE_C, INTERFACE_D\n        \n        Return:\n        Returns 0 if successful, error code otherwise.\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_11init_custom(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_v_baud;
   int __pyx_v_vid;
   int __pyx_v_pid;
@@ -1481,21 +1240,21 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_11init_custom(PyObject *__pyx_v_self
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_vid)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("init_custom", 1, 4, 4, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 159; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("init_custom", 1, 4, 4, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 162; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
         case  2:
         if (likely((values[2] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_pid)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("init_custom", 1, 4, 4, 2); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 159; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("init_custom", 1, 4, 4, 2); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 162; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
         case  3:
         if (likely((values[3] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_interface)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("init_custom", 1, 4, 4, 3); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 159; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("init_custom", 1, 4, 4, 3); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 162; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "init_custom") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 159; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "init_custom") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 162; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 4) {
       goto __pyx_L5_argtuple_error;
@@ -1505,27 +1264,27 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_11init_custom(PyObject *__pyx_v_self
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
       values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
     }
-    __pyx_v_baud = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_baud == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 159; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
-    __pyx_v_vid = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_vid == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 159; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
-    __pyx_v_pid = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_pid == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 159; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
-    __pyx_v_interface = __Pyx_PyInt_As_int(values[3]); if (unlikely((__pyx_v_interface == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 159; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_baud = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_baud == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 162; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_vid = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_vid == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 162; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_pid = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_pid == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 162; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_interface = __Pyx_PyInt_As_int(values[3]); if (unlikely((__pyx_v_interface == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 162; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("init_custom", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 159; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("init_custom", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 162; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.init_custom", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.init_custom", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_10init_custom(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), __pyx_v_baud, __pyx_v_vid, __pyx_v_pid, __pyx_v_interface);
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_10init_custom(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), __pyx_v_baud, __pyx_v_vid, __pyx_v_pid, __pyx_v_interface);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_10init_custom(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, int __pyx_v_baud, int __pyx_v_vid, int __pyx_v_pid, int __pyx_v_interface) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_10init_custom(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, int __pyx_v_baud, int __pyx_v_vid, int __pyx_v_pid, int __pyx_v_interface) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1534,7 +1293,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_10init_custom(struct __pyx_obj_7pyko
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("init_custom", 0);
 
-  /* "pykondo.pyx":175
+  /* "pykondo.pyx":178
  *         Returns 0 if successful, error code otherwise.
  *         """
  *         return self.C_Kondo.kondo_init_custom(baud, vid, pid, interface)             # <<<<<<<<<<<<<<
@@ -1542,13 +1301,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_10init_custom(struct __pyx_obj_7pyko
  *     def close(self):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_init_custom(__pyx_v_baud, __pyx_v_vid, __pyx_v_pid, __pyx_v_interface)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 175; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_init_custom(__pyx_v_baud, __pyx_v_vid, __pyx_v_pid, __pyx_v_interface)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 178; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":159
+  /* "pykondo.pyx":162
  *         return self.C_Kondo.kondo_init()
  * 
  *     def init_custom(self, int baud, int vid, int pid, int interface):             # <<<<<<<<<<<<<<
@@ -1559,7 +1318,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_10init_custom(struct __pyx_obj_7pyko
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.init_custom", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.init_custom", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -1567,7 +1326,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_10init_custom(struct __pyx_obj_7pyko
   return __pyx_r;
 }
 
-/* "pykondo.pyx":177
+/* "pykondo.pyx":180
  *         return self.C_Kondo.kondo_init_custom(baud, vid, pid, interface)
  * 
  *     def close(self):             # <<<<<<<<<<<<<<
@@ -1576,20 +1335,20 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_10init_custom(struct __pyx_obj_7pyko
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_13close(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_12close[] = "\n        Close/Deinitialize the KondoInstance.\n        This consists mainly of closing the USB adapter.\n        \n        Returns 0 if successful, < 0 if error.\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_13close(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_13close(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_12close[] = "\n        Close/Deinitialize the KondoInstance.\n        This consists mainly of closing the USB adapter.\n        \n        Returns 0 if successful, < 0 if error.\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_13close(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("close (wrapper)", 0);
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_12close(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_12close(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_12close(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_12close(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1598,7 +1357,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_12close(struct __pyx_obj_7pykondo_py
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("close", 0);
 
-  /* "pykondo.pyx":184
+  /* "pykondo.pyx":187
  *         Returns 0 if successful, < 0 if error.
  *         """
  *         return self.C_Kondo.kondo_close()             # <<<<<<<<<<<<<<
@@ -1606,13 +1365,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_12close(struct __pyx_obj_7pykondo_py
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_close()); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 184; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_close()); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 187; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":177
+  /* "pykondo.pyx":180
  *         return self.C_Kondo.kondo_init_custom(baud, vid, pid, interface)
  * 
  *     def close(self):             # <<<<<<<<<<<<<<
@@ -1623,7 +1382,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_12close(struct __pyx_obj_7pykondo_py
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.close", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.close", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -1631,18 +1390,18 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_12close(struct __pyx_obj_7pykondo_py
   return __pyx_r;
 }
 
-/* "pykondo.pyx":188
+/* "pykondo.pyx":191
  * 
  *     ## rcb4 commands
  *     def move(self, UINT num):             # <<<<<<<<<<<<<<
  *         """
- * 
+ *         Move the specified joint to the maximum positive joint limit.
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_15move(PyObject *__pyx_v_self, PyObject *__pyx_arg_num); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_14move[] = "\n\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_15move(PyObject *__pyx_v_self, PyObject *__pyx_arg_num) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_15move(PyObject *__pyx_v_self, PyObject *__pyx_arg_num); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_14move[] = "\n        Move the specified joint to the maximum positive joint limit.\n\n        Parameter:\n        num: joint id.\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_15move(PyObject *__pyx_v_self, PyObject *__pyx_arg_num) {
   __pyx_t_7pykondo_UINT __pyx_v_num;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -1651,22 +1410,22 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_15move(PyObject *__pyx_v_self, PyObj
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("move (wrapper)", 0);
   assert(__pyx_arg_num); {
-    __pyx_v_num = __Pyx_PyInt_As_unsigned_int(__pyx_arg_num); if (unlikely((__pyx_v_num == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 188; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_num = __Pyx_PyInt_As_unsigned_int(__pyx_arg_num); if (unlikely((__pyx_v_num == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 191; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.move", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.move", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_14move(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), ((__pyx_t_7pykondo_UINT)__pyx_v_num));
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_14move(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), ((__pyx_t_7pykondo_UINT)__pyx_v_num));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_14move(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_num) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_14move(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_num) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1675,32 +1434,32 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_14move(struct __pyx_obj_7pykondo_pyk
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("move", 0);
 
-  /* "pykondo.pyx":192
- * 
+  /* "pykondo.pyx":198
+ *         num: joint id.
  *         """
  *         return self.C_Kondo.kondo_move(num)             # <<<<<<<<<<<<<<
  * 
  *     def ack(self):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_move(__pyx_v_num)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 192; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_move(__pyx_v_num)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 198; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":188
+  /* "pykondo.pyx":191
  * 
  *     ## rcb4 commands
  *     def move(self, UINT num):             # <<<<<<<<<<<<<<
  *         """
- * 
+ *         Move the specified joint to the maximum positive joint limit.
  */
 
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.move", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.move", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -1708,7 +1467,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_14move(struct __pyx_obj_7pykondo_pyk
   return __pyx_r;
 }
 
-/* "pykondo.pyx":194
+/* "pykondo.pyx":200
  *         return self.C_Kondo.kondo_move(num)
  * 
  *     def ack(self):             # <<<<<<<<<<<<<<
@@ -1717,20 +1476,20 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_14move(struct __pyx_obj_7pykondo_pyk
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_17ack(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_16ack[] = "\n        ACK: Send a ping to the robot and get a response.\n        \n        Returns < 0: error\n        Returns 0: OK\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_17ack(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_17ack(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_16ack[] = "\n        ACK: Send a ping to the robot and get a response.\n        \n        Returns < 0: error\n        Returns 0: OK\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_17ack(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("ack (wrapper)", 0);
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_16ack(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_16ack(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_16ack(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_16ack(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1739,7 +1498,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_16ack(struct __pyx_obj_7pykondo_pyko
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("ack", 0);
 
-  /* "pykondo.pyx":201
+  /* "pykondo.pyx":207
  *         Returns 0: OK
  *         """
  *         return self.C_Kondo.kondo_ack()             # <<<<<<<<<<<<<<
@@ -1747,13 +1506,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_16ack(struct __pyx_obj_7pykondo_pyko
  *     def get_options(self):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_ack()); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 201; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_ack()); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 207; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":194
+  /* "pykondo.pyx":200
  *         return self.C_Kondo.kondo_move(num)
  * 
  *     def ack(self):             # <<<<<<<<<<<<<<
@@ -1764,7 +1523,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_16ack(struct __pyx_obj_7pykondo_pyko
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.ack", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.ack", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -1772,7 +1531,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_16ack(struct __pyx_obj_7pykondo_pyko
   return __pyx_r;
 }
 
-/* "pykondo.pyx":203
+/* "pykondo.pyx":209
  *         return self.C_Kondo.kondo_ack()
  * 
  *     def get_options(self):             # <<<<<<<<<<<<<<
@@ -1781,20 +1540,20 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_16ack(struct __pyx_obj_7pykondo_pyko
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_19get_options(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_18get_options[] = "\n        Get options from RCB-4\n        \n        Returns < 0: error\n        Returns 0: OK\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_19get_options(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_19get_options(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_18get_options[] = "\n        Get options from RCB-4\n        \n        Returns < 0: error\n        Returns 0: OK\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_19get_options(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("get_options (wrapper)", 0);
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_18get_options(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_18get_options(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_18get_options(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_18get_options(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1803,7 +1562,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_18get_options(struct __pyx_obj_7pyko
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_options", 0);
 
-  /* "pykondo.pyx":210
+  /* "pykondo.pyx":216
  *         Returns 0: OK
  *         """
  *         return self.C_Kondo.kondo_get_options()             # <<<<<<<<<<<<<<
@@ -1811,13 +1570,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_18get_options(struct __pyx_obj_7pyko
  *     def play_motion(self, UINT num, long max_wait):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_get_options()); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 210; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_get_options()); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 216; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":203
+  /* "pykondo.pyx":209
  *         return self.C_Kondo.kondo_ack()
  * 
  *     def get_options(self):             # <<<<<<<<<<<<<<
@@ -1828,7 +1587,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_18get_options(struct __pyx_obj_7pyko
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.get_options", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.get_options", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -1836,7 +1595,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_18get_options(struct __pyx_obj_7pyko
   return __pyx_r;
 }
 
-/* "pykondo.pyx":212
+/* "pykondo.pyx":218
  *         return self.C_Kondo.kondo_get_options()
  * 
  *     def play_motion(self, UINT num, long max_wait):             # <<<<<<<<<<<<<<
@@ -1845,9 +1604,9 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_18get_options(struct __pyx_obj_7pyko
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_21play_motion(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_20play_motion[] = "\n        Play a motion with given slot number.\n        Blocks (does not return) until timeout time has elapsed or motion is done.\n        So if you want to run a motion without blocking, just use max_wait = 0.\n\n        Returns < 0: Error\n        Returns 0: All good\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_21play_motion(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_21play_motion(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_20play_motion[] = "\n        Play a motion with given slot number.\n        Blocks (does not return) until timeout time has elapsed or motion is done.\n        So if you want to run a motion without blocking, just use max_wait = 0.\n\n        Returns < 0: Error\n        Returns 0: All good\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_21play_motion(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __pyx_t_7pykondo_UINT __pyx_v_num;
   long __pyx_v_max_wait;
   int __pyx_lineno = 0;
@@ -1876,11 +1635,11 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_21play_motion(PyObject *__pyx_v_self
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_max_wait)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("play_motion", 1, 2, 2, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 212; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("play_motion", 1, 2, 2, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 218; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "play_motion") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 212; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "play_motion") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 218; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -1888,25 +1647,25 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_21play_motion(PyObject *__pyx_v_self
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_num = __Pyx_PyInt_As_unsigned_int(values[0]); if (unlikely((__pyx_v_num == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 212; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
-    __pyx_v_max_wait = __Pyx_PyInt_As_long(values[1]); if (unlikely((__pyx_v_max_wait == (long)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 212; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_num = __Pyx_PyInt_As_unsigned_int(values[0]); if (unlikely((__pyx_v_num == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 218; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_max_wait = __Pyx_PyInt_As_long(values[1]); if (unlikely((__pyx_v_max_wait == (long)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 218; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("play_motion", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 212; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("play_motion", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 218; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.play_motion", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.play_motion", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_20play_motion(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), __pyx_v_num, __pyx_v_max_wait);
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_20play_motion(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), __pyx_v_num, __pyx_v_max_wait);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_20play_motion(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_num, long __pyx_v_max_wait) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_20play_motion(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_num, long __pyx_v_max_wait) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1915,7 +1674,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_20play_motion(struct __pyx_obj_7pyko
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("play_motion", 0);
 
-  /* "pykondo.pyx":221
+  /* "pykondo.pyx":227
  *         Returns 0: All good
  *         """
  *         return self.C_Kondo.kondo_play_motion(num, max_wait)             # <<<<<<<<<<<<<<
@@ -1923,13 +1682,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_20play_motion(struct __pyx_obj_7pyko
  *     def stop_motion(self):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_play_motion(__pyx_v_num, __pyx_v_max_wait)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 221; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_play_motion(__pyx_v_num, __pyx_v_max_wait)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 227; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":212
+  /* "pykondo.pyx":218
  *         return self.C_Kondo.kondo_get_options()
  * 
  *     def play_motion(self, UINT num, long max_wait):             # <<<<<<<<<<<<<<
@@ -1940,7 +1699,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_20play_motion(struct __pyx_obj_7pyko
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.play_motion", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.play_motion", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -1948,7 +1707,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_20play_motion(struct __pyx_obj_7pyko
   return __pyx_r;
 }
 
-/* "pykondo.pyx":223
+/* "pykondo.pyx":229
  *         return self.C_Kondo.kondo_play_motion(num, max_wait)
  * 
  *     def stop_motion(self):             # <<<<<<<<<<<<<<
@@ -1957,20 +1716,20 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_20play_motion(struct __pyx_obj_7pyko
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_23stop_motion(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_22stop_motion[] = "\n        Stop the currently playing motion, freezing the robot in place.\n        \n        Returns < 0: error\n        Returns 0: all good\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_23stop_motion(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_23stop_motion(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_22stop_motion[] = "\n        Stop the currently playing motion, freezing the robot in place.\n        \n        Returns < 0: error\n        Returns 0: all good\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_23stop_motion(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("stop_motion (wrapper)", 0);
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_22stop_motion(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_22stop_motion(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_22stop_motion(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_22stop_motion(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1979,7 +1738,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_22stop_motion(struct __pyx_obj_7pyko
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("stop_motion", 0);
 
-  /* "pykondo.pyx":230
+  /* "pykondo.pyx":236
  *         Returns 0: all good
  *         """
  *         return self.C_Kondo.kondo_stop_motion()             # <<<<<<<<<<<<<<
@@ -1987,13 +1746,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_22stop_motion(struct __pyx_obj_7pyko
  *     def krc3_buttons(self, UINT cc, UCHAR a1, UCHAR a2, UCHAR a3, UCHAR a4):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_stop_motion()); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 230; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_stop_motion()); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 236; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":223
+  /* "pykondo.pyx":229
  *         return self.C_Kondo.kondo_play_motion(num, max_wait)
  * 
  *     def stop_motion(self):             # <<<<<<<<<<<<<<
@@ -2004,7 +1763,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_22stop_motion(struct __pyx_obj_7pyko
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.stop_motion", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.stop_motion", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2012,7 +1771,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_22stop_motion(struct __pyx_obj_7pyko
   return __pyx_r;
 }
 
-/* "pykondo.pyx":232
+/* "pykondo.pyx":238
  *         return self.C_Kondo.kondo_stop_motion()
  * 
  *     def krc3_buttons(self, UINT cc, UCHAR a1, UCHAR a2, UCHAR a3, UCHAR a4):             # <<<<<<<<<<<<<<
@@ -2021,9 +1780,9 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_22stop_motion(struct __pyx_obj_7pyko
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_25krc3_buttons(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_24krc3_buttons[] = "\n        Emulate a KRC-3 button state change\n        See button codes in libkondo_rcb4.h\n        \n        Parameters:\n        cc: (bit field) the buttons activated, 0 = released, 1 = pressed\n        a1 - a4: analog input 1 - 4\n        \n        Returns: 0 if successful, < 0 if error.\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_25krc3_buttons(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_25krc3_buttons(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_24krc3_buttons[] = "\n        Emulate a KRC-3 button state change\n        See button codes in libkondo_rcb4.h\n        \n        Parameters:\n        cc: (bit field) the buttons activated, 0 = released, 1 = pressed\n        a1 - a4: analog input 1 - 4\n        \n        Returns: 0 if successful, < 0 if error.\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_25krc3_buttons(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __pyx_t_7pykondo_UINT __pyx_v_cc;
   __pyx_t_7pykondo_UCHAR __pyx_v_a1;
   __pyx_t_7pykondo_UCHAR __pyx_v_a2;
@@ -2058,26 +1817,26 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_25krc3_buttons(PyObject *__pyx_v_sel
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_a1)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("krc3_buttons", 1, 5, 5, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 232; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("krc3_buttons", 1, 5, 5, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 238; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
         case  2:
         if (likely((values[2] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_a2)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("krc3_buttons", 1, 5, 5, 2); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 232; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("krc3_buttons", 1, 5, 5, 2); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 238; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
         case  3:
         if (likely((values[3] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_a3)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("krc3_buttons", 1, 5, 5, 3); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 232; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("krc3_buttons", 1, 5, 5, 3); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 238; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
         case  4:
         if (likely((values[4] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_a4)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("krc3_buttons", 1, 5, 5, 4); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 232; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("krc3_buttons", 1, 5, 5, 4); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 238; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "krc3_buttons") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 232; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "krc3_buttons") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 238; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 5) {
       goto __pyx_L5_argtuple_error;
@@ -2088,28 +1847,28 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_25krc3_buttons(PyObject *__pyx_v_sel
       values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
       values[4] = PyTuple_GET_ITEM(__pyx_args, 4);
     }
-    __pyx_v_cc = __Pyx_PyInt_As_unsigned_int(values[0]); if (unlikely((__pyx_v_cc == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 232; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
-    __pyx_v_a1 = __Pyx_PyInt_As_unsigned_char(values[1]); if (unlikely((__pyx_v_a1 == (unsigned char)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 232; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
-    __pyx_v_a2 = __Pyx_PyInt_As_unsigned_char(values[2]); if (unlikely((__pyx_v_a2 == (unsigned char)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 232; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
-    __pyx_v_a3 = __Pyx_PyInt_As_unsigned_char(values[3]); if (unlikely((__pyx_v_a3 == (unsigned char)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 232; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
-    __pyx_v_a4 = __Pyx_PyInt_As_unsigned_char(values[4]); if (unlikely((__pyx_v_a4 == (unsigned char)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 232; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_cc = __Pyx_PyInt_As_unsigned_int(values[0]); if (unlikely((__pyx_v_cc == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 238; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_a1 = __Pyx_PyInt_As_unsigned_char(values[1]); if (unlikely((__pyx_v_a1 == (unsigned char)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 238; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_a2 = __Pyx_PyInt_As_unsigned_char(values[2]); if (unlikely((__pyx_v_a2 == (unsigned char)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 238; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_a3 = __Pyx_PyInt_As_unsigned_char(values[3]); if (unlikely((__pyx_v_a3 == (unsigned char)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 238; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_a4 = __Pyx_PyInt_As_unsigned_char(values[4]); if (unlikely((__pyx_v_a4 == (unsigned char)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 238; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("krc3_buttons", 1, 5, 5, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 232; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("krc3_buttons", 1, 5, 5, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 238; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.krc3_buttons", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.krc3_buttons", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_24krc3_buttons(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), __pyx_v_cc, __pyx_v_a1, __pyx_v_a2, __pyx_v_a3, __pyx_v_a4);
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_24krc3_buttons(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), __pyx_v_cc, __pyx_v_a1, __pyx_v_a2, __pyx_v_a3, __pyx_v_a4);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_24krc3_buttons(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_cc, __pyx_t_7pykondo_UCHAR __pyx_v_a1, __pyx_t_7pykondo_UCHAR __pyx_v_a2, __pyx_t_7pykondo_UCHAR __pyx_v_a3, __pyx_t_7pykondo_UCHAR __pyx_v_a4) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_24krc3_buttons(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_cc, __pyx_t_7pykondo_UCHAR __pyx_v_a1, __pyx_t_7pykondo_UCHAR __pyx_v_a2, __pyx_t_7pykondo_UCHAR __pyx_v_a3, __pyx_t_7pykondo_UCHAR __pyx_v_a4) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2118,7 +1877,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_24krc3_buttons(struct __pyx_obj_7pyk
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("krc3_buttons", 0);
 
-  /* "pykondo.pyx":243
+  /* "pykondo.pyx":249
  *         Returns: 0 if successful, < 0 if error.
  *         """
  *         return self.C_Kondo.kondo_krc3_buttons(cc, a1, a2, a3, a4)             # <<<<<<<<<<<<<<
@@ -2126,13 +1885,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_24krc3_buttons(struct __pyx_obj_7pyk
  *     #def read_analog(self, int* result, UINT num):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_krc3_buttons(__pyx_v_cc, __pyx_v_a1, __pyx_v_a2, __pyx_v_a3, __pyx_v_a4)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 243; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_krc3_buttons(__pyx_v_cc, __pyx_v_a1, __pyx_v_a2, __pyx_v_a3, __pyx_v_a4)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 249; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":232
+  /* "pykondo.pyx":238
  *         return self.C_Kondo.kondo_stop_motion()
  * 
  *     def krc3_buttons(self, UINT cc, UCHAR a1, UCHAR a2, UCHAR a3, UCHAR a4):             # <<<<<<<<<<<<<<
@@ -2143,7 +1902,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_24krc3_buttons(struct __pyx_obj_7pyk
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.krc3_buttons", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.krc3_buttons", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2151,7 +1910,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_24krc3_buttons(struct __pyx_obj_7pyk
   return __pyx_r;
 }
 
-/* "pykondo.pyx":246
+/* "pykondo.pyx":252
  * 
  *     #def read_analog(self, int* result, UINT num):
  *     def read_analog(self, UINT num):             # <<<<<<<<<<<<<<
@@ -2160,9 +1919,9 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_24krc3_buttons(struct __pyx_obj_7pyk
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_27read_analog(PyObject *__pyx_v_self, PyObject *__pyx_arg_num); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_26read_analog[] = "\n        Read an analog value (Battery, AD1, AD2, AD3, etc)\n        Analog number 0 is the battery voltage.\n        Analog numbers 1-11 are the analog inputs.\n        Side effect: The analog value is read into 'result'.\n        \n        Returns:\n        - result: The read analog value.\n        - success: 0 if successful, < 0 if error.\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_27read_analog(PyObject *__pyx_v_self, PyObject *__pyx_arg_num) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_27read_analog(PyObject *__pyx_v_self, PyObject *__pyx_arg_num); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_26read_analog[] = "\n        Read an analog value (Battery, AD1, AD2, AD3, etc)\n        Analog number 0 is the battery voltage.\n        Analog numbers 1-11 are the analog inputs.\n        Side effect: The analog value is read into 'result'.\n        \n        Returns:\n        - result: The read analog value.\n        - success: 0 if successful, < 0 if error.\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_27read_analog(PyObject *__pyx_v_self, PyObject *__pyx_arg_num) {
   __pyx_t_7pykondo_UINT __pyx_v_num;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -2171,22 +1930,22 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_27read_analog(PyObject *__pyx_v_self
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("read_analog (wrapper)", 0);
   assert(__pyx_arg_num); {
-    __pyx_v_num = __Pyx_PyInt_As_unsigned_int(__pyx_arg_num); if (unlikely((__pyx_v_num == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 246; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_num = __Pyx_PyInt_As_unsigned_int(__pyx_arg_num); if (unlikely((__pyx_v_num == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 252; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.read_analog", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.read_analog", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_26read_analog(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), ((__pyx_t_7pykondo_UINT)__pyx_v_num));
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_26read_analog(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), ((__pyx_t_7pykondo_UINT)__pyx_v_num));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_26read_analog(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_num) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_26read_analog(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_num) {
   int __pyx_v_result;
   int __pyx_v_success;
   PyObject *__pyx_r = NULL;
@@ -2199,7 +1958,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_26read_analog(struct __pyx_obj_7pyko
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("read_analog", 0);
 
-  /* "pykondo.pyx":258
+  /* "pykondo.pyx":264
  *         """
  *         cdef int result
  *         success = self.C_Kondo.kondo_read_analog(&result, num)             # <<<<<<<<<<<<<<
@@ -2208,7 +1967,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_26read_analog(struct __pyx_obj_7pyko
  */
   __pyx_v_success = __pyx_v_self->C_Kondo->kondo_read_analog((&__pyx_v_result), __pyx_v_num);
 
-  /* "pykondo.pyx":259
+  /* "pykondo.pyx":265
  *         cdef int result
  *         success = self.C_Kondo.kondo_read_analog(&result, num)
  *         return result, success             # <<<<<<<<<<<<<<
@@ -2216,11 +1975,11 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_26read_analog(struct __pyx_obj_7pyko
  *     def set_pio_direction(self, UINT bitset):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_result); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 259; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_result); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 265; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_success); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 259; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_success); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 265; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 259; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 265; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1);
@@ -2232,7 +1991,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_26read_analog(struct __pyx_obj_7pyko
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":246
+  /* "pykondo.pyx":252
  * 
  *     #def read_analog(self, int* result, UINT num):
  *     def read_analog(self, UINT num):             # <<<<<<<<<<<<<<
@@ -2245,7 +2004,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_26read_analog(struct __pyx_obj_7pyko
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("pykondo.pykondo.read_analog", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.read_analog", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2253,7 +2012,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_26read_analog(struct __pyx_obj_7pyko
   return __pyx_r;
 }
 
-/* "pykondo.pyx":261
+/* "pykondo.pyx":267
  *         return result, success
  * 
  *     def set_pio_direction(self, UINT bitset):             # <<<<<<<<<<<<<<
@@ -2262,9 +2021,9 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_26read_analog(struct __pyx_obj_7pyko
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_29set_pio_direction(PyObject *__pyx_v_self, PyObject *__pyx_arg_bitset); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_28set_pio_direction[] = "\n        Set the direction for the digital (PIO) ports.\n        \n        Parameters:\n        bitfield: 9-bits where 1=Output, 0=Input. PIO1 is bit 0 ~ PIO10 is bit 9.\n        NOTE: At power-on, the PIO direction defaults to 1 (Output) for all ports.\n        See kondo_get_pio_direction to get direction (input / output) of the ports.\n        \n        Returns: 0 if successful, < 0 if error.\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_29set_pio_direction(PyObject *__pyx_v_self, PyObject *__pyx_arg_bitset) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_29set_pio_direction(PyObject *__pyx_v_self, PyObject *__pyx_arg_bitset); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_28set_pio_direction[] = "\n        Set the direction for the digital (PIO) ports.\n        \n        Parameters:\n        bitfield: 9-bits where 1=Output, 0=Input. PIO1 is bit 0 ~ PIO10 is bit 9.\n        NOTE: At power-on, the PIO direction defaults to 1 (Output) for all ports.\n        See kondo_get_pio_direction to get direction (input / output) of the ports.\n        \n        Returns: 0 if successful, < 0 if error.\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_29set_pio_direction(PyObject *__pyx_v_self, PyObject *__pyx_arg_bitset) {
   __pyx_t_7pykondo_UINT __pyx_v_bitset;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -2273,22 +2032,22 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_29set_pio_direction(PyObject *__pyx_
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("set_pio_direction (wrapper)", 0);
   assert(__pyx_arg_bitset); {
-    __pyx_v_bitset = __Pyx_PyInt_As_unsigned_int(__pyx_arg_bitset); if (unlikely((__pyx_v_bitset == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 261; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_bitset = __Pyx_PyInt_As_unsigned_int(__pyx_arg_bitset); if (unlikely((__pyx_v_bitset == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 267; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.set_pio_direction", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.set_pio_direction", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_28set_pio_direction(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), ((__pyx_t_7pykondo_UINT)__pyx_v_bitset));
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_28set_pio_direction(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), ((__pyx_t_7pykondo_UINT)__pyx_v_bitset));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_28set_pio_direction(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_bitset) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_28set_pio_direction(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_bitset) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2297,7 +2056,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_28set_pio_direction(struct __pyx_obj
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("set_pio_direction", 0);
 
-  /* "pykondo.pyx":272
+  /* "pykondo.pyx":278
  *         Returns: 0 if successful, < 0 if error.
  *         """
  *         return self.C_Kondo.kondo_set_pio_direction(bitset)             # <<<<<<<<<<<<<<
@@ -2305,13 +2064,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_28set_pio_direction(struct __pyx_obj
  *     #def get_pio_direction(self, UINT* bitset):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_set_pio_direction(__pyx_v_bitset)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 272; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_set_pio_direction(__pyx_v_bitset)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 278; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":261
+  /* "pykondo.pyx":267
  *         return result, success
  * 
  *     def set_pio_direction(self, UINT bitset):             # <<<<<<<<<<<<<<
@@ -2322,7 +2081,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_28set_pio_direction(struct __pyx_obj
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.set_pio_direction", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.set_pio_direction", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2330,7 +2089,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_28set_pio_direction(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "pykondo.pyx":275
+/* "pykondo.pyx":281
  * 
  *     #def get_pio_direction(self, UINT* bitset):
  *     def get_pio_direction(self):             # <<<<<<<<<<<<<<
@@ -2339,20 +2098,20 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_28set_pio_direction(struct __pyx_obj
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_31get_pio_direction(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_30get_pio_direction[] = "\n        Get the direction for the digital ports.\n        Side effect: The direction for all the ports will be returned in bitfield.\n        The format of result is a 9-bits field, lowest order bit is the value of\n        PIO1; 1=Output, 0=Input\n        NOTE: At power-on, the PIO direction defaults to 1 (Output) for all ports.\n        See kondo_set_pio_direction() to set the direction of the PIO ports.\n        \n        Returns:\n        - bitset: the bitfield.\n        - success: 0 if successful, < 0 if error.\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_31get_pio_direction(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_31get_pio_direction(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_30get_pio_direction[] = "\n        Get the direction for the digital ports.\n        Side effect: The direction for all the ports will be returned in bitfield.\n        The format of result is a 9-bits field, lowest order bit is the value of\n        PIO1; 1=Output, 0=Input\n        NOTE: At power-on, the PIO direction defaults to 1 (Output) for all ports.\n        See kondo_set_pio_direction() to set the direction of the PIO ports.\n        \n        Returns:\n        - bitset: the bitfield.\n        - success: 0 if successful, < 0 if error.\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_31get_pio_direction(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("get_pio_direction (wrapper)", 0);
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_30get_pio_direction(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_30get_pio_direction(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_30get_pio_direction(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_30get_pio_direction(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self) {
   __pyx_t_7pykondo_UINT __pyx_v_bitset;
   int __pyx_v_success;
   PyObject *__pyx_r = NULL;
@@ -2365,7 +2124,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_30get_pio_direction(struct __pyx_obj
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_pio_direction", 0);
 
-  /* "pykondo.pyx":289
+  /* "pykondo.pyx":295
  *         """
  *         cdef UINT bitset
  *         success = self.C_Kondo.kondo_get_pio_direction(&bitset)             # <<<<<<<<<<<<<<
@@ -2374,7 +2133,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_30get_pio_direction(struct __pyx_obj
  */
   __pyx_v_success = __pyx_v_self->C_Kondo->kondo_get_pio_direction((&__pyx_v_bitset));
 
-  /* "pykondo.pyx":290
+  /* "pykondo.pyx":296
  *         cdef UINT bitset
  *         success = self.C_Kondo.kondo_get_pio_direction(&bitset)
  *         return bitset, success             # <<<<<<<<<<<<<<
@@ -2382,11 +2141,11 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_30get_pio_direction(struct __pyx_obj
  *     #def read_pio(self, UINT* result):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_bitset); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 290; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_bitset); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 296; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_success); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 290; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_success); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 296; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 290; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 296; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1);
@@ -2398,7 +2157,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_30get_pio_direction(struct __pyx_obj
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":275
+  /* "pykondo.pyx":281
  * 
  *     #def get_pio_direction(self, UINT* bitset):
  *     def get_pio_direction(self):             # <<<<<<<<<<<<<<
@@ -2411,7 +2170,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_30get_pio_direction(struct __pyx_obj
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("pykondo.pykondo.get_pio_direction", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.get_pio_direction", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2419,7 +2178,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_30get_pio_direction(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "pykondo.pyx":293
+/* "pykondo.pyx":299
  * 
  *     #def read_pio(self, UINT* result):
  *     def read_pio(self):             # <<<<<<<<<<<<<<
@@ -2428,20 +2187,20 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_30get_pio_direction(struct __pyx_obj
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_33read_pio(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_32read_pio[] = "\n        Read digital values (PIO1 to PIO10).\n        The 'result' will be set to a 10-bit field of the digital values.\n        The format of result will be 10-bits, lowest order bit is the value of PIO1\n\n        Returns:\n        - result: digital value.\n        - success: 0 if successful, < 0 if error.\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_33read_pio(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_33read_pio(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_32read_pio[] = "\n        Read digital values (PIO1 to PIO10).\n        The 'result' will be set to a 10-bit field of the digital values.\n        The format of result will be 10-bits, lowest order bit is the value of PIO1\n\n        Returns:\n        - result: digital value.\n        - success: 0 if successful, < 0 if error.\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_33read_pio(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("read_pio (wrapper)", 0);
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_32read_pio(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_32read_pio(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_32read_pio(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_32read_pio(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self) {
   __pyx_t_7pykondo_UINT __pyx_v_result;
   int __pyx_v_success;
   PyObject *__pyx_r = NULL;
@@ -2454,7 +2213,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_32read_pio(struct __pyx_obj_7pykondo
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("read_pio", 0);
 
-  /* "pykondo.pyx":304
+  /* "pykondo.pyx":310
  *         """
  *         cdef UINT result
  *         success = self.C_Kondo.kondo_read_pio(&result)             # <<<<<<<<<<<<<<
@@ -2463,7 +2222,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_32read_pio(struct __pyx_obj_7pykondo
  */
   __pyx_v_success = __pyx_v_self->C_Kondo->kondo_read_pio((&__pyx_v_result));
 
-  /* "pykondo.pyx":305
+  /* "pykondo.pyx":311
  *         cdef UINT result
  *         success = self.C_Kondo.kondo_read_pio(&result)
  *         return result, success             # <<<<<<<<<<<<<<
@@ -2471,11 +2230,11 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_32read_pio(struct __pyx_obj_7pykondo
  *     def write_pio(self, UINT bitset):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_result); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 305; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_result); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 311; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_success); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 305; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_success); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 311; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 305; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 311; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1);
@@ -2487,7 +2246,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_32read_pio(struct __pyx_obj_7pykondo
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":293
+  /* "pykondo.pyx":299
  * 
  *     #def read_pio(self, UINT* result):
  *     def read_pio(self):             # <<<<<<<<<<<<<<
@@ -2500,7 +2259,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_32read_pio(struct __pyx_obj_7pykondo
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("pykondo.pykondo.read_pio", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.read_pio", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2508,7 +2267,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_32read_pio(struct __pyx_obj_7pykondo
   return __pyx_r;
 }
 
-/* "pykondo.pyx":307
+/* "pykondo.pyx":313
  *         return result, success
  * 
  *     def write_pio(self, UINT bitset):             # <<<<<<<<<<<<<<
@@ -2517,9 +2276,9 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_32read_pio(struct __pyx_obj_7pykondo
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_35write_pio(PyObject *__pyx_v_self, PyObject *__pyx_arg_bitset); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_34write_pio[] = "\n        Write to the PIO port.\n\n        Parameters:\n        bitfield: 9-bits where PIO1 is bit 0 (low order bit); PIO10 is bit 9.\n        NOTE: At power-on, the PIO direction defaults to 1 (Output) for all ports.\n        You will need to set the PIO direction to Output for the ports you would\n        like to write values to.\n        \n        Returns: 0 if successful, < 0 if error.\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_35write_pio(PyObject *__pyx_v_self, PyObject *__pyx_arg_bitset) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_35write_pio(PyObject *__pyx_v_self, PyObject *__pyx_arg_bitset); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_34write_pio[] = "\n        Write to the PIO port.\n\n        Parameters:\n        bitfield: 9-bits where PIO1 is bit 0 (low order bit); PIO10 is bit 9.\n        NOTE: At power-on, the PIO direction defaults to 1 (Output) for all ports.\n        You will need to set the PIO direction to Output for the ports you would\n        like to write values to.\n        \n        Returns: 0 if successful, < 0 if error.\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_35write_pio(PyObject *__pyx_v_self, PyObject *__pyx_arg_bitset) {
   __pyx_t_7pykondo_UINT __pyx_v_bitset;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -2528,22 +2287,22 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_35write_pio(PyObject *__pyx_v_self, 
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("write_pio (wrapper)", 0);
   assert(__pyx_arg_bitset); {
-    __pyx_v_bitset = __Pyx_PyInt_As_unsigned_int(__pyx_arg_bitset); if (unlikely((__pyx_v_bitset == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 307; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_bitset = __Pyx_PyInt_As_unsigned_int(__pyx_arg_bitset); if (unlikely((__pyx_v_bitset == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 313; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.write_pio", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.write_pio", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_34write_pio(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), ((__pyx_t_7pykondo_UINT)__pyx_v_bitset));
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_34write_pio(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), ((__pyx_t_7pykondo_UINT)__pyx_v_bitset));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_34write_pio(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_bitset) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_34write_pio(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_bitset) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2552,7 +2311,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_34write_pio(struct __pyx_obj_7pykond
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("write_pio", 0);
 
-  /* "pykondo.pyx":319
+  /* "pykondo.pyx":325
  *         Returns: 0 if successful, < 0 if error.
  *         """
  *         return self.C_Kondo.kondo_write_pio(bitset)             # <<<<<<<<<<<<<<
@@ -2560,13 +2319,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_34write_pio(struct __pyx_obj_7pykond
  *     def set_counter(self, UINT num, UCHAR val):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_write_pio(__pyx_v_bitset)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 319; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_write_pio(__pyx_v_bitset)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 325; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":307
+  /* "pykondo.pyx":313
  *         return result, success
  * 
  *     def write_pio(self, UINT bitset):             # <<<<<<<<<<<<<<
@@ -2577,7 +2336,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_34write_pio(struct __pyx_obj_7pykond
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.write_pio", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.write_pio", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2585,7 +2344,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_34write_pio(struct __pyx_obj_7pykond
   return __pyx_r;
 }
 
-/* "pykondo.pyx":321
+/* "pykondo.pyx":327
  *         return self.C_Kondo.kondo_write_pio(bitset)
  * 
  *     def set_counter(self, UINT num, UCHAR val):             # <<<<<<<<<<<<<<
@@ -2594,9 +2353,9 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_34write_pio(struct __pyx_obj_7pykond
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_37set_counter(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_36set_counter[] = "\n        Set the counter value.\n\n        Parameters:\n        num: the counter to set (0 to 10)\n        val: the value to set the counter to\n        \n        Returns: 0 if successful, < 0 if error.\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_37set_counter(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_37set_counter(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_36set_counter[] = "\n        Set the counter value.\n\n        Parameters:\n        num: the counter to set (0 to 10)\n        val: the value to set the counter to\n        \n        Returns: 0 if successful, < 0 if error.\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_37set_counter(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __pyx_t_7pykondo_UINT __pyx_v_num;
   __pyx_t_7pykondo_UCHAR __pyx_v_val;
   int __pyx_lineno = 0;
@@ -2625,11 +2384,11 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_37set_counter(PyObject *__pyx_v_self
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_val)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("set_counter", 1, 2, 2, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 321; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("set_counter", 1, 2, 2, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 327; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "set_counter") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 321; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "set_counter") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 327; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -2637,25 +2396,25 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_37set_counter(PyObject *__pyx_v_self
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_num = __Pyx_PyInt_As_unsigned_int(values[0]); if (unlikely((__pyx_v_num == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 321; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
-    __pyx_v_val = __Pyx_PyInt_As_unsigned_char(values[1]); if (unlikely((__pyx_v_val == (unsigned char)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 321; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_num = __Pyx_PyInt_As_unsigned_int(values[0]); if (unlikely((__pyx_v_num == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 327; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_val = __Pyx_PyInt_As_unsigned_char(values[1]); if (unlikely((__pyx_v_val == (unsigned char)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 327; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("set_counter", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 321; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("set_counter", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 327; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.set_counter", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.set_counter", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_36set_counter(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), __pyx_v_num, __pyx_v_val);
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_36set_counter(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), __pyx_v_num, __pyx_v_val);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_36set_counter(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_num, __pyx_t_7pykondo_UCHAR __pyx_v_val) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_36set_counter(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_num, __pyx_t_7pykondo_UCHAR __pyx_v_val) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2664,7 +2423,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_36set_counter(struct __pyx_obj_7pyko
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("set_counter", 0);
 
-  /* "pykondo.pyx":331
+  /* "pykondo.pyx":337
  *         Returns: 0 if successful, < 0 if error.
  *         """
  *         return self.C_Kondo.kondo_set_counter(num, val)             # <<<<<<<<<<<<<<
@@ -2672,13 +2431,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_36set_counter(struct __pyx_obj_7pyko
  *     def get_counter(self, UCHAR* result, UINT num):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_set_counter(__pyx_v_num, __pyx_v_val)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 331; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_set_counter(__pyx_v_num, __pyx_v_val)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 337; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":321
+  /* "pykondo.pyx":327
  *         return self.C_Kondo.kondo_write_pio(bitset)
  * 
  *     def set_counter(self, UINT num, UCHAR val):             # <<<<<<<<<<<<<<
@@ -2689,7 +2448,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_36set_counter(struct __pyx_obj_7pyko
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.set_counter", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.set_counter", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2697,7 +2456,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_36set_counter(struct __pyx_obj_7pyko
   return __pyx_r;
 }
 
-/* "pykondo.pyx":333
+/* "pykondo.pyx":339
  *         return self.C_Kondo.kondo_set_counter(num, val)
  * 
  *     def get_counter(self, UCHAR* result, UINT num):             # <<<<<<<<<<<<<<
@@ -2706,9 +2465,9 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_36set_counter(struct __pyx_obj_7pyko
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_39get_counter(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_38get_counter[] = "\n        Read a counter value.\n        \n        Parameters:\n        num: the counter to read\n        Side effect: The counter value is read into 'result'.\n        \n        Returns: 0 if successful, < 0 if error.\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_39get_counter(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_39get_counter(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_38get_counter[] = "\n        Read a counter value.\n        \n        Parameters:\n        num: the counter to read\n        Side effect: The counter value is read into 'result'.\n        \n        Returns: 0 if successful, < 0 if error.\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_39get_counter(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __pyx_t_7pykondo_UCHAR *__pyx_v_result;
   __pyx_t_7pykondo_UINT __pyx_v_num;
   int __pyx_lineno = 0;
@@ -2737,11 +2496,11 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_39get_counter(PyObject *__pyx_v_self
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_num)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("get_counter", 1, 2, 2, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 333; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("get_counter", 1, 2, 2, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 339; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "get_counter") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 333; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "get_counter") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 339; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -2749,25 +2508,25 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_39get_counter(PyObject *__pyx_v_self
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_result = __Pyx_PyObject_AsUString(values[0]); if (unlikely((!__pyx_v_result) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 333; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
-    __pyx_v_num = __Pyx_PyInt_As_unsigned_int(values[1]); if (unlikely((__pyx_v_num == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 333; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_result = __Pyx_PyObject_AsUString(values[0]); if (unlikely((!__pyx_v_result) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 339; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_num = __Pyx_PyInt_As_unsigned_int(values[1]); if (unlikely((__pyx_v_num == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 339; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("get_counter", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 333; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("get_counter", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 339; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.get_counter", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.get_counter", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_38get_counter(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), __pyx_v_result, __pyx_v_num);
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_38get_counter(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), __pyx_v_result, __pyx_v_num);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_38get_counter(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UCHAR *__pyx_v_result, __pyx_t_7pykondo_UINT __pyx_v_num) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_38get_counter(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UCHAR *__pyx_v_result, __pyx_t_7pykondo_UINT __pyx_v_num) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2776,7 +2535,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_38get_counter(struct __pyx_obj_7pyko
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_counter", 0);
 
-  /* "pykondo.pyx":343
+  /* "pykondo.pyx":349
  *         Returns: 0 if successful, < 0 if error.
  *         """
  *         return self.C_Kondo.kondo_get_counter(result, num)             # <<<<<<<<<<<<<<
@@ -2784,13 +2543,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_38get_counter(struct __pyx_obj_7pyko
  *     def send_ics_pos(self, UCHAR servos[5], UINT frame):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_get_counter(__pyx_v_result, __pyx_v_num)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 343; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_get_counter(__pyx_v_result, __pyx_v_num)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 349; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":333
+  /* "pykondo.pyx":339
  *         return self.C_Kondo.kondo_set_counter(num, val)
  * 
  *     def get_counter(self, UCHAR* result, UINT num):             # <<<<<<<<<<<<<<
@@ -2801,7 +2560,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_38get_counter(struct __pyx_obj_7pyko
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.get_counter", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.get_counter", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2809,7 +2568,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_38get_counter(struct __pyx_obj_7pyko
   return __pyx_r;
 }
 
-/* "pykondo.pyx":345
+/* "pykondo.pyx":351
  *         return self.C_Kondo.kondo_get_counter(result, num)
  * 
  *     def send_ics_pos(self, UCHAR servos[5], UINT frame):             # <<<<<<<<<<<<<<
@@ -2818,9 +2577,9 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_38get_counter(struct __pyx_obj_7pyko
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_41send_ics_pos(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_40send_ics_pos[] = "\n        Send an ICS pos frame to all servos selected in the bitfield.\n        \n        Parameters:\n        servos[5]: a bit field of all the servos to send to.\n        frame: two-byte ICS frame to send\n        free position is 0x8000 (32768)\n        hold position is 0x7fff (32767)\n        center position is 0x1d4c (7500)\n        \n        Returns: < 0 if error, 0 if OK.\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_41send_ics_pos(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_41send_ics_pos(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_40send_ics_pos[] = "\n        Send an ICS pos frame to all servos selected in the bitfield.\n        \n        Parameters:\n        servos[5]: a bit field of all the servos to send to.\n        frame: two-byte ICS frame to send\n        free position is 0x8000 (32768)\n        hold position is 0x7fff (32767)\n        center position is 0x1d4c (7500)\n        \n        Returns: < 0 if error, 0 if OK.\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_41send_ics_pos(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __pyx_t_7pykondo_UCHAR *__pyx_v_servos;
   __pyx_t_7pykondo_UINT __pyx_v_frame;
   int __pyx_lineno = 0;
@@ -2849,11 +2608,11 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_41send_ics_pos(PyObject *__pyx_v_sel
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_frame)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("send_ics_pos", 1, 2, 2, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 345; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("send_ics_pos", 1, 2, 2, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 351; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "send_ics_pos") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 345; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "send_ics_pos") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 351; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -2861,25 +2620,25 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_41send_ics_pos(PyObject *__pyx_v_sel
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_servos = __Pyx_PyObject_AsUString(values[0]); if (unlikely((!__pyx_v_servos) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 345; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
-    __pyx_v_frame = __Pyx_PyInt_As_unsigned_int(values[1]); if (unlikely((__pyx_v_frame == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 345; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_servos = __Pyx_PyObject_AsUString(values[0]); if (unlikely((!__pyx_v_servos) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 351; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_frame = __Pyx_PyInt_As_unsigned_int(values[1]); if (unlikely((__pyx_v_frame == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 351; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("send_ics_pos", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 345; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("send_ics_pos", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 351; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.send_ics_pos", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.send_ics_pos", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_40send_ics_pos(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), __pyx_v_servos, __pyx_v_frame);
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_40send_ics_pos(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), __pyx_v_servos, __pyx_v_frame);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_40send_ics_pos(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UCHAR *__pyx_v_servos, __pyx_t_7pykondo_UINT __pyx_v_frame) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_40send_ics_pos(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UCHAR *__pyx_v_servos, __pyx_t_7pykondo_UINT __pyx_v_frame) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2888,7 +2647,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_40send_ics_pos(struct __pyx_obj_7pyk
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("send_ics_pos", 0);
 
-  /* "pykondo.pyx":358
+  /* "pykondo.pyx":364
  *         Returns: < 0 if error, 0 if OK.
  *         """
  *         return self.C_Kondo.kondo_send_ics_pos(servos, frame)             # <<<<<<<<<<<<<<
@@ -2896,13 +2655,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_40send_ics_pos(struct __pyx_obj_7pyk
  *     def get_servo_data(self, UINT servo_idx, UINT offset):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_send_ics_pos(__pyx_v_servos, __pyx_v_frame)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 358; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_send_ics_pos(__pyx_v_servos, __pyx_v_frame)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 364; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":345
+  /* "pykondo.pyx":351
  *         return self.C_Kondo.kondo_get_counter(result, num)
  * 
  *     def send_ics_pos(self, UCHAR servos[5], UINT frame):             # <<<<<<<<<<<<<<
@@ -2913,7 +2672,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_40send_ics_pos(struct __pyx_obj_7pyk
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.send_ics_pos", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.send_ics_pos", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2921,7 +2680,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_40send_ics_pos(struct __pyx_obj_7pyk
   return __pyx_r;
 }
 
-/* "pykondo.pyx":360
+/* "pykondo.pyx":366
  *         return self.C_Kondo.kondo_send_ics_pos(servos, frame)
  * 
  *     def get_servo_data(self, UINT servo_idx, UINT offset):             # <<<<<<<<<<<<<<
@@ -2930,9 +2689,9 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_40send_ics_pos(struct __pyx_obj_7pyk
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_43get_servo_data(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_42get_servo_data[] = "\n        Get the given 2-byte field of data from a servo.\n        \n        Returns: < 0 if error, or pos >= 0;\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_43get_servo_data(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_43get_servo_data(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_42get_servo_data[] = "\n        Get the given 2-byte field of data from a servo.\n        \n        Returns: < 0 if error, or pos >= 0;\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_43get_servo_data(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __pyx_t_7pykondo_UINT __pyx_v_servo_idx;
   __pyx_t_7pykondo_UINT __pyx_v_offset;
   int __pyx_lineno = 0;
@@ -2961,11 +2720,11 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_43get_servo_data(PyObject *__pyx_v_s
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_offset)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("get_servo_data", 1, 2, 2, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 360; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("get_servo_data", 1, 2, 2, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 366; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "get_servo_data") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 360; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "get_servo_data") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 366; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -2973,25 +2732,25 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_43get_servo_data(PyObject *__pyx_v_s
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_servo_idx = __Pyx_PyInt_As_unsigned_int(values[0]); if (unlikely((__pyx_v_servo_idx == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 360; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
-    __pyx_v_offset = __Pyx_PyInt_As_unsigned_int(values[1]); if (unlikely((__pyx_v_offset == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 360; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_servo_idx = __Pyx_PyInt_As_unsigned_int(values[0]); if (unlikely((__pyx_v_servo_idx == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 366; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_offset = __Pyx_PyInt_As_unsigned_int(values[1]); if (unlikely((__pyx_v_offset == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 366; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("get_servo_data", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 360; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("get_servo_data", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 366; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.get_servo_data", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.get_servo_data", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_42get_servo_data(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), __pyx_v_servo_idx, __pyx_v_offset);
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_42get_servo_data(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), __pyx_v_servo_idx, __pyx_v_offset);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_42get_servo_data(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_servo_idx, __pyx_t_7pykondo_UINT __pyx_v_offset) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_42get_servo_data(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_servo_idx, __pyx_t_7pykondo_UINT __pyx_v_offset) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3000,7 +2759,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_42get_servo_data(struct __pyx_obj_7p
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_servo_data", 0);
 
-  /* "pykondo.pyx":366
+  /* "pykondo.pyx":372
  *         Returns: < 0 if error, or pos >= 0;
  *         """
  *         return self.C_Kondo.kondo_get_servo_data(servo_idx, offset)             # <<<<<<<<<<<<<<
@@ -3008,13 +2767,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_42get_servo_data(struct __pyx_obj_7p
  *     def get_servo_trim(self, UINT servo_idx):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_get_servo_data(__pyx_v_servo_idx, __pyx_v_offset)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 366; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_get_servo_data(__pyx_v_servo_idx, __pyx_v_offset)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 372; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":360
+  /* "pykondo.pyx":366
  *         return self.C_Kondo.kondo_send_ics_pos(servos, frame)
  * 
  *     def get_servo_data(self, UINT servo_idx, UINT offset):             # <<<<<<<<<<<<<<
@@ -3025,7 +2784,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_42get_servo_data(struct __pyx_obj_7p
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.get_servo_data", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.get_servo_data", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3033,7 +2792,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_42get_servo_data(struct __pyx_obj_7p
   return __pyx_r;
 }
 
-/* "pykondo.pyx":368
+/* "pykondo.pyx":374
  *         return self.C_Kondo.kondo_get_servo_data(servo_idx, offset)
  * 
  *     def get_servo_trim(self, UINT servo_idx):             # <<<<<<<<<<<<<<
@@ -3042,9 +2801,9 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_42get_servo_data(struct __pyx_obj_7p
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_45get_servo_trim(PyObject *__pyx_v_self, PyObject *__pyx_arg_servo_idx); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_44get_servo_trim[] = "\n        Get the trim of the selected servo.\n        \n        Returns: < 0 if error, or pos >= 0.\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_45get_servo_trim(PyObject *__pyx_v_self, PyObject *__pyx_arg_servo_idx) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_45get_servo_trim(PyObject *__pyx_v_self, PyObject *__pyx_arg_servo_idx); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_44get_servo_trim[] = "\n        Get the trim of the selected servo.\n        \n        Returns: < 0 if error, or pos >= 0.\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_45get_servo_trim(PyObject *__pyx_v_self, PyObject *__pyx_arg_servo_idx) {
   __pyx_t_7pykondo_UINT __pyx_v_servo_idx;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -3053,22 +2812,22 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_45get_servo_trim(PyObject *__pyx_v_s
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("get_servo_trim (wrapper)", 0);
   assert(__pyx_arg_servo_idx); {
-    __pyx_v_servo_idx = __Pyx_PyInt_As_unsigned_int(__pyx_arg_servo_idx); if (unlikely((__pyx_v_servo_idx == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 368; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_servo_idx = __Pyx_PyInt_As_unsigned_int(__pyx_arg_servo_idx); if (unlikely((__pyx_v_servo_idx == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 374; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.get_servo_trim", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.get_servo_trim", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_44get_servo_trim(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), ((__pyx_t_7pykondo_UINT)__pyx_v_servo_idx));
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_44get_servo_trim(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), ((__pyx_t_7pykondo_UINT)__pyx_v_servo_idx));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_44get_servo_trim(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_servo_idx) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_44get_servo_trim(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_servo_idx) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3077,7 +2836,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_44get_servo_trim(struct __pyx_obj_7p
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_servo_trim", 0);
 
-  /* "pykondo.pyx":374
+  /* "pykondo.pyx":380
  *         Returns: < 0 if error, or pos >= 0.
  *         """
  *         return self.C_Kondo.kondo_get_servo_trim(servo_idx)             # <<<<<<<<<<<<<<
@@ -3085,13 +2844,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_44get_servo_trim(struct __pyx_obj_7p
  *     def get_servo_setpos(self, UINT servo_idx):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_get_servo_trim(__pyx_v_servo_idx)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 374; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_get_servo_trim(__pyx_v_servo_idx)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 380; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":368
+  /* "pykondo.pyx":374
  *         return self.C_Kondo.kondo_get_servo_data(servo_idx, offset)
  * 
  *     def get_servo_trim(self, UINT servo_idx):             # <<<<<<<<<<<<<<
@@ -3102,7 +2861,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_44get_servo_trim(struct __pyx_obj_7p
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.get_servo_trim", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.get_servo_trim", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3110,7 +2869,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_44get_servo_trim(struct __pyx_obj_7p
   return __pyx_r;
 }
 
-/* "pykondo.pyx":376
+/* "pykondo.pyx":382
  *         return self.C_Kondo.kondo_get_servo_trim(servo_idx)
  * 
  *     def get_servo_setpos(self, UINT servo_idx):             # <<<<<<<<<<<<<<
@@ -3119,9 +2878,9 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_44get_servo_trim(struct __pyx_obj_7p
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_47get_servo_setpos(PyObject *__pyx_v_self, PyObject *__pyx_arg_servo_idx); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_46get_servo_setpos[] = "\n        Get the set pos of the selected servo.\n        \n        Returns: < 0 if error, or pos >= 0.\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_47get_servo_setpos(PyObject *__pyx_v_self, PyObject *__pyx_arg_servo_idx) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_47get_servo_setpos(PyObject *__pyx_v_self, PyObject *__pyx_arg_servo_idx); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_46get_servo_setpos[] = "\n        Get the set pos of the selected servo.\n        \n        Returns: < 0 if error, or pos >= 0.\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_47get_servo_setpos(PyObject *__pyx_v_self, PyObject *__pyx_arg_servo_idx) {
   __pyx_t_7pykondo_UINT __pyx_v_servo_idx;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -3130,22 +2889,22 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_47get_servo_setpos(PyObject *__pyx_v
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("get_servo_setpos (wrapper)", 0);
   assert(__pyx_arg_servo_idx); {
-    __pyx_v_servo_idx = __Pyx_PyInt_As_unsigned_int(__pyx_arg_servo_idx); if (unlikely((__pyx_v_servo_idx == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 376; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_servo_idx = __Pyx_PyInt_As_unsigned_int(__pyx_arg_servo_idx); if (unlikely((__pyx_v_servo_idx == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 382; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.get_servo_setpos", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.get_servo_setpos", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_46get_servo_setpos(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), ((__pyx_t_7pykondo_UINT)__pyx_v_servo_idx));
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_46get_servo_setpos(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), ((__pyx_t_7pykondo_UINT)__pyx_v_servo_idx));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_46get_servo_setpos(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_servo_idx) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_46get_servo_setpos(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_servo_idx) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3154,7 +2913,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_46get_servo_setpos(struct __pyx_obj_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_servo_setpos", 0);
 
-  /* "pykondo.pyx":382
+  /* "pykondo.pyx":388
  *         Returns: < 0 if error, or pos >= 0.
  *         """
  *         return self.C_Kondo.kondo_get_servo_setpos(servo_idx)             # <<<<<<<<<<<<<<
@@ -3162,13 +2921,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_46get_servo_setpos(struct __pyx_obj_
  *     def get_servo_pos(self, UINT servo_idx):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_get_servo_setpos(__pyx_v_servo_idx)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 382; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_get_servo_setpos(__pyx_v_servo_idx)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 388; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":376
+  /* "pykondo.pyx":382
  *         return self.C_Kondo.kondo_get_servo_trim(servo_idx)
  * 
  *     def get_servo_setpos(self, UINT servo_idx):             # <<<<<<<<<<<<<<
@@ -3179,7 +2938,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_46get_servo_setpos(struct __pyx_obj_
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.get_servo_setpos", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.get_servo_setpos", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3187,7 +2946,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_46get_servo_setpos(struct __pyx_obj_
   return __pyx_r;
 }
 
-/* "pykondo.pyx":384
+/* "pykondo.pyx":390
  *         return self.C_Kondo.kondo_get_servo_setpos(servo_idx)
  * 
  *     def get_servo_pos(self, UINT servo_idx):             # <<<<<<<<<<<<<<
@@ -3196,9 +2955,9 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_46get_servo_setpos(struct __pyx_obj_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_49get_servo_pos(PyObject *__pyx_v_self, PyObject *__pyx_arg_servo_idx); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_48get_servo_pos[] = "\n        Get the position of the selected servo (single).\n        \n        Returns: < 0 if error, or pos >= 0;\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_49get_servo_pos(PyObject *__pyx_v_self, PyObject *__pyx_arg_servo_idx) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_49get_servo_pos(PyObject *__pyx_v_self, PyObject *__pyx_arg_servo_idx); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_48get_servo_pos[] = "\n        Get the position of the selected servo (single).\n        \n        Returns: < 0 if error, or pos >= 0;\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_49get_servo_pos(PyObject *__pyx_v_self, PyObject *__pyx_arg_servo_idx) {
   __pyx_t_7pykondo_UINT __pyx_v_servo_idx;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -3207,22 +2966,22 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_49get_servo_pos(PyObject *__pyx_v_se
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("get_servo_pos (wrapper)", 0);
   assert(__pyx_arg_servo_idx); {
-    __pyx_v_servo_idx = __Pyx_PyInt_As_unsigned_int(__pyx_arg_servo_idx); if (unlikely((__pyx_v_servo_idx == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 384; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_servo_idx = __Pyx_PyInt_As_unsigned_int(__pyx_arg_servo_idx); if (unlikely((__pyx_v_servo_idx == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 390; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.get_servo_pos", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.get_servo_pos", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_48get_servo_pos(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), ((__pyx_t_7pykondo_UINT)__pyx_v_servo_idx));
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_48get_servo_pos(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), ((__pyx_t_7pykondo_UINT)__pyx_v_servo_idx));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_48get_servo_pos(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_servo_idx) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_48get_servo_pos(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_servo_idx) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3231,7 +2990,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_48get_servo_pos(struct __pyx_obj_7py
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_servo_pos", 0);
 
-  /* "pykondo.pyx":390
+  /* "pykondo.pyx":396
  *         Returns: < 0 if error, or pos >= 0;
  *         """
  *         return self.C_Kondo.kondo_get_servo_pos(servo_idx)             # <<<<<<<<<<<<<<
@@ -3239,13 +2998,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_48get_servo_pos(struct __pyx_obj_7py
  *     def get_servo_id(self, UINT servo_idx):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_get_servo_pos(__pyx_v_servo_idx)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 390; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_get_servo_pos(__pyx_v_servo_idx)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 396; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":384
+  /* "pykondo.pyx":390
  *         return self.C_Kondo.kondo_get_servo_setpos(servo_idx)
  * 
  *     def get_servo_pos(self, UINT servo_idx):             # <<<<<<<<<<<<<<
@@ -3256,7 +3015,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_48get_servo_pos(struct __pyx_obj_7py
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.get_servo_pos", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.get_servo_pos", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3264,7 +3023,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_48get_servo_pos(struct __pyx_obj_7py
   return __pyx_r;
 }
 
-/* "pykondo.pyx":392
+/* "pykondo.pyx":398
  *         return self.C_Kondo.kondo_get_servo_pos(servo_idx)
  * 
  *     def get_servo_id(self, UINT servo_idx):             # <<<<<<<<<<<<<<
@@ -3273,9 +3032,9 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_48get_servo_pos(struct __pyx_obj_7py
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_51get_servo_id(PyObject *__pyx_v_self, PyObject *__pyx_arg_servo_idx); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_50get_servo_id[] = "\n        Get the ID of the selected servo.\n        \n        Returns: < 0 if error, or pos >= 0.\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_51get_servo_id(PyObject *__pyx_v_self, PyObject *__pyx_arg_servo_idx) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_51get_servo_id(PyObject *__pyx_v_self, PyObject *__pyx_arg_servo_idx); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_50get_servo_id[] = "\n        Get the ID of the selected servo.\n        \n        Returns: < 0 if error, or pos >= 0.\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_51get_servo_id(PyObject *__pyx_v_self, PyObject *__pyx_arg_servo_idx) {
   __pyx_t_7pykondo_UINT __pyx_v_servo_idx;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -3284,22 +3043,22 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_51get_servo_id(PyObject *__pyx_v_sel
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("get_servo_id (wrapper)", 0);
   assert(__pyx_arg_servo_idx); {
-    __pyx_v_servo_idx = __Pyx_PyInt_As_unsigned_int(__pyx_arg_servo_idx); if (unlikely((__pyx_v_servo_idx == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 392; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_servo_idx = __Pyx_PyInt_As_unsigned_int(__pyx_arg_servo_idx); if (unlikely((__pyx_v_servo_idx == (unsigned int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 398; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.get_servo_id", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.get_servo_id", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_50get_servo_id(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), ((__pyx_t_7pykondo_UINT)__pyx_v_servo_idx));
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_50get_servo_id(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), ((__pyx_t_7pykondo_UINT)__pyx_v_servo_idx));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_50get_servo_id(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_servo_idx) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_50get_servo_id(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, __pyx_t_7pykondo_UINT __pyx_v_servo_idx) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3308,7 +3067,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_50get_servo_id(struct __pyx_obj_7pyk
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_servo_id", 0);
 
-  /* "pykondo.pyx":398
+  /* "pykondo.pyx":404
  *         Returns: < 0 if error, or pos >= 0.
  *         """
  *         return self.C_Kondo.kondo_get_servo_id(servo_idx)             # <<<<<<<<<<<<<<
@@ -3316,13 +3075,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_50get_servo_id(struct __pyx_obj_7pyk
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_get_servo_id(__pyx_v_servo_idx)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 398; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_get_servo_id(__pyx_v_servo_idx)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 404; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":392
+  /* "pykondo.pyx":398
  *         return self.C_Kondo.kondo_get_servo_pos(servo_idx)
  * 
  *     def get_servo_id(self, UINT servo_idx):             # <<<<<<<<<<<<<<
@@ -3333,7 +3092,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_50get_servo_id(struct __pyx_obj_7pyk
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.get_servo_id", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.get_servo_id", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3341,7 +3100,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_50get_servo_id(struct __pyx_obj_7pyk
   return __pyx_r;
 }
 
-/* "pykondo.pyx":402
+/* "pykondo.pyx":408
  * 
  *     ## basic communication
  *     def write(self, int n):             # <<<<<<<<<<<<<<
@@ -3350,9 +3109,9 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_50get_servo_id(struct __pyx_obj_7pyk
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_53write(PyObject *__pyx_v_self, PyObject *__pyx_arg_n); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_52write[] = "\n        Write n bytes from the swap to the Kondo.\n        \n        Parameter:\n        n: the number of bytes to write.\n\n        Return:\n        Returns >0 number of bytes written, < 0 if error\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_53write(PyObject *__pyx_v_self, PyObject *__pyx_arg_n) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_53write(PyObject *__pyx_v_self, PyObject *__pyx_arg_n); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_52write[] = "\n        Write n bytes from the swap to the Kondo.\n        \n        Parameter:\n        n: the number of bytes to write.\n\n        Return:\n        Returns >0 number of bytes written, < 0 if error\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_53write(PyObject *__pyx_v_self, PyObject *__pyx_arg_n) {
   int __pyx_v_n;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -3361,22 +3120,22 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_53write(PyObject *__pyx_v_self, PyOb
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("write (wrapper)", 0);
   assert(__pyx_arg_n); {
-    __pyx_v_n = __Pyx_PyInt_As_int(__pyx_arg_n); if (unlikely((__pyx_v_n == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 402; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_n = __Pyx_PyInt_As_int(__pyx_arg_n); if (unlikely((__pyx_v_n == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 408; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.write", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.write", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_52write(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), ((int)__pyx_v_n));
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_52write(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), ((int)__pyx_v_n));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_52write(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, int __pyx_v_n) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_52write(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, int __pyx_v_n) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3385,7 +3144,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_52write(struct __pyx_obj_7pykondo_py
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("write", 0);
 
-  /* "pykondo.pyx":412
+  /* "pykondo.pyx":418
  *         Returns >0 number of bytes written, < 0 if error
  *         """
  *         return self.C_Kondo.kondo_write(n)             # <<<<<<<<<<<<<<
@@ -3393,13 +3152,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_52write(struct __pyx_obj_7pykondo_py
  *     def read(self, int n):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_write(__pyx_v_n)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 412; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_write(__pyx_v_n)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 418; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":402
+  /* "pykondo.pyx":408
  * 
  *     ## basic communication
  *     def write(self, int n):             # <<<<<<<<<<<<<<
@@ -3410,7 +3169,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_52write(struct __pyx_obj_7pykondo_py
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.write", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.write", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3418,7 +3177,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_52write(struct __pyx_obj_7pykondo_py
   return __pyx_r;
 }
 
-/* "pykondo.pyx":414
+/* "pykondo.pyx":420
  *         return self.C_Kondo.kondo_write(n)
  * 
  *     def read(self, int n):             # <<<<<<<<<<<<<<
@@ -3427,9 +3186,9 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_52write(struct __pyx_obj_7pykondo_py
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_55read(PyObject *__pyx_v_self, PyObject *__pyx_arg_n); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_54read[] = "\n        Read n bytes from the RCB-4. Reads immediately from the serial buffer.\n        See kondo_read_timeout for a version that blocks waiting for the data.\n        \n        Parameter:\n        n: the number of bytes to read.\n\n        Return:\n        Returns < 0: error\n        Returns >= 0: number of bytes read\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_55read(PyObject *__pyx_v_self, PyObject *__pyx_arg_n) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_55read(PyObject *__pyx_v_self, PyObject *__pyx_arg_n); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_54read[] = "\n        Read n bytes from the RCB-4. Reads immediately from the serial buffer.\n        See kondo_read_timeout for a version that blocks waiting for the data.\n        \n        Parameter:\n        n: the number of bytes to read.\n\n        Return:\n        Returns < 0: error\n        Returns >= 0: number of bytes read\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_55read(PyObject *__pyx_v_self, PyObject *__pyx_arg_n) {
   int __pyx_v_n;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -3438,22 +3197,22 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_55read(PyObject *__pyx_v_self, PyObj
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("read (wrapper)", 0);
   assert(__pyx_arg_n); {
-    __pyx_v_n = __Pyx_PyInt_As_int(__pyx_arg_n); if (unlikely((__pyx_v_n == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 414; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_n = __Pyx_PyInt_As_int(__pyx_arg_n); if (unlikely((__pyx_v_n == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 420; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.read", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.read", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_54read(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), ((int)__pyx_v_n));
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_54read(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), ((int)__pyx_v_n));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_54read(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, int __pyx_v_n) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_54read(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, int __pyx_v_n) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3462,7 +3221,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_54read(struct __pyx_obj_7pykondo_pyk
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("read", 0);
 
-  /* "pykondo.pyx":426
+  /* "pykondo.pyx":432
  *         Returns >= 0: number of bytes read
  *         """
  *         return self.C_Kondo.kondo_read(n)             # <<<<<<<<<<<<<<
@@ -3470,13 +3229,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_54read(struct __pyx_obj_7pykondo_pyk
  *     def read_timeout(self, int n, long timeout):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_read(__pyx_v_n)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 426; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_read(__pyx_v_n)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 432; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":414
+  /* "pykondo.pyx":420
  *         return self.C_Kondo.kondo_write(n)
  * 
  *     def read(self, int n):             # <<<<<<<<<<<<<<
@@ -3487,7 +3246,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_54read(struct __pyx_obj_7pykondo_pyk
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.read", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.read", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3495,7 +3254,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_54read(struct __pyx_obj_7pykondo_pyk
   return __pyx_r;
 }
 
-/* "pykondo.pyx":428
+/* "pykondo.pyx":434
  *         return self.C_Kondo.kondo_read(n)
  * 
  *     def read_timeout(self, int n, long timeout):             # <<<<<<<<<<<<<<
@@ -3504,9 +3263,9 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_54read(struct __pyx_obj_7pykondo_pyk
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_57read_timeout(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_56read_timeout[] = "\n        Read n bytes from the RCB-4, waiting for at most timeout usecs for n bytes.\n        Performs this by continuously polling the serial buffer until either\n        all of the bytes are read or the timeout has been reached.\n        \n        Return:\n        Returns < 0: error\n        Returns >= 0: number of bytes read\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_57read_timeout(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_57read_timeout(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_56read_timeout[] = "\n        Read n bytes from the RCB-4, waiting for at most timeout usecs for n bytes.\n        Performs this by continuously polling the serial buffer until either\n        all of the bytes are read or the timeout has been reached.\n        \n        Return:\n        Returns < 0: error\n        Returns >= 0: number of bytes read\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_57read_timeout(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_v_n;
   long __pyx_v_timeout;
   int __pyx_lineno = 0;
@@ -3535,11 +3294,11 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_57read_timeout(PyObject *__pyx_v_sel
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_timeout)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("read_timeout", 1, 2, 2, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 428; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("read_timeout", 1, 2, 2, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 434; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "read_timeout") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 428; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "read_timeout") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 434; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -3547,25 +3306,25 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_57read_timeout(PyObject *__pyx_v_sel
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_n = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_n == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 428; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
-    __pyx_v_timeout = __Pyx_PyInt_As_long(values[1]); if (unlikely((__pyx_v_timeout == (long)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 428; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_n = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_n == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 434; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_timeout = __Pyx_PyInt_As_long(values[1]); if (unlikely((__pyx_v_timeout == (long)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 434; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("read_timeout", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 428; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("read_timeout", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 434; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.read_timeout", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.read_timeout", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_56read_timeout(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), __pyx_v_n, __pyx_v_timeout);
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_56read_timeout(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), __pyx_v_n, __pyx_v_timeout);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_56read_timeout(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, int __pyx_v_n, long __pyx_v_timeout) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_56read_timeout(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, int __pyx_v_n, long __pyx_v_timeout) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3574,7 +3333,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_56read_timeout(struct __pyx_obj_7pyk
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("read_timeout", 0);
 
-  /* "pykondo.pyx":438
+  /* "pykondo.pyx":444
  *         Returns >= 0: number of bytes read
  *         """
  *         return self.C_Kondo.kondo_read_timeout(n, timeout)             # <<<<<<<<<<<<<<
@@ -3582,13 +3341,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_56read_timeout(struct __pyx_obj_7pyk
  *     def purge(self):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_read_timeout(__pyx_v_n, __pyx_v_timeout)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 438; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_read_timeout(__pyx_v_n, __pyx_v_timeout)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 444; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":428
+  /* "pykondo.pyx":434
  *         return self.C_Kondo.kondo_read(n)
  * 
  *     def read_timeout(self, int n, long timeout):             # <<<<<<<<<<<<<<
@@ -3599,7 +3358,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_56read_timeout(struct __pyx_obj_7pyk
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.read_timeout", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.read_timeout", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3607,7 +3366,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_56read_timeout(struct __pyx_obj_7pyk
   return __pyx_r;
 }
 
-/* "pykondo.pyx":440
+/* "pykondo.pyx":446
  *         return self.C_Kondo.kondo_read_timeout(n, timeout)
  * 
  *     def purge(self):             # <<<<<<<<<<<<<<
@@ -3616,20 +3375,20 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_56read_timeout(struct __pyx_obj_7pyk
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_59purge(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_58purge[] = "\n        Purge the TX and RX serial buffers.\n        \n        Return:\n        Returns 0 if successful, < 0 if error.\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_59purge(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_59purge(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_58purge[] = "\n        Purge the TX and RX serial buffers.\n        \n        Return:\n        Returns 0 if successful, < 0 if error.\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_59purge(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("purge (wrapper)", 0);
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_58purge(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_58purge(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_58purge(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_58purge(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3638,7 +3397,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_58purge(struct __pyx_obj_7pykondo_py
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("purge", 0);
 
-  /* "pykondo.pyx":447
+  /* "pykondo.pyx":453
  *         Returns 0 if successful, < 0 if error.
  *         """
  *         return self.C_Kondo.kondo_purge()             # <<<<<<<<<<<<<<
@@ -3646,13 +3405,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_58purge(struct __pyx_obj_7pykondo_py
  *     def trx(self, int out_bytes, int in_bytes):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_purge()); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 447; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_purge()); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 453; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":440
+  /* "pykondo.pyx":446
  *         return self.C_Kondo.kondo_read_timeout(n, timeout)
  * 
  *     def purge(self):             # <<<<<<<<<<<<<<
@@ -3663,7 +3422,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_58purge(struct __pyx_obj_7pykondo_py
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.purge", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.purge", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3671,7 +3430,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_58purge(struct __pyx_obj_7pykondo_py
   return __pyx_r;
 }
 
-/* "pykondo.pyx":449
+/* "pykondo.pyx":455
  *         return self.C_Kondo.kondo_purge()
  * 
  *     def trx(self, int out_bytes, int in_bytes):             # <<<<<<<<<<<<<<
@@ -3680,9 +3439,9 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_58purge(struct __pyx_obj_7pykondo_py
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_61trx(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_60trx[] = "\n        Transaction template: Purge, then send out_bytes, then receive in_bytes.\n        \n        Return:\n        Returns < 0: error\n        Returns >= 0: number of bytes read\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_61trx(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_61trx(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_60trx[] = "\n        Transaction template: Purge, then send out_bytes, then receive in_bytes.\n        \n        Return:\n        Returns < 0: error\n        Returns >= 0: number of bytes read\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_61trx(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_v_out_bytes;
   int __pyx_v_in_bytes;
   int __pyx_lineno = 0;
@@ -3711,11 +3470,11 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_61trx(PyObject *__pyx_v_self, PyObje
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_in_bytes)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("trx", 1, 2, 2, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 449; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("trx", 1, 2, 2, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 455; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "trx") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 449; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "trx") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 455; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -3723,25 +3482,25 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_61trx(PyObject *__pyx_v_self, PyObje
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_out_bytes = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_out_bytes == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 449; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
-    __pyx_v_in_bytes = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_in_bytes == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 449; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_out_bytes = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_out_bytes == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 455; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_in_bytes = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_in_bytes == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 455; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("trx", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 449; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("trx", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 455; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.trx", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.trx", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_60trx(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), __pyx_v_out_bytes, __pyx_v_in_bytes);
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_60trx(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), __pyx_v_out_bytes, __pyx_v_in_bytes);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_60trx(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, int __pyx_v_out_bytes, int __pyx_v_in_bytes) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_60trx(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, int __pyx_v_out_bytes, int __pyx_v_in_bytes) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3750,7 +3509,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_60trx(struct __pyx_obj_7pykondo_pyko
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("trx", 0);
 
-  /* "pykondo.pyx":457
+  /* "pykondo.pyx":463
  *         Returns >= 0: number of bytes read
  *         """
  *         return self.C_Kondo.kondo_trx(out_bytes, in_bytes)             # <<<<<<<<<<<<<<
@@ -3758,13 +3517,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_60trx(struct __pyx_obj_7pykondo_pyko
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_trx(__pyx_v_out_bytes, __pyx_v_in_bytes)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 457; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_trx(__pyx_v_out_bytes, __pyx_v_in_bytes)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 463; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":449
+  /* "pykondo.pyx":455
  *         return self.C_Kondo.kondo_purge()
  * 
  *     def trx(self, int out_bytes, int in_bytes):             # <<<<<<<<<<<<<<
@@ -3775,7 +3534,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_60trx(struct __pyx_obj_7pykondo_pyko
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.trx", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.trx", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3783,7 +3542,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_60trx(struct __pyx_obj_7pykondo_pyko
   return __pyx_r;
 }
 
-/* "pykondo.pyx":461
+/* "pykondo.pyx":467
  * 
  *     ## utility
  *     def checksum(self, int n):             # <<<<<<<<<<<<<<
@@ -3792,9 +3551,9 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_60trx(struct __pyx_obj_7pykondo_pyko
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_63checksum(PyObject *__pyx_v_self, PyObject *__pyx_arg_n); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_62checksum[] = "\n        Compute checksum for n bytes (swap[0] to swap[n-1]).\n        \n        Return:\n        Returns checksum value.\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_63checksum(PyObject *__pyx_v_self, PyObject *__pyx_arg_n) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_63checksum(PyObject *__pyx_v_self, PyObject *__pyx_arg_n); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_62checksum[] = "\n        Compute checksum for n bytes (swap[0] to swap[n-1]).\n        \n        Return:\n        Returns checksum value.\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_63checksum(PyObject *__pyx_v_self, PyObject *__pyx_arg_n) {
   int __pyx_v_n;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -3803,22 +3562,22 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_63checksum(PyObject *__pyx_v_self, P
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("checksum (wrapper)", 0);
   assert(__pyx_arg_n); {
-    __pyx_v_n = __Pyx_PyInt_As_int(__pyx_arg_n); if (unlikely((__pyx_v_n == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 461; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_n = __Pyx_PyInt_As_int(__pyx_arg_n); if (unlikely((__pyx_v_n == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 467; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.checksum", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.checksum", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_62checksum(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), ((int)__pyx_v_n));
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_62checksum(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), ((int)__pyx_v_n));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_62checksum(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, int __pyx_v_n) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_62checksum(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, int __pyx_v_n) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3827,7 +3586,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_62checksum(struct __pyx_obj_7pykondo
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("checksum", 0);
 
-  /* "pykondo.pyx":468
+  /* "pykondo.pyx":474
  *         Returns checksum value.
  *         """
  *         return self.C_Kondo.kondo_checksum(n)             # <<<<<<<<<<<<<<
@@ -3835,13 +3594,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_62checksum(struct __pyx_obj_7pykondo
  *     def verify_checksum(self, int n):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_char(__pyx_v_self->C_Kondo->kondo_checksum(__pyx_v_n)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 468; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_char(__pyx_v_self->C_Kondo->kondo_checksum(__pyx_v_n)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 474; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":461
+  /* "pykondo.pyx":467
  * 
  *     ## utility
  *     def checksum(self, int n):             # <<<<<<<<<<<<<<
@@ -3852,7 +3611,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_62checksum(struct __pyx_obj_7pykondo
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.checksum", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.checksum", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3860,7 +3619,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_62checksum(struct __pyx_obj_7pykondo
   return __pyx_r;
 }
 
-/* "pykondo.pyx":470
+/* "pykondo.pyx":476
  *         return self.C_Kondo.kondo_checksum(n)
  * 
  *     def verify_checksum(self, int n):             # <<<<<<<<<<<<<<
@@ -3869,9 +3628,9 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_62checksum(struct __pyx_obj_7pykondo
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_65verify_checksum(PyObject *__pyx_v_self, PyObject *__pyx_arg_n); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_64verify_checksum[] = "\n        Verify checksum for n bytes (swap[0] to swap[n-1]).\n        \n        Return:\n        Returns 0 if correct, < 0 if incorrect\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_65verify_checksum(PyObject *__pyx_v_self, PyObject *__pyx_arg_n) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_65verify_checksum(PyObject *__pyx_v_self, PyObject *__pyx_arg_n); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_64verify_checksum[] = "\n        Verify checksum for n bytes (swap[0] to swap[n-1]).\n        \n        Return:\n        Returns 0 if correct, < 0 if incorrect\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_65verify_checksum(PyObject *__pyx_v_self, PyObject *__pyx_arg_n) {
   int __pyx_v_n;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -3880,22 +3639,22 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_65verify_checksum(PyObject *__pyx_v_
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("verify_checksum (wrapper)", 0);
   assert(__pyx_arg_n); {
-    __pyx_v_n = __Pyx_PyInt_As_int(__pyx_arg_n); if (unlikely((__pyx_v_n == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 470; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_n = __Pyx_PyInt_As_int(__pyx_arg_n); if (unlikely((__pyx_v_n == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 476; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.verify_checksum", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.verify_checksum", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_64verify_checksum(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), ((int)__pyx_v_n));
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_64verify_checksum(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), ((int)__pyx_v_n));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_64verify_checksum(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, int __pyx_v_n) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_64verify_checksum(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, int __pyx_v_n) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3904,7 +3663,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_64verify_checksum(struct __pyx_obj_7
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("verify_checksum", 0);
 
-  /* "pykondo.pyx":477
+  /* "pykondo.pyx":483
  *         Returns 0 if correct, < 0 if incorrect
  *         """
  *         return self.C_Kondo.kondo_verify_checksum(n)             # <<<<<<<<<<<<<<
@@ -3912,13 +3671,13 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_64verify_checksum(struct __pyx_obj_7
  *     def load_asciihex(self, const char * hex):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_verify_checksum(__pyx_v_n)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 477; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_verify_checksum(__pyx_v_n)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 483; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":470
+  /* "pykondo.pyx":476
  *         return self.C_Kondo.kondo_checksum(n)
  * 
  *     def verify_checksum(self, int n):             # <<<<<<<<<<<<<<
@@ -3929,7 +3688,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_64verify_checksum(struct __pyx_obj_7
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.verify_checksum", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.verify_checksum", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3937,7 +3696,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_64verify_checksum(struct __pyx_obj_7
   return __pyx_r;
 }
 
-/* "pykondo.pyx":479
+/* "pykondo.pyx":485
  *         return self.C_Kondo.kondo_verify_checksum(n)
  * 
  *     def load_asciihex(self, const char * hex):             # <<<<<<<<<<<<<<
@@ -3946,9 +3705,9 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_64verify_checksum(struct __pyx_obj_7
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pykondo_7pykondo_67load_asciihex(PyObject *__pyx_v_self, PyObject *__pyx_arg_hex); /*proto*/
-static char __pyx_doc_7pykondo_7pykondo_66load_asciihex[] = "\n        Load the given data (from ASCII hex string) into swap.\n        \n        Return:\n        Returns number of bytes read into swap\n        ";
-static PyObject *__pyx_pw_7pykondo_7pykondo_67load_asciihex(PyObject *__pyx_v_self, PyObject *__pyx_arg_hex) {
+static PyObject *__pyx_pw_7pykondo_5Kondo_67load_asciihex(PyObject *__pyx_v_self, PyObject *__pyx_arg_hex); /*proto*/
+static char __pyx_doc_7pykondo_5Kondo_66load_asciihex[] = "\n        Load the given data (from ASCII hex string) into swap.\n        \n        Return:\n        Returns number of bytes read into swap\n        ";
+static PyObject *__pyx_pw_7pykondo_5Kondo_67load_asciihex(PyObject *__pyx_v_self, PyObject *__pyx_arg_hex) {
   char const *__pyx_v_hex;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -3957,22 +3716,22 @@ static PyObject *__pyx_pw_7pykondo_7pykondo_67load_asciihex(PyObject *__pyx_v_se
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("load_asciihex (wrapper)", 0);
   assert(__pyx_arg_hex); {
-    __pyx_v_hex = __Pyx_PyObject_AsString(__pyx_arg_hex); if (unlikely((!__pyx_v_hex) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 479; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_hex = __Pyx_PyObject_AsString(__pyx_arg_hex); if (unlikely((!__pyx_v_hex) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 485; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pykondo.pykondo.load_asciihex", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.load_asciihex", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pykondo_7pykondo_66load_asciihex(((struct __pyx_obj_7pykondo_pykondo *)__pyx_v_self), ((char const *)__pyx_v_hex));
+  __pyx_r = __pyx_pf_7pykondo_5Kondo_66load_asciihex(((struct __pyx_obj_7pykondo_Kondo *)__pyx_v_self), ((char const *)__pyx_v_hex));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pykondo_7pykondo_66load_asciihex(struct __pyx_obj_7pykondo_pykondo *__pyx_v_self, char const *__pyx_v_hex) {
+static PyObject *__pyx_pf_7pykondo_5Kondo_66load_asciihex(struct __pyx_obj_7pykondo_Kondo *__pyx_v_self, char const *__pyx_v_hex) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3981,19 +3740,19 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_66load_asciihex(struct __pyx_obj_7py
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("load_asciihex", 0);
 
-  /* "pykondo.pyx":486
+  /* "pykondo.pyx":492
  *         Returns number of bytes read into swap
  *         """
  *         return self.C_Kondo.kondo_load_asciihex(hex)             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_load_asciihex(__pyx_v_hex)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 486; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->C_Kondo->kondo_load_asciihex(__pyx_v_hex)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 492; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pykondo.pyx":479
+  /* "pykondo.pyx":485
  *         return self.C_Kondo.kondo_verify_checksum(n)
  * 
  *     def load_asciihex(self, const char * hex):             # <<<<<<<<<<<<<<
@@ -4004,7 +3763,7 @@ static PyObject *__pyx_pf_7pykondo_7pykondo_66load_asciihex(struct __pyx_obj_7py
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pykondo.pykondo.load_asciihex", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pykondo.Kondo.load_asciihex", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -4246,8 +4005,8 @@ static std::vector<double>  __pyx_convert_vector_from_py_double(PyObject *__pyx_
   return __pyx_r;
 }
 
-static PyObject *__pyx_tp_new_7pykondo_pykondo(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
-  struct __pyx_obj_7pykondo_pykondo *p;
+static PyObject *__pyx_tp_new_7pykondo_Kondo(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+  struct __pyx_obj_7pykondo_Kondo *p;
   PyObject *o;
   if (likely((t->tp_flags & Py_TPFLAGS_IS_ABSTRACT) == 0)) {
     o = (*t->tp_alloc)(t, 0);
@@ -4255,16 +4014,16 @@ static PyObject *__pyx_tp_new_7pykondo_pykondo(PyTypeObject *t, CYTHON_UNUSED Py
     o = (PyObject *) PyBaseObject_Type.tp_new(t, __pyx_empty_tuple, 0);
   }
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_7pykondo_pykondo *)o);
+  p = ((struct __pyx_obj_7pykondo_Kondo *)o);
   p->free_on_dealloc = Py_None; Py_INCREF(Py_None);
-  if (unlikely(__pyx_pw_7pykondo_7pykondo_1__cinit__(o, __pyx_empty_tuple, NULL) < 0)) {
+  if (unlikely(__pyx_pw_7pykondo_5Kondo_1__cinit__(o, __pyx_empty_tuple, NULL) < 0)) {
     Py_DECREF(o); o = 0;
   }
   return o;
 }
 
-static void __pyx_tp_dealloc_7pykondo_pykondo(PyObject *o) {
-  struct __pyx_obj_7pykondo_pykondo *p = (struct __pyx_obj_7pykondo_pykondo *)o;
+static void __pyx_tp_dealloc_7pykondo_Kondo(PyObject *o) {
+  struct __pyx_obj_7pykondo_Kondo *p = (struct __pyx_obj_7pykondo_Kondo *)o;
   #if PY_VERSION_HEX >= 0x030400a1
   if (unlikely(Py_TYPE(o)->tp_finalize) && !_PyGC_FINALIZED(o)) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -4275,7 +4034,7 @@ static void __pyx_tp_dealloc_7pykondo_pykondo(PyObject *o) {
     PyObject *etype, *eval, *etb;
     PyErr_Fetch(&etype, &eval, &etb);
     ++Py_REFCNT(o);
-    __pyx_pw_7pykondo_7pykondo_3__dealloc__(o);
+    __pyx_pw_7pykondo_5Kondo_3__dealloc__(o);
     --Py_REFCNT(o);
     PyErr_Restore(etype, eval, etb);
   }
@@ -4283,66 +4042,66 @@ static void __pyx_tp_dealloc_7pykondo_pykondo(PyObject *o) {
   (*Py_TYPE(o)->tp_free)(o);
 }
 
-static int __pyx_tp_traverse_7pykondo_pykondo(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_7pykondo_Kondo(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_7pykondo_pykondo *p = (struct __pyx_obj_7pykondo_pykondo *)o;
+  struct __pyx_obj_7pykondo_Kondo *p = (struct __pyx_obj_7pykondo_Kondo *)o;
   if (p->free_on_dealloc) {
     e = (*v)(p->free_on_dealloc, a); if (e) return e;
   }
   return 0;
 }
 
-static int __pyx_tp_clear_7pykondo_pykondo(PyObject *o) {
+static int __pyx_tp_clear_7pykondo_Kondo(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_7pykondo_pykondo *p = (struct __pyx_obj_7pykondo_pykondo *)o;
+  struct __pyx_obj_7pykondo_Kondo *p = (struct __pyx_obj_7pykondo_Kondo *)o;
   tmp = ((PyObject*)p->free_on_dealloc);
   p->free_on_dealloc = Py_None; Py_INCREF(Py_None);
   Py_XDECREF(tmp);
   return 0;
 }
 
-static PyMethodDef __pyx_methods_7pykondo_pykondo[] = {
-  {"set_angle", (PyCFunction)__pyx_pw_7pykondo_7pykondo_5set_angle, METH_VARARGS|METH_KEYWORDS, __pyx_doc_7pykondo_7pykondo_4set_angle},
-  {"set_angles", (PyCFunction)__pyx_pw_7pykondo_7pykondo_7set_angles, METH_VARARGS|METH_KEYWORDS, __pyx_doc_7pykondo_7pykondo_6set_angles},
-  {"init", (PyCFunction)__pyx_pw_7pykondo_7pykondo_9init, METH_NOARGS, __pyx_doc_7pykondo_7pykondo_8init},
-  {"init_custom", (PyCFunction)__pyx_pw_7pykondo_7pykondo_11init_custom, METH_VARARGS|METH_KEYWORDS, __pyx_doc_7pykondo_7pykondo_10init_custom},
-  {"close", (PyCFunction)__pyx_pw_7pykondo_7pykondo_13close, METH_NOARGS, __pyx_doc_7pykondo_7pykondo_12close},
-  {"move", (PyCFunction)__pyx_pw_7pykondo_7pykondo_15move, METH_O, __pyx_doc_7pykondo_7pykondo_14move},
-  {"ack", (PyCFunction)__pyx_pw_7pykondo_7pykondo_17ack, METH_NOARGS, __pyx_doc_7pykondo_7pykondo_16ack},
-  {"get_options", (PyCFunction)__pyx_pw_7pykondo_7pykondo_19get_options, METH_NOARGS, __pyx_doc_7pykondo_7pykondo_18get_options},
-  {"play_motion", (PyCFunction)__pyx_pw_7pykondo_7pykondo_21play_motion, METH_VARARGS|METH_KEYWORDS, __pyx_doc_7pykondo_7pykondo_20play_motion},
-  {"stop_motion", (PyCFunction)__pyx_pw_7pykondo_7pykondo_23stop_motion, METH_NOARGS, __pyx_doc_7pykondo_7pykondo_22stop_motion},
-  {"krc3_buttons", (PyCFunction)__pyx_pw_7pykondo_7pykondo_25krc3_buttons, METH_VARARGS|METH_KEYWORDS, __pyx_doc_7pykondo_7pykondo_24krc3_buttons},
-  {"read_analog", (PyCFunction)__pyx_pw_7pykondo_7pykondo_27read_analog, METH_O, __pyx_doc_7pykondo_7pykondo_26read_analog},
-  {"set_pio_direction", (PyCFunction)__pyx_pw_7pykondo_7pykondo_29set_pio_direction, METH_O, __pyx_doc_7pykondo_7pykondo_28set_pio_direction},
-  {"get_pio_direction", (PyCFunction)__pyx_pw_7pykondo_7pykondo_31get_pio_direction, METH_NOARGS, __pyx_doc_7pykondo_7pykondo_30get_pio_direction},
-  {"read_pio", (PyCFunction)__pyx_pw_7pykondo_7pykondo_33read_pio, METH_NOARGS, __pyx_doc_7pykondo_7pykondo_32read_pio},
-  {"write_pio", (PyCFunction)__pyx_pw_7pykondo_7pykondo_35write_pio, METH_O, __pyx_doc_7pykondo_7pykondo_34write_pio},
-  {"set_counter", (PyCFunction)__pyx_pw_7pykondo_7pykondo_37set_counter, METH_VARARGS|METH_KEYWORDS, __pyx_doc_7pykondo_7pykondo_36set_counter},
-  {"get_counter", (PyCFunction)__pyx_pw_7pykondo_7pykondo_39get_counter, METH_VARARGS|METH_KEYWORDS, __pyx_doc_7pykondo_7pykondo_38get_counter},
-  {"send_ics_pos", (PyCFunction)__pyx_pw_7pykondo_7pykondo_41send_ics_pos, METH_VARARGS|METH_KEYWORDS, __pyx_doc_7pykondo_7pykondo_40send_ics_pos},
-  {"get_servo_data", (PyCFunction)__pyx_pw_7pykondo_7pykondo_43get_servo_data, METH_VARARGS|METH_KEYWORDS, __pyx_doc_7pykondo_7pykondo_42get_servo_data},
-  {"get_servo_trim", (PyCFunction)__pyx_pw_7pykondo_7pykondo_45get_servo_trim, METH_O, __pyx_doc_7pykondo_7pykondo_44get_servo_trim},
-  {"get_servo_setpos", (PyCFunction)__pyx_pw_7pykondo_7pykondo_47get_servo_setpos, METH_O, __pyx_doc_7pykondo_7pykondo_46get_servo_setpos},
-  {"get_servo_pos", (PyCFunction)__pyx_pw_7pykondo_7pykondo_49get_servo_pos, METH_O, __pyx_doc_7pykondo_7pykondo_48get_servo_pos},
-  {"get_servo_id", (PyCFunction)__pyx_pw_7pykondo_7pykondo_51get_servo_id, METH_O, __pyx_doc_7pykondo_7pykondo_50get_servo_id},
-  {"write", (PyCFunction)__pyx_pw_7pykondo_7pykondo_53write, METH_O, __pyx_doc_7pykondo_7pykondo_52write},
-  {"read", (PyCFunction)__pyx_pw_7pykondo_7pykondo_55read, METH_O, __pyx_doc_7pykondo_7pykondo_54read},
-  {"read_timeout", (PyCFunction)__pyx_pw_7pykondo_7pykondo_57read_timeout, METH_VARARGS|METH_KEYWORDS, __pyx_doc_7pykondo_7pykondo_56read_timeout},
-  {"purge", (PyCFunction)__pyx_pw_7pykondo_7pykondo_59purge, METH_NOARGS, __pyx_doc_7pykondo_7pykondo_58purge},
-  {"trx", (PyCFunction)__pyx_pw_7pykondo_7pykondo_61trx, METH_VARARGS|METH_KEYWORDS, __pyx_doc_7pykondo_7pykondo_60trx},
-  {"checksum", (PyCFunction)__pyx_pw_7pykondo_7pykondo_63checksum, METH_O, __pyx_doc_7pykondo_7pykondo_62checksum},
-  {"verify_checksum", (PyCFunction)__pyx_pw_7pykondo_7pykondo_65verify_checksum, METH_O, __pyx_doc_7pykondo_7pykondo_64verify_checksum},
-  {"load_asciihex", (PyCFunction)__pyx_pw_7pykondo_7pykondo_67load_asciihex, METH_O, __pyx_doc_7pykondo_7pykondo_66load_asciihex},
+static PyMethodDef __pyx_methods_7pykondo_Kondo[] = {
+  {"set_angle", (PyCFunction)__pyx_pw_7pykondo_5Kondo_5set_angle, METH_VARARGS|METH_KEYWORDS, __pyx_doc_7pykondo_5Kondo_4set_angle},
+  {"set_angles", (PyCFunction)__pyx_pw_7pykondo_5Kondo_7set_angles, METH_VARARGS|METH_KEYWORDS, __pyx_doc_7pykondo_5Kondo_6set_angles},
+  {"init", (PyCFunction)__pyx_pw_7pykondo_5Kondo_9init, METH_NOARGS, __pyx_doc_7pykondo_5Kondo_8init},
+  {"init_custom", (PyCFunction)__pyx_pw_7pykondo_5Kondo_11init_custom, METH_VARARGS|METH_KEYWORDS, __pyx_doc_7pykondo_5Kondo_10init_custom},
+  {"close", (PyCFunction)__pyx_pw_7pykondo_5Kondo_13close, METH_NOARGS, __pyx_doc_7pykondo_5Kondo_12close},
+  {"move", (PyCFunction)__pyx_pw_7pykondo_5Kondo_15move, METH_O, __pyx_doc_7pykondo_5Kondo_14move},
+  {"ack", (PyCFunction)__pyx_pw_7pykondo_5Kondo_17ack, METH_NOARGS, __pyx_doc_7pykondo_5Kondo_16ack},
+  {"get_options", (PyCFunction)__pyx_pw_7pykondo_5Kondo_19get_options, METH_NOARGS, __pyx_doc_7pykondo_5Kondo_18get_options},
+  {"play_motion", (PyCFunction)__pyx_pw_7pykondo_5Kondo_21play_motion, METH_VARARGS|METH_KEYWORDS, __pyx_doc_7pykondo_5Kondo_20play_motion},
+  {"stop_motion", (PyCFunction)__pyx_pw_7pykondo_5Kondo_23stop_motion, METH_NOARGS, __pyx_doc_7pykondo_5Kondo_22stop_motion},
+  {"krc3_buttons", (PyCFunction)__pyx_pw_7pykondo_5Kondo_25krc3_buttons, METH_VARARGS|METH_KEYWORDS, __pyx_doc_7pykondo_5Kondo_24krc3_buttons},
+  {"read_analog", (PyCFunction)__pyx_pw_7pykondo_5Kondo_27read_analog, METH_O, __pyx_doc_7pykondo_5Kondo_26read_analog},
+  {"set_pio_direction", (PyCFunction)__pyx_pw_7pykondo_5Kondo_29set_pio_direction, METH_O, __pyx_doc_7pykondo_5Kondo_28set_pio_direction},
+  {"get_pio_direction", (PyCFunction)__pyx_pw_7pykondo_5Kondo_31get_pio_direction, METH_NOARGS, __pyx_doc_7pykondo_5Kondo_30get_pio_direction},
+  {"read_pio", (PyCFunction)__pyx_pw_7pykondo_5Kondo_33read_pio, METH_NOARGS, __pyx_doc_7pykondo_5Kondo_32read_pio},
+  {"write_pio", (PyCFunction)__pyx_pw_7pykondo_5Kondo_35write_pio, METH_O, __pyx_doc_7pykondo_5Kondo_34write_pio},
+  {"set_counter", (PyCFunction)__pyx_pw_7pykondo_5Kondo_37set_counter, METH_VARARGS|METH_KEYWORDS, __pyx_doc_7pykondo_5Kondo_36set_counter},
+  {"get_counter", (PyCFunction)__pyx_pw_7pykondo_5Kondo_39get_counter, METH_VARARGS|METH_KEYWORDS, __pyx_doc_7pykondo_5Kondo_38get_counter},
+  {"send_ics_pos", (PyCFunction)__pyx_pw_7pykondo_5Kondo_41send_ics_pos, METH_VARARGS|METH_KEYWORDS, __pyx_doc_7pykondo_5Kondo_40send_ics_pos},
+  {"get_servo_data", (PyCFunction)__pyx_pw_7pykondo_5Kondo_43get_servo_data, METH_VARARGS|METH_KEYWORDS, __pyx_doc_7pykondo_5Kondo_42get_servo_data},
+  {"get_servo_trim", (PyCFunction)__pyx_pw_7pykondo_5Kondo_45get_servo_trim, METH_O, __pyx_doc_7pykondo_5Kondo_44get_servo_trim},
+  {"get_servo_setpos", (PyCFunction)__pyx_pw_7pykondo_5Kondo_47get_servo_setpos, METH_O, __pyx_doc_7pykondo_5Kondo_46get_servo_setpos},
+  {"get_servo_pos", (PyCFunction)__pyx_pw_7pykondo_5Kondo_49get_servo_pos, METH_O, __pyx_doc_7pykondo_5Kondo_48get_servo_pos},
+  {"get_servo_id", (PyCFunction)__pyx_pw_7pykondo_5Kondo_51get_servo_id, METH_O, __pyx_doc_7pykondo_5Kondo_50get_servo_id},
+  {"write", (PyCFunction)__pyx_pw_7pykondo_5Kondo_53write, METH_O, __pyx_doc_7pykondo_5Kondo_52write},
+  {"read", (PyCFunction)__pyx_pw_7pykondo_5Kondo_55read, METH_O, __pyx_doc_7pykondo_5Kondo_54read},
+  {"read_timeout", (PyCFunction)__pyx_pw_7pykondo_5Kondo_57read_timeout, METH_VARARGS|METH_KEYWORDS, __pyx_doc_7pykondo_5Kondo_56read_timeout},
+  {"purge", (PyCFunction)__pyx_pw_7pykondo_5Kondo_59purge, METH_NOARGS, __pyx_doc_7pykondo_5Kondo_58purge},
+  {"trx", (PyCFunction)__pyx_pw_7pykondo_5Kondo_61trx, METH_VARARGS|METH_KEYWORDS, __pyx_doc_7pykondo_5Kondo_60trx},
+  {"checksum", (PyCFunction)__pyx_pw_7pykondo_5Kondo_63checksum, METH_O, __pyx_doc_7pykondo_5Kondo_62checksum},
+  {"verify_checksum", (PyCFunction)__pyx_pw_7pykondo_5Kondo_65verify_checksum, METH_O, __pyx_doc_7pykondo_5Kondo_64verify_checksum},
+  {"load_asciihex", (PyCFunction)__pyx_pw_7pykondo_5Kondo_67load_asciihex, METH_O, __pyx_doc_7pykondo_5Kondo_66load_asciihex},
   {0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_7pykondo_pykondo = {
+static PyTypeObject __pyx_type_7pykondo_Kondo = {
   PyVarObject_HEAD_INIT(0, 0)
-  "pykondo.pykondo", /*tp_name*/
-  sizeof(struct __pyx_obj_7pykondo_pykondo), /*tp_basicsize*/
+  "pykondo.Kondo", /*tp_name*/
+  sizeof(struct __pyx_obj_7pykondo_Kondo), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_7pykondo_pykondo, /*tp_dealloc*/
+  __pyx_tp_dealloc_7pykondo_Kondo, /*tp_dealloc*/
   0, /*tp_print*/
   0, /*tp_getattr*/
   0, /*tp_setattr*/
@@ -4364,13 +4123,13 @@ static PyTypeObject __pyx_type_7pykondo_pykondo = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_7pykondo_pykondo, /*tp_traverse*/
-  __pyx_tp_clear_7pykondo_pykondo, /*tp_clear*/
+  __pyx_tp_traverse_7pykondo_Kondo, /*tp_traverse*/
+  __pyx_tp_clear_7pykondo_Kondo, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_7pykondo_pykondo, /*tp_methods*/
+  __pyx_methods_7pykondo_Kondo, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -4380,7 +4139,7 @@ static PyTypeObject __pyx_type_7pykondo_pykondo = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_7pykondo_pykondo, /*tp_new*/
+  __pyx_tp_new_7pykondo_Kondo, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -4418,30 +4177,6 @@ static struct PyModuleDef __pyx_moduledef = {
 #endif
 
 static __Pyx_StringTabEntry __pyx_string_tab[] = {
-  {&__pyx_n_s_LAnkPitch, __pyx_k_LAnkPitch, sizeof(__pyx_k_LAnkPitch), 0, 0, 1, 1},
-  {&__pyx_n_s_LAnkYaw, __pyx_k_LAnkYaw, sizeof(__pyx_k_LAnkYaw), 0, 0, 1, 1},
-  {&__pyx_n_s_LElbow, __pyx_k_LElbow, sizeof(__pyx_k_LElbow), 0, 0, 1, 1},
-  {&__pyx_n_s_LFoot, __pyx_k_LFoot, sizeof(__pyx_k_LFoot), 0, 0, 1, 1},
-  {&__pyx_n_s_LHipPitch, __pyx_k_LHipPitch, sizeof(__pyx_k_LHipPitch), 0, 0, 1, 1},
-  {&__pyx_n_s_LHipRoll, __pyx_k_LHipRoll, sizeof(__pyx_k_LHipRoll), 0, 0, 1, 1},
-  {&__pyx_n_s_LHipYaw, __pyx_k_LHipYaw, sizeof(__pyx_k_LHipYaw), 0, 0, 1, 1},
-  {&__pyx_n_s_LKnee, __pyx_k_LKnee, sizeof(__pyx_k_LKnee), 0, 0, 1, 1},
-  {&__pyx_n_s_LShoulderPitch, __pyx_k_LShoulderPitch, sizeof(__pyx_k_LShoulderPitch), 0, 0, 1, 1},
-  {&__pyx_n_s_LShoulderRoll, __pyx_k_LShoulderRoll, sizeof(__pyx_k_LShoulderRoll), 0, 0, 1, 1},
-  {&__pyx_n_s_LUpperArmYaw, __pyx_k_LUpperArmYaw, sizeof(__pyx_k_LUpperArmYaw), 0, 0, 1, 1},
-  {&__pyx_n_s_Neck, __pyx_k_Neck, sizeof(__pyx_k_Neck), 0, 0, 1, 1},
-  {&__pyx_n_s_PelvisYaw, __pyx_k_PelvisYaw, sizeof(__pyx_k_PelvisYaw), 0, 0, 1, 1},
-  {&__pyx_n_s_RAnkPitch, __pyx_k_RAnkPitch, sizeof(__pyx_k_RAnkPitch), 0, 0, 1, 1},
-  {&__pyx_n_s_RAnkYaw, __pyx_k_RAnkYaw, sizeof(__pyx_k_RAnkYaw), 0, 0, 1, 1},
-  {&__pyx_n_s_RElbow, __pyx_k_RElbow, sizeof(__pyx_k_RElbow), 0, 0, 1, 1},
-  {&__pyx_n_s_RFoot, __pyx_k_RFoot, sizeof(__pyx_k_RFoot), 0, 0, 1, 1},
-  {&__pyx_n_s_RHipPitch, __pyx_k_RHipPitch, sizeof(__pyx_k_RHipPitch), 0, 0, 1, 1},
-  {&__pyx_n_s_RHipRoll, __pyx_k_RHipRoll, sizeof(__pyx_k_RHipRoll), 0, 0, 1, 1},
-  {&__pyx_n_s_RHipYaw, __pyx_k_RHipYaw, sizeof(__pyx_k_RHipYaw), 0, 0, 1, 1},
-  {&__pyx_n_s_RKnee, __pyx_k_RKnee, sizeof(__pyx_k_RKnee), 0, 0, 1, 1},
-  {&__pyx_n_s_RShoulderPitch, __pyx_k_RShoulderPitch, sizeof(__pyx_k_RShoulderPitch), 0, 0, 1, 1},
-  {&__pyx_n_s_RShoulderRoll, __pyx_k_RShoulderRoll, sizeof(__pyx_k_RShoulderRoll), 0, 0, 1, 1},
-  {&__pyx_n_s_RUpperArmYaw, __pyx_k_RUpperArmYaw, sizeof(__pyx_k_RUpperArmYaw), 0, 0, 1, 1},
   {&__pyx_n_s_a1, __pyx_k_a1, sizeof(__pyx_k_a1), 0, 0, 1, 1},
   {&__pyx_n_s_a2, __pyx_k_a2, sizeof(__pyx_k_a2), 0, 0, 1, 1},
   {&__pyx_n_s_a3, __pyx_k_a3, sizeof(__pyx_k_a3), 0, 0, 1, 1},
@@ -4449,29 +4184,23 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_angleInDegree, __pyx_k_angleInDegree, sizeof(__pyx_k_angleInDegree), 0, 0, 1, 1},
   {&__pyx_n_s_anglesInDegree, __pyx_k_anglesInDegree, sizeof(__pyx_k_anglesInDegree), 0, 0, 1, 1},
   {&__pyx_n_s_baud, __pyx_k_baud, sizeof(__pyx_k_baud), 0, 0, 1, 1},
-  {&__pyx_n_s_camera, __pyx_k_camera, sizeof(__pyx_k_camera), 0, 0, 1, 1},
   {&__pyx_n_s_cc, __pyx_k_cc, sizeof(__pyx_k_cc), 0, 0, 1, 1},
   {&__pyx_n_s_fractionMaxSpeed, __pyx_k_fractionMaxSpeed, sizeof(__pyx_k_fractionMaxSpeed), 0, 0, 1, 1},
   {&__pyx_n_s_frame, __pyx_k_frame, sizeof(__pyx_k_frame), 0, 0, 1, 1},
-  {&__pyx_n_s_imu, __pyx_k_imu, sizeof(__pyx_k_imu), 0, 0, 1, 1},
   {&__pyx_n_s_in_bytes, __pyx_k_in_bytes, sizeof(__pyx_k_in_bytes), 0, 0, 1, 1},
   {&__pyx_n_s_interface, __pyx_k_interface, sizeof(__pyx_k_interface), 0, 0, 1, 1},
   {&__pyx_n_s_jointIndex, __pyx_k_jointIndex, sizeof(__pyx_k_jointIndex), 0, 0, 1, 1},
   {&__pyx_n_s_jointIndices, __pyx_k_jointIndices, sizeof(__pyx_k_jointIndices), 0, 0, 1, 1},
-  {&__pyx_n_s_joints_idx, __pyx_k_joints_idx, sizeof(__pyx_k_joints_idx), 0, 0, 1, 1},
   {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
   {&__pyx_n_s_max_wait, __pyx_k_max_wait, sizeof(__pyx_k_max_wait), 0, 0, 1, 1},
-  {&__pyx_n_s_microphone, __pyx_k_microphone, sizeof(__pyx_k_microphone), 0, 0, 1, 1},
   {&__pyx_n_s_n, __pyx_k_n, sizeof(__pyx_k_n), 0, 0, 1, 1},
   {&__pyx_n_s_num, __pyx_k_num, sizeof(__pyx_k_num), 0, 0, 1, 1},
   {&__pyx_n_s_offset, __pyx_k_offset, sizeof(__pyx_k_offset), 0, 0, 1, 1},
   {&__pyx_n_s_out_bytes, __pyx_k_out_bytes, sizeof(__pyx_k_out_bytes), 0, 0, 1, 1},
   {&__pyx_n_s_pid, __pyx_k_pid, sizeof(__pyx_k_pid), 0, 0, 1, 1},
   {&__pyx_n_s_result, __pyx_k_result, sizeof(__pyx_k_result), 0, 0, 1, 1},
-  {&__pyx_n_s_screen, __pyx_k_screen, sizeof(__pyx_k_screen), 0, 0, 1, 1},
   {&__pyx_n_s_servo_idx, __pyx_k_servo_idx, sizeof(__pyx_k_servo_idx), 0, 0, 1, 1},
   {&__pyx_n_s_servos, __pyx_k_servos, sizeof(__pyx_k_servos), 0, 0, 1, 1},
-  {&__pyx_n_s_speaker, __pyx_k_speaker, sizeof(__pyx_k_speaker), 0, 0, 1, 1},
   {&__pyx_n_s_test, __pyx_k_test, sizeof(__pyx_k_test), 0, 0, 1, 1},
   {&__pyx_n_s_timeout, __pyx_k_timeout, sizeof(__pyx_k_timeout), 0, 0, 1, 1},
   {&__pyx_n_s_val, __pyx_k_val, sizeof(__pyx_k_val), 0, 0, 1, 1},
@@ -4491,23 +4220,6 @@ static int __Pyx_InitCachedConstants(void) {
 
 static int __Pyx_InitGlobals(void) {
   if (__Pyx_InitStrings(__pyx_string_tab) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
-  __pyx_int_0 = PyInt_FromLong(0); if (unlikely(!__pyx_int_0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_int_1 = PyInt_FromLong(1); if (unlikely(!__pyx_int_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_int_2 = PyInt_FromLong(2); if (unlikely(!__pyx_int_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_int_4 = PyInt_FromLong(4); if (unlikely(!__pyx_int_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_int_5 = PyInt_FromLong(5); if (unlikely(!__pyx_int_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_int_6 = PyInt_FromLong(6); if (unlikely(!__pyx_int_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_int_8 = PyInt_FromLong(8); if (unlikely(!__pyx_int_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_int_11 = PyInt_FromLong(11); if (unlikely(!__pyx_int_11)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_int_12 = PyInt_FromLong(12); if (unlikely(!__pyx_int_12)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_int_13 = PyInt_FromLong(13); if (unlikely(!__pyx_int_13)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_int_14 = PyInt_FromLong(14); if (unlikely(!__pyx_int_14)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_int_15 = PyInt_FromLong(15); if (unlikely(!__pyx_int_15)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_int_17 = PyInt_FromLong(17); if (unlikely(!__pyx_int_17)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_int_18 = PyInt_FromLong(18); if (unlikely(!__pyx_int_18)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_int_19 = PyInt_FromLong(19); if (unlikely(!__pyx_int_19)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_int_20 = PyInt_FromLong(20); if (unlikely(!__pyx_int_20)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_int_21 = PyInt_FromLong(21); if (unlikely(!__pyx_int_21)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -4599,10 +4311,10 @@ PyMODINIT_FUNC PyInit_pykondo(void)
   /*--- Variable export code ---*/
   /*--- Function export code ---*/
   /*--- Type init code ---*/
-  if (PyType_Ready(&__pyx_type_7pykondo_pykondo) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 80; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_type_7pykondo_pykondo.tp_print = 0;
-  if (PyObject_SetAttrString(__pyx_m, "pykondo", (PyObject *)&__pyx_type_7pykondo_pykondo) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 80; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_ptype_7pykondo_pykondo = &__pyx_type_7pykondo_pykondo;
+  if (PyType_Ready(&__pyx_type_7pykondo_Kondo) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 80; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_type_7pykondo_Kondo.tp_print = 0;
+  if (PyObject_SetAttrString(__pyx_m, "Kondo", (PyObject *)&__pyx_type_7pykondo_Kondo) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 80; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_ptype_7pykondo_Kondo = &__pyx_type_7pykondo_Kondo;
   /*--- Type import code ---*/
   /*--- Variable import code ---*/
   /*--- Function import code ---*/
