@@ -5,8 +5,7 @@
 #include <iostream>
 #include <vector>
 #include <math.h>
-
-
+ #include <unistd.h>
 /*
  kondo class include the libkondo4 functions.
  libkondo4 is a small open source C library project by Christopher Vo for controlling the servos and servo controller in the Kondo KHR-3HV humanoid robot kit.

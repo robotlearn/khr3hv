@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -g  -shared -Wl,-soname,libkondo.so -o libkondo.so CMakeFiles/kondo.dir/src/ics.c.o CMakeFiles/kondo.dir/src/rcb4.c.o -lftdi1 

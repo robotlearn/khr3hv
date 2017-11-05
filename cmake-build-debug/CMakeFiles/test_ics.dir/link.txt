@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC -O3 -DNDEBUG  -rdynamic CMakeFiles/test_ics.dir/utils/test_ics.c.o CMakeFiles/test_ics.dir/src/ics.c.o CMakeFiles/test_ics.dir/src/rcb4.c.o  -o test_ics -Wl,-rpath,/usr/local/lib -lm /usr/local/lib/libftdi1.so 

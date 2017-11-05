@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC -O3 -DNDEBUG  -rdynamic CMakeFiles/test_analog.dir/utils/test_analog.c.o CMakeFiles/test_analog.dir/src/ics.c.o CMakeFiles/test_analog.dir/src/rcb4.c.o  -o test_analog -Wl,-rpath,/usr/local/lib /usr/local/lib/libftdi1.so 

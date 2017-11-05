@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="kondo"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\python\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/xin/libkondo4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/xin/libkondo4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/xin/libkondo4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="run_motion">
+				<Option output="/home/xin/libkondo4/cmake-build-debug/run_motion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xin/libkondo4/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xin/libkondo4/include"/>
+					<Add directory="/usr/include/libftdi1"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 run_motion"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="run_motion/fast">
+				<Option output="/home/xin/libkondo4/cmake-build-debug/run_motion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xin/libkondo4/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xin/libkondo4/include"/>
+					<Add directory="/usr/include/libftdi1"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 run_motion/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="kondo">
+				<Option output="/home/xin/libkondo4/cmake-build-debug/libkondo.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xin/libkondo4/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xin/libkondo4/include"/>
+					<Add directory="/usr/include/libftdi1"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 kondo"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="kondo/fast">
+				<Option output="/home/xin/libkondo4/cmake-build-debug/libkondo.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xin/libkondo4/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xin/libkondo4/include"/>
+					<Add directory="/usr/include/libftdi1"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 kondo/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="_pykondo">
+				<Option output="/home/xin/libkondo4/cmake-build-debug/python/_pykondo.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xin/libkondo4/cmake-build-debug/python"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xin/libkondo4/include"/>
+					<Add directory="/usr/include/libftdi1"/>
+					<Add directory="/usr/include/python2.7"/>
+					<Add directory="/home/xin/libkondo4/python"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/python/Makefile&quot;  VERBOSE=1 _pykondo"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/python/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/python/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/python/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="_pykondo/fast">
+				<Option output="/home/xin/libkondo4/cmake-build-debug/python/_pykondo.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xin/libkondo4/cmake-build-debug/python"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xin/libkondo4/include"/>
+					<Add directory="/usr/include/libftdi1"/>
+					<Add directory="/usr/include/python2.7"/>
+					<Add directory="/home/xin/libkondo4/python"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/python/Makefile&quot;  VERBOSE=1 _pykondo/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/python/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/python/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/xin/libkondo4/cmake-build-debug/python/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/xin/libkondo4/cmake-build-debug/python/pykondo.py">
+			<Option target="_pykondo"/>
+		</Unit>
+		<Unit filename="/home/xin/libkondo4/cmake-build-debug/python/pykondoPYTHON_wrap.c">
+			<Option target="_pykondo"/>
+		</Unit>
+		<Unit filename="/home/xin/libkondo4/python/pykondo.i">
+			<Option target="_pykondo"/>
+		</Unit>
+		<Unit filename="/home/xin/libkondo4/src/ics.c">
+			<Option target="kondo"/>
+			<Option target="_pykondo"/>
+		</Unit>
+		<Unit filename="/home/xin/libkondo4/src/rcb4.c">
+			<Option target="kondo"/>
+			<Option target="_pykondo"/>
+		</Unit>
+		<Unit filename="/home/xin/libkondo4/utils/run_motion.c">
+			<Option target="run_motion"/>
+		</Unit>
+		<Unit filename="/home/xin/libkondo4/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/xin/libkondo4/python/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\python\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

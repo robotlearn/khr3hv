@@ -1,0 +1,10 @@
+/opt/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/xin/libkondo4
+CMake Deprecation Warning at /opt/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/UseSWIG.cmake:226 (message):
+  SWIG_ADD_MODULE is deprecated.  Use SWIG_ADD_LIBRARY instead.
+Call Stack (most recent call first):
+  python/CMakeLists.txt:12 (swig_add_module)
+
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/xin/libkondo4/cmake-build-debug
