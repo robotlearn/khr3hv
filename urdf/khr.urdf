@@ -1,0 +1,347 @@
+<!-- from https://github.com/ponta-mkii/roboticsAC/blob/master/KHR-3HV/urdf/khr.urdf -->
+
+<?xml version="1.0"?>
+<robot name="khr">
+
+  <!--base link-->
+  <link name="base">
+    <visual>
+      <geometry>
+	<mesh filename="package://KHR-3HV/dae/body.dae"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0.8"/>
+      <material name="gray">
+        <color rgba="0.8 0.8 0.8 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <!--first_arm link-->
+  <link name="first_arm">
+    <visual>
+      <geometry>
+        <mesh filename="package://KHR-3HV/dae/joint.dae"/>
+      </geometry>
+      <origin rpy="0 1.6 0" xyz="0 0 0"/>
+      <material name="gray">
+      </material>
+    </visual>
+  </link>
+
+  <!--base to first_arm joint-->
+  <joint name="base_to_first" type="revolute">
+    <parent link="base"/>
+    <child link="first_arm"/>
+    <axis xyz="1 0 0"/>
+    <origin xyz="0.18 0 1.375"/>
+    <limit effort="1000" lower="-2.0" upper="2.0" velocity="0.5"/>
+  </joint>
+
+  <link name="first_arm_2">
+    <visual>
+      <geometry>
+        <mesh filename="package://KHR-3HV/dae/joint2.dae"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 -0.035"/>
+      <material name="gray">
+      </material>
+    </visual>
+  </link>
+
+  <joint name="first_to_first_2" type="revolute">
+    <parent link="first_arm"/>
+    <child link="first_arm_2"/>
+    <axis xyz="0 1 0"/>
+    <origin xyz="0.075 0 0"/>
+    <limit effort="1000" lower="-2.0" upper="2.0" velocity="0.5"/>
+  </joint>
+
+  <link name="first_arm_3">
+    <visual>
+      <geometry>
+        <mesh filename="package://KHR-3HV/dae/f_arm.dae"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 -0.3"/>
+      <material name="gray">
+      </material>
+    </visual>
+  </link>
+
+  <joint name="first_2_to_first_3" type="revolute">
+    <parent link="first_arm_2"/>
+    <child link="first_arm_3"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0 0 -0.05"/>
+    <limit effort="1000" lower="-2.0" upper="2.0" velocity="0.5"/>
+  </joint>
+
+
+  <link name="arm2">
+    <visual>
+      <geometry>
+        <mesh filename="package://KHR-3HV/dae/joint.dae"/>
+      </geometry>
+      <origin rpy="0 -1.6 0" xyz="0 0 0"/>
+      <material name="gray">
+      </material>
+    </visual>
+  </link>
+
+  <joint name="base_to_arm2" type="revolute">
+    <parent link="base"/>
+    <child link="arm2"/>
+    <axis xyz="1 0 0"/>
+    <origin xyz="-0.18 0 1.375"/>
+    <limit effort="1000" lower="-2.0" upper="2.0" velocity="0.5"/>
+  </joint>
+
+  <link name="arm2_2">
+    <visual>
+      <geometry>
+        <mesh filename="package://KHR-3HV/dae/joint2.dae"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 -0.035"/>
+      <material name="gray">
+      </material>
+    </visual>
+  </link>
+
+  <joint name="arm2_to_arm2_2" type="revolute">
+    <parent link="arm2"/>
+    <child link="arm2_2"/>
+    <axis xyz="0 1 0"/>
+    <origin xyz="-0.075 0 0"/>
+    <limit effort="1000" lower="-2.0" upper="2.0" velocity="0.5"/>
+  </joint>
+
+  <link name="arm2_3">
+    <visual>
+      <geometry>
+        <mesh filename="package://KHR-3HV/dae/f_arm.dae"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 -0.3"/>
+      <material name="gray">
+      </material>
+    </visual>
+  </link>
+
+  <joint name="arm2_2_to_arm2_3" type="revolute">
+    <parent link="arm2_2"/>
+    <child link="arm2_3"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0 0 -0.04"/>
+    <limit effort="1000" lower="-2.0" upper="2.0" velocity="0.5"/>
+  </joint>
+
+  <link name="base2">
+    <visual>
+      <geometry>
+        <mesh filename="package://KHR-3HV/dae/hip.dae"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0.05"/>
+      <material name="black2">
+	<color rgba="0.3 0.3 0.3 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="base_to_base2" type="revolute">
+    <parent link="base"/>
+    <child link="base2"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0 0 0.5"/>
+    <limit effort="1000" lower="-2.0" upper="2.0" velocity="0.5"/>
+  </joint>
+
+  <link name="leg1">
+    <visual>
+      <geometry>
+        <mesh filename="package://KHR-3HV/dae/joint.dae"/>
+      </geometry>
+      <origin rpy="0 1.6 0" xyz="0 0 0"/>
+      <material name="gray">
+      </material>
+    </visual>
+  </link>
+
+  <joint name="base2_to_leg1" type="revolute">
+    <parent link="base2"/>
+    <child link="leg1"/>
+    <axis xyz="1 0 0"/>
+    <origin xyz="0.08 0 0.11"/>
+    <limit effort="1000" lower="-2.0" upper="2.0" velocity="0.5"/>
+  </joint>
+
+  <link name="leg1_2">
+    <visual>
+      <geometry>
+        <mesh filename="package://KHR-3HV/dae/joint2.dae"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 -0.035"/>
+      <material name="gray">
+      </material>
+    </visual>
+  </link>
+
+  <joint name="leg1_to_leg1_2" type="revolute">
+    <parent link="leg1"/>
+    <child link="leg1_2"/>
+    <axis xyz="0 1 0"/>
+    <origin xyz="0.075 0 0"/>
+    <limit effort="1000" lower="-2.0" upper="2.0" velocity="0.5"/>
+  </joint>
+
+  <link name="leg1_3">
+    <visual>
+      <geometry>
+        <mesh filename="package://KHR-3HV/dae/f_leg.dae"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 -0.3"/>
+      <material name="gray">
+      </material>
+    </visual>
+  </link>
+
+  <joint name="leg1_2_to_leg1_3" type="revolute">
+    <parent link="leg1_2"/>
+    <child link="leg1_3"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0 0 -0.05"/>
+    <limit effort="1000" lower="-2.0" upper="2.0" velocity="0.5"/>
+  </joint>
+
+  <link name="leg1_4">
+    <visual>
+      <geometry>
+        <mesh filename="package://KHR-3HV/dae/s_leg.dae"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 -0.275"/>
+      <material name="gray">
+      </material>
+    </visual>
+  </link>
+
+  <joint name="leg1_3_to_leg1_4" type="revolute">
+    <parent link="leg1_3"/>
+    <child link="leg1_4"/>
+    <axis xyz="1 0 0"/>
+    <origin xyz="0 0 -0.275"/>
+    <limit effort="1000" lower="-2.0" upper="2.0" velocity="0.5"/>
+  </joint>
+
+  <link name="r_foot">
+    <visual>
+      <geometry>
+        <mesh filename="package://KHR-3HV/dae/foot.dae"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 -0.08 -0.035"/>
+      <material name="gray">
+      </material>
+    </visual>
+  </link>
+
+  <joint name="leg1_4_to_r_foot" type="revolute">
+    <parent link="leg1_4"/>e 
+    <child link="r_foot"/>
+    <axis xyz="1 0 0"/>
+    <origin xyz="0 0 -0.25"/>
+    <limit effort="1000" lower="-2.0" upper="2.0" velocity="0.5"/>
+  </joint>
+
+
+  <link name="leg2">
+    <visual>
+      <geometry>
+        <mesh filename="package://KHR-3HV/dae/joint.dae"/>
+      </geometry>
+      <origin rpy="0 -1.6 0" xyz="0 0 0"/>
+      <material name="gray">
+      </material>
+    </visual>
+  </link>
+
+  <joint name="base2_to_leg2" type="revolute">
+    <parent link="base2"/>
+    <child link="leg2"/>
+    <axis xyz="1 0 0"/>
+    <origin xyz="-0.08 0 0.11"/>
+    <limit effort="1000" lower="-2.0" upper="2.0" velocity="0.5"/>
+  </joint>
+
+  <link name="leg2_2">
+    <visual>
+      <geometry>
+        <mesh filename="package://KHR-3HV/dae/joint2.dae"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 -0.035"/>
+      <material name="gray">
+      </material>
+    </visual>
+  </link>
+
+  <joint name="leg2_to_leg2_2" type="revolute">
+    <parent link="leg2"/>
+    <child link="leg2_2"/>
+    <axis xyz="0 1 0"/>
+    <origin xyz="-0.075 0 0"/>
+    <limit effort="1000" lower="-2.0" upper="2.0" velocity="0.5"/>
+  </joint>
+
+  <link name="leg2_3">
+    <visual>
+      <geometry>
+        <mesh filename="package://KHR-3HV/dae/f_leg.dae"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 -0.3"/>
+      <material name="gray">
+      </material>
+    </visual>
+  </link>
+
+  <joint name="leg2_2_to_leg2_3" type="revolute">
+    <parent link="leg2_2"/>
+    <child link="leg2_3"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0 0 -0.05"/>
+    <limit effort="1000" lower="-2.0" upper="2.0" velocity="0.5"/>
+  </joint>
+
+  <link name="leg2_4">
+    <visual>
+      <geometry>
+        <mesh filename="package://KHR-3HV/dae/s_leg.dae"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 -0.275"/>
+      <material name="gray">
+      </material>
+    </visual>
+  </link>
+
+  <joint name="leg2_3_to_leg2_4" type="revolute">
+    <parent link="leg2_3"/>
+    <child link="leg2_4"/>
+    <axis xyz="1 0 0"/>
+    <origin xyz="0 0 -0.275"/>
+    <limit effort="1000" lower="-2.0" upper="2.0" velocity="0.5"/>
+  </joint>
+
+  <link name="l_foot">
+    <visual>
+      <geometry>
+        <mesh filename="package://KHR-3HV/dae/foot.dae"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 -0.08 -0.035"/>
+      <material name="gray">
+      </material>
+    </visual>
+  </link>
+
+  <joint name="leg2_4_to_l_foot" type="revolute">
+    <parent link="leg2_4"/>
+    <child link="l_foot"/>
+    <axis xyz="1 0 0"/>
+    <origin xyz="0 0 -0.25"/>
+    <limit effort="1000" lower="-2.0" upper="2.0" velocity="0.5"/>
+  </joint>
+
+</robot>
