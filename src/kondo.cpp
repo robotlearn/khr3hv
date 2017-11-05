@@ -581,7 +581,36 @@ int kondo::kondo_play_motion( UINT num, long timeout)
 
 int kondo::kondo_move( UINT num)
 {
-    assert(&ki);
+//    assert(&ki);
+//    int i;
+//    UCHAR chk;
+//
+//    // (2) call motion script -------------------------------------------------
+//    // You have to compute the motion address (base + num * size) and call it.
+//    ki.swap[0] = 7; // num bytes
+//    ki.swap[1] = RCB4_CMD_SIN_MOVE; // command
+//    ki.swap[2] = num; // sevor number
+//    ki.swap[3] = 50; // velocity
+//    ki.swap[4] = 76; // position L
+//    ki.swap[5] = 29; // position H
+//    ki.swap[6] = kondo_checksum( 6);
+//
+//    // printf("joint num %x\n",ki.swap[2]);
+//
+//    // send 7 bytes, expect 4 in response
+//    if ((i = kondo_trx( 7, 4)) < 0)
+//        return i;
+//
+//    // verify response (ack)
+//    if (i != 4 || ki.swap[2] != RCB4_ACK_BYTE)
+//        kondo_error(ki, "Bad response trying to call the motion.");
+//
+//    if ((i = kondo_get_options()) < 0)
+//        return i;
+//
+//    return 0;
+
+    assert(ki);
     int i;
     UCHAR chk;
 
@@ -589,13 +618,13 @@ int kondo::kondo_move( UINT num)
     // You have to compute the motion address (base + num * size) and call it.
     ki.swap[0] = 7; // num bytes
     ki.swap[1] = RCB4_CMD_SIN_MOVE; // command
-    ki.swap[2] = num; // sevor number
-    ki.swap[3] = 50; // velocity
-    ki.swap[4] = 76; // position L
-    ki.swap[5] = 29; // position H
+    ki.swap[2] = SEVOR01*num; // sevor number
+    ki.swap[3] = 0xFF; // velocity
+    ki.swap[4] = 0x00; // position H
+    ki.swap[5] = 0x0F; // position L
     ki.swap[6] = kondo_checksum( 6);
 
-    // printf("joint num %x\n",ki.swap[2]);
+    printf("joint num %x\n",ki.swap[2]);
 
     // send 7 bytes, expect 4 in response
     if ((i = kondo_trx( 7, 4)) < 0)
@@ -609,6 +638,7 @@ int kondo::kondo_move( UINT num)
         return i;
 
     return 0;
+
 }
 
 
