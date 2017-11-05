@@ -20,8 +20,14 @@ target_link_libraries(kondo ${FTDI_LIBRARY}) #${LIBUSB_LIBRARIES})
 
 #add_subdirectory(python)
 
-add_executable(run_motion utils/run_motion.cpp ${SOURCES})
-target_link_libraries(run_motion ${FTDI_LIBRARY}) #${LIBUSB_LIBRARIES})
+add_executable(test_kondo_move utils/test_kondo_move.cpp ${SOURCES})
+target_link_libraries(test_kondo_move ${FTDI_LIBRARY}) #${LIBUSB_LIBRARIES})
+
+
+add_executable(test_kondo_set_angle utils/test_kondo_set_angle.cpp ${SOURCES})
+target_link_libraries(test_kondo_set_angle ${FTDI_LIBRARY}) #${LIBUSB_LIBRARIES})
+
+
 
 #add_executable(test_ics utils/test_ics.cpp ${SOURCES})
 #target_link_libraries(test_ics m ${FTDI_LIBRARY}) #${LIBUSB_LIBRARIES})
