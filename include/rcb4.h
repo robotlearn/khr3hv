@@ -27,6 +27,16 @@
 #include <sys/time.h>
 #include "ftdi.h"
 
+// user defined
+#define NUMBER_OF_JOINTS 17 // by default, the robot has 17 servos, but we can add few more
+#define DOTS_PER_DEGREE 29
+#define DEGREES_PER_DOT 0.0344827586
+#define INI_SERVO_DOT 7500
+#define SERVO_SPEED_RANGE 255
+#define LOOP_CYCLE_DURATION 20000
+#define CYCLE_DURATION_50HZ 20000
+#define CYCLE_DURATION_200HZ 5000
+
 // general --------------------------------------------------------------------
 #define RCB4_SECOND 1000000
 #define RCB4_15MS 15000
@@ -54,6 +64,8 @@
 #define RCB4_CMD_CALL  0x0C // CALL command
 #define RCB4_CMD_VERS  0xFD // Version command
 #define RCB4_CMD_ICS   0x10 // ICS frame command
+#define RCB4_CMD_SIN_MOVE 0x0F // single move command (new)
+
 // device types
 #define RCB4_DEV_RAM   0x00 // RAM
 #define RCB4_DEV_DEV   0x01 // Device

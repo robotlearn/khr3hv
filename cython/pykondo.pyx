@@ -73,7 +73,7 @@ cdef extern from "kondo.h":
 # Python Wrapper using Cython
 
 
-import ckondo
+#import ckondo
 
 
 # Wrapper class
@@ -250,11 +250,13 @@ cdef class pykondo:
         Analog numbers 1-11 are the analog inputs.
         Side effect: The analog value is read into 'result'.
         
-        Returns: 0 if successful, < 0 if error.
+        Returns:
+        - result: The read analog value.
+        - success: 0 if successful, < 0 if error.
         """
-        cdef int* result
-        res = self.C_Kondo.kondo_read_analog(result, num)
-        return *result, res
+        cdef int result
+        success = self.C_Kondo.kondo_read_analog(&result, num)
+        return result, success
 
     def set_pio_direction(self, UINT bitset):
         """
@@ -269,7 +271,8 @@ cdef class pykondo:
         """
         return self.C_Kondo.kondo_set_pio_direction(bitset)
 
-    def get_pio_direction(self, UINT* bitset):
+    #def get_pio_direction(self, UINT* bitset):
+    def get_pio_direction(self):
         """
         Get the direction for the digital ports.
         Side effect: The direction for all the ports will be returned in bitfield.
@@ -278,19 +281,28 @@ cdef class pykondo:
         NOTE: At power-on, the PIO direction defaults to 1 (Output) for all ports.
         See kondo_set_pio_direction() to set the direction of the PIO ports.
         
-        Returns: 0 if successful, < 0 if error.
+        Returns:
+        - bitset: the bitfield.
+        - success: 0 if successful, < 0 if error.
         """
-        return self.C_Kondo.kondo_get_pio_direction(bitset)
+        cdef UINT bitset
+        success = self.C_Kondo.kondo_get_pio_direction(&bitset)
+        return bitset, success
 
-    def read_pio(self, UINT* result):
+    #def read_pio(self, UINT* result):
+    def read_pio(self):
         """
         Read digital values (PIO1 to PIO10).
         The 'result' will be set to a 10-bit field of the digital values.
         The format of result will be 10-bits, lowest order bit is the value of PIO1
 
-        Returns: 0 if successful, < 0 if error.
+        Returns:
+        - result: digital value.
+        - success: 0 if successful, < 0 if error.
         """
-        return self.C_Kondo.kondo_read_pio(result)
+        cdef UINT result
+        success = self.C_Kondo.kondo_read_pio(&result)
+        return result, success
 
     def write_pio(self, UINT bitset):
         """

@@ -2,6 +2,10 @@
 #define KONDO_H
 
 #include "rcb4.h"
+#include <iostream>
+#include <vector>
+#include <math.h>
+
 
 /*
  kondo class include the libkondo4 functions.
@@ -17,7 +21,7 @@ private:
 public:
     // self defined
     int kondo_set_angle(UINT jointIndex, double angleInDegree, double fractionMaxSpeed);
-    int kondo_set_angles(vector<UINT> jointIndices, vector<double> anglesInDegree, double fractionMaxSpeed);
+    int kondo_set_angles(std::vector<UINT> jointIndices, std::vector<double> anglesInDegree, double fractionMaxSpeed);
 
     // initialization / deinitialization ------------------------------------------
     int kondo_init();

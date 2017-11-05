@@ -37,7 +37,7 @@ int kondo::kondo_set_angle( UINT jointIndex, double angleInDegree, double fracti
 }
 
 //  this function is used to set angles for multipule servo
-int kondo::kondo_set_angles(vector<UINT> jointIndices, vector<double> anglesInDegree, double fractionMaxSpeed)
+int kondo::kondo_set_angles(std::vector<UINT> jointIndices, std::vector<double> anglesInDegree, double fractionMaxSpeed)
 {
     assert(&ki);
     int ret;
@@ -255,7 +255,7 @@ int kondo::kondo_read_timeout( int n, long timeout)
     static int count=0;
     if (bytes_read < n)
     {   count ++;
-        cout << "Warning: in " << __func__ << ", data lost. count:"<< count <<endl;
+        std::cout << "Warning: in " << __func__ << ", data lost. count:"<< count << std::endl;
     }
 
     return bytes_read;
@@ -1138,13 +1138,13 @@ int kondo::kondo_get_servo_data( UINT servo_idx, UINT offset)
 void kondo::kondo_error(KondoInstance ki,const char *err)
 {
     snprintf(ki.error, 128, "ERROR: %s: %s\n", __func__, err);
-    cout << "ERROR: " << __func__ << " " << err << endl;
+    std::cout << "ERROR: " << __func__ << " " << err << std::endl;
 //    exit(EXIT_FAILURE);
 }
 
 void kondo::kondo_ftdi_error(KondoInstance ki)
 {
     snprintf(ki.error, 128, "ERROR: %s: %s\n", __func__,ftdi_get_error_string(&ki.ftdic));
-    cout << "ERROR: " << __func__ << " " << ftdi_get_error_string(&ki.ftdic) << endl;
+    std::cout << "ERROR: " << __func__ << " " << ftdi_get_error_string(&ki.ftdic) << std::endl;
 //    exit(EXIT_FAILURE);
 }
