@@ -7,11 +7,17 @@
  https://bitbucket.org/vo/libkondo4/wiki/Home
 */
 
-
+#include <stdio.h>
+#include <assert.h>
+#include <string.h>
+#include <ctype.h>
+#include <sys/time.h>
 #include <iostream>
 #include <vector>
 #include <math.h>
 #include <unistd.h>
+#include <stdlib.h>
+#include "ftdi.h"
 
 // user defined
 #define NUMBER_OF_JOINTS 17 // by default, the robot has 17 servos, but we can add few more

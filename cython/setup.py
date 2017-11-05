@@ -8,7 +8,7 @@ from Cython.Build import cythonize
 from distutils.extension import Extension
 
 sourcefiles = ['pykondo.pyx',
-               '../src/rcb4.cpp',
+               # '../src/rcb4.cpp',
                '../src/kondo.cpp'] #'ckondo.pxd', '../src/kondo.cpp']
 compile_opts = ['-std=c++11']
 include_dirs = ['../include/', #rcb4.h, kondo.h
