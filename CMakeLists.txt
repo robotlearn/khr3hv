@@ -18,7 +18,7 @@ include_directories(include ${FTDI_INCLUDE_DIR}) #${LIBUSB_INCLUDE_DIRS})
 add_library(kondo SHARED ${SOURCES})
 target_link_libraries(kondo ${FTDI_LIBRARY}) #${LIBUSB_LIBRARIES})
 
-add_subdirectory(python)
+#add_subdirectory(python)
 
 add_executable(run_motion utils/run_motion.c ${SOURCES})
 target_link_libraries(run_motion ${FTDI_LIBRARY}) #${LIBUSB_LIBRARIES})
