@@ -4,6 +4,7 @@ This repo is based on the libkondo4 C library (by Christopher Vo) to control the
 
 In this repo, we extend the previous work by including/providing:
 * CMakeLists (instead of Makefiles)
+* Documentations (how to assemble the Kondo KHR-3HV robot, joint IDs, joint limits,...)
 * Python wrappers (using Cython)
 * Sample codes to run different motions
 * ROS nodes
