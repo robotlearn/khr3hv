@@ -16,11 +16,15 @@ In this repo, we extend the previous work by including/providing:
 
 * An Ubuntu system (tested on Ubuntu 16.04, and on Ubuntu Mate 16.04 on a Raspi3) or MacOSX.
 * The ftdi library to communicate via usb to the board
+
 On Linux:
+
 ```bash
 $ sudo apt-get install libftdi-dev
 ```
+
 On MacOSX (with [Homebrew](https://brew.sh/)):
+
 ```bash
 $ brew install libftdi
 ```
