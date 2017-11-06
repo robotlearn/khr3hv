@@ -1,72 +1,35 @@
--------------------------------------------------------------------------------
- libkondo4
- A small C library to control the Kondo RCB-4 and ICS 3.0 protocols.
- 
- Christopher Vo
- cvo1 at cs.gmu.edu
- Autonomous Robotics Laboratory
- George Mason University
--------------------------------------------------------------------------------
+# Kondo-Robot library
 
-1. INSTALLATION
+This repo is based on the libkondo4 C library (by Christopher Vo) to control the Kondo RCB-4 servo controller board using the ICS 3.0 protocol. The servos KRS-2552RHV feature the ICS-3 interface making them compatible with serial or PWM communication.
 
-    You will need libusb and libftdi:
-    libusb:  http://www.libusb.org/
-    libftdi: http://www.intra2net.com/en/developer/libftdi/
-    
-    It has been tested on Linux 32-bit and 64-bit. 
-
-    On Ubuntu 10.04, you can get libusb using this:
-        sudo apt-get install libusb-dev libusb-0.1-4
-
-    To build, there is an example Makefile included.
-    Just type 'make'.
-    
-    The Makefile creates a shared DLL (libkondo.so) and static lib (libkondo.a)
-        in the main directory, which you can use in your programs. 
-
-2. USAGE
-
-    Most of the function documentation is in the comments in libkondo.c
-    There are also some usage examples in the utils directory,
-    And a demo of using the wiimote to remote-control the rcb4 in "wii"
-    And Java bindings (using SWIG) example in "java"
-    And Python bindings (using SWIG) example in "python"
-    And serial (termios API) examples in "serial"
-
-3. LICENSE AND COPYRIGHT
-
-    Copyright 2010 - Christopher Vo (cvo1@cs.gmu.edu)
-    George Mason University - Autonomous Robotics Laboratory
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-    
-       http://www.apache.org/licenses/LICENSE-2.0
-    
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+In this repo, we extend the previous work by including/providing:
+* CMakeLists (instead of Makefiles)
+* Python wrappers (using Cython)
+* Sample codes to run different motions
+* ROS nodes
+* Code that interfaces with sensors (such as camera, IMU, microphone,...) that are connected with the Raspi 3
+* URDF for the Kondo KHR-3HV robot (the original repo for the URDF can be found [here](https://github.com/ponta-mkii/roboticsAC))
 
 
-## New (by Brian)
+## Prerequisites
 
-* To install `libftdi` on Ubuntu (tested on 16.04):
+* An Ubuntu system (tested on Ubuntu 16.04, and on Ubuntu Mate 16.04 on a Raspi3) or MacOSX.
+* The ftdi library to communicate via usb to the board
+On Linux:
 ```bash
 $ sudo apt-get install libftdi-dev
 ```
-
-* To install `libusb` on Ubuntu (tested on 16.04):
-```bash 
-$ sudo apt-get install libusb-dev
+On MacOSX (with [Homebrew](https://brew.sh/)):
+```bash
+$ brew install libftdi
 ```
 
-In this version, instead of using Makefiles, I created CMakeLists files and cmake modules to compile the C and python code.
 
-To compile it:
+## How to use it?
+
+* Compiling the C++ code
+Compared to the original library, we created CMakeLists files to compile the code.
+In a terminal, type the following lines:
 ```bash
 $ mkdir build
 $ cd build
@@ -74,15 +37,37 @@ $ cmake ..
 $ make
 ```
 
-To launch `run_motion.py`, type the following commands from the `build` folder:
+
+* Compiling the Cython code
 ```bash
-$ cd python/
-$ python run_motion.py
+$ cd cython
+$ python setup.py build_ext --inplace
 ```
+You can now run one of the python code such as:
+```bash
+$ sudo python move.py
+```
+
 
 ## Troubleshooting
 
-* ImportError: dynamic module does not define init function (init_pykondo)
+* `ImportError: dynamic module does not define init function (init_pykondo)`
 This is probably due to compiling the library with a specific version of Python, and trying to launch the code with another version. By default, in the CMakeLists, it is looking for python 2.7 (see the cmake command `find_package(PythonLibs 2.7)`). If you are using another version, please update accordingly the appropriate cmake line.
 
-* Error: kond_init_custom: device not found
+* `ERROR: kondo_ftdi_error device not found`
+Make sure that the robot is turned on and its USB cable correctly connected to the computer (or Raspi).
+
+* `permission denied`
+You have to use `sudo` when running the code.
+
+
+## TODO
+
+* URDF
+    * write a node that broadcast the tf transforms
+    * add an <inertia> element within each link in the urdf (see [Using a URDF in Gazebo](http://gazebosim.org/tutorials/?tut=ros_urdf))
+* ROS node
+* (Py)KDL or RBDL: load urdf, FK and IK, etc.
+* compute CoM
+* write Python wrapper for the IMU
+* (C++/Python) code to use the camera, IMU, microphone,... on the Raspi 3
