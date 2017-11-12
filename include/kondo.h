@@ -234,7 +234,11 @@ public:
     int kondo_hold_servo(UINT servo_idx);
     int kondo_free_servos(std::vector<UINT> servo_indices);
     int kondo_hold_servos(std::vector<UINT> servo_indices);
-
+    int system_setting(UINT frame_cycle_time, UINT com_baud, UINT ics_baud);
+    int kondo_suspend_motion();
+    int kondo_set_program_counter_and_reset_EEPROM_update_flag();
+    int kondo_call_motion(UINT num);
+    int kondo_restart_motion();
 
 };
 

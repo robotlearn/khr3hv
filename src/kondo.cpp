@@ -1289,3 +1289,201 @@ int kondo::kondo_hold_servos(std::vector<UINT> servo_indices) {
     }
     return 0;
 }
+
+
+/*-----------------------------------------------------------------------------
+ * Set the COM and ICS baud rate, and the frame cycle time
+ *
+ * Returns: < 0 if error, 0 if OK
+ */
+int kondo::system_setting(UINT frame_cycle_time = RCB4_OPT_FRAME_15MS,
+                          UINT com_baud = RCB4_OPT_COM_BAUD_1250000,
+                          UINT ics_baud = RCB4_OPT_ICS_BAUD_625000) {
+
+    assert(&ki);
+    int ret;
+
+    system_config = (frame_cycle_time | com_baud | ics_baud);
+
+    ki.swap[0] = 0x09; // number of bytes
+    ki.swap[1] = RCB4_CMD_MOV; // move command (0x00)
+    ki.swap[2] = RCB4_COM_TO_RAM; // communication type RAM to Literal 
+    ki.swap[3] = 0x00; // COM address
+    ki.swap[4] = 0x00; // COM address
+    ki.swap[5] = 0x00; // COM address
+    ki.swap[6] = (UCHAR) system_config; // Literal data
+    ki.swap[7] = (UCHAR) system_config>>8; // Literal data
+    ki.swap[8] = kondo_checksum(8); // checksum
+
+    // send 9, expect 4 in response
+    if ((ret = kondo_trx(9, 4)) < 0)
+        return ret;
+
+    // verify response
+    // response should be 0x04 0x00 0x06 0x0A
+    // 0x04 is the number of bytes
+    // 0x00 is the move command
+    // 0x06 is RCB4_ACK_BYTE
+    // 0x0A is the checksum
+    if (ret != 4 || ki.swap[1] != RCB4_CMD_MOV)
+        kondo_error(ki, "Response was not valid.");
+
+    return 0;
+}
+
+/*-----------------------------------------------------------------------------
+ * Suspend current motion
+ *
+ * Returns: < 0 if error, 0 if OK
+ */
+int kondo::kondo_suspend_motion() {
+    return system_setting();
+}
+
+/*-----------------------------------------------------------------------------
+ * Set program counter and reset the EEPROM update flag
+ *
+ * Returns: < 0 if error, 0 if OK
+ */
+int kondo::kondo_set_program_counter_and_reset_EEPROM_update_flag() {
+    assert(&ki);
+    int ret;
+
+    ki.swap[0] = 0x11; // number of bytes
+    ki.swap[1] = RCB4_CMD_MOV; // move command (0x00)
+    ki.swap[2] = RCB4_COM_TO_RAM; // communication type RAM to Literal
+    ki.swap[3] = 0x02; // COM address
+    ki.swap[4] = 0x00; // COM address
+    ki.swap[5] = 0x00; // COM address
+    ki.swap[6] = 0x4B; // Literal data
+    ki.swap[7] = 0x04; // Literal data
+    ki.swap[8] = 0x00; // Literal data
+    ki.swap[9] = 0x00; // Literal data
+    ki.swap[10] = 0x00; // Literal data
+    ki.swap[11] = 0x00; // Literal data
+    ki.swap[12] = 0x00; // Literal data
+    ki.swap[13] = 0x00; // Literal data
+    ki.swap[14] = 0x00; // Literal data
+    ki.swap[15] = 0x00; // Literal data
+    ki.swap[16] = kondo_checksum(16);
+
+    // send 17, expect 4 in response
+    if ((ret = kondo_trx(17, 4)) < 0)
+        return ret;
+
+    // verify response
+    // response should be 0x04 0x00 0x06 0x0A
+    // 0x04 is the number of bytes
+    // 0x00 is the move command
+    // 0x06 is RCB4_ACK_BYTE
+    // 0x0A is the checksum
+    if (ret != 4 || ki.swap[1] != RCB4_CMD_MOV)
+        kondo_error(ki, "Response was not valid.");
+
+    return 0;
+}
+
+/*-----------------------------------------------------------------------------
+ * Call the motion (i.e. it executes the specified motion)
+ * num is between 1 and 120
+ * Returns: < 0 if error, 0 if OK
+ */
+int kondo::kondo_call_motion(UINT num) {
+    assert(&ki);
+    int ret;
+
+    if (num < 1 || num > 120)
+        kondo_error(ki, "The parameter 'num' should be between 1 and 120!");
+
+    ki.swap[0] = 7; // number of bytes (0x07)
+    ki.swap[1] = RCB4_CMD_CALL; // Call command (0x0C)
+    ki.swap[2] = 0x80; // ROM address
+    ki.swap[3] = (UCHAR) (3+((8*num)%256)); // ROM address
+    UINT b = (1+8*num)/256;
+    ki.swap[4] = (UCHAR) b; // ROM address
+    ki.swap[5] = 0x00; // condition to jump (C and Z flag OFF and same condition)
+    ki.swap[6] = kondo_checksum(6);
+
+    // send 7, expect 4 in response
+    if ((ret = kondo_trx(7, 4)) < 0)
+        return ret;
+
+    // verify response
+    // response should be 0x04 0x00 0x06 0x0A
+    // 0x04 is the number of bytes
+    // 0x00 is the move command
+    // 0x0C is RCB4_CMD_CALL
+    // 0x0A is the checksum
+    if (ret != 4 || ki.swap[1] != RCB4_CMD_CALL)
+        kondo_error(ki, "Response was not valid.");
+
+    return 0;
+}
+
+/*-----------------------------------------------------------------------------
+ * Restart/Continue the motion (that has been suspended)
+ * In terms of bytes, this is very similar to system_setting() or
+ * kondo_suspend_motion(), except that we add 3 on the 7th byte.
+ *
+ * Returns: < 0 if error, 0 if OK
+ */
+int kondo::kondo_restart_motion() {
+    assert(&ki);
+    int ret;
+
+    ki.swap[0] = 0x09; // number of bytes
+    ki.swap[1] = RCB4_CMD_MOV; // move command (0x00)
+    ki.swap[2] = RCB4_COM_TO_RAM; // communication type RAM to Literal 
+    ki.swap[3] = 0x00; // COM address
+    ki.swap[4] = 0x00; // COM address
+    ki.swap[5] = 0x00; // COM address
+    ki.swap[6] = (UCHAR) (system_config + 3); // Literal data
+    ki.swap[7] = (UCHAR) system_config>>8; // Literal data
+    ki.swap[8] = kondo_checksum(8); // checksum
+
+    // send 9, expect 4 in response
+    if ((ret = kondo_trx(9, 4)) < 0)
+        return ret;
+
+    // verify response
+    // response should be 0x04 0x00 0x06 0x0A
+    // 0x04 is the number of bytes
+    // 0x00 is the move command
+    // 0x06 is RCB4_ACK_BYTE
+    // 0x0A is the checksum
+    if (ret != 4 || ki.swap[1] != RCB4_CMD_MOV)
+        kondo_error(ki, "Response was not valid.");
+
+    return 0;
+}
+
+/*-----------------------------------------------------------------------------
+ * Play a motion with given slot number.
+ * Blocks (does not return) until timeout time has elapsed or motion is done.
+ * So if you want to run a motion without blocking, just use max_wait = 0
+ * Returns < 0: Error
+ * Returns 0: All good
+ */
+int kondo::kondo_play_motion( UINT num, long timeout)
+{
+    assert(&ki);
+    int ret;
+
+    ret = kondo_suspend_motion();
+    if (ret < 0)
+        kondo_error(ki, "Error while suspending the motion.");
+
+    ret = kondo_set_program_counter_and_reset_EEPROM_update_flag();
+    if (ret < 0)
+        kondo_error(ki, "Error while setting the program counter and resetting the EEPROM update flag.");
+
+    ret = kondo_call_motion(num);
+    if (ret < 0)
+        kondo_error(ki, "Error while calling the motion.");
+
+    ret = kondo_restart_motion();
+    if (ret < 0)
+        kondo_error(ki, "Error while restarting the motion.");
+
+    return 0;
+}
