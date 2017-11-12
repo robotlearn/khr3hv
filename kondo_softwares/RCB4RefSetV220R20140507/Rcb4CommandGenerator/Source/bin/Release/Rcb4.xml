@@ -1,0 +1,2513 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Rcb4</name>
+    </assembly>
+    <members>
+        <member name="T:Rcb4.Rcb4">
+            <summary>
+            Rcb4基本データおよびアドレスデータ
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Version">
+            <summary>
+            ライブラリバージョン
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.MaxServoNumber">
+            <summary>
+            サーボモーターの最大使用可能数（35固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.DoNothing">
+            <summary>
+            何もしない設定（int.MaxValue）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.MaxRamAddress">
+            <summary>
+            RAMの指定できるアドレスの最大値（0x48F固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.MaxRomAddress">
+            <summary>
+            ROMで指定できるアドレスの最大値（0x3FFFF固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.MaxDeviceNumner">
+            <summary>
+            接続可能な最大デバイス番号（35固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.ConfigDataCount">
+            <summary>
+            システム設定のデータバイト数（2固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.ConfigRamAddress">
+            <summary>
+            システム設定RAMアドレス(RAM)（0x00固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.ConfigDataRomAddress">
+            <summary>
+            Configデータを書き込むROM上のアドレス（1500固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.ConfigCmdAddress">
+            <summary>
+            Configデータ書き込みコマンド保存ROMアドレス（0固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.ConfigCmdExecute">
+            <summary>
+            接続機器を実行する（0x0333固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.MainLoopCmd">
+            <summary>
+            メインルーチンの先頭アドレス（0x0044B固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.TimerWaitCmd">
+            <summary>
+            タイマーループで待ち時間を作る（0x038D固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.TimerLoopAddress">
+            <summary>
+            タイマーループの繰り返し位置
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.ProgramCounterDataCount">
+            <summary>
+            プログラムカウンターに使うデータバイト数（3固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.ProgramCounterRamAddress">
+            <summary>
+            プログラムカウンター設定アドレス(RAM)（0x02固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.StackPointerRamAddress">
+            <summary>
+            スタックポインターのアドレス（0x05固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.StackPointerDataCount">
+            <summary>
+            スタックポインターに使うデータバイト数（1固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.RomUpdateDataCount">
+            <summary>
+            EEPROM更新フラグ設定データバイト数（5固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.RomUpdateRamAddress">
+            <summary>
+            EEPROM更新フラグ設定アドレス(RAM)（0x07固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.AdrSingleDataCount">
+            <summary>
+            AD変換器基準値のデータバイト数（１チャンネルあたり）アドレスオフセット（2固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.AdrDataCount">
+            <summary>
+            AD変換器基準値のデータ総バイト数（22固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.AdrRamAddress">
+            <summary>
+            AD変換器基準値開始アドレス(RAM)（0x0C固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.AdrCmdRomAddress">
+            <summary>
+            AD変換器の基準データをRAMへ展開するコマンドを保存するアドレス（0x001B固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.AdrDataRomAddress">
+            <summary>
+            AD変換器基準値開始アドレス(ROM)（0x08F6固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Adr0RamAddress">
+            <summary>
+            AD変換器0基準値アドレス(RAM)（0x0C固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Adr1RamAddress">
+            <summary>
+            AD変換器1基準値アドレス(RAM)（0x0E固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Adr2RamAddress">
+            <summary>
+            AD変換器2基準値アドレス(RAM)（0x10固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Adr3RamAddress">
+            <summary>
+            AD変換器3基準値アドレス(RAM)（0x12固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Adr4RamAddress">
+            <summary>
+            AD変換器4基準値アドレス(RAM)（0x14固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Adr5RamAddress">
+            <summary>
+            AD変換器5基準値アドレス(RAM)（0x16固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Adr6RamAddress">
+            <summary>
+            AD変換器6基準値アドレス(RAM)（0x18固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Adr7RamAddress">
+            <summary>
+            AD変換器7基準値アドレス(RAM)（0x1A固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Adr8RamAddress">
+            <summary>
+            AD変換器8基準値アドレス(RAM)（0x1C固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Adr9RamAddress">
+            <summary>
+            AD変換器9基準値アドレス(RAM)（0x1E固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Adr10RamAddress">
+            <summary>
+            AD変換器10基準値アドレス(RAM)（0x20固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.AdcSingleDataCount">
+            <summary>
+            AD変換値のデータバイト数（１チャンネルあたり）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.AdcDataCount">
+            <summary>
+            AD変換値のデータバイト数
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.AdcRamAddress">
+            <summary>
+            AD変換器0の値
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.AdcRomAddress">
+            <summary>
+            AD変換器0の値（未定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Adc0RamAddress">
+            <summary>
+            AD変換器0のアドレス値（0x22固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Adc1RamAddress">
+            <summary>
+            AD変換器1のアドレス値（0x24固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Adc2RamAddress">
+            <summary>
+            AD変換器2のアドレス値（0x26固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Adc3RamAddress">
+            <summary>
+            AD変換器3のアドレス値（0x28固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Adc4RamAddress">
+            <summary>
+            AD変換器4のアドレス値（0x2A固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Adc5RamAddress">
+            <summary>
+            AD変換器5のアドレス値（0x2C固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Adc6RamAddress">
+            <summary>
+            AD変換器6のアドレス値（0x2E固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Adc7RamAddress">
+            <summary>
+            AD変換器7のアドレス値（0x30固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Adc8RamAddress">
+            <summary>
+            AD変換器8のアドレス値（0x32固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Adc9RamAddress">
+            <summary>
+            AD変換器9のアドレス値（0x34固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Adc10RamAddress">
+            <summary>
+            AD変換器10のアドレス値（0x36固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.PioDataCount">
+            <summary>
+            Pio値のデータバイト数（2固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.PioPortDataCount">
+            <summary>
+            Pioポート値のデータバイト数（2固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.PioPortAddress">
+            <summary>
+            PIOポート値（0x38固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.PioAddress">
+            <summary>
+            PIOポート方向ベクトル（0x3A固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.PioConfigCmdAddress">
+            <summary>
+            Pio設定を書き出すコマンドのアドレス（0x0009固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.PioCmdAddress">
+            <summary>
+            Pioの初期状態を書き出すコマンドをのアドレス（0x0012固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.TimerSingleDataCount">
+            <summary>
+            タイマーカウンターのデータバイト数（１チャンネルあたり）（2固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.TimerDataCount">
+            <summary>
+            タイマーカウンターのデータバイト数（0x8固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.TimerRamAddress">
+            <summary>
+            タイマーカウンター0（0x3C固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.TimerOverFlow">
+            <summary>
+            タイマーのオーバーフローを見る（0x8000固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Timer0RamAddress">
+            <summary>
+            タイマーカウンター0（0x3C固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Timer1RamAddress">
+            <summary>
+            タイマーカウンター1（0x3E固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Timer2RamAddress">
+            <summary>
+            タイマーカウンター2（0x40固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Timer3RamAddress">
+            <summary>
+            タイマーカウンター3（0x42固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.ServoSingleDataCount">
+            <summary>
+            サーボモーターの個別データ数（20固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.ServoSingleAddressOffset">
+            <summary>
+            １個あたりのサーボモーターのアドレスオフセット（2固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.ServoDataCount">
+            <summary>
+            サーボモーターの総データ数（700固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.ServoRamRefAddress">
+            <summary>
+            サーボモーター開始RAMアドレス（0x44固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.ServoRamAddress">
+            <summary>
+            サーボモーター個別データアドレス（0x90固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.ServoCmdRamAddress">
+            <summary>
+            サーボモーターの参照アドレスを書き込むコマンドのROMアドレス（0x01A7固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.ServoCmdRomAddress">
+            <summary>
+            サーボモーターの参照アドレスを書き込むコマンドのROMアドレス（0x0026固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.ServoDataRamAddress">
+            <summary>
+            サーボモーターの参照アドレスを保存するROMアドレス（1502固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.ServoDataRomAddress">
+            <summary>
+            サーボモーターの個別データを保存するROMアドレス（1574固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.ServoCmdSetPosAddress">
+            <summary>
+            サーボモーターの現在位置を目標位置へ書き戻すコマンドを保管するROM上の先頭アドレス（0x041A固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.ServoDataSetPosCount">
+            <summary>
+            ポジションを書き戻す命令のデータ数（10固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.ServoCmdFree">
+            <summary>
+            フリーコマンドを書き出す先頭アドレス（0x02F1固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.ServoCmdHold">
+            <summary>
+            ホールドモードに移行するコマンドを書き出す命令の先頭アドレス（0x0358固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.ServoCmdHome">
+            <summary>
+            サーボモーターをホームポジションへ移動するコマンドを保管するROM上の先頭アドレス（0x03A7固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.CategoryAddressOffset">
+            <summary>
+            RAM、ROM上のカテゴリー（種別）データの位置（先頭アドレスからのオフセット）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.IDAddressOffset">
+            <summary>
+            RAM、ROM上のIDデータの位置（先頭アドレスからのオフセット）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.TrimAddressOffset">
+            <summary>
+            RAM、ROM上のトリムデータの位置（先頭アドレスからのオフセット）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.MotorPositionAddressOffset">
+            <summary>
+            RAM、ROM上の実測値データの位置（先頭アドレスからのオフセット）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.PositionAddressOffset">
+            <summary>
+            RAM、ROM上のポジションデータの位置（先頭アドレスからのオフセット）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.frameAddressOffset">
+            <summary>
+            RAM、ROM上のフレーム数データ（補間速度・スピード）の位置（先頭アドレスからのオフセット）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Mixing1AddressOffset">
+            <summary>
+            RAM、ROM上のミキシング１データの位置（先頭アドレスからのオフセット）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Mixing1RatioAddressOffset">
+            <summary>
+            RAM、ROM上のミキシング１倍率データの位置（先頭アドレスからのオフセット）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Mixing2AddressOffset">
+            <summary>
+            RAM、ROM上のミキシング１データの位置（先頭アドレスからのオフセット）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Mixing2RatioAddressOffset">
+            <summary>
+            RAM、ROM上のミキシング１倍率データの位置（先頭アドレスからのオフセット）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.FreePosition">
+            <summary>
+            フリーにする
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.HoldPosition">
+            <summary>
+            ホールドポジション
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.Neutral">
+            <summary>
+            ニュートラル
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.KRI3SingleAddressOffset">
+            <summary>
+            データアドレスの大きさ
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.KRI3DataCount">
+            <summary>
+            KRI3のデータを書き出すためのメモリーサイズ
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.KRI3RamRefAddress">
+            <summary>
+            KRI3のデータを参照するアドレス
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.KRI3RamAddress">
+            <summary>
+            KRI3の実データを書き出すアドレス
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.KRI3DataRamAddress">
+            <summary>
+            KRI-3のユーザーデータアドレスを保管する
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.KRI3DataRomAddress">
+            <summary>
+            KRI-3の初期化データを保存するアドレス
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.KRI3CmdRamAddress">
+            <summary>
+            KRI-3のユーザーデータアドレスをデバイス参照アドレスへ登録する
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.KRI3CmdRomAddress">
+            <summary>
+            KRI-3の初期データをメモリーへ展開するコマンドを登録するアドレス
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.KRI3IdAddress">
+            <summary>
+            KRI-3のIDが記録されているアドレス
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.KRI3ButtonDataAddress">
+            <summary>
+            KRI-3のボタンデータが記録されているアドレス
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.KRI3Pa1Address">
+            <summary>
+            PA1データ
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.KRI3Pa2Address">
+            <summary>
+            PA2データ
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.KRI3Pa3Address">
+            <summary>
+            PA3データ
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.KRI3Pa4Address">
+            <summary>
+            PA4データ
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.VectorJumpAddress">
+            <summary>
+            ジャンプベクタ参照アドレス（0x008C固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.VectorJumpRamAddress">
+            <summary>
+            ジャンプベクトル格納RAMアドレス（0x357固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.VectorJumpCmdRamAddress">
+            <summary>
+            ジャンプベクトルをROMからRAMへ展開するコマンドの先頭アドレス（0x02DB固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.VectorJumpDataRamAddress">
+            <summary>
+            ジャンプベクトル登録アドレスに参照アドレスを書き込む命令を保存するアドレス（0x0919固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.VectorJumpDataRomAddress">
+            <summary>
+            ジャンプベクトルのデータを保存する先頭アドレス（0x091B固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.VectorJumpCmdRomAddress">
+            <summary>
+            ジャンプベクトル参照アドレス（0x01C8固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.VectorJumpSigleDataCount">
+            <summary>
+            ジャンプベクトルの個別データ数（8固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.VectorJumpMaxBranchCount">
+            <summary>
+            最大分岐数（25固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.VectorJumpCmdCount">
+            <summary>
+            ジャンプベクターの命令長（11固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.MaxRomAtOnce">
+            <summary>
+            一度に読み書きできるデータ数（128固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.RomAddress">
+            <summary>
+            ROM開始アドレス（0x00固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.RomDataCount">
+            <summary>
+            ROM最大数（256kByte）（0x3FFFF固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.RamAddress">
+            <summary>
+            RAM開始アドレス（0x00固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.RamDataCount">
+            <summary>
+            RAM最大数（1kByte:ユーザーロム）（0x3FF固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.MotionRomAddress">
+            <summary>
+            MotitonData開始アドレス
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.MotionSingleDataCount">
+            <summary>
+            Motionあたりのデータ数
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.MaxMotionCount">
+            <summary>
+            登録可能モーション数
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.MotionDataCount">
+            <summary>
+            モーションデータ総バイト数
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.StartupCmdRomAddress">
+            <summary>
+            スタートアップモーションを再生するコマンドのアドレス
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.DefaultStartupAddress">
+            <summary>
+            スタートアップモーションのアドレス
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserDataRamAddress">
+            <summary>
+            サーボモーターに割り当てるユーザーデータアドレス（0x90固定、変更不可）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserDataCount">
+            <summary>
+            ユーザーデータエリア（0x3FF固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.CounterRamAddress">
+            <summary>
+            カウンターデータアドレス(RAM)（0x457固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.CounterSingleDataCount">
+            <summary>
+            カウンター個別のデータバイト数（1固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.CounterDataCount">
+            <summary>
+            カウンターの総データバイト数(CounterSingleDataCount x 10)（10固定）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserParameterRamAddress">
+            <summary>
+            カウンターデータアドレス(RAM)
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserParameterSingleDataCount">
+            <summary>
+            カウンター個別のデータバイト数
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserParameterDataCount">
+            <summary>
+            カウンターの総データバイト数(CounterSingleDataCount x UserParameterDataCount)
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserParameter01">
+            <summary>
+            ユーザー任意変数アドレス01
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserParameter02">
+            <summary>
+            ユーザー任意変数アドレス02
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserParameter03">
+            <summary>
+            ユーザー任意変数アドレス03
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserParameter04">
+            <summary>
+            ユーザー任意変数アドレス04
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserParameter05">
+            <summary>
+            ユーザー任意変数アドレス05
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserParameter06">
+            <summary>
+            ユーザー任意変数アドレス06
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserParameter07">
+            <summary>
+            ユーザー任意変数アドレス07
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserParameter08">
+            <summary>
+            ユーザー任意変数アドレス08
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserParameter09">
+            <summary>
+            ユーザー任意変数アドレス09
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserParameter10">
+            <summary>
+            ユーザー任意変数アドレス10
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserParameter11">
+            <summary>
+            ユーザー任意変数アドレス11
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserParameter12">
+            <summary>
+            ユーザー任意変数アドレス12
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserParameter13">
+            <summary>
+            ユーザー任意変数アドレス13
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserParameter14">
+            <summary>
+            ユーザー任意変数アドレス14
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserParameter15">
+            <summary>
+            ユーザー任意変数アドレス15
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserParameter16">
+            <summary>
+            ユーザー任意変数アドレス16
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserParameter17">
+            <summary>
+            ユーザー任意変数アドレス17
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserParameter18">
+            <summary>
+            ユーザー任意変数アドレス18
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserParameter19">
+            <summary>
+            ユーザー任意変数アドレス19
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.UserParameter20">
+            <summary>
+            ユーザー任意変数アドレス20
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.SystemTmp1">
+            <summary>
+            ユーザー任意変数アドレス20
+            </summary>
+        </member>
+        <member name="F:Rcb4.Rcb4.SystemTmp2">
+            <summary>
+            ユーザー任意変数アドレス20
+            </summary>
+        </member>
+        <member name="M:Rcb4.Rcb4.AdRead(System.Int32,System.Int32)">
+            <summary>
+            ADポートを範囲指定して、データを取り込みます。データは連続した領域を読み取ります
+            </summary>
+            <param name="start">読み取り範囲指定開始ポート番号</param>
+            <param name="end">読み取り範囲指定終了ポート番号</param>
+            <returns>AD値を範囲指定で読み取るコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Rcb4.AdRead(System.Int32)">
+            <summary>
+            指定ポートからAD値を読み取ります
+            </summary>
+            <param name="port">ポート番号0~10(0はバッテリー専用ポート)</param>
+            <returns>AD値を読み取るコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Rcb4.AdReadAll">
+            <summary>
+            全ポートのAD値を読み取る
+            </summary>
+            <returns>AD値を読み取るコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Rcb4.AdReferenceRead(System.Int32,System.Int32)">
+            <summary>
+            AD基準値ポートを範囲指定して、データを取り込みます。データは連続した領域を読み取ります
+            </summary>
+            <param name="start">読み取り範囲指定開始ポート番号</param>
+            <param name="end">読み取り範囲指定終了ポート番号</param>
+            <returns>AD基準値を範囲指定で読み取るコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Rcb4.AdReferenceRead(System.Int32)">
+            <summary>
+            指定ポートからAD基準値を読み取ります
+            </summary>
+            <param name="port">ポート番号0~10(0はバッテリー専用ポート)</param>
+            <returns>AD基準値を読み取るコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Rcb4.AdReferenceReadAll">
+            <summary>
+            全ポートのAD基準値を読み取る
+            </summary>
+            <returns>AD値を読み取るコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Rcb4.PioRead">
+            <summary>
+            指定したPIOポートの状態を読み取ります。PIOポートはあらかじめ入力設定にすること
+            </summary>
+            <returns>読み取りコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Rcb4.PioWrite(System.Byte,System.Byte)">
+            <summary>
+            PIOポートに書き込みます。PIOポートはあらかじめ出力設定にすること
+            </summary>
+            <param name="pio_l">PIOポートの下位バイト情報</param>
+            <param name="pio_h">PIOポートの上位バイト情報</param>
+            <returns>PIOポート設定コマンド</returns>
+        </member>
+        <member name="M:Rcb4.Rcb4.PioDirWrite(System.Byte,System.Byte)">
+            <summary>
+            PIOポートの入出力設定を書き出します
+            </summary>
+            <param name="piodir_l">PIO入出力設定ポート下位バイト情報</param>
+            <param name="piodir_h">PIO入出力設定ポート上位バイト情報</param>
+            <returns>PIO入出力設定コマンド</returns>
+        </member>
+        <member name="M:Rcb4.Rcb4.PositionRead(System.Int32)">
+            <summary>
+            指定ICS番号のサーボモーターの現在位置を取得します
+            </summary>
+            <param name="ics_no">サーボモーターのICS番号</param>
+            <remarks>ICS番号についてはリファレンスマニュアルを参照すること。取り付けられていないサーボモーターの値を取得した場合は不定値となります</remarks>
+            <returns>現在位置を取得するコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Rcb4.PositionRead(System.Int32,System.Int32)">
+            <summary>
+            指定ID番号、ポートのサーボモーターの現在位置を取得します
+            </summary>
+            <param name="id">サーボモーターのID番号</param>
+            <param name="port">SIO1~4の場合は0、SIO5~8の場合は1を指定すること</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">portに0または1以外を指定した場合にスロー</exception>
+            <returns>現在位置を取得するコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Rcb4.TrimRead(System.Int32)">
+            <summary>
+            指定ICS番号のサーボモーターのトリム値を取得します
+            </summary>
+            <param name="ics_no">サーボモーターのICS番号</param>
+            <remarks>ICS番号についてはリファレンスマニュアルを参照すること。取り付けられていないサーボモーターの値を取得した場合は不定値となります</remarks>
+            <returns>トリム値を取得するコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Rcb4.TrimRead(System.Int32,System.Int32)">
+            <summary>
+            指定ID番号、ポートのサーボモーターのトリム値を取得します
+            </summary>
+            <param name="id">サーボモーターのID番号</param>
+            <param name="port">SIO1~4の場合は0、SIO5~8の場合は1を指定すること</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">portに0または1以外を指定した場合にスロー</exception>
+            <returns>トリム値を取得するコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Rcb4.MixingSourceRead(System.Int32,System.Int32)">
+            <summary>
+            指定ICS番号のサーボモーターのミキシングソースを取得します
+            </summary>
+            <param name="ics_no">サーボモーターのICS番号</param>
+            <param name="mix_src">ミキシングソースを0または1で指定</param>
+            <remarks>ICS番号についてはリファレンスマニュアルを参照すること。取り付けられていないサーボモーターの値を取得した場合は不定値となります</remarks>
+            <returns>ミキシングソースを取得するコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Rcb4.MixingSourceRead(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            指定ID番号、ポートのサーボモーターのミキシングソースを取得します
+            </summary>
+            <param name="id">サーボモーターのID番号</param>
+            <param name="port">SIO1~4の場合は0、SIO5~8の場合は1を指定すること</param>
+            <param name="mix_src">ミキシングソースを0または1で指定</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">portに0または1以外を指定した場合にスロー</exception>
+            <returns>ミキシングソースを取得するコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Rcb4.MixingRatioRead(System.Int32,System.Int32)">
+            <summary>
+            指定ICS番号のサーボモーターのミキシングソースを取得します
+            </summary>
+            <param name="ics_no">サーボモーターのICS番号</param>
+            <param name="mix_src">ミキシングソースを0または1で指定</param>
+            <remarks>ICS番号についてはリファレンスマニュアルを参照すること。取り付けられていないサーボモーターの値を取得した場合は不定値となります</remarks>
+            <returns>ミキシングソースを取得するコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Rcb4.MixingRatioRead(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            指定ID番号、ポートのサーボモーターのミキシングソースを取得します
+            </summary>
+            <param name="id">サーボモーターのID番号</param>
+            <param name="port">SIO1~4の場合は0、SIO5~8の場合は1を指定すること</param>
+            <param name="mix_src">ミキシングソースを0または1で指定</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">portに0または1以外を指定した場合にスロー</exception>
+            <returns>ミキシングソースを取得するコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Rcb4.ConfigRead">
+            <summary>
+            RAMから設定データを取得する
+            </summary>
+            <returns>RAMから設定データを取得するコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Rcb4.Suspend(Rcb4.Config)">
+            <summary>
+            モーションの一時停止
+            </summary>
+            <param name="config">２バイトのRCB-4コンフィグデータ</param>
+            <returns>モーション一時停止コマンドバイトリスト</returns>
+        </member>
+        <member name="M:Rcb4.Rcb4.SetProgramCounter(System.Int32)">
+            <summary>
+            プログラムカウンターのセット
+            </summary>
+            <param name="address">プログラムカウンターにセットするアドレスを指定する</param>
+            <returns>プログラムカウンターをセットするコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Rcb4.ResetProgramCounter(System.Int32)">
+            <summary>
+            プログラムカウンターとスタックポインタなどのリセット
+            EEPROMデータは自動的に初期化されます
+            </summary>
+            <param name="address">プログラムカウンターにセットするアドレスを指定する</param>
+            <returns>プログラムカウンターをセットするコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Rcb4.Play(System.Int32)">
+            <summary>
+            モーション再生コマンドひとまとまりを返します
+            </summary>
+            <param name="address">モーション開始アドレス</param>
+            <returns>モーション再生コマンド</returns>
+        </member>
+        <member name="M:Rcb4.Rcb4.Play(System.Byte)">
+            <summary>
+            モーション再生コマンドひとまとまりを返します
+            </summary>
+            <param name="mot_num">モーション番号（1 ~ 120）</param>
+            <returns>モーション再生コマンド</returns>
+        </member>
+        <member name="M:Rcb4.Rcb4.Resume(Rcb4.Config)">
+            <summary>
+            モーションレジューム
+            </summary>
+            <param name="config">現在のシステム設定値</param>
+            <returns>モーションを再開するコマンド</returns>
+        </member>
+        <member name="T:Rcb4.Resources.Messages">
+            <summary>
+              ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+            </summary>
+        </member>
+        <member name="P:Rcb4.Resources.Messages.ResourceManager">
+            <summary>
+              このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+            </summary>
+        </member>
+        <member name="P:Rcb4.Resources.Messages.Culture">
+            <summary>
+              厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+              現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+            </summary>
+        </member>
+        <member name="P:Rcb4.Resources.Messages.ExceptionCheckSum">
+            <summary>
+              チェックサムが正しくありません（0x{0,0:X8}） に類似しているローカライズされた文字列を検索します。
+            </summary>
+        </member>
+        <member name="P:Rcb4.Resources.Messages.ExceptionDeviceOutOfReference">
+            <summary>
+              デバイス番号が最大数を超えました。 に類似しているローカライズされた文字列を検索します。
+            </summary>
+        </member>
+        <member name="P:Rcb4.Resources.Messages.ExceptionInvalidCommand">
+            <summary>
+              命令コードが不正です（{0}） に類似しているローカライズされた文字列を検索します。
+            </summary>
+        </member>
+        <member name="P:Rcb4.Resources.Messages.ExceptionInvalidDataLength">
+            <summary>
+              データ数が足りません（{0}） に類似しているローカライズされた文字列を検索します。
+            </summary>
+        </member>
+        <member name="P:Rcb4.Resources.Messages.ExceptionOutOfRange">
+            <summary>
+              指定した範囲が上限値を超えました。 に類似しているローカライズされた文字列を検索します。
+            </summary>
+        </member>
+        <member name="P:Rcb4.Resources.Messages.ExceptionRamOutOfReference">
+            <summary>
+              ROMメモリーのアドレス上限値を超えました。 に類似しているローカライズされた文字列を検索します。
+            </summary>
+        </member>
+        <member name="P:Rcb4.Resources.Messages.ExceptionRomOutOfReference">
+            <summary>
+              ROMメモリーのアドレス上限値を超えました。 に類似しているローカライズされた文字列を検索します。
+            </summary>
+        </member>
+        <member name="P:Rcb4.Resources.Messages.ExceptionTypeMissMatch">
+            <summary>
+              SRCまたはDESTにおいて指定したタイプが間違っています。 に類似しているローカライズされた文字列を検索します。
+            </summary>
+        </member>
+        <member name="T:Rcb4.Command">
+            <summary>
+            RCB-4コマンドインターフェイスクラス
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandContinue">
+            <summary>
+            命令を飛ばして続ける
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandBreak">
+            <summary>
+            命令停止
+            </summary>
+        </member>
+        <member name="M:Rcb4.Command.GetBit(System.Byte,System.Byte)">
+            <summary>
+            任意のbyteデータから、ビットフィールドを読み込む
+            </summary>
+            <param name="b">データ</param>
+            <param name="bit">読み込むビットフィールド（0~7）</param>
+            <returns>0または1を返す</returns>
+        </member>
+        <member name="M:Rcb4.Command.SetBit(System.Byte,System.Byte)">
+            <summary>
+            バイトデータ内の指定ビットを１にする
+            </summary>
+            <param name="b">データ</param>
+            <param name="bit">指定ビット番号</param>
+            <returns>結果を返す</returns>
+        </member>
+        <member name="M:Rcb4.Command.ClearBit(System.Byte,System.Byte)">
+            <summary>
+            バイトデータ内の指定ビットを１にする
+            </summary>
+            <param name="b">データ</param>
+            <param name="bit">指定ビット番号</param>
+            <returns>結果を返す</returns>
+        </member>
+        <member name="M:Rcb4.Command.GetVersionInfo">
+            <summary>
+            バージョン情報を返す
+            </summary>
+            <returns>作成した命令（{ 0x03, 0xFD, 0x00 }固定）</returns>
+        </member>
+        <member name="M:Rcb4.Command.MoveBase(Rcb4.Command.DeviceTypes,Rcb4.Command.DeviceTypes,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte[])">
+            <summary>
+            Move命令ベース
+            </summary>
+            <param name="src">データ送信元の種類</param>
+            <param name="dest">データ送信先の種類</param>
+            <param name="src_addr_h">送信側データアドレスLOW</param>
+            <param name="src_addr_m">送信側データアドレスMIDIUM</param>
+            <param name="src_addr_l">送信側データアドレスHIGH</param>
+            <param name="dest_addr_h">受信側データアドレスLOW</param>
+            <param name="dest_addr_m">受信側データアドレスMIDIUM</param>
+            <param name="dest_addr_l">受信側データアドレスHIGH</param>
+            <param name="src_offset">アドレスオフセット</param>
+            <param name="src_devNo">デバイス番号</param>
+            <param name="dest_offset">アドレスオフセット</param>
+            <param name="dest_devNo">デバイス番号</param>
+            <param name="size">送信データバイト数</param>
+            <param name="data">送信データ</param>
+            <returns>文字列に変換されたコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.Move(Rcb4.Command.DeviceTypes,Rcb4.Command.DeviceTypes,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte[])">
+            <summary>
+            Moveコマンド（詳細）
+            </summary>
+            <param name="src">データ送信元の種類</param>
+            <param name="dest">データ送信先の種類</param>
+            <param name="src_addr_l">送信側データアドレスHIGH</param>
+            <param name="src_addr_m">送信側データアドレスMIDIUM</param>
+            <param name="src_addr_h">送信側データアドレスLOW</param>
+            <param name="dest_addr_l">受信側データアドレスHIGH</param>
+            <param name="dest_addr_m">受信側データアドレスMIDIUM</param>
+            <param name="dest_addr_h">受信側データアドレスLOW</param>
+            <param name="src_offset">アドレスオフセット</param>
+            <param name="src_devNo">デバイス番号</param>
+            <param name="dest_offset">アドレスオフセット</param>
+            <param name="dest_devNo">デバイス番号</param>
+            <param name="size">送信データバイト数</param>
+            <param name="data">送信データ</param>
+            <returns>文字列に変換されたコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.Move(Rcb4.Command.DeviceTypes,Rcb4.Command.DeviceTypes,System.Int32,System.Int32,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte[])">
+            <summary>
+            Moveコマンド（基本）
+            </summary>
+            <param name="src">データ送信元の種類</param>
+            <param name="dest">データ送信先の種類</param>
+            <param name="src_addr">送信側32bitデータアドレス空間指定</param>
+            <param name="dest_addr">受信側32bitデータアドレス空間指定</param>
+            <param name="src_offset">アドレスオフセット</param>
+            <param name="src_devNo">デバイス番号</param>
+            <param name="dest_offset">アドレスオフセット</param>
+            <param name="dest_devNo">デバイス番号</param>
+            <param name="size">送信データバイト数</param>
+            <param name="data">送信データ</param>
+            <returns>文字列に変換されたコマンド</returns>
+            <example>Moveコマンド例（COMポートへRAMアドレス0xABCDのデータを10バイト出力する）
+            <code>
+            using Rcb4.Command;
+            ...
+            
+            // ByteListクラスを使うと簡単にデータを保存できる 
+            Extensions.Collections.ByteList command = new Extensions.Collections.ByteList ();
+            
+            command.Bytes = Rcb4.Command.Move (DeviceTypes.COM, DeviceTypes.RAM, 
+                0xABCD, 0, 0, 0, 10);
+            </code>
+            </example>
+            <example>Moveコマンド例（デバイス番号10へオフセット6でデータ0xABCDを書き込む）
+            <code>
+            Extensions.Collections.ByteList command = new Extensions.Collections.ByteList ();
+            
+            command.Bytes = Rcb4.Command.Move (DeviceTypes.COM, DeviceTypes.Device, 
+                0, 0, 6, 0, new byte[] { 0xCD, 0xAB });
+            </code>
+            </example>
+        </member>
+        <member name="M:Rcb4.Command.Move(Rcb4.Command.DeviceTypes,Rcb4.Command.DeviceTypes,System.Int32,System.Int32,System.Byte,System.Byte,System.Byte,System.Byte[])">
+            <summary>
+            簡易データ送受信コマンド
+            </summary>
+            <param name="src">データ送信元の種類</param>
+            <param name="dest">データ送信先の種類</param>
+            <param name="src_addr">送信側32bitデータアドレス空間指定</param>
+            <param name="dest_addr">受信側32bitデータアドレス空間指定</param>
+            <param name="offset">アドレスオフセット</param>
+            <param name="devNo">デバイス番号</param>
+            <param name="size">送信データバイト数</param>
+            <param name="data">送信データ</param>
+            <returns>バイト列に変換されたコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.MoveComToRam(System.Int32,System.Byte[])">
+            <summary>
+            リテラル値をRAMへ書き込みます
+            </summary>
+            <param name="dest_addr">受信側32bitデータアドレス空間指定</param>
+            <param name="data">送信データ</param>
+            <returns>バイト列に変換されたコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.MoveComToRom(System.Int32,System.Byte[])">
+            <summary>
+            リテラル値をROMへ書き込みます
+            </summary>
+            <param name="dest_addr">受信側32bitデータアドレス空間指定</param>
+            <param name="data">送信データ</param>
+            <returns>バイト列に変換されたコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.MoveComToDevice(System.Byte,System.Byte,System.Byte[])">
+            <summary>
+            リテラル値をデバイス（RAM）へ書き込みます
+            </summary>
+            <param name="offset">アドレスオフセット</param>
+            <param name="devNo">デバイス番号</param>
+            <param name="data">RAMへ書き込むデータバイト列</param>
+            <returns>バイト列に変換されたコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.MoveRamToCom(System.Int32,System.Byte)">
+            <summary>
+            RAM上のデータをCOMから出力する
+            </summary>
+            <param name="src_addr">送信側32bitデータアドレス空間指定</param>
+            <param name="size">送信データバイト数</param>
+            <returns>データを取得するコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.MoveRamToRam(System.Int32,System.Int32,System.Byte)">
+            <summary>
+            RAM上のデータをRAMへ書き込む
+            </summary>
+            <param name="src_addr">送信側32bitデータアドレス空間指定</param>
+            <param name="dest_addr">受け取り側データアドレス</param>
+            <param name="size">送信データバイト数</param>
+            <returns>データを取得するコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.MoveRamToRom(System.Int32,System.Int32,System.Byte)">
+            <summary>
+            RAM上のデータをROMへ書き込む
+            </summary>
+            <param name="src_addr">送信側32bitデータアドレス空間指定</param>
+            <param name="dest_addr">受け取り側データアドレス</param>
+            <param name="size">送信データバイト数</param>
+            <returns>データを取得するコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.MoveRomToCom(System.Int32,System.Byte)">
+            <summary>
+            ROM上のデータをCOMから出力する
+            </summary>
+            <param name="src_addr">送信側32bitデータアドレス空間指定</param>
+            <param name="size">送信データバイト数</param>
+            <returns>データを取得するコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.MoveDeviceToCom(System.Byte,System.Byte,System.Byte)">
+            <summary>
+            デバイスデータ（RAM）をCOMから出力する
+            </summary>
+            <param name="offset">デバイスを指定するアドレスの先頭位置からのオフセット</param>
+            <param name="devNo">デバイス番号（ICS番号）</param>
+            <param name="size">送信データバイト数</param>
+            <returns>データを取得するコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.MoveRomToRam(System.Int32,System.Int32,System.Byte)">
+            <summary>
+            ROM上のデータをRAMに書き出す
+            </summary>
+            <param name="src_addr">送信側32bitデータアドレス空間指定</param>
+            <param name="dest_addr">受け取り側データアドレス</param>
+            <param name="size">送信データバイト数</param>
+            <returns>データを取得するコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.CalcBase(Rcb4.Command.CommandTypes,Rcb4.Command.DeviceTypes,Rcb4.Command.DeviceTypes,Rcb4.Command.SubstitutionTypes,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte[])">
+            <summary>
+            拡張計算命令基本
+            </summary>
+            <param name="cType">計算の種類</param>
+            <param name="src">計算元データの種類</param>
+            <param name="dest">計算結果の保存場所の種類</param>
+            <param name="sType">結果の代入タイプ</param>
+            <param name="src_addr_l">ソースアドレス下位8bit</param>
+            <param name="src_addr_m">ソースアドレス中位8bit</param>
+            <param name="src_addr_h">ソースアドレス上位8bit</param>
+            <param name="dest_addr_l">宛先アドレス下位8bit</param>
+            <param name="dest_addr_m">宛先アドレス中位8bit</param>
+            <param name="dest_addr_h">宛先アドレス上位8bit</param>
+            <param name="offset">接続機器のアドレスオフセット</param>
+            <param name="devNo">接続機器番号</param>
+            <param name="size">計算データ数</param>
+            <param name="data">計算をする際のリテラル値</param>
+            <returns>拡張計算命令基本コマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.And(Rcb4.Command.DeviceTypes,Rcb4.Command.DeviceTypes,Rcb4.Command.SubstitutionTypes,System.Int32,System.Int32,System.Byte,System.Byte,System.Byte,System.Byte[])">
+            <summary>
+            論理積関数
+            </summary>
+            <param name="src">計算元データの種類</param>
+            <param name="dest">計算結果の保存場所の種類</param>
+            <param name="sType">結果の代入タイプ</param>
+            <param name="src_addr">計算元のデータアドレス</param>
+            <param name="dest_addr">計算結果を格納するデータアドレス</param>
+            <param name="offset">接続機器のアドレスオフセット</param>
+            <param name="devNo">接続機器番号</param>
+            <param name="size">計算データ数</param>
+            <param name="data">計算をする際のリテラル値</param>
+            <returns>コマンド列</returns>
+        </member>
+        <member name="M:Rcb4.Command.Or(Rcb4.Command.DeviceTypes,Rcb4.Command.DeviceTypes,Rcb4.Command.SubstitutionTypes,System.Int32,System.Int32,System.Byte,System.Byte,System.Byte,System.Byte[])">
+            <summary>
+            論理積関数
+            </summary>
+            <param name="src">計算元データの種類</param>
+            <param name="dest">計算結果の保存場所の種類</param>
+            <param name="sType">結果の代入タイプ</param>
+            <param name="src_addr">計算元のデータアドレス</param>
+            <param name="dest_addr">計算結果を格納するデータアドレス</param>
+            <param name="offset">接続機器のアドレスオフセット</param>
+            <param name="devNo">接続機器番号</param>
+            <param name="size">計算データ数</param>
+            <param name="data">計算をする際のリテラル値</param>
+            <returns>コマンド列</returns>
+        </member>
+        <member name="M:Rcb4.Command.Xor(Rcb4.Command.DeviceTypes,Rcb4.Command.DeviceTypes,Rcb4.Command.SubstitutionTypes,System.Int32,System.Int32,System.Byte,System.Byte,System.Byte,System.Byte[])">
+            <summary>
+            排他的論理和
+            </summary>
+            <param name="src">計算元データの種類</param>
+            <param name="dest">計算結果の保存場所の種類</param>
+            <param name="sType">結果の代入タイプ</param>
+            <param name="src_addr">計算元のデータアドレス</param>
+            <param name="dest_addr">計算結果を格納するデータアドレス</param>
+            <param name="offset">接続機器のアドレスオフセット</param>
+            <param name="devNo">接続機器番号</param>
+            <param name="size">計算データ数</param>
+            <param name="data">計算をする際のリテラル値</param>
+            <returns>コマンド列</returns>
+        </member>
+        <member name="M:Rcb4.Command.Not(Rcb4.Command.DeviceTypes,System.Int32,System.Byte,System.Byte,System.Byte,System.Byte[])">
+            <summary>
+            ビット反転
+            </summary>
+            <param name="dest">計算結果の保存場所の種類</param>
+            <param name="dest_addr">計算結果を格納するデータアドレス</param>
+            <param name="offset">接続機器のアドレスオフセット</param>
+            <param name="devNo">接続機器番号</param>
+            <param name="size">計算データ数</param>
+            <param name="data">計算をする際のリテラル値</param>
+            <returns>コマンド列</returns>
+        </member>
+        <member name="M:Rcb4.Command.Shift(Rcb4.Command.DeviceTypes,System.Int32,System.Byte,System.Byte,System.Byte,System.SByte)">
+            <summary>
+            シフト演算
+            </summary>
+            <param name="dest">計算結果の保存場所の種類</param>
+            <param name="dest_addr">計算結果を格納するデータアドレス</param>
+            <param name="offset">接続機器のアドレスオフセット</param>
+            <param name="devNo">接続機器番号</param>
+            <param name="size">計算データ数</param>
+            <param name="sft">シフト数</param>
+            <returns>コマンド列</returns>
+        </member>
+        <member name="M:Rcb4.Command.Add(Rcb4.Command.DeviceTypes,Rcb4.Command.DeviceTypes,Rcb4.Command.SubstitutionTypes,System.Int32,System.Int32,System.Byte,System.Byte,System.Byte,System.Byte[])">
+            <summary>
+            足し算
+            </summary>
+            <param name="src">計算元データの種類</param>
+            <param name="dest">計算結果の保存場所の種類</param>
+            <param name="sType">結果の代入タイプ</param>
+            <param name="src_addr">計算元データの種類</param>
+            <param name="dest_addr">計算結果の保存場所の種類</param>
+            <param name="offset">接続機器のアドレスオフセット</param>
+            <param name="devNo">接続機器番号</param>
+            <param name="size">計算データ数</param>
+            <param name="data">計算をする際のリテラル値</param>
+            <returns>コマンド列</returns>
+        </member>
+        <member name="M:Rcb4.Command.Sub(Rcb4.Command.DeviceTypes,Rcb4.Command.DeviceTypes,Rcb4.Command.SubstitutionTypes,System.Int32,System.Int32,System.Byte,System.Byte,System.Byte,System.Byte[])">
+            <summary>
+            引き算
+            </summary>
+            <param name="src">計算元データの種類</param>
+            <param name="dest">計算結果の保存場所の種類</param>
+            <param name="sType">結果の代入タイプ</param>
+            <param name="src_addr">計算元データの種類</param>
+            <param name="dest_addr">計算結果の保存場所の種類</param>
+            <param name="offset">接続機器のアドレスオフセット</param>
+            <param name="devNo">接続機器番号</param>
+            <param name="size">計算データ数</param>
+            <param name="data">計算をする際のリテラル値</param>
+            <returns>コマンド列</returns>
+        </member>
+        <member name="M:Rcb4.Command.Multiply(Rcb4.Command.DeviceTypes,Rcb4.Command.DeviceTypes,Rcb4.Command.SubstitutionTypes,System.Int32,System.Int32,System.Byte,System.Byte,System.Byte,System.Byte[])">
+            <summary>
+            かけ算
+            </summary>
+            <param name="src">計算元データの種類</param>
+            <param name="dest">計算結果の保存場所の種類</param>
+            <param name="sType">結果の代入タイプ</param>
+            <param name="src_addr">計算元データの種類</param>
+            <param name="dest_addr">計算結果の保存場所の種類</param>
+            <param name="offset">接続機器のアドレスオフセット</param>
+            <param name="devNo">接続機器番号</param>
+            <param name="size">計算データ数</param>
+            <param name="data">計算をする際のリテラル値</param>
+            <returns>コマンド列</returns>
+        </member>
+        <member name="M:Rcb4.Command.Division(Rcb4.Command.DeviceTypes,Rcb4.Command.DeviceTypes,Rcb4.Command.SubstitutionTypes,System.Int32,System.Int32,System.Byte,System.Byte,System.Byte,System.Byte[])">
+            <summary>
+            割り算
+            </summary>
+            <param name="src">計算元データの種類</param>
+            <param name="dest">計算結果の保存場所の種類</param>
+            <param name="sType">結果の代入タイプ</param>
+            <param name="src_addr">計算元データの種類</param>
+            <param name="dest_addr">計算結果の保存場所の種類</param>
+            <param name="offset">接続機器のアドレスオフセット</param>
+            <param name="devNo">接続機器番号</param>
+            <param name="size">計算データ数</param>
+            <param name="data">計算をする際のリテラル値</param>
+            <returns>コマンド列</returns>
+        </member>
+        <member name="M:Rcb4.Command.Mod(Rcb4.Command.DeviceTypes,Rcb4.Command.DeviceTypes,Rcb4.Command.SubstitutionTypes,System.Int32,System.Int32,System.Byte,System.Byte,System.Byte,System.Byte[])">
+            <summary>
+            Mod関数
+            </summary>
+            <param name="src">計算元データの種類</param>
+            <param name="dest">計算結果の保存場所の種類</param>
+            <param name="sType">結果の代入タイプ</param>
+            <param name="src_addr">計算元データの種類</param>
+            <param name="dest_addr">計算結果の保存場所の種類</param>
+            <param name="offset">接続機器のアドレスオフセット</param>
+            <param name="devNo">接続機器番号</param>
+            <param name="size">計算データ数</param>
+            <param name="data">計算をする際のリテラル値</param>
+            <returns>コマンド列</returns>
+        </member>
+        <member name="M:Rcb4.Command.Increment(Rcb4.Command.SubstitutionTypes,System.Int32)">
+            <summary>
+            指定したアドレスのデータに１を足します
+            </summary>
+            <param name="sType">計算結果の格納タイプ</param>
+            <param name="dest_addr">デクリメントするデータのアドレス</param>
+            <returns>生成されたコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.Increment(System.Int32)">
+            <summary>
+            指定したアドレスのデータに１を足します
+            代入結果は指定したアドレスのデータに上書きします
+            </summary>
+            <param name="dest_addr">インクリメントするデータのアドレス</param>
+            <returns>生成されたコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.Increment(Rcb4.Command.DeviceTypes,Rcb4.Command.DeviceTypes,System.Int32,System.Int32,System.Byte)">
+            <summary>
+            指定したアドレスのデータに１を足します
+            代入結果は指定したアドレスのデータに上書きします
+            </summary>
+            <param name="src">ソースタイプ</param>
+            <param name="dest">計算結果の出力先</param>
+            <param name="src_addr">ソースアドレス</param>
+            <param name="dest_addr">計算結果を格納するデータアドレス</param>
+            <param name="size">計算データのサイズ（1 or 2）</param>
+            <returns>生成されたコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.Decrement(Rcb4.Command.SubstitutionTypes,System.Int32)">
+            <summary>
+            指定したアドレスのデータに１を足します
+            </summary>
+            <param name="sType">計算結果の格納タイプ</param>
+            <param name="dest_addr">デクリメントするデータのアドレス</param>
+            <returns>生成されたコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.Decrement(System.Int32)">
+            <summary>
+            指定したアドレスのデータに１を足します
+            代入結果は指定したアドレスのデータに上書きします
+            </summary>
+            <param name="dest_addr">インクリメントするデータのアドレス</param>
+            <returns>生成されたコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.Decrement(Rcb4.Command.DeviceTypes,Rcb4.Command.DeviceTypes,System.Int32,System.Int32,System.Byte)">
+            <summary>
+            指定したアドレスのデータに１を足します
+            代入結果は指定したアドレスのデータに上書きします
+            </summary>
+            <param name="src">ソースタイプ</param>
+            <param name="dest">計算結果の出力先</param>
+            <param name="src_addr">ソースアドレス</param>
+            <param name="dest_addr">計算結果を格納するデータアドレス</param>
+            <param name="size">計算データのサイズ（1 or 2）</param>
+            <returns>生成されたコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.GetOperators">
+            <summary>
+            計算に使用できるオペレーターシンボルのリストを返す
+            </summary>
+            <returns>使用可能なオペレーターのリスト</returns>
+        </member>
+        <member name="M:Rcb4.Command.GetCalcTypesBySymbol(System.String)">
+            <summary>
+            演算記号から演算タイプを返す
+            </summary>
+            <param name="symbol">数学演算記号</param>
+            <returns>演算タイプ</returns>
+        </member>
+        <member name="M:Rcb4.Command.GetCompareSymbols">
+            <summary>
+            比較演算子一覧を返す
+            </summary>
+            <returns>比較演算記号</returns>
+        </member>
+        <member name="M:Rcb4.Command.GetCompareSymbol(Rcb4.Command.CalcResultTypes)">
+            <summary>
+            比較演算子から文字列を返す
+            </summary>
+            <param name="compareType">対象の比較演算子列挙型変数</param>
+            <returns>比較演算子から取得した記号文字列</returns>
+        </member>
+        <member name="M:Rcb4.Command.GetCompareType(System.String)">
+            <summary>
+            比較文字列記号から演算子タイプ取得します
+            </summary>
+            <param name="symbol">対象の比較文字記号</param>
+            <returns>演算子が見つかったらCalcResultType型の変数として返す</returns>
+        </member>
+        <member name="M:Rcb4.Command.ByteToCalcTypes(System.Byte)">
+            <summary>
+            バイトデータから比較演算タイプを表す列挙型に変換します
+            </summary>
+            <param name="b">バイトデータ</param>
+            <returns>比較演算タイプ</returns>
+        </member>
+        <member name="M:Rcb4.Command.JumpBase(Rcb4.Command.CommandTypes,System.Byte,System.Byte,System.Byte,Rcb4.Command.CalcResultTypes)">
+            <summary>
+            比較条件の下でアドレスジャンプをします
+            </summary>
+            <param name="cType">コマンドの種類</param>
+            <param name="dest_addr_h">受信側データアドレスLOW</param>
+            <param name="dest_addr_m">受信側データアドレスMIDIUM</param>
+            <param name="dest_addr_l">受信側データアドレスHIGH</param>
+            <param name="flag">ジャンプ条件フラグ</param>
+            <returns>生成されたコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.CompareJump(System.Int32,Rcb4.Command.CalcResultTypes)">
+            <summary>
+            条件ジャンプ
+            </summary>
+            <param name="dest_addr">ジャンプ先アドレス</param>
+            <param name="flag">ジャンプ条件</param>
+            <returns>生成されたコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.CompareCall(System.Int32,Rcb4.Command.CalcResultTypes)">
+            <summary>
+            条件呼び出し（サブルーチンコール）
+            </summary>
+            <param name="dest_addr">ジャンプ先アドレス</param>
+            <param name="flag">ジャンプ条件</param>
+            <returns>生成されたコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.Jump(System.Int32)">
+            <summary>
+            指定アドレス（ROM）へジャンプします。返ってきません。
+            </summary>
+            <param name="dest_addr">ジャンプ先アドレス</param>
+            <returns>生成されたコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.Call(System.Int32)">
+            <summary>
+            指定アドレス（ROM）へジャンプします。
+            </summary>
+            <param name="dest_addr">ジャンプ先アドレス</param>
+            <returns>生成されたコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.Return">
+            <summary>
+            呼び出し先から復帰する（というかスタックアドレスへ戻る）
+            </summary>
+            <returns>リターン命令を返します（固定）</returns>
+        </member>
+        <member name="M:Rcb4.Command.CommunicateDeviceBase(System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)">
+            <summary>
+            Ramに配置したデータをICSデバイスに送る
+            </summary>
+            <param name="com_port">SIO1~4のときは0、SIO5~8のときは1を入力</param>
+            <param name="count">ICSデバイスに送るコマンドバイト数</param>
+            <param name="dest_addr_l">コマンドデータアドレス下位８ビット</param>
+            <param name="dest_addr_h">コマンドデータアドレス上位８ビット</param>
+            <param name="res_addr_l">返値を保存するアドレス下位８ビット</param>
+            <param name="res_addr_h">返値を保存するアドレス上位８ビット</param>
+            <returns>データバイト列</returns>
+        </member>
+        <member name="M:Rcb4.Command.CommunicateDevice(System.Byte,System.Byte,System.Int32,System.Int32)">
+            <summary>
+            Ramに配置したデータをICSデバイスに送る
+            </summary>
+            <param name="com_port">ポート番号（0 or 1）</param>
+            <param name="count">送信コマンドデータバイト数</param>
+            <param name="dest_addr">送信コマンドデータを配置している先頭アドレス</param>
+            <param name="res_addr">デバイスからの返事を受け取るアドレス</param>
+            <returns>作成したコマンドバイト列</returns>
+        </member>
+        <member name="M:Rcb4.Command.RunSingleServoBase(Rcb4.Command.CommandTypes,System.Byte,System.Byte,System.Byte,System.Byte)">
+            <summary>
+            単独でサーボモーターを動かす命令（詳細）
+            </summary>
+            <param name="ctype">命令タイプ</param>
+            <param name="devNo">デバイス番号</param>
+            <param name="speed">スピード</param>
+            <param name="pos_l">１６ビットポジションデータの下８ビット</param>
+            <param name="pos_h">１６ビットポジションデータの上８ビット</param>
+            <returns>コマンドを送信した結果</returns>
+        </member>
+        <member name="M:Rcb4.Command.RunSingleServo(System.Byte,System.Byte,System.Byte,System.Byte)">
+            <summary>
+            サーボモーターを単体で駆動する
+            </summary>
+            <param name="devNo">デバイス番号</param>
+            <param name="speed">スピード</param>
+            <param name="pos_l">１６ビットポジションデータの下８ビット</param>
+            <param name="pos_h">１６ビットポジションデータの上８ビット</param>
+            <returns>コマンドを送信した結果</returns>
+        </member>
+        <member name="M:Rcb4.Command.RunSingleServo(System.Byte,System.Byte,System.Int32)">
+            <summary>
+            サーボモーターを単体で駆動する（基本）
+            </summary>
+            <param name="devNo">デバイス番号</param>
+            <param name="speed">スピード</param>
+            <param name="pos">ポジション</param>
+            <returns>コマンドを送信した結果</returns>
+            <example>SIO1~4にあるID=5のサーボモーターをスピード（フレームのこと）50でposition=7500へ移動する
+            <code>
+            Extensions.Collections.ByteList command = new Extensions.Collections.ByteList ();
+            // devNo = id * 2 (SIO1~4)、id * 2 + 1（SIO5~8）
+            command.Bytes = RunSingleServo (10, 50, 7500);
+            </code>
+            </example>
+        </member>
+        <member name="M:Rcb4.Command.RunSeriesServoBase(System.Byte[],System.Boolean,System.Byte[])">
+            <summary>
+            スピード・移動先を個別に設定してサーボモーターを動かす
+            </summary>
+            <param name="selbit">デバイス選択ビット</param>
+            <param name="eeprom">EEPROM更新フラグ</param>
+            <param name="servo">サーボモーターのパラメーター</param>
+            <returns>スピード・移動先を個別に設定してサーボモーターを動かすコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.RunSeriesServo(System.Byte[],System.Boolean,System.Byte[])">
+            <summary>
+            スピード・移動先を個別に設定してサーボモーターを動かす
+            </summary>
+            <param name="selbit">どのサーボモーターを動かすか選択するビット</param>
+            <param name="eeprom">EEPROMデータを更新するか</param>
+            <param name="servo">サーボモーターパラメーター</param>
+            <returns>コマンドを送信した結果</returns>
+        </member>
+        <member name="M:Rcb4.Command.SetServoParametersBase(System.Byte[],Rcb4.Command.ServoParameters,System.Byte[])">
+            <summary>
+            サーボモーターのパラメーターを変更する
+            </summary>
+            <param name="selbit">デバイス選択ビット</param>
+            <param name="sParam">パラメーターの種類</param>
+            <param name="servo">セットするパラメーターの値</param>
+            <returns>生成されたコマンドバイト列</returns>
+        </member>
+        <member name="M:Rcb4.Command.SetStretch(System.Byte[],System.Byte[])">
+            <summary>
+            サーボモーターのストレッチを変更する
+            </summary>
+            <param name="selbit">デバイス選択ビット</param>
+            <param name="servo">セットするパラメーターの値</param>
+            <returns>生成されたコマンドバイト列</returns>
+        </member>
+        <member name="M:Rcb4.Command.SetStretch(System.Collections.Generic.Dictionary{System.Byte,System.Byte})">
+            <summary>
+            サーボモーターのストレッチを変更する
+            </summary>
+            <param name="parameters">デバイス番号とパラメーターのペア</param>
+            <returns>生成されたコマンドバイト列</returns>
+        </member>
+        <member name="M:Rcb4.Command.SetSpeed(System.Byte[],System.Byte[])">
+            <summary>
+            サーボモーターのスピードを変更する
+            </summary>
+            <param name="selbit">デバイス選択ビット</param>
+            <param name="servo">セットするパラメーターの値</param>
+            <returns>生成されたコマンドバイト列</returns>
+        </member>
+        <member name="M:Rcb4.Command.SetSpeed(System.Collections.Generic.Dictionary{System.Byte,System.Byte})">
+            <summary>
+            サーボモーターのストレッチを変更する
+            </summary>
+            <param name="parameters">デバイス番号とパラメーターのペア</param>
+            <returns>生成されたコマンドバイト列</returns>
+        </member>
+        <member name="M:Rcb4.Command.LinkFree(System.Byte[])">
+            <summary>
+            フリーモード設定
+            </summary>
+            <param name="servos">フリーモードに設定するサーボモーターのデバイス番号リスト</param>
+            <returns>フリーモードに設定するコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.LinkFreeFromSelbit(System.Byte[])">
+            <summary>
+            Selbitからフリーモード設定
+            </summary>
+            <param name="selbit">サーボモーターを表す選択ビット（ICS）</param>
+            <returns>フリーモードに設定するコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.LinkHold(System.Byte[])">
+            <summary>
+            ホールドモード設定
+            </summary>
+            <param name="servos">ホールドモードに設定するサーボモーターのデバイス番号リスト</param>
+            <returns>ホールドモードに設定するコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.LinkHoldFromSelbit(System.Byte[])">
+            <summary>
+            Selbitからホールドモード設定
+            </summary>
+            <param name="selbit">サーボモーターを表す選択ビット（ICS）</param>
+            <returns>ホールドモードに設定するコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.RunConstFrameServoBase(System.Byte[],System.Boolean,System.Byte,System.Byte[])">
+            <summary>
+            同一スピードでサーボを回転させる命令
+            </summary>
+            <param name="selbit">どのサーボモーターを動かすか選択するビット</param>
+            <param name="eeprom">EEPROMデータを更新するか</param>
+            <param name="frames">サーボモーターを動かすフレーム数</param>
+            <param name="servo">サーボモーターパラメーター</param>
+            <returns>生成されたコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.RunConstFrameServo(System.Byte[],System.Boolean,System.Byte,System.Byte[])">
+            <summary>
+            同一スピードでサーボを回転させる命令
+            </summary>
+            <param name="selbit">どのサーボモーターを動かすか選択するビット</param>
+            <param name="eeprom">EEPROMデータを更新するか</param>
+            <param name="frames">フレーム数</param>
+            <param name="servo">サーボモーターパラメーター</param>
+            <returns>生成されたコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.RunConstFrameServo(System.Boolean,System.Collections.Generic.Dictionary{System.Int32,System.Int32})">
+            <summary>
+            同一スピードでサーボを回転させる命令
+            </summary>
+            <param name="eeprom">EEPROMデータを更新するか</param>
+            <param name="poss">DeviceNumberとPositionのペア</param>
+            <returns>生成されたコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.RunConstFrameServo(System.Collections.Generic.Dictionary{System.Int32,System.Int32})">
+            <summary>
+            同一スピードでサーボを回転させる命令。エントリーKey=-1の時のValueはフレームを意味する
+            </summary>
+            <param name="poss">DeviceNumberとPositionのペア</param>
+            <returns>生成されたコマンド</returns>
+        </member>
+        <member name="M:Rcb4.Command.DirectRunSingleServo(System.Byte,System.Byte,System.Int32)">
+            <summary>
+            メモリーに書き込むことで直接サーボモーターを動かす命令
+            動作完了の合図は返ってきません
+            </summary>
+            <param name="devNo">動かしたいサーボのデバイス番号</param>
+            <param name="position">位置</param>
+            <param name="frame">フレーム数</param>
+            <returns>生成されたコマンドバイト列</returns>
+        </member>
+        <member name="M:Rcb4.Command.DirectRunSingleServo(System.Byte,System.Int32)">
+            <summary>
+            メモリーに書き込むことで直接サーボモーターを動かす命令（フレーム数１固定）
+            動作完了の合図は返ってきません
+            </summary>
+            <param name="devNo">動かしたいサーボのデバイス番号</param>
+            <param name="position">位置</param>
+            <returns>生成されたコマンドバイト列</returns>
+        </member>
+        <member name="M:Rcb4.Command.JumpVectorRegistBase(System.Boolean,Rcb4.Command.JumpTypes,Rcb4.Command.Sizebit,System.Boolean,Rcb4.Command.CalcResultTypes,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)">
+            <summary>
+            ジャンプベクタ命令基本（詳細）
+            </summary>
+            <param name="eof">命令ファイルの末尾かどうか</param>
+            <param name="jType">移動種類</param>
+            <param name="size">比較データサイズ</param>
+            <param name="isLit">比較データがリテラル値かどうか</param>
+            <param name="cType">演算種類</param>
+            <param name="src_addr_l">比較先の値下8bit</param>
+            <param name="src_addr_h">比較先の値上8bit</param>
+            <param name="dest_addr_l">比較元の値下8bit</param>
+            <param name="dest_addr_h">比較元の値上8bit</param>
+            <param name="jmp_addr_l">移動先アドレス下8bit</param>
+            <param name="jmp_addr_m">移動先アドレス中8bit</param>
+            <param name="jmp_addr_h">移動先アドレス上8bit</param>
+            <returns>生成されたコマンドバイトデータ列</returns>
+        </member>
+        <member name="M:Rcb4.Command.JumpVectorRegist(System.Boolean,Rcb4.Command.JumpTypes,Rcb4.Command.Sizebit,System.Boolean,Rcb4.Command.CalcResultTypes,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            ジャンプベクタ命令基本
+            </summary>
+            <param name="eof">命令ファイルの末尾かどうか</param>
+            <param name="jType">移動種類</param>
+            <param name="size">比較データサイズ</param>
+            <param name="isLit">比較データがリテラル値かどうか</param>
+            <param name="cType">演算種類</param>
+            <param name="src_addr">比較先の値（アドレス）</param>
+            <param name="dest_addr">比較元の値（アドレス）</param>
+            <param name="jmp_addr">移動先アドレス</param>
+            <returns>生成されたコマンドバイトデータ列</returns>
+        </member>
+        <member name="M:Rcb4.Command.JumpVectorRegistJump(System.Boolean,Rcb4.Command.Sizebit,System.Boolean,Rcb4.Command.CalcResultTypes,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            ジャンプベクタジャンプ登録命令
+            </summary>
+            <param name="eof">命令ファイルの末尾かどうか</param>
+            <param name="size">比較データサイズ</param>
+            <param name="isLit">比較データがリテラル値かどうか</param>
+            <param name="cType">演算種類</param>
+            <param name="src_addr">比較先の値（アドレス）</param>
+            <param name="dest_addr">比較元の値（アドレス）</param>
+            <param name="jmp_addr">移動先アドレス</param>
+            <returns>生成されたコマンドバイトデータ列</returns>
+        </member>
+        <member name="M:Rcb4.Command.JumpVectorRegistCall(System.Boolean,Rcb4.Command.Sizebit,System.Boolean,Rcb4.Command.CalcResultTypes,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            ジャンプベクタジャンプ登録命令
+            </summary>
+            <param name="eof">命令ファイルの末尾かどうか</param>
+            <param name="size">比較データサイズ</param>
+            <param name="isLit">比較データがリテラル値かどうか</param>
+            <param name="cType">演算種類</param>
+            <param name="src_addr">比較先の値（アドレス）</param>
+            <param name="dest_addr">比較元の値（アドレス）</param>
+            <param name="jmp_addr">移動先アドレス</param>
+            <returns>生成されたコマンドバイトデータ列</returns>
+        </member>
+        <member name="M:Rcb4.Command.AcknowledgeCheck">
+            <summary>
+            現在生きているかどうか確認します
+            </summary>
+            <returns>生成されたコマンド = { 0x04, 0xFE, 0x06, 0x08 }（固定）</returns>
+        </member>
+        <member name="M:Rcb4.Command.ByteArrayToSelbit(System.Byte[])">
+            <summary>
+            バイト列を選択ビットに変換する
+            </summary>
+            <param name="b">対象となるサーボモーターのリスト</param>
+            <returns>５バイトの選択ビット</returns>
+            <example>ICS番号、0、4、10をセットしたICS選択ビット(selbit)を取得する
+            <code>
+            byte[] selbit = Command.ByteArrayToSelbit (new byte[] { 0, 4, 10 });
+            </code>
+            </example>
+        </member>
+        <member name="M:Rcb4.Command.SelbitToByteArray(System.Byte[])">
+            <summary>
+            SELBITバイトデータから、対象となるサーボモーターのリストを生成します
+            </summary>
+            <param name="selbit">５バイトの選択ビット</param>
+            <returns>選択ビットで動作対象となっているサーボモーターのリスト</returns>
+        </member>
+        <member name="M:Rcb4.Command.ReassemblePositions(Extensions.Collections.ByteList)">
+            <summary>
+            ByteListからDeviceNumberとポジションのペアを作成する
+            </summary>
+            <param name="bList">RunConstFrameServo Only</param>
+            <returns>DeviceNumberとポジションのペアデータ</returns>
+        </member>
+        <member name="M:Rcb4.Command.Synchronize(System.IO.Ports.SerialPort,System.Byte[],System.Byte[]@)">
+            <summary>
+            データの送受信をおこないます
+            受信データの、SIZE、CMD、SUMのみをチェックします
+            </summary>
+            <param name="serialPort">経路に使用するシリアルポート</param>
+            <param name="src">送信データ</param>
+            <param name="dest">受信データ</param>
+            <returns>返値が正常ならばtrue、それ以外はfalseを返す。タイムアウト例外が出た場合もfalse</returns>
+            <example>Acknowledgeを送り、返事を待つ
+            <code>
+            byte[] result = new byte[4];
+            
+            if (Synchronize (serialPort, Command.Acknowledge (), ref result) == true)
+            {
+              // データの送受信に成功
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Rcb4.Command.WaitResponse(System.IO.Ports.SerialPort,System.Byte[]@)">
+            <summary>
+            返事を待つ関数
+            受信タイムアウトは関数の呼び出し側で決定すること
+            </summary>
+            <param name="serialPort">送受信を行うシリアルポート</param>
+            <param name="dest">返事</param>
+            <returns>受信が成功したかどうか返す</returns>
+        </member>
+        <member name="P:Rcb4.Command.JumpType">
+            <summary>
+            ジャンプのタイプを設定
+            </summary>
+        </member>
+        <member name="T:Rcb4.Command.DeviceTypes">
+            <summary>
+            データの送り元と送り先
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.DeviceTypes.RAM">
+            <summary>
+            RAMへデータを送る
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.DeviceTypes.Device">
+            <summary>
+            接続機器へデータを送る
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.DeviceTypes.COM">
+            <summary>
+            文字列などをCOM経由で送る
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.DeviceTypes.ROM">
+            <summary>
+            ROMへ保存
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.DeviceTypes.Compare">
+            <summary>
+            ビット演算用命例
+            </summary>
+        </member>
+        <member name="T:Rcb4.Command.Acknowledges">
+            <summary>
+            データの受信および内容の確認についての返事
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.Acknowledges.Ack">
+            <summary>
+            データを正常に受けとった
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.Acknowledges.Nack">
+            <summary>
+            データに異常があった
+            </summary>
+        </member>
+        <member name="T:Rcb4.Command.CommandTypes">
+            <summary>
+            コマンドバイトコード
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandTypes.Move">
+            <summary>
+            指定されたアドレス（デバイス）から指定のアドレス（デバイス）にデータを送る命令
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandTypes.And">
+            <summary>
+            ビット演算（論理積）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandTypes.Or">
+            <summary>
+            ビット演算（論理和）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandTypes.Xor">
+            <summary>
+            ビット演算（排他的論理和）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandTypes.Not">
+            <summary>
+            ビット反転
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandTypes.Shift">
+            <summary>
+            ビットシフト
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandTypes.Add">
+            <summary>
+            足し算（バイト単位）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandTypes.Sub">
+            <summary>
+            引き算（バイト単位）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandTypes.Multiply">
+            <summary>
+            掛け算（バイト単位）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandTypes.Division">
+            <summary>
+            割り算
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandTypes.Mod">
+            <summary>
+            剰余
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandTypes.Jump">
+            <summary>
+            条件ジャンプ
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandTypes.Call">
+            <summary>
+            条件サブルーチン呼び出し
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandTypes.Return">
+            <summary>
+            サブルーチンの呼び出しからの復帰
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandTypes.ComToRam">
+            <summary>
+            RAMの値を利用して接続機器と通信する
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandTypes.SingleServo">
+            <summary>
+            単独でサーボモーターを動かす命令
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandTypes.ConstFrameServo">
+            <summary>
+            フレーム数固定でサーボ位置を変化させる
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandTypes.SeriesServo">
+            <summary>
+            スピードと異動先を個別に設定して動かす
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandTypes.ServoParam">
+            <summary>
+            サーボのパラメータを一括で送信する
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandTypes.Version">
+            <summary>
+            バージョンの確認
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandTypes.AckCheck">
+            <summary>
+            Acknowledge
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CommandTypes.None">
+            <summary>
+            どれにも属さない
+            </summary>
+        </member>
+        <member name="T:Rcb4.Command.SubstitutionTypes">
+            <summary>
+            演算結果の処理方法
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.SubstitutionTypes.Subst">
+            <summary>
+            結果を元のアドレスへ代入する
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.SubstitutionTypes.Dispose">
+            <summary>
+            破棄する
+            </summary>
+        </member>
+        <member name="T:Rcb4.Command.Sizebit">
+            <summary>
+            計算の範囲
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.Sizebit.ByteSize">
+            <summary>
+            バイトサイズの計算
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.Sizebit.WordSize">
+            <summary>
+            ワードサイズの計算
+            </summary>
+        </member>
+        <member name="T:Rcb4.Command.CalcResultTypes">
+            <summary>
+            引き算の結果の比較
+            0b X X CE ZE X X C Z
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CalcResultTypes.Equals">
+            <summary>
+            等しい
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CalcResultTypes.NotEquals">
+            <summary>
+            等しくない
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CalcResultTypes.GreaterThan">
+            <summary>
+            より大きい
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CalcResultTypes.LessThan">
+            <summary>
+            より小さい
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CalcResultTypes.GreaterThanOrEqualTo">
+            <summary>
+            以上
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CalcResultTypes.LessThanOrEqualTo">
+            <summary>
+            以下
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CalcResultTypes.Zero">
+            <summary>
+            ZERO（前段の結果が０）
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.CalcResultTypes.None">
+            <summary>
+            計算しない
+            </summary>
+        </member>
+        <member name="T:Rcb4.Command.ServoParameters">
+            <summary>
+            サーボモーターで変更できるパラメーター
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.ServoParameters.Stretch">
+            <summary>
+            ストレッチ
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.ServoParameters.Speed">
+            <summary>
+            スピード
+            </summary>
+        </member>
+        <member name="T:Rcb4.Command.JumpTypes">
+            <summary>
+            ジャンプベクタのタイプ
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.JumpTypes.Jump">
+            <summary>
+            ジャンプ
+            </summary>
+        </member>
+        <member name="F:Rcb4.Command.JumpTypes.Call">
+            <summary>
+            コール
+            </summary>
+        </member>
+        <member name="T:Rcb4.Krc">
+            <summary>
+            Kondo Robot Controller button code definitions (Control Code)
+            </summary>
+        </member>
+        <member name="M:Rcb4.Krc.#ctor">
+            <summary>
+            インスタンスコンストラクタ
+            </summary>
+        </member>
+        <member name="T:Rcb4.Krc.KeyCodes">
+            <summary>
+            低速シリアルキーコード列挙型
+            </summary>
+            <remarks>RCB-4では使いません</remarks>
+        </member>
+        <member name="F:Rcb4.Krc.KeyCodes.Neutral">
+            <summary>
+            ニュートラル
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.KeyCodes.Shift1">
+            <summary>
+            シフト1
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.KeyCodes.Shift2">
+            <summary>
+            シフト2
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.KeyCodes.Shift3">
+            <summary>
+            シフト3
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.KeyCodes.Shift4">
+            <summary>
+            シフト4
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.KeyCodes.Up">
+            <summary>
+            上キー
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.KeyCodes.Down">
+            <summary>
+            下キー
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.KeyCodes.Right">
+            <summary>
+            右キー
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.KeyCodes.Left">
+            <summary>
+            左キー
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.KeyCodes.UpperLeft">
+            <summary>
+            左上キー
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.KeyCodes.LowerLeft">
+            <summary>
+            左下キー
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.KeyCodes.LowerRight">
+            <summary>
+            右上キー
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.KeyCodes.UpperRight">
+            <summary>
+            右下キー
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.KeyCodes.Triangle">
+            <summary>
+            △ボタン
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.KeyCodes.Cross">
+            <summary>
+            ×ボタン
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.KeyCodes.Circle">
+            <summary>
+            ○ボタン
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.KeyCodes.Square">
+            <summary>
+            □ボタン
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.KeyCodes.A">
+            <summary>
+            Aボタン
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.KeyCodes.B">
+            <summary>
+            Bボタン
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.KeyCodes.D">
+            <summary>
+            Dボタン
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.KeyCodes.C">
+            <summary>
+            Cボタン
+            </summary>
+        </member>
+        <member name="T:Rcb4.Krc.ExtKeyCodes">
+            <summary>
+            拡張低速シリアルキーコード列挙型
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.ExtKeyCodes.Neutral">
+            <summary>
+            ニュートラル
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.ExtKeyCodes.Shift1">
+            <summary>
+            シフト１
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.ExtKeyCodes.Shift2">
+            <summary>
+            シフト２
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.ExtKeyCodes.Shift3">
+            <summary>
+            シフト３
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.ExtKeyCodes.Shift4">
+            <summary>
+            シフト４
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.ExtKeyCodes.Up">
+            <summary>
+            上キー
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.ExtKeyCodes.Down">
+            <summary>
+            下キー
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.ExtKeyCodes.Right">
+            <summary>
+            右キー
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.ExtKeyCodes.Left">
+            <summary>
+            左キー
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.ExtKeyCodes.UpperLeft">
+            <summary>
+            左上キー
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.ExtKeyCodes.LowerLeft">
+            <summary>
+            左下キー
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.ExtKeyCodes.LowerRight">
+            <summary>
+            右上キー
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.ExtKeyCodes.UpperRight">
+            <summary>
+            右下キー
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.ExtKeyCodes.Triangle">
+            <summary>
+            △ボタン
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.ExtKeyCodes.Cross">
+            <summary>
+            ×ボタン
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.ExtKeyCodes.Circle">
+            <summary>
+            ○ボタン
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.ExtKeyCodes.Square">
+            <summary>
+            □ボタン
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.ExtKeyCodes.A">
+            <summary>
+            Aボタン
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.ExtKeyCodes.B">
+            <summary>
+            Bボタン
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.ExtKeyCodes.D">
+            <summary>
+            Dボタン
+            </summary>
+        </member>
+        <member name="F:Rcb4.Krc.ExtKeyCodes.C">
+            <summary>
+            Cボタン
+            </summary>
+        </member>
+        <member name="T:Rcb4.Config">
+            <summary>
+            RCB4の初期設定やオプションを設定します
+            </summary>
+        </member>
+        <member name="M:Rcb4.Config.#ctor">
+            <summary>
+            インスタンスコンストラクタ
+            </summary>
+        </member>
+        <member name="M:Rcb4.Config.#ctor(System.Byte[])">
+            <summary>
+            コピーコンストラクタ
+            </summary>
+            <param name="config">コピー元のConfigデータ</param>
+        </member>
+        <member name="P:Rcb4.Config.Acknowledge">
+            <summary>
+            データの受信および内容の確認についての返事を受け取るか、またはその返事
+            </summary>
+        </member>
+        <member name="P:Rcb4.Config.EnableSio">
+            <summary>
+            接続機器の処理と通信を始める（ON=1, OFF=0）
+            </summary>
+        </member>
+        <member name="P:Rcb4.Config.EnableRunEeprom">
+            <summary>
+            EEPROMからプログラムを再生する（ON=1, OFF=0）
+            </summary>
+        </member>
+        <member name="P:Rcb4.Config.EnableServoResponse">
+            <summary>
+            サーボ動作終了時に合図を送る（ON=1, OFF=0）
+            </summary>
+        </member>
+        <member name="P:Rcb4.Config.EnableReferenceTable">
+            <summary>
+            参照テーブルを使用する
+            </summary>
+        </member>
+        <member name="P:Rcb4.Config.FrameTime">
+            <summary>
+            フレーム時間
+            </summary>
+        </member>
+        <member name="P:Rcb4.Config.Frame">
+            <summary>
+            フレーム数
+            </summary>
+        </member>
+        <member name="P:Rcb4.Config.Baudrate">
+            <summary>
+            ボーレート設定
+            </summary>
+        </member>
+        <member name="P:Rcb4.Config.ZeroFlag">
+            <summary>
+            演算結果が０ならば（a==b）１を返す
+            </summary>
+        </member>
+        <member name="P:Rcb4.Config.CarrayFlag">
+            <summary>
+            演算結果に繰り上がりがあれば１になる
+            </summary>
+        </member>
+        <member name="P:Rcb4.Config.ProgramError">
+            <summary>
+            参照テーブルを使用する
+            </summary>
+        </member>
+        <member name="P:Rcb4.Config.IcsBaudrate">
+            <summary>
+            ICSデバイスのボーレート設定
+            </summary>
+        </member>
+        <member name="P:Rcb4.Config.GreenLED">
+            <summary>
+            参照テーブルを使用する
+            </summary>
+        </member>
+        <member name="T:Rcb4.Config.OptEnable">
+            <summary>
+            COMポートを使った通信開始フラグ
+            </summary>
+        </member>
+        <member name="F:Rcb4.Config.OptEnable.OFF">
+            <summary>
+            未接続状態
+            </summary>
+        </member>
+        <member name="F:Rcb4.Config.OptEnable.ON">
+            <summary>
+            通信可能
+            </summary>
+        </member>
+        <member name="T:Rcb4.Config.OptFrameTime">
+            <summary>
+            フレーム時間の調整
+            </summary>
+        </member>
+        <member name="F:Rcb4.Config.OptFrameTime.Frame10ms">
+            <summary>
+            10ms
+            </summary>
+        </member>
+        <member name="F:Rcb4.Config.OptFrameTime.Frame15ms">
+            <summary>
+            15ms
+            </summary>
+        </member>
+        <member name="F:Rcb4.Config.OptFrameTime.Frame20ms">
+            <summary>
+            20ms
+            </summary>
+        </member>
+        <member name="F:Rcb4.Config.OptFrameTime.Frame25ms">
+            <summary>
+            25ms
+            </summary>
+        </member>
+        <member name="T:Rcb4.Config.Baudrates">
+            <summary>
+            通信速度設定
+            </summary>
+        </member>
+        <member name="F:Rcb4.Config.Baudrates.Br115200">
+            <summary>
+            低速
+            </summary>
+        </member>
+        <member name="F:Rcb4.Config.Baudrates.Br625000">
+            <summary>
+            中速
+            </summary>
+        </member>
+        <member name="F:Rcb4.Config.Baudrates.Br1250000">
+            <summary>
+            高速
+            </summary>
+        </member>
+    </members>
+</doc>

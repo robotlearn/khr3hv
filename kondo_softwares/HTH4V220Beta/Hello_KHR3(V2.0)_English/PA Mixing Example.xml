@@ -1,0 +1,325 @@
+<?xml version="1.0"?>
+<CanvasData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>canvas</Name>
+  <Size>
+    <Width>640</Width>
+    <Height>480</Height>
+  </Size>
+  <GridSize>8</GridSize>
+  <Lines>
+    <anyType xsi:type="LineData">
+      <GUID>11f075ae-7aa1-413f-bb29-7318ea7439eb</GUID>
+      <Path>
+        <Point>
+          <X>160</X>
+          <Y>232</Y>
+        </Point>
+        <Point>
+          <X>160</X>
+          <Y>328</Y>
+        </Point>
+      </Path>
+      <ConnectMode>Normal</ConnectMode>
+    </anyType>
+    <anyType xsi:type="LineData">
+      <GUID>b1e835a3-1939-4e6a-8a98-1b6fbdf8559a</GUID>
+      <Path>
+        <Point>
+          <X>160</X>
+          <Y>152</Y>
+        </Point>
+        <Point>
+          <X>160</X>
+          <Y>232</Y>
+        </Point>
+      </Path>
+      <ConnectMode>False</ConnectMode>
+    </anyType>
+    <anyType xsi:type="LineData">
+      <GUID>97e17fa6-5ef5-4110-811c-2aab4c5ce2c6</GUID>
+      <Path>
+        <Point>
+          <X>160</X>
+          <Y>152</Y>
+        </Point>
+        <Point>
+          <X>264</X>
+          <Y>152</Y>
+        </Point>
+      </Path>
+      <ConnectMode>True</ConnectMode>
+    </anyType>
+    <anyType xsi:type="LineData">
+      <GUID>54094534-11ce-47de-80c1-d34f62d410ad</GUID>
+      <Path>
+        <Point>
+          <X>264</X>
+          <Y>152</Y>
+        </Point>
+        <Point>
+          <X>368</X>
+          <Y>152</Y>
+        </Point>
+      </Path>
+      <ConnectMode>Normal</ConnectMode>
+    </anyType>
+    <anyType xsi:type="LineData">
+      <GUID>a59acf80-e5c9-4bbd-932c-c2c90c48cfe0</GUID>
+      <Path>
+        <Point>
+          <X>64</X>
+          <Y>56</Y>
+        </Point>
+        <Point>
+          <X>160</X>
+          <Y>56</Y>
+        </Point>
+      </Path>
+      <ConnectMode>Normal</ConnectMode>
+    </anyType>
+    <anyType xsi:type="LineData">
+      <GUID>4d861393-6551-4e4f-a0a5-5f00bbb4c60a</GUID>
+      <Path>
+        <Point>
+          <X>160</X>
+          <Y>56</Y>
+        </Point>
+        <Point>
+          <X>64</X>
+          <Y>152</Y>
+        </Point>
+      </Path>
+      <ConnectMode>Normal</ConnectMode>
+    </anyType>
+    <anyType xsi:type="LineData">
+      <GUID>cac335f2-e32f-48b3-b2f5-51ba0a369231</GUID>
+      <Path>
+        <Point>
+          <X>64</X>
+          <Y>152</Y>
+        </Point>
+        <Point>
+          <X>160</X>
+          <Y>152</Y>
+        </Point>
+      </Path>
+      <ConnectMode>Normal</ConnectMode>
+    </anyType>
+    <anyType xsi:type="LineData">
+      <GUID>f9bcdcfd-7f7d-4c53-8f7e-6d83aa82140e</GUID>
+      <Path>
+        <Point>
+          <X>160</X>
+          <Y>328</Y>
+        </Point>
+        <Point>
+          <X>64</X>
+          <Y>328</Y>
+        </Point>
+        <Point>
+          <X>64</X>
+          <Y>152</Y>
+        </Point>
+      </Path>
+      <ConnectMode>Normal</ConnectMode>
+    </anyType>
+  </Lines>
+  <Activities>
+    <anyType xsi:type="ActivityData">
+      <Name>SingleServo0</Name>
+      <GUID>a61832aa-46de-4cb0-89c0-5c668c459b0f</GUID>
+      <Location>
+        <X>128</X>
+        <Y>208</Y>
+      </Location>
+      <Size>
+        <Width>64</Width>
+        <Height>48</Height>
+      </Size>
+      <Text>首振り１</Text>
+      <BackColorText>WhiteSmoke</BackColorText>
+      <MotionFlag>None</MotionFlag>
+      <BaseName>SingleServo</BaseName>
+      <Description>個別サーボモーターの設定</Description>
+      <Group>Position</Group>
+      <ConnectedGuids>11f075ae-7aa1-413f-bb29-7318ea7439eb,b1e835a3-1939-4e6a-8a98-1b6fbdf8559a</ConnectedGuids>
+      <ConnectTypes>BeginConnect,EndConnect</ConnectTypes>
+      <ProgramCode>
+        <anyType xsi:type="xsd:string">0B 10 01 00 00 00 00 1C 0F 17 5E</anyType>
+      </ProgramCode>
+      <Hint>頭（ヨー）: Position = -1597 Frame = 28</Hint>
+    </anyType>
+    <anyType xsi:type="ActivityData">
+      <Name>SingleServo2</Name>
+      <GUID>f8276af9-97ac-4c48-8afc-3a546baccb9f</GUID>
+      <Location>
+        <X>128</X>
+        <Y>304</Y>
+      </Location>
+      <Size>
+        <Width>64</Width>
+        <Height>48</Height>
+      </Size>
+      <Text>首振り２</Text>
+      <BackColorText>WhiteSmoke</BackColorText>
+      <MotionFlag>None</MotionFlag>
+      <BaseName>SingleServo</BaseName>
+      <Description>個別サーボモーターの設定</Description>
+      <Group>Position</Group>
+      <ConnectedGuids>11f075ae-7aa1-413f-bb29-7318ea7439eb,f9bcdcfd-7f7d-4c53-8f7e-6d83aa82140e</ConnectedGuids>
+      <ConnectTypes>EndConnect,BeginConnect</ConnectTypes>
+      <ProgramCode>
+        <anyType xsi:type="xsd:string">0B 10 01 00 00 00 00 1E E8 23 45</anyType>
+      </ProgramCode>
+      <Hint>頭（ヨー）: Position = 1692 Frame = 30</Hint>
+    </anyType>
+    <anyType xsi:type="ActivityData">
+      <Name>SetCounter2</Name>
+      <GUID>97e36c31-2fa9-4d3c-af63-3d28e37e67d5</GUID>
+      <Location>
+        <X>128</X>
+        <Y>32</Y>
+      </Location>
+      <Size>
+        <Width>64</Width>
+        <Height>48</Height>
+      </Size>
+      <Text>カウンタ10回</Text>
+      <BackColorText>WhiteSmoke</BackColorText>
+      <MotionFlag>None</MotionFlag>
+      <BaseName>SetCounter</BaseName>
+      <Description>パラメーターのセット</Description>
+      <Group>Set</Group>
+      <ConnectedGuids>a59acf80-e5c9-4bbd-932c-c2c90c48cfe0,4d861393-6551-4e4f-a0a5-5f00bbb4c60a</ConnectedGuids>
+      <ConnectTypes>EndConnect,BeginConnect</ConnectTypes>
+      <ProgramCode>
+        <anyType xsi:type="xsd:string">08 00 02 57 04 00 0A 6F</anyType>
+      </ProgramCode>
+      <Hint>C1 = 10</Hint>
+    </anyType>
+    <anyType xsi:type="ActivityData">
+      <Name>Loop3</Name>
+      <GUID>ece4c68d-8fe1-4903-a111-b5c114029edc</GUID>
+      <Location>
+        <X>128</X>
+        <Y>128</Y>
+      </Location>
+      <Size>
+        <Width>64</Width>
+        <Height>48</Height>
+      </Size>
+      <Text>繰り返し</Text>
+      <BackColorText>WhiteSmoke</BackColorText>
+      <MotionFlag>None</MotionFlag>
+      <BaseName>Loop</BaseName>
+      <Description>繰り返し処理</Description>
+      <Group>Compare</Group>
+      <ConnectedGuids>b1e835a3-1939-4e6a-8a98-1b6fbdf8559a,97e17fa6-5ef5-4110-811c-2aab4c5ce2c6,cac335f2-e32f-48b3-b2f5-51ba0a369231</ConnectedGuids>
+      <ConnectTypes>BeginConnect,BeginConnect,EndConnect</ConnectTypes>
+      <ProgramCode>
+        <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+        <anyType xsi:type="xsd:string">07 0B FF FF FF 05 14</anyType>
+      </ProgramCode>
+      <Hint>繰り返し処理</Hint>
+    </anyType>
+    <anyType xsi:type="ActivityData">
+      <Name>SingleServo5</Name>
+      <GUID>b1165903-2337-4076-9e8c-a46b9b362134</GUID>
+      <Location>
+        <X>232</X>
+        <Y>128</Y>
+      </Location>
+      <Size>
+        <Width>64</Width>
+        <Height>48</Height>
+      </Size>
+      <Text>首を戻す</Text>
+      <BackColorText>WhiteSmoke</BackColorText>
+      <MotionFlag>None</MotionFlag>
+      <BaseName>SingleServo</BaseName>
+      <Description>個別サーボモーターの設定</Description>
+      <Group>Position</Group>
+      <ConnectedGuids>97e17fa6-5ef5-4110-811c-2aab4c5ce2c6,54094534-11ce-47de-80c1-d34f62d410ad</ConnectedGuids>
+      <ConnectTypes>EndConnect,BeginConnect</ConnectTypes>
+      <ProgramCode>
+        <anyType xsi:type="xsd:string">0B 10 01 00 00 00 00 0A 4C 1D 8F</anyType>
+      </ProgramCode>
+      <Hint>頭（ヨー）: Position = 0 Frame = 10</Hint>
+    </anyType>
+    <anyType xsi:type="ActivityData">
+      <Name>StickMix25</Name>
+      <GUID>a6662846-b3dd-44f6-8b3f-00c1fd1a8d7c</GUID>
+      <Location>
+        <X>32</X>
+        <Y>128</Y>
+      </Location>
+      <Size>
+        <Width>64</Width>
+        <Height>48</Height>
+      </Size>
+      <Text>PA1を保存</Text>
+      <BackColorText>WhiteSmoke</BackColorText>
+      <MotionFlag>None</MotionFlag>
+      <BaseName>StickMix2</BaseName>
+      <Description>アナログスティックの値をミキシングソースに割り当てる</Description>
+      <Group>Advance</Group>
+      <ConnectedGuids>4d861393-6551-4e4f-a0a5-5f00bbb4c60a,cac335f2-e32f-48b3-b2f5-51ba0a369231,f9bcdcfd-7f7d-4c53-8f7e-6d83aa82140e</ConnectedGuids>
+      <ConnectTypes>EndConnect,BeginConnect,EndConnect</ConnectTypes>
+      <ProgramCode>
+        <anyType xsi:type="xsd:string">09 00 02 62 04 00 00 00 71</anyType>
+        <anyType xsi:type="xsd:string">0A 00 00 62 04 00 52 03 01 C6</anyType>
+        <anyType xsi:type="xsd:string">09 07 02 62 04 00 3C 00 B4</anyType>
+      </ProgramCode>
+      <Hint>アナログスティックの値をミキシングソースに割り当てる</Hint>
+    </anyType>
+    <anyType xsi:type="ActivityData">
+      <Name>URemix6</Name>
+      <GUID>39d68323-46b0-4945-9b27-353a71be513d</GUID>
+      <Location>
+        <X>32</X>
+        <Y>32</Y>
+      </Location>
+      <Size>
+        <Width>64</Width>
+        <Height>48</Height>
+      </Size>
+      <Text>Mixing設定</Text>
+      <BackColorText>WhiteSmoke</BackColorText>
+      <MotionFlag>Start</MotionFlag>
+      <BaseName>URemix</BaseName>
+      <Description>ユーザー変数でミキシング設定を行う</Description>
+      <Group>Advance</Group>
+      <ConnectedGuids>a59acf80-e5c9-4bbd-932c-c2c90c48cfe0</ConnectedGuids>
+      <ConnectTypes>BeginConnect</ConnectTypes>
+      <ProgramCode>
+        <anyType xsi:type="xsd:string">0D 00 12 0E 00 00 62 44 32 FF FF 01 04</anyType>
+      </ProgramCode>
+      <Hint>頭（ヨー） </Hint>
+    </anyType>
+    <anyType xsi:type="ActivityData">
+      <Name>URemix8</Name>
+      <GUID>3e3b9a1d-b1f1-4d6d-8953-0315da80d4a7</GUID>
+      <Location>
+        <X>336</X>
+        <Y>128</Y>
+      </Location>
+      <Size>
+        <Width>64</Width>
+        <Height>48</Height>
+      </Size>
+      <Text>Mixingを戻す</Text>
+      <BackColorText>WhiteSmoke</BackColorText>
+      <MotionFlag>None</MotionFlag>
+      <BaseName>URemix</BaseName>
+      <Description>ユーザー変数でミキシング設定を行う</Description>
+      <Group>Advance</Group>
+      <ConnectedGuids>54094534-11ce-47de-80c1-d34f62d410ad</ConnectedGuids>
+      <ConnectTypes>EndConnect</ConnectTypes>
+      <ProgramCode>
+        <anyType xsi:type="xsd:string">0D 00 12 0E 00 00 FF FF 01 FF FF 01 2B</anyType>
+      </ProgramCode>
+      <Hint>頭（ヨー） </Hint>
+    </anyType>
+  </Activities>
+  <BackColorText>buttonface</BackColorText>
+</CanvasData>

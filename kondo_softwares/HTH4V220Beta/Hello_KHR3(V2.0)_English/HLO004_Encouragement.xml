@@ -1,0 +1,444 @@
+<?xml version="1.0"?>
+<ArrayOfAnyType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <anyType xsi:type="ActivityData">
+    <Name>Pos6</Name>
+    <GUID>fd4c43c5-21e8-4f75-b077-4a8b14f1534d</GUID>
+    <Location>
+      <X>456</X>
+      <Y>200</Y>
+    </Location>
+    <Size>
+      <Width>64</Width>
+      <Height>48</Height>
+    </Size>
+    <Text>homepos</Text>
+    <BackColorText>buttonface</BackColorText>
+    <MotionFlag>None</MotionFlag>
+    <PriorityList>
+      <anyType xsi:type="xsd:string">00 00 00 00</anyType>
+    </PriorityList>
+    <BaseName>Pos</BaseName>
+    <Description>ポジション設定</Description>
+    <Group>Position</Group>
+    <Path />
+    <ConnectedGuids>00000000-0000-0000-0000-000000000000,00000000-0000-0000-0000-000000000000,3af2b32e-5e25-40ca-8bda-337e6b8014b1,00000000-0000-0000-0000-000000000000</ConnectedGuids>
+    <ConnectTypes>NotConnected,NotConnected,EndConnect,NotConnected</ConnectTypes>
+    <ProgramCode>
+      <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 32 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D D5</anyType>
+    </ProgramCode>
+  </anyType>
+  <anyType xsi:type="ActivityData">
+    <Name>ServoParam17</Name>
+    <GUID>2619c50b-d920-4945-a3aa-62fbb143a9bd</GUID>
+    <Location>
+      <X>384</X>
+      <Y>200</Y>
+    </Location>
+    <Size>
+      <Width>64</Width>
+      <Height>48</Height>
+    </Size>
+    <Text>ServoParam17</Text>
+    <BackColorText>buttonface</BackColorText>
+    <MotionFlag>None</MotionFlag>
+    <PriorityList>
+      <anyType xsi:type="xsd:string">00 00 00 00</anyType>
+    </PriorityList>
+    <BaseName>ServoParam</BaseName>
+    <Description>サーボモーターの特性を設定</Description>
+    <Group>Set</Group>
+    <Path />
+    <ConnectedGuids>00000000-0000-0000-0000-000000000000,00000000-0000-0000-0000-000000000000,54f3b876-4343-4cb3-a458-bbd2c92d1f1e,3af2b32e-5e25-40ca-8bda-337e6b8014b1</ConnectedGuids>
+    <ConnectTypes>NotConnected,NotConnected,EndConnect,BeginConnect</ConnectTypes>
+    <ProgramCode>
+      <anyType xsi:type="xsd:string">0D 12 08 0E 00 00 00 01 3C 3C 3C 3C 26</anyType>
+    </ProgramCode>
+  </anyType>
+  <anyType xsi:type="ActivityData">
+    <Name>Pos24</Name>
+    <GUID>f97f2bf3-bce5-4d3a-b564-26795a798634</GUID>
+    <Location>
+      <X>312</X>
+      <Y>200</Y>
+    </Location>
+    <Size>
+      <Width>64</Width>
+      <Height>48</Height>
+    </Size>
+    <Text>Pos24</Text>
+    <BackColorText>buttonface</BackColorText>
+    <MotionFlag>None</MotionFlag>
+    <PriorityList>
+      <anyType xsi:type="xsd:string">00 00 00 00</anyType>
+    </PriorityList>
+    <BaseName>Pos</BaseName>
+    <Description>ポジション設定</Description>
+    <Group>Position</Group>
+    <Path />
+    <ConnectedGuids>00000000-0000-0000-0000-000000000000,00000000-0000-0000-0000-000000000000,6f513419-b905-4a59-8eda-4287cda0307e,54f3b876-4343-4cb3-a458-bbd2c92d1f1e</ConnectedGuids>
+    <ConnectTypes>NotConnected,NotConnected,EndConnect,BeginConnect</ConnectTypes>
+    <ProgramCode>
+      <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 3C 4C 1D 64 19 AC 0D 78 1E E8 1C 3C 0F D0 20 A4 1F A4 1F 08 20 E8 1C 60 22 E8 1C 26 1B 4C 1D C4 1D 8D 1D C7</anyType>
+    </ProgramCode>
+  </anyType>
+  <anyType xsi:type="ActivityData">
+    <Name>Pos23</Name>
+    <GUID>81f91a83-193f-4102-9688-648538cc685b</GUID>
+    <Location>
+      <X>240</X>
+      <Y>200</Y>
+    </Location>
+    <Size>
+      <Width>64</Width>
+      <Height>48</Height>
+    </Size>
+    <Text>Pos23</Text>
+    <BackColorText>buttonface</BackColorText>
+    <MotionFlag>None</MotionFlag>
+    <PriorityList>
+      <anyType xsi:type="xsd:string">00 00 00 00</anyType>
+    </PriorityList>
+    <BaseName>Pos</BaseName>
+    <Description>ポジション設定</Description>
+    <Group>Position</Group>
+    <Path />
+    <ConnectedGuids>00000000-0000-0000-0000-000000000000,00000000-0000-0000-0000-000000000000,de290f93-c33b-430b-950b-31aea5500e63,6f513419-b905-4a59-8eda-4287cda0307e</ConnectedGuids>
+    <ConnectTypes>NotConnected,NotConnected,EndConnect,BeginConnect</ConnectTypes>
+    <ProgramCode>
+      <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 64 19 AC 0D 78 1E E8 1C 3C 0F D0 20 A4 1F A4 1F 08 20 E8 1C 60 22 E8 1C 26 1B 4C 1D C4 1D 8D 1D 9F</anyType>
+    </ProgramCode>
+  </anyType>
+  <anyType xsi:type="ActivityData">
+    <Name>Pos22</Name>
+    <GUID>b36faf65-a3db-44e9-855b-322bcab6c5a7</GUID>
+    <Location>
+      <X>168</X>
+      <Y>200</Y>
+    </Location>
+    <Size>
+      <Width>64</Width>
+      <Height>48</Height>
+    </Size>
+    <Text>Pos22</Text>
+    <BackColorText>buttonface</BackColorText>
+    <MotionFlag>None</MotionFlag>
+    <PriorityList>
+      <anyType xsi:type="xsd:string">00 00 00 00</anyType>
+    </PriorityList>
+    <BaseName>Pos</BaseName>
+    <Description>ポジション設定</Description>
+    <Group>Position</Group>
+    <Path />
+    <ConnectedGuids>7f466823-d2d1-4e38-86c1-4af1b4dc1b69,00000000-0000-0000-0000-000000000000,00000000-0000-0000-0000-000000000000,de290f93-c33b-430b-950b-31aea5500e63</ConnectedGuids>
+    <ConnectTypes>EndConnect,NotConnected,NotConnected,BeginConnect</ConnectTypes>
+    <ProgramCode>
+      <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 4C 1D 58 1B 7C 15 78 1E 20 1C 3C 0F 3C 28 5C 1C 5C 1C A0 1E 30 1B 02 21 6A 18 CC 1A 3A 20 4C 1D E8 1C ED</anyType>
+    </ProgramCode>
+  </anyType>
+  <anyType xsi:type="ActivityData">
+    <Name>Loop36</Name>
+    <GUID>c7fea7a2-ea49-4de7-9f1b-55c6fe696874</GUID>
+    <Location>
+      <X>168</X>
+      <Y>128</Y>
+    </Location>
+    <Size>
+      <Width>64</Width>
+      <Height>48</Height>
+    </Size>
+    <Text>Loop36</Text>
+    <BackColorText>buttonface</BackColorText>
+    <MotionFlag>None</MotionFlag>
+    <PriorityList>
+      <anyType xsi:type="xsd:string">00 04 01 00</anyType>
+    </PriorityList>
+    <BaseName>Loop</BaseName>
+    <Description>繰り返し処理</Description>
+    <Group>Compare</Group>
+    <Path />
+    <ConnectedGuids>00000000-0000-0000-0000-000000000000,7f466823-d2d1-4e38-86c1-4af1b4dc1b69,495fbb13-a45b-4219-98d7-9080d9eaffbc,4914580f-8774-4c05-ba00-3e50b27039d0</ConnectedGuids>
+    <ConnectTypes>NotConnected,BeginConnect,BeginConnect,EndConnect</ConnectTypes>
+    <ProgramCode>
+      <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+      <anyType xsi:type="xsd:string">07 0B FF FF FF 05 14</anyType>
+    </ProgramCode>
+  </anyType>
+  <anyType xsi:type="ActivityData">
+    <Name>Pos18</Name>
+    <GUID>e949d5d9-f11f-4c2b-aae2-979a603ea1c3</GUID>
+    <Location>
+      <X>240</X>
+      <Y>72</Y>
+    </Location>
+    <Size>
+      <Width>64</Width>
+      <Height>48</Height>
+    </Size>
+    <Text>Pos18</Text>
+    <BackColorText>buttonface</BackColorText>
+    <MotionFlag>None</MotionFlag>
+    <PriorityList>
+      <anyType xsi:type="xsd:string">00 00 00 00</anyType>
+    </PriorityList>
+    <BaseName>Pos</BaseName>
+    <Description>ポジション設定</Description>
+    <Group>Position</Group>
+    <Path />
+    <ConnectedGuids>00000000-0000-0000-0000-000000000000,4914580f-8774-4c05-ba00-3e50b27039d0,9ae5480c-0542-4039-b594-afd10ca046ca,00000000-0000-0000-0000-000000000000</ConnectedGuids>
+    <ConnectTypes>NotConnected,BeginConnect,EndConnect,NotConnected</ConnectTypes>
+    <ProgramCode>
+      <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 4C 1D 58 1B 2C 1A 78 1E 20 1C 3C 0F 5C 2B 94 1B 94 1B 30 20 3C 19 5A 23 4A 15 A0 19 CA 21 14 1E E8 1C 33</anyType>
+    </ProgramCode>
+  </anyType>
+  <anyType xsi:type="ActivityData">
+    <Name>Pos22</Name>
+    <GUID>918c2202-456c-453e-b807-bd2d80ca7639</GUID>
+    <Location>
+      <X>168</X>
+      <Y>72</Y>
+    </Location>
+    <Size>
+      <Width>64</Width>
+      <Height>48</Height>
+    </Size>
+    <Text>Pos22</Text>
+    <BackColorText>buttonface</BackColorText>
+    <MotionFlag>None</MotionFlag>
+    <PriorityList>
+      <anyType xsi:type="xsd:string">00 00 00 00</anyType>
+    </PriorityList>
+    <BaseName>Pos</BaseName>
+    <Description>ポジション設定</Description>
+    <Group>Position</Group>
+    <Path />
+    <ConnectedGuids>00000000-0000-0000-0000-000000000000,00000000-0000-0000-0000-000000000000,2a240222-abe2-4800-b46e-7cd02181ad08,9ae5480c-0542-4039-b594-afd10ca046ca</ConnectedGuids>
+    <ConnectTypes>NotConnected,NotConnected,EndConnect,BeginConnect</ConnectTypes>
+    <ProgramCode>
+      <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 58 1B 2C 1A 78 1E 20 1C 3C 0F 5C 2B 94 1B 94 1B 30 20 3C 19 5A 23 4A 15 A0 19 CA 21 14 1E E8 1C 47</anyType>
+    </ProgramCode>
+  </anyType>
+  <anyType xsi:type="ActivityData">
+    <Name>Pos19</Name>
+    <GUID>168a86ce-78aa-447d-b438-087a41b1e2d9</GUID>
+    <Location>
+      <X>96</X>
+      <Y>72</Y>
+    </Location>
+    <Size>
+      <Width>64</Width>
+      <Height>48</Height>
+    </Size>
+    <Text>Pos19</Text>
+    <BackColorText>buttonface</BackColorText>
+    <MotionFlag>None</MotionFlag>
+    <PriorityList>
+      <anyType xsi:type="xsd:string">00 00 00 00</anyType>
+    </PriorityList>
+    <BaseName>Pos</BaseName>
+    <Description>ポジション設定</Description>
+    <Group>Position</Group>
+    <Path />
+    <ConnectedGuids>00000000-0000-0000-0000-000000000000,495fbb13-a45b-4219-98d7-9080d9eaffbc,20d0162b-502c-438d-bf7e-753b58dc0ac3,2a240222-abe2-4800-b46e-7cd02181ad08</ConnectedGuids>
+    <ConnectTypes>NotConnected,EndConnect,EndConnect,BeginConnect</ConnectTypes>
+    <ProgramCode>
+      <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 90 1A 88 13 40 1F 4C 1D A0 0F 54 24 B0 1D E8 1C 78 1E 20 1C A4 1F F4 1A EE 1B AA 1E B0 1D E8 1C 7B</anyType>
+    </ProgramCode>
+  </anyType>
+  <anyType xsi:type="ActivityData">
+    <Name>SetCounter4</Name>
+    <GUID>1dccd0ca-0f74-4618-a8d0-aebf2ac6d1e2</GUID>
+    <Location>
+      <X>8</X>
+      <Y>72</Y>
+    </Location>
+    <Size>
+      <Width>64</Width>
+      <Height>48</Height>
+    </Size>
+    <Text>SetCounter4</Text>
+    <BackColorText>buttonface</BackColorText>
+    <MotionFlag>None</MotionFlag>
+    <PriorityList>
+      <anyType xsi:type="xsd:string">00 00 00 00</anyType>
+    </PriorityList>
+    <BaseName>SetCounter</BaseName>
+    <Description>パラメーターのセット</Description>
+    <Group>Set</Group>
+    <Path />
+    <ConnectedGuids>42df41d3-42f4-49ef-a086-ab8de21d7d0e,00000000-0000-0000-0000-000000000000,00000000-0000-0000-0000-000000000000,20d0162b-502c-438d-bf7e-753b58dc0ac3</ConnectedGuids>
+    <ConnectTypes>EndConnect,NotConnected,NotConnected,BeginConnect</ConnectTypes>
+    <ProgramCode>
+      <anyType xsi:type="xsd:string">08 00 02 57 04 00 02 67</anyType>
+    </ProgramCode>
+  </anyType>
+  <anyType xsi:type="ActivityData">
+    <Name>ServoParam16</Name>
+    <GUID>461dc12b-d5ce-4a63-a2b2-b94211580f47</GUID>
+    <Location>
+      <X>8</X>
+      <Y>16</Y>
+    </Location>
+    <Size>
+      <Width>64</Width>
+      <Height>48</Height>
+    </Size>
+    <Text>ServoParam16</Text>
+    <BackColorText>buttonface</BackColorText>
+    <MotionFlag>Start</MotionFlag>
+    <PriorityList>
+      <anyType xsi:type="xsd:string">00 00 00 00</anyType>
+    </PriorityList>
+    <BaseName>ServoParam</BaseName>
+    <Description>サーボモーターの特性を設定</Description>
+    <Group>Set</Group>
+    <Path />
+    <ConnectedGuids>00000000-0000-0000-0000-000000000000,42df41d3-42f4-49ef-a086-ab8de21d7d0e,00000000-0000-0000-0000-000000000000,00000000-0000-0000-0000-000000000000</ConnectedGuids>
+    <ConnectTypes>NotConnected,BeginConnect,NotConnected,NotConnected</ConnectTypes>
+    <ProgramCode>
+      <anyType xsi:type="xsd:string">0D 12 08 0E 00 00 00 01 7F 7F 7F 7F 32</anyType>
+    </ProgramCode>
+  </anyType>
+  <anyType xsi:type="LineData">
+    <Name />
+    <StartPoint>
+      <X>228</X>
+      <Y>96</Y>
+    </StartPoint>
+    <EndPoint>
+      <X>242</X>
+      <Y>96</Y>
+    </EndPoint>
+    <GUID>9ae5480c-0542-4039-b594-afd10ca046ca</GUID>
+    <LineType>Straight</LineType>
+  </anyType>
+  <anyType xsi:type="LineData">
+    <Name />
+    <StartPoint>
+      <X>272</X>
+      <Y>116</Y>
+    </StartPoint>
+    <EndPoint>
+      <X>228</X>
+      <Y>152</Y>
+    </EndPoint>
+    <GUID>4914580f-8774-4c05-ba00-3e50b27039d0</GUID>
+    <LineType>Straight</LineType>
+  </anyType>
+  <anyType xsi:type="LineData">
+    <Name />
+    <StartPoint>
+      <X>200</X>
+      <Y>172</Y>
+    </StartPoint>
+    <EndPoint>
+      <X>200</X>
+      <Y>202</Y>
+    </EndPoint>
+    <GUID>7f466823-d2d1-4e38-86c1-4af1b4dc1b69</GUID>
+    <LineType>Straight</LineType>
+  </anyType>
+  <anyType xsi:type="LineData">
+    <Name />
+    <StartPoint>
+      <X>228</X>
+      <Y>224</Y>
+    </StartPoint>
+    <EndPoint>
+      <X>242</X>
+      <Y>224</Y>
+    </EndPoint>
+    <GUID>de290f93-c33b-430b-950b-31aea5500e63</GUID>
+    <LineType>Straight</LineType>
+  </anyType>
+  <anyType xsi:type="LineData">
+    <Name />
+    <StartPoint>
+      <X>300</X>
+      <Y>224</Y>
+    </StartPoint>
+    <EndPoint>
+      <X>314</X>
+      <Y>224</Y>
+    </EndPoint>
+    <GUID>6f513419-b905-4a59-8eda-4287cda0307e</GUID>
+    <LineType>Straight</LineType>
+  </anyType>
+  <anyType xsi:type="LineData">
+    <Name />
+    <StartPoint>
+      <X>372</X>
+      <Y>224</Y>
+    </StartPoint>
+    <EndPoint>
+      <X>386</X>
+      <Y>224</Y>
+    </EndPoint>
+    <GUID>54f3b876-4343-4cb3-a458-bbd2c92d1f1e</GUID>
+    <LineType>Straight</LineType>
+  </anyType>
+  <anyType xsi:type="LineData">
+    <Name />
+    <StartPoint>
+      <X>444</X>
+      <Y>224</Y>
+    </StartPoint>
+    <EndPoint>
+      <X>458</X>
+      <Y>224</Y>
+    </EndPoint>
+    <GUID>3af2b32e-5e25-40ca-8bda-337e6b8014b1</GUID>
+    <LineType>Straight</LineType>
+  </anyType>
+  <anyType xsi:type="LineData">
+    <Name />
+    <StartPoint>
+      <X>40</X>
+      <Y>60</Y>
+    </StartPoint>
+    <EndPoint>
+      <X>40</X>
+      <Y>74</Y>
+    </EndPoint>
+    <GUID>42df41d3-42f4-49ef-a086-ab8de21d7d0e</GUID>
+    <LineType>Straight</LineType>
+  </anyType>
+  <anyType xsi:type="LineData">
+    <Name />
+    <StartPoint>
+      <X>156</X>
+      <Y>96</Y>
+    </StartPoint>
+    <EndPoint>
+      <X>170</X>
+      <Y>96</Y>
+    </EndPoint>
+    <GUID>2a240222-abe2-4800-b46e-7cd02181ad08</GUID>
+    <LineType>Straight</LineType>
+  </anyType>
+  <anyType xsi:type="LineData">
+    <Name />
+    <StartPoint>
+      <X>170</X>
+      <Y>152</Y>
+    </StartPoint>
+    <EndPoint>
+      <X>128</X>
+      <Y>116</Y>
+    </EndPoint>
+    <GUID>495fbb13-a45b-4219-98d7-9080d9eaffbc</GUID>
+    <LineType>Straight</LineType>
+  </anyType>
+  <anyType xsi:type="LineData">
+    <Name />
+    <StartPoint>
+      <X>68</X>
+      <Y>96</Y>
+    </StartPoint>
+    <EndPoint>
+      <X>98</X>
+      <Y>96</Y>
+    </EndPoint>
+    <GUID>20d0162b-502c-438d-bf7e-753b58dc0ac3</GUID>
+    <LineType>Straight</LineType>
+  </anyType>
+</ArrayOfAnyType>

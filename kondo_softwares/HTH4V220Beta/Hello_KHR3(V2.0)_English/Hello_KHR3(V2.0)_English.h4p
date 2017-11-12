@@ -1,0 +1,3448 @@
+<?xml version="1.0"?>
+<Rcb4 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Config>
+    <unsignedByte>155</unsignedByte>
+    <unsignedByte>128</unsignedByte>
+  </Config>
+  <AdcReference>
+    <unsignedByte>0</unsignedByte>
+    <unsignedByte>0</unsignedByte>
+    <unsignedByte>0</unsignedByte>
+    <unsignedByte>0</unsignedByte>
+    <unsignedByte>0</unsignedByte>
+    <unsignedByte>0</unsignedByte>
+    <unsignedByte>0</unsignedByte>
+    <unsignedByte>0</unsignedByte>
+    <unsignedByte>0</unsignedByte>
+    <unsignedByte>0</unsignedByte>
+    <unsignedByte>0</unsignedByte>
+    <unsignedByte>0</unsignedByte>
+    <unsignedByte>0</unsignedByte>
+    <unsignedByte>0</unsignedByte>
+    <unsignedByte>0</unsignedByte>
+    <unsignedByte>0</unsignedByte>
+    <unsignedByte>0</unsignedByte>
+    <unsignedByte>0</unsignedByte>
+    <unsignedByte>0</unsignedByte>
+    <unsignedByte>0</unsignedByte>
+    <unsignedByte>0</unsignedByte>
+    <unsignedByte>0</unsignedByte>
+  </AdcReference>
+  <Kri3>
+    <Name>KRI-3</Name>
+    <Count>11</Count>
+    <RomAddress>0</RomAddress>
+    <RamAddress>844</RamAddress>
+    <DeviceNumber>35</DeviceNumber>
+    <Code>1</Code>
+    <ID>31</ID>
+    <ReceiveDataAddress>0</ReceiveDataAddress>
+    <ReceiveDataSize>7</ReceiveDataSize>
+    <ButtonValue>0</ButtonValue>
+    <PA1>0</PA1>
+    <PA2>0</PA2>
+    <PA3>0</PA3>
+    <PA4>0</PA4>
+    <CheckSum>0</CheckSum>
+  </Kri3>
+  <MotionDataCollection>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M001</Key>
+      <Value xsi:type="Motion">
+        <Number>0</Number>
+        <Name>HLO001_Greeting</Name>
+        <Date>2012-01-26T16:11:48.609375+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D B7</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 50 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 10 27 88 13 40 1F 58 1B 08 20 90 1A 4C 1D 4C 1D F3</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 10 27 88 13 40 1F 58 1B 08 20 90 1A 4C 1D 4C 1D B7</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 64 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 07</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>3000</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M002</Key>
+      <Value xsi:type="Motion">
+        <Number>1</Number>
+        <Name>HLO002_HomePosition(Hello_KHR3)</Name>
+        <Date>2012-01-26T16:12:06.921875+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 64 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 07</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>5048</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M003</Key>
+      <Value xsi:type="Motion">
+        <Number>2</Number>
+        <Name>HLO003_Waving</Name>
+        <Date>2012-01-26T16:13:00.203125+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">10 12 FD 00 00 00 00 01 1E 3C 3C 1E 1E 1E 1E 2E</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 2D 4C 1D 7C 1A 97 10 2C 1E 65 18 56 14 1C 25 4C 1D 4C 1D B0 1D E8 1C 4C 1D 4C 1D B0 1D E8 1C 4C 1D 4C 1D 07</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 7C 1A 97 10 2C 1E 65 18 56 14 1C 25 4C 1D 4C 1D B0 1D E8 1C 4C 1D 4C 1D B0 1D E8 1C 4C 1D 4C 1D F8</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 7C 1A 4C 0E 2C 1E 14 20 56 14 FC 21 4C 1D 4C 1D B0 1D E8 1C 4C 1D 4C 1D B0 1D E8 1C 4C 1D 4C 1D 3E</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 7C 1A 97 10 2C 1E 65 18 56 14 1C 25 4C 1D 4C 1D B0 1D E8 1C 4C 1D 4C 1D B0 1D E8 1C 4C 1D 4C 1D F8</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 3A 20 7C 1A 4C 0E 2C 1E 14 20 56 14 FC 21 14 1E 14 1E 40 1F E8 1C 6C 20 4C 1D 20 1C E8 1C 4C 1D 4C 1D E5</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 28 23 7C 1A 97 10 2C 1E 65 18 56 14 1C 25 14 1E 14 1E 40 1F E8 1C 6C 20 4C 1D 20 1C E8 1C 4C 1D 4C 1D 90</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 3A 20 7C 1A 4C 0E 2C 1E 14 20 56 14 FC 21 4C 1D 4C 1D B0 1D E8 1C 4C 1D 4C 1D B0 1D E8 1C 4C 1D 4C 1D 2F</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 7C 1A 97 10 2C 1E 65 18 56 14 1C 25 4C 1D 4C 1D B0 1D E8 1C 4C 1D 4C 1D B0 1D E8 1C 4C 1D 4C 1D F8</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 5E 1A 7C 1A 4C 0E 2C 1E 14 20 56 14 28 23 84 1C 84 1C B0 1D 58 1B 4C 1D 2C 1A B0 1D 78 1E 4C 1D 4C 1D C7</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 70 17 7C 1A 97 10 2C 1E 65 18 56 14 1C 25 84 1C 84 1C B0 1D 58 1B 4C 1D 2C 1A B0 1D 78 1E 4C 1D 4C 1D 62</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 5E 1A 7C 1A 4C 0E 2C 1E 14 20 56 14 28 23 4C 1D 4C 1D B0 1D E8 1C 4C 1D 4C 1D B0 1D E8 1C 4C 1D 4C 1D 7B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 7C 1A 97 10 2C 1E 65 18 56 14 1C 25 4C 1D 4C 1D B0 1D E8 1C 4C 1D 4C 1D B0 1D E8 1C 4C 1D 4C 1D F8</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 7C 1A 4C 0E 2C 1E 14 20 56 14 28 23 4C 1D 4C 1D B0 1D E8 1C 4C 1D 4C 1D B0 1D E8 1C 4C 1D 4C 1D 6C</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 7C 1A 97 10 2C 1E 65 18 56 14 1C 25 4C 1D 4C 1D B0 1D E8 1C 4C 1D 4C 1D B0 1D E8 1C 4C 1D 4C 1D F8</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 7C 1A 97 10 2C 1E 65 18 56 14 1C 25 4C 1D 4C 1D B0 1D E8 1C 4C 1D 4C 1D B0 1D E8 1C 4C 1D 4C 1D EE</anyType>
+          <anyType xsi:type="xsd:string">12 12 FD 03 00 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 41</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 2D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D D0</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>7096</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M004</Key>
+      <Value xsi:type="Motion">
+        <Number>3</Number>
+        <Name>HLO004_Encouragement</Name>
+        <Date>2012-01-26T16:15:06.984375+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">0D 12 08 0E 00 00 00 01 7F 7F 7F 7F 32</anyType>
+          <anyType xsi:type="xsd:string">08 00 02 57 04 00 02 67</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 90 1A 88 13 40 1F 4C 1D A0 0F 54 24 B0 1D E8 1C 78 1E 20 1C A4 1F F4 1A EE 1B AA 1E B0 1D E8 1C 7B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 58 1B 2C 1A 78 1E 20 1C 3C 0F 5C 2B 94 1B 94 1B 30 20 3C 19 5A 23 4A 15 A0 19 CA 21 14 1E E8 1C 47</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 4C 1D 58 1B 2C 1A 78 1E 20 1C 3C 0F 5C 2B 94 1B 94 1B 30 20 3C 19 5A 23 4A 15 A0 19 CA 21 14 1E E8 1C 33</anyType>
+          <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+          <anyType xsi:type="xsd:string">07 0B 64 24 00 05 9F</anyType>
+          <anyType xsi:type="xsd:string">07 0B CD 23 00 00 02</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 4C 1D 58 1B 7C 15 78 1E 20 1C 3C 0F 3C 28 5C 1C 5C 1C A0 1E 30 1B 02 21 6A 18 CC 1A 3A 20 4C 1D E8 1C ED</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 64 19 AC 0D 78 1E E8 1C 3C 0F D0 20 A4 1F A4 1F 08 20 E8 1C 60 22 E8 1C 26 1B 4C 1D C4 1D 8D 1D 9F</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 3C 4C 1D 64 19 AC 0D 78 1E E8 1C 3C 0F D0 20 A4 1F A4 1F 08 20 E8 1C 60 22 E8 1C 26 1B 4C 1D C4 1D 8D 1D C7</anyType>
+          <anyType xsi:type="xsd:string">0D 12 08 0E 00 00 00 01 3C 3C 3C 3C 26</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 32 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D D5</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>9144</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M005</Key>
+      <Value xsi:type="Motion">
+        <Number>4</Number>
+        <Name>HLO005_Chagrined</Name>
+        <Date>2012-01-26T16:17:36.59375+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 1C 25 7C 15 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 28 23 70 17 4C 1D 4C 1D A4 1F F4 1A 4C 1D 4C 1D B6</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 04 29 94 11 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D CC 29 CC 10 4C 1D 4C 1D FC 21 9C 18 4C 1D 4C 1D B5</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 19 4C 1D 04 29 94 11 4C 1D 4C 1D 2C 1A 6C 20 4C 1D 4C 1D CC 29 CC 10 4C 1D 4C 1D 40 1F 58 1B 4C 1D 4C 1D BB</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 46 4C 1D 10 27 88 13 BC 1B DC 1E 88 13 10 27 08 20 90 1A AC 26 EC 13 F8 2A A0 0F 5C 12 3C 28 4C 1D 4C 1D E6</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 10 27 B8 0B BC 1B F4 1A 88 13 24 2C A4 1F FA 19 9E 20 A0 0F F0 23 2A 12 58 1B 64 19 4C 1D 4C 1D 4F</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 10 27 AC 0D BC 1B 78 1E 88 13 10 27 A4 1F FA 19 9E 20 A0 0F F0 23 2A 12 58 1B 70 17 4C 1D 4C 1D B4</anyType>
+          <anyType xsi:type="xsd:string">0D 12 0C 03 00 00 00 01 7F 7F 7F 7F 2B</anyType>
+          <anyType xsi:type="xsd:string">08 00 02 57 04 00 05 6A</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 10 27 AC 0D BC 1B 78 1E 88 13 10 27 A4 1F FA 19 9E 20 A0 0F F0 23 2A 12 58 1B 70 17 4C 1D 4C 1D B4</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 05 4C 1D 10 27 94 11 BC 1B 78 1E 88 13 10 27 A4 1F FA 19 9E 20 A0 0F F0 23 2A 12 58 1B 70 17 4C 1D 4C 1D 91</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 05 4C 1D 10 27 88 13 BC 1B 78 1E 88 13 28 23 A4 1F FA 19 9E 20 A0 0F F0 23 2A 12 58 1B 70 17 4C 1D 4C 1D 9B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 4C 1D 10 27 88 13 BC 1B 78 1E 88 13 28 23 A4 1F FA 19 9E 20 A0 0F F0 23 2A 12 58 1B 70 17 4C 1D 4C 1D A0</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 05 4C 1D 10 27 94 11 BC 1B 78 1E 88 13 10 27 A4 1F FA 19 9E 20 A0 0F F0 23 2A 12 58 1B 70 17 4C 1D 4C 1D 91</anyType>
+          <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+          <anyType xsi:type="xsd:string">07 0B BC 2D 00 05 00</anyType>
+          <anyType xsi:type="xsd:string">07 0B CF 2C 00 00 0D</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 10 27 AC 0D BC 1B 78 1E 88 13 10 27 A4 1F FA 19 9E 20 A0 0F F0 23 2A 12 58 1B 70 17 4C 1D 4C 1D B4</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 10 27 88 13 BC 1B 78 1E 88 13 10 27 A4 1F FA 19 9E 20 A0 0F F0 23 2A 12 58 1B 70 17 4C 1D 4C 1D AA</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 10 27 88 13 BC 1B DC 1E 88 13 10 27 08 20 90 1A AC 26 EC 13 F8 2A A0 0F 52 1C 46 1E 4C 1D 4C 1D C8</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 28 23 70 17 4C 1D 4C 1D A0 0F F8 2A 4C 1D 4C 1D 7C 15 1C 25 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D B6</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D D8 27 C0 12 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D FC 21 9C 18 4C 1D 4C 1D 9C 18 FC 21 4C 1D 4C 1D C8</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D D8 27 C0 12 14 1E 84 1C 4C 1D 4C 1D 4C 1D 4C 1D CC 29 CC 10 4C 1D 4C 1D 78 1E 20 1C 4C 1D 4C 1D C9</anyType>
+          <anyType xsi:type="xsd:string">2F 10 3D FF 3F 00 00 0A 4C 1D D8 27 C0 12 14 1E 84 1C 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D CC 29 CC 10 4C 1D 4C 1D 78 1E 20 1C 4C 1D 4C 1D 8D</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D D8 27 C0 12 14 1E 84 1C 4C 1D 4C 1D 4C 1D 4C 1D FE 29 9A 10 4C 1D 4C 1D FC 21 9C 18 4C 1D 4C 1D B4</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 23 4C 1D D0 20 C8 19 14 1E 84 1C 4C 1D 4C 1D 4C 1D 4C 1D B8 24 E0 15 4C 1D 4C 1D 34 21 64 19 4C 1D 4C 1D C4</anyType>
+          <anyType xsi:type="xsd:string">0D 12 0C 03 00 00 00 01 3C 3C 3C 3C 1F</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 32 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D D5</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>11192</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M006</Key>
+      <Value xsi:type="Motion">
+        <Number>5</Number>
+        <Name>HLO006_Handstand</Name>
+        <Date>2012-01-26T16:17:46.71875+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">11 12 3C 03 03 00 00 01 7F 7F 3C 3C 7F 7F 7F 7F D8</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 1C 25 7C 15 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 28 23 70 17 4C 1D 4C 1D A4 1F F4 1A 4C 1D 4C 1D B6</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 04 29 94 11 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D CC 29 CC 10 4C 1D 4C 1D FC 21 9C 18 4C 1D 4C 1D B5</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 04 29 94 11 4C 1D 4C 1D 74 0E 24 2C 4C 1D 4C 1D F8 2A A0 0F 58 1B 40 1F 4C 1D 4C 1D 4C 1D 4C 1D CA</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 04 29 94 11 20 1C 20 1C 74 0E 24 2C 14 1E 14 1E F8 2A A0 0F 2C 1A 6C 20 28 23 70 17 4C 1D 4C 1D 02</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 07 4C 1D 04 29 94 11 20 1C 20 1C 74 0E 24 2C 14 1E 14 1E F8 2A A0 0F 2C 1A 6C 20 28 23 70 17 4C 1D 4C 1D E1</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 04 29 94 11 20 1C 20 1C 74 0E 24 2C 14 1E 4C 1D F8 2A 64 19 2C 1A 94 11 28 23 4C 1D 4C 1D 4C 1D 02</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 19 4C 1D 04 29 94 11 20 1C 20 1C 74 0E 24 2C 14 1E 4C 1D F8 2A 04 29 2C 1A 4C 1D 28 23 58 1B 4C 1D 4C 1D 71</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 04 29 94 11 20 1C 20 1C 74 0E 24 2C 14 1E 4C 1D F8 2A 04 29 2C 1A 4C 1D 28 23 58 1B 4C 1D 4C 1D 80</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D EC 2C AC 0D 4C 1D 4C 1D 74 0E 24 2C 4C 1D 4C 1D F8 2A 04 29 64 19 4C 1D 28 23 58 1B 4C 1D 4C 1D 47</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D EC 2C AC 0D 4C 1D 4C 1D 74 0E 24 2C 4C 1D 4C 1D F8 2A 04 29 64 19 4C 1D 28 23 58 1B 4C 1D 4C 1D 47</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D EC 2C AC 0D 4C 1D 4C 1D 74 0E 24 2C 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 40 1F 58 1B 4C 1D 4C 1D CA</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D EC 2C AC 0D 4C 1D 4C 1D 74 0E 24 2C 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 40 1F 58 1B 4C 1D 4C 1D CA</anyType>
+          <anyType xsi:type="xsd:string">11 12 3C 03 03 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 46</anyType>
+          <anyType xsi:type="xsd:string">08 00 02 57 04 00 05 6A</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 88 2C 10 0E 4C 1D 4C 1D 74 0E 24 2C 58 1B 58 1B 1C 25 4C 1D EC 2C 4C 1D 7C 15 58 1B 4C 1D 4C 1D 98</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 88 2C 10 0E 4C 1D 4C 1D 74 0E 24 2C 40 1F 40 1F 4C 1D 7C 15 4C 1D AC 0D 40 1F 1C 25 4C 1D 4C 1D FD</anyType>
+          <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+          <anyType xsi:type="xsd:string">07 0B 52 36 00 05 9F</anyType>
+          <anyType xsi:type="xsd:string">07 0B E6 35 00 00 2D</anyType>
+          <anyType xsi:type="xsd:string">19 12 3C F3 3F 00 00 01 3C 3C 3C 3C 3C 3C 14 14 1E 1E 1E 1E 1E 1E 14 14 06</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 88 2C 10 0E 4C 1D 4C 1D 74 0E 24 2C E8 1C B0 1D 1C 25 7C 15 EC 2C AC 0D 7C 15 1C 25 4C 1D 4C 1D C9</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 88 2C 10 0E 4C 1D 4C 1D 74 0E 24 2C E8 1C B0 1D CC 29 CC 10 80 25 18 15 7C 15 1C 25 4C 1D 4C 1D B5</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D D8 27 C0 12 14 1E 84 1C 4C 1D 4C 1D 4C 1D 4C 1D FE 29 9A 10 4C 1D 4C 1D FC 21 9C 18 4C 1D 4C 1D BE</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 97</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D D8 27 C0 12 14 1E 84 1C 4C 1D 4C 1D 4C 1D 4C 1D FE 29 9A 10 4C 1D 4C 1D FC 21 9C 18 4C 1D 4C 1D B4</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D D0 20 C8 19 14 1E 84 1C 4C 1D 4C 1D 4C 1D 4C 1D B8 24 E0 15 4C 1D 4C 1D 34 21 64 19 4C 1D 4C 1D C9</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D CB</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>13240</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M007</Key>
+      <Value xsi:type="Motion">
+        <Number>6</Number>
+        <Name>M007</Name>
+        <Date>2009-07-15T21:23:52.078125+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>15288</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M008</Key>
+      <Value xsi:type="Motion">
+        <Number>7</Number>
+        <Name>HLO008_Clapping(Call M40 at 10 times)</Name>
+        <Date>2012-01-26T16:20:40.828125+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 58 1B 40 1F 78 1E 20 1C 04 10 94 2A 4C 1D 4C 1D 4C 1D 4C 1D 84 1C 14 1E 14 1E 84 1C 4C 1D 4C 1D C1</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 48 26 18 15 58 1B 14 1E 00 19 D0 20 4C 1D 4C 1D 78 1E 20 1C A4 1F F4 1A 52 1C 46 1E 4C 1D 4C 1D 9D</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 48 26 18 15 58 1B 14 1E 00 19 D0 20 4C 1D 4C 1D 78 1E 20 1C A4 1F F4 1A 52 1C 46 1E 4C 1D 4C 1D 93</anyType>
+          <anyType xsi:type="xsd:string">08 00 02 57 04 00 0A 6F</anyType>
+          <anyType xsi:type="xsd:string">07 0C B8 43 01 00 0F</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 28 23 70 17 14 1E 84 1C D4 17 C4 22 4C 1D 4C 1D 78 1E 20 1C A4 1F F4 1A 52 1C 46 1E 4C 1D 4C 1D BF</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D CB</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>17336</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M009</Key>
+      <Value xsi:type="Motion">
+        <Number>8</Number>
+        <Name>HLO009_Clap the Rhythm(Call M40)</Name>
+        <Date>2012-01-26T16:22:15.96875+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 58 1B 40 1F 78 1E 20 1C 04 10 94 2A 4C 1D 4C 1D 4C 1D 4C 1D 84 1C 14 1E 14 1E 84 1C 4C 1D 4C 1D C1</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 48 26 18 15 58 1B 14 1E 00 19 D0 20 4C 1D 4C 1D 78 1E 20 1C A4 1F F4 1A 52 1C 46 1E 4C 1D 4C 1D 9D</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 48 26 18 15 58 1B 14 1E 00 19 D0 20 4C 1D 4C 1D 78 1E 20 1C A4 1F F4 1A 52 1C 46 1E 4C 1D 4C 1D 93</anyType>
+          <anyType xsi:type="xsd:string">08 00 02 57 04 00 03 68</anyType>
+          <anyType xsi:type="xsd:string">07 0C B8 43 01 00 0F</anyType>
+          <anyType xsi:type="xsd:string">08 00 02 57 04 00 03 68</anyType>
+          <anyType xsi:type="xsd:string">07 0C B8 43 01 00 0F</anyType>
+          <anyType xsi:type="xsd:string">08 00 02 57 04 00 07 6C</anyType>
+          <anyType xsi:type="xsd:string">07 0C B8 43 01 00 0F</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0F 4C 1D 28 23 70 17 14 1E 84 1C D4 17 C4 22 4C 1D 4C 1D 78 1E 20 1C A4 1F F4 1A 52 1C 46 1E 4C 1D 4C 1D B0</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D CB</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>19384</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M010</Key>
+      <Value xsi:type="Motion">
+        <Number>9</Number>
+        <Name>HLO010_Push-Up(10 times)</Name>
+        <Date>2012-01-26T16:22:50.109375+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 15 4C 1D 1C 25 7C 15 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 28 23 70 17 4C 1D 4C 1D A4 1F F4 1A 4C 1D 4C 1D B7</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 15 4C 1D 04 29 94 11 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D CC 29 CC 10 4C 1D 4C 1D FC 21 9C 18 4C 1D 4C 1D B6</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1C 4C 1D 04 29 94 11 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D CC 29 CC 10 4C 1D 4C 1D 40 1F 58 1B 4C 1D 4C 1D BE</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 2A 4C 1D 10 27 88 13 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D E8 1C B0 1D 4C 1D 4C 1D 7C 15 1C 25 4C 1D 4C 1D CC</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 31 4C 1D 28 23 70 17 4C 1D 4C 1D 9C 18 FC 21 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 40 1F 58 1B 4C 1D 4C 1D D3</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 38 4C 1D 28 23 70 17 4C 1D 4C 1D 9C 18 FC 21 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 40 1F 58 1B 4C 1D 4C 1D DA</anyType>
+          <anyType xsi:type="xsd:string">0D 12 0C 03 00 00 00 01 7F 7F 7F 7F 2B</anyType>
+          <anyType xsi:type="xsd:string">08 00 02 57 04 00 0A 6F</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0E 4C 1D DC 1E BC 1B 14 1E 84 1C A0 0F F8 2A 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D AF</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0B 4C 1D DC 1E BC 1B 14 1E 84 1C A0 0F F8 2A 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D AC</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 19 4C 1D 28 23 70 17 4C 1D 4C 1D 9C 18 FC 21 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 40 1F 58 1B 4C 1D 4C 1D BB</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 07 4C 1D 28 23 70 17 4C 1D 4C 1D 9C 18 FC 21 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 40 1F 58 1B 4C 1D 4C 1D A9</anyType>
+          <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+          <anyType xsi:type="xsd:string">07 0B 91 55 00 05 FD</anyType>
+          <anyType xsi:type="xsd:string">07 0B CF 54 00 00 35</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 23 4C 1D 1C 25 7C 15 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D E8 1C B0 1D 4C 1D 4C 1D 40 1F 58 1B 4C 1D 4C 1D C5</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 07 4C 1D 1C 25 7C 15 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D E8 1C B0 1D 4C 1D 4C 1D 40 1F 58 1B 4C 1D 4C 1D A9</anyType>
+          <anyType xsi:type="xsd:string">0D 12 0C 03 00 00 00 01 3C 3C 3C 3C 1F</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 15 4C 1D D8 27 C0 12 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 02 21 96 19 4C 1D 4C 1D 70 17 28 23 4C 1D 4C 1D B7</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1C 4C 1D D8 27 C0 12 14 1E 84 1C 4C 1D 4C 1D 4C 1D 4C 1D CC 29 CC 10 4C 1D 4C 1D 78 1E 20 1C 4C 1D 4C 1D BD</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 07 4C 1D D8 27 C0 12 14 1E 84 1C 4C 1D 4C 1D 4C 1D 4C 1D CC 29 CC 10 4C 1D 4C 1D 78 1E 20 1C 4C 1D 4C 1D A8</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 15 4C 1D D8 27 C0 12 14 1E 84 1C 4C 1D 4C 1D 4C 1D 4C 1D FE 29 9A 10 E8 1C 4C 1D FC 21 9C 18 4C 1D 4C 1D 50</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 23 4C 1D D0 20 C8 19 14 1E 84 1C 4C 1D 4C 1D 4C 1D 4C 1D B8 24 E0 15 56 1D 4C 1D 34 21 64 19 4C 1D 4C 1D CE</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 23 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D C6</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>21432</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M011</Key>
+      <Value xsi:type="Motion">
+        <Number>10</Number>
+        <Name>HLO011_One Leg Bend and Stretch(5 times)</Name>
+        <Date>2012-01-26T16:23:42.265625+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D C1</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 DC 1E DC 1E 40 1F 58 1B 34 21 64 19 26 1B 72 1F DC 1E DC 1E 0F</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0E 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 DC 1E DC 1E 40 1F 58 1B 34 21 64 19 26 1B 72 1F DC 1E DC 1E F5</anyType>
+          <anyType xsi:type="xsd:string">0E 12 00 A0 2A 00 00 01 7F 7F 7F 7F 7F 66</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 23 4C 1D 64 19 34 21 40 1F 58 1B 88 13 10 27 DC 1E DC 1E 1C 25 F4 1A EC 2C 64 19 7C 15 DC 1E 4C 1D DC 1E 72</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 23 4C 1D 64 19 34 21 40 1F 58 1B 88 13 10 27 DC 1E DC 1E 1C 25 F4 1A 84 1C 64 19 4C 1D DC 1E 4C 1D DC 1E D2</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0E 4C 1D 64 19 34 21 40 1F 58 1B 88 13 10 27 DC 1E DC 1E 1C 25 F4 1A 84 1C 64 19 4C 1D DC 1E 4C 1D DC 1E BD</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 64 19 34 21 40 1F 58 1B 88 13 10 27 DC 1E DC 1E 1C 25 F4 1A 84 1C 64 19 4C 1D DC 1E 4C 1D DC 1E D7</anyType>
+          <anyType xsi:type="xsd:string">08 00 02 57 04 00 05 6A</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 64 19 34 21 34 21 64 19 88 13 10 27 DC 1E DC 1E 04 29 70 17 4C 1D 94 11 4C 1D 28 23 4C 1D DC 1E 6A</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 07 4C 1D 64 19 34 21 34 21 64 19 88 13 10 27 DC 1E DC 1E 04 29 70 17 4C 1D 94 11 4C 1D 28 23 4C 1D DC 1E 5D</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 37 4C 1D 64 19 34 21 40 1F 58 1B 88 13 10 27 DC 1E DC 1E 1C 25 F4 1A 4C 1D 64 19 4C 1D DC 1E 4C 1D DC 1E AF</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 07 4C 1D 64 19 34 21 40 1F 58 1B 88 13 10 27 DC 1E DC 1E 1C 25 F4 1A 4C 1D 64 19 4C 1D DC 1E 4C 1D DC 1E 7F</anyType>
+          <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+          <anyType xsi:type="xsd:string">07 0B BD 5D 00 05 31</anyType>
+          <anyType xsi:type="xsd:string">07 0B FB 5C 00 00 69</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 64 19 34 21 40 1F 58 1B 88 13 10 27 DC 1E DC 1E 1C 25 F4 1A 4C 1D 64 19 AC 26 DC 1E 4C 1D DC 1E FF</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 64 19 34 21 40 1F 58 1B 88 13 10 27 A4 1F DC 1E 34 21 4C 1D 1C 25 4C 1D 64 19 4C 1D A4 1F DC 1E 79</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 46 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D E9</anyType>
+          <anyType xsi:type="xsd:string">0F 12 00 C0 0F 00 00 01 3C 3C 3C 3C 3C 3C 59</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>23480</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M012</Key>
+      <Value xsi:type="Motion">
+        <Number>11</Number>
+        <Name>HLO012_Rabbit Jump A(3 times)</Name>
+        <Date>2012-01-26T16:24:14.390625+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 64 19 34 21 78 1E 20 1C 94 11 04 29 4C 1D 4C 1D 80 25 18 15 EC 2C AC 0D 7C 15 1C 25 4C 1D 4C 1D CA</anyType>
+          <anyType xsi:type="xsd:string">08 00 02 57 04 00 03 68</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 64 19 34 21 78 1E 20 1C 94 11 04 29 4C 1D 4C 1D 80 25 18 15 EC 2C AC 0D 7C 15 1C 25 4C 1D 4C 1D CA</anyType>
+          <anyType xsi:type="xsd:string">11 12 0C C0 0F 00 00 01 7F 7F 7F 7F 7F 7F 7F 7F F7</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 4C 1D 4C 1D 78 1E 20 1C 94 11 04 29 4C 1D 4C 1D AC 26 EC 13 EC 2C AC 0D 7C 15 1C 25 4C 1D 4C 1D B5</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 04 4C 1D 28 23 70 17 78 1E 20 1C 94 11 04 29 4C 1D 4C 1D 34 21 64 19 10 27 88 13 7C 15 1C 25 4C 1D 4C 1D A7</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 03 4C 1D 10 27 88 13 78 1E 20 1C 7C 15 1C 25 4C 1D 4C 1D 78 1E 20 1C 14 1E 84 1C 14 1E 84 1C A4 1F F4 1A A5</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 02 4C 1D 10 27 88 13 78 1E 20 1C 7C 15 1C 25 4C 1D 4C 1D 78 1E 20 1C 14 1E 84 1C 14 1E 84 1C A4 1F F4 1A A4</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 01 4C 1D 64 19 34 21 78 1E 20 1C 94 11 04 29 4C 1D 4C 1D 80 25 18 15 EC 2C AC 0D 7C 15 1C 25 4C 1D 4C 1D A3</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 03 4C 1D 64 19 34 21 78 1E 20 1C 94 11 04 29 4C 1D 4C 1D 80 25 18 15 EC 2C AC 0D 7C 15 1C 25 4C 1D 4C 1D A5</anyType>
+          <anyType xsi:type="xsd:string">11 12 0C C0 0F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C DF</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 64 19 34 21 78 1E 20 1C 94 11 04 29 4C 1D 4C 1D 80 25 18 15 EC 2C AC 0D 7C 15 1C 25 4C 1D 4C 1D B6</anyType>
+          <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+          <anyType xsi:type="xsd:string">07 0B 7B 65 00 05 F7</anyType>
+          <anyType xsi:type="xsd:string">07 0B EB 63 00 00 60</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 19 4C 1D 64 19 34 21 78 1E 20 1C 94 11 04 29 4C 1D 4C 1D 80 25 18 15 EC 2C AC 0D 7C 15 1C 25 4C 1D 4C 1D BB</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 37 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D DA</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>25528</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M013</Key>
+      <Value xsi:type="Motion">
+        <Number>12</Number>
+        <Name>HLO013_Rabbit Jump B(3 times)</Name>
+        <Date>2012-01-26T16:24:40.875+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 64 19 34 21 78 1E 20 1C 94 11 04 29 4C 1D 4C 1D 80 25 18 15 EC 2C AC 0D 7C 15 1C 25 4C 1D 4C 1D CA</anyType>
+          <anyType xsi:type="xsd:string">08 00 02 57 04 00 03 68</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 64 19 34 21 78 1E 20 1C 94 11 04 29 4C 1D 4C 1D 80 25 18 15 EC 2C AC 0D 7C 15 1C 25 4C 1D 4C 1D CA</anyType>
+          <anyType xsi:type="xsd:string">11 12 0C C0 0F 00 00 01 7F 7F 7F 7F 7F 7F 7F 7F F7</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0E 4C 1D 4C 1D 4C 1D 78 1E 20 1C 94 11 04 29 4C 1D 4C 1D 48 26 50 14 EC 2C AC 0D 7C 15 1C 25 4C 1D 4C 1D B0</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 03 4C 1D 28 23 70 17 78 1E 20 1C 94 11 04 29 4C 1D 4C 1D 34 21 64 19 A6 27 F2 12 7C 15 1C 25 4C 1D 4C 1D A5</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 03 4C 1D 10 27 88 13 78 1E 20 1C 7C 15 1C 25 4C 1D 4C 1D 78 1E 20 1C 14 1E 84 1C 14 1E 84 1C A4 1F F4 1A A5</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 02 4C 1D 10 27 88 13 78 1E 20 1C 7C 15 1C 25 4C 1D 4C 1D 78 1E 20 1C 14 1E 84 1C 14 1E 84 1C A4 1F F4 1A A4</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 01 4C 1D 64 19 34 21 78 1E 20 1C 94 11 04 29 4C 1D 4C 1D 80 25 18 15 EC 2C AC 0D 7C 15 1C 25 4C 1D 4C 1D A3</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 03 4C 1D 64 19 34 21 78 1E 20 1C 94 11 04 29 4C 1D 4C 1D 80 25 18 15 EC 2C AC 0D 7C 15 1C 25 4C 1D 4C 1D A5</anyType>
+          <anyType xsi:type="xsd:string">11 12 0C C0 0F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C DF</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 64 19 34 21 78 1E 20 1C 94 11 04 29 4C 1D 4C 1D 80 25 18 15 EC 2C AC 0D 7C 15 1C 25 4C 1D 4C 1D B6</anyType>
+          <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+          <anyType xsi:type="xsd:string">07 0B 7B 6D 00 05 FF</anyType>
+          <anyType xsi:type="xsd:string">07 0B EB 6B 00 00 68</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 64 19 34 21 78 1E 20 1C 94 11 04 29 4C 1D 4C 1D 80 25 18 15 EC 2C AC 0D 7C 15 1C 25 4C 1D 4C 1D C0</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 37 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D DA</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>27576</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M014</Key>
+      <Value xsi:type="Motion">
+        <Number>13</Number>
+        <Name>HLO014_Get Up(Stomach)</Name>
+        <Date>2012-01-26T16:26:48.84375+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 88 13 10 27 14 1E 84 1C A0 0F F8 2A 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D CA</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0F 4C 1D 7C 15 1C 25 34 21 64 19 74 0E 24 2C 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D B2</anyType>
+          <anyType xsi:type="xsd:string">0F 12 3C 03 00 00 00 01 7F 7F 7F 7F 7F 7F 5B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 32 4C 1D 28 23 70 17 1C 25 7C 15 74 0E 24 2C 4C 1D 4C 1D 7C 15 1C 25 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D D5</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 28 23 70 17 4C 1D 4C 1D A0 0F F8 2A 4C 1D 4C 1D 7C 15 1C 25 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D B6</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 32 4C 1D D8 27 C0 12 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D FC 21 9C 18 4C 1D 4C 1D 9C 18 FC 21 4C 1D 4C 1D D2</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D D8 27 C0 12 14 1E 84 1C 4C 1D 4C 1D 4C 1D 4C 1D CC 29 CC 10 4C 1D 4C 1D 78 1E 20 1C 4C 1D 4C 1D BF</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 07 4C 1D D8 27 C0 12 14 1E 84 1C 4C 1D 4C 1D 4C 1D 4C 1D CC 29 CC 10 4C 1D 4C 1D 78 1E 20 1C 4C 1D 4C 1D A8</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D D8 27 C0 12 14 1E 84 1C 4C 1D 4C 1D 4C 1D 4C 1D FE 29 9A 10 4C 1D 4C 1D FC 21 9C 18 4C 1D 4C 1D B4</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 23 4C 1D 98 21 00 19 14 1E 84 1C 4C 1D 4C 1D 4C 1D 4C 1D 80 25 18 15 4C 1D 4C 1D 34 21 64 19 4C 1D 4C 1D C6</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 97</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 32 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D D5</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>29624</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M015</Key>
+      <Value xsi:type="Motion">
+        <Number>14</Number>
+        <Name>HLO015_Get Up(Face up)</Name>
+        <Date>2012-01-26T16:27:38.078125+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 38 4C 1D 88 13 10 27 28 23 70 17 A0 0F F8 2A 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D DA</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0E 4C 1D 88 13 10 27 14 1E 84 1C A0 0F F8 2A 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D B0</anyType>
+          <anyType xsi:type="xsd:string">0D 12 0C 03 00 00 00 01 7F 7F 7F 7F 2B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 2A 4C 1D 88 13 10 27 14 1E 84 1C 88 13 10 27 4C 1D 4C 1D 1C 25 7C 15 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D CD</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1C 4C 1D 70 17 28 23 14 1E 84 1C 90 1A 08 20 4C 1D 4C 1D 1C 25 7C 15 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D BF</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0E 4C 1D 70 17 28 23 14 1E 84 1C 58 1B 40 1F 4C 1D 4C 1D 3C 28 5C 12 9C 18 FC 21 F8 2A A0 0F 4C 1D 4C 1D AF</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1C 4C 1D 84 1C 14 1E 14 1E 84 1C 58 1B 40 1F 4C 1D 4C 1D F8 2A A0 0F 9C 18 FC 21 F8 2A A0 0F 4C 1D 4C 1D BC</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1C 4C 1D 6C 20 2C 1A 14 1E 84 1C 58 1B 40 1F 4C 1D 4C 1D F8 2A A0 0F 9C 18 FC 21 AC 26 EC 13 4C 1D 4C 1D BC</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 07 4C 1D 6C 20 2C 1A 14 1E 84 1C 58 1B 40 1F 4C 1D 4C 1D F8 2A A0 0F 9C 18 FC 21 AC 26 EC 13 4C 1D 4C 1D A7</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1C 4C 1D 2C 1A 6C 20 34 21 64 19 A0 0F F8 2A 4C 1D 4C 1D F8 2A A0 0F 9C 18 FC 21 AC 26 EC 13 4C 1D 4C 1D BB</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0E 4C 1D 10 27 88 13 40 1F 58 1B A0 0F F8 2A 4C 1D 4C 1D F8 2A A0 0F 9C 18 FC 21 AC 26 EC 13 4C 1D 4C 1D AD</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 15 4C 1D D8 27 C0 12 14 1E 84 1C 4C 1D 4C 1D 4C 1D 4C 1D F8 2A A0 0F 4C 1D 4C 1D FC 21 9C 18 4C 1D 4C 1D B5</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 07 4C 1D D8 27 C0 12 14 1E 84 1C 4C 1D 4C 1D 4C 1D 4C 1D F8 2A A0 0F 4C 1D 4C 1D FC 21 9C 18 4C 1D 4C 1D A7</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 23 4C 1D 98 21 00 19 14 1E 84 1C 4C 1D 4C 1D 4C 1D 4C 1D 80 25 18 15 4C 1D 4C 1D 34 21 64 19 4C 1D 4C 1D C6</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 97</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 2A 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D CD</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>31672</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M016</Key>
+      <Value xsi:type="Motion">
+        <Number>15</Number>
+        <Name>HLO016_Safty Walk(Forward, 5 steps)</Name>
+        <Date>2012-01-26T16:41:18.65625+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">08 00 02 57 04 00 05 6A</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0F 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D B2</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 E2 1D E2 1D 40 1F 58 1B 34 21 64 19 C2 1A D6 1F E2 1D E2 1D 0E</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 07 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 46 1E 46 1E D0 20 58 1B 54 24 64 19 64 19 D6 1F AA 1E 78 1E 80</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0C 4C 1D 64 19 4C 1D 14 1E 84 1C 64 19 34 21 DC 1E 46 1E 28 23 F4 1A E4 25 9C 18 2C 1A 3A 20 0E 1F 46 1E 4E</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 64 19 4C 1D 14 1E 84 1C 64 19 34 21 DC 1E 46 1E FC 21 F4 1A FC 21 9C 18 B6 1C 08 20 0E 1F 46 1E 8A</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 11 4C 1D 64 19 4C 1D 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D D0 20 58 1B FC 21 9C 18 8A 1B D0 20 4C 1D E8 1C B6</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 64 19 4C 1D 14 1E 84 1C 64 19 34 21 E8 1C 1A 1D 40 1F 46 1E FC 21 90 1A 2C 1A D0 20 84 1C 84 1C EC</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 52 1C 52 1C A4 1F 20 1C FC 21 A8 16 90 1A 34 21 20 1C 20 1C CA</anyType>
+          <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+          <anyType xsi:type="xsd:string">07 0B EE 86 00 05 8B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0C 4C 1D 4C 1D 34 21 14 1E 84 1C 64 19 34 21 52 1C BC 1B A4 1F 70 17 FC 21 B4 14 90 1A 6C 20 52 1C 8A 1B 3E</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 4C 1D 34 21 14 1E 84 1C 64 19 34 21 52 1C BC 1B A4 1F 9C 18 FC 21 9C 18 90 1A E2 1D 52 1C 8A 1B C6</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 11 4C 1D 4C 1D 34 21 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D 40 1F C8 19 FC 21 9C 18 C8 19 0E 1F B0 1D 4C 1D AD</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 4C 1D 34 21 14 1E 84 1C 64 19 34 21 7E 1D B0 1D 52 1C 58 1B 08 20 9C 18 C8 19 6C 20 14 1E 14 1E 7F</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 46 1E 46 1E 78 1E F4 1A F0 23 9C 18 64 19 08 20 78 1E 78 1E A1</anyType>
+          <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+          <anyType xsi:type="xsd:string">07 0B 3F 86 00 05 DC</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0C 4C 1D 64 19 4C 1D 14 1E 84 1C 64 19 34 21 DC 1E 46 1E 28 23 F4 1A E4 25 9C 18 2C 1A 08 20 0E 1F 46 1E 1C</anyType>
+          <anyType xsi:type="xsd:string">07 0B 6C 84 00 00 02</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0F 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 46 1E 46 1E D0 20 F4 1A 80 25 9C 18 38 18 08 20 78 1E 78 1E 5B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 46 1E 46 1E 08 20 F4 1A C4 22 9C 18 2C 1A 08 20 78 1E 46 1E 9D</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D A4 1F F4 1A FC 21 9C 18 C2 1A D6 1F 4C 1D 4C 1D C8</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D C1</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0F 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 52 1C 52 1C A4 1F C8 19 FC 21 18 15 90 1A 60 22 20 1C 20 1C 06</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 52 1C 52 1C A4 1F 90 1A FC 21 D4 17 90 1A 6C 20 52 1C 20 1C CE</anyType>
+          <anyType xsi:type="xsd:string">07 0B 95 86 00 00 2D</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>33720</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M017</Key>
+      <Value xsi:type="Motion">
+        <Number>16</Number>
+        <Name>HLO017_Safty Walk(Backward, 5 steps)</Name>
+        <Date>2012-01-26T16:41:25.984375+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">08 00 02 57 04 00 05 6A</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0F 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D B2</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 E2 1D E2 1D 40 1F 58 1B 34 21 64 19 58 1B 40 1F E2 1D E2 1D 0F</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 07 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 46 1E 46 1E 34 21 58 1B 1C 25 64 19 2C 1A 72 1F AA 1E 78 1E 13</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0C 4C 1D 4C 1D 34 21 14 1E 84 1C 64 19 34 21 DC 1E 46 1E 6C 20 F4 1A 48 26 9C 18 9C 18 D6 1F 0E 1F 46 1E D5</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 4C 1D 34 21 14 1E 84 1C 64 19 34 21 DC 1E 46 1E 4C 1D F4 1A 60 22 9C 18 00 19 D6 1F 0E 1F 46 1E 27</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 11 4C 1D 4C 1D 34 21 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D 14 1E C8 19 FC 21 9C 18 64 19 DC 1E 4C 1D E8 1C 20</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 4C 1D 34 21 14 1E 84 1C 64 19 34 21 E8 1C 1A 1D 40 1F C8 19 FC 21 90 1A 90 1A B6 1C 84 1C 84 1C 87</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 52 1C 52 1C 40 1F 9C 18 FC 21 A8 16 90 1A 4C 1D 20 1C 20 1C F2</anyType>
+          <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+          <anyType xsi:type="xsd:string">07 0B EE 8E 00 05 93</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0C 4C 1D 64 19 4C 1D 14 1E 84 1C 64 19 34 21 52 1C BC 1B A4 1F 2C 1A FC 21 50 14 C2 1A FC 21 52 1C 8A 1B 84</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 64 19 4C 1D 14 1E 84 1C 64 19 34 21 52 1C BC 1B A4 1F 4C 1D FC 21 38 18 C2 1A 98 21 52 1C 8A 1B 2B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 11 4C 1D 64 19 4C 1D 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D D0 20 84 1C FC 21 9C 18 BC 1B 34 21 B0 1D 4C 1D 43</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 64 19 4C 1D 14 1E 84 1C 64 19 34 21 7E 1D B0 1D D0 20 58 1B 08 20 9C 18 E2 1D 08 20 14 1E 14 1E E3</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 46 1E 46 1E FC 21 58 1B F0 23 9C 18 4C 1D 08 20 78 1E 78 1E 79</anyType>
+          <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+          <anyType xsi:type="xsd:string">07 0B 3F 8E 00 05 E4</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0C 4C 1D 4C 1D 34 21 14 1E 84 1C 64 19 34 21 DC 1E 46 1E 6C 20 F4 1A 48 26 9C 18 9C 18 D6 1F 0E 1F 46 1E D5</anyType>
+          <anyType xsi:type="xsd:string">07 0B 6C 8C 00 00 0A</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0F 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 46 1E 46 1E D0 20 F4 1A 80 25 9C 18 38 18 08 20 78 1E 78 1E 5B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 46 1E 46 1E 08 20 F4 1A C4 22 9C 18 2C 1A 08 20 78 1E 46 1E 9D</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D A4 1F F4 1A FC 21 9C 18 C2 1A D6 1F 4C 1D 4C 1D C8</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D C1</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0F 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 52 1C 52 1C A4 1F C8 19 FC 21 18 15 90 1A 60 22 20 1C 20 1C 06</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 52 1C 52 1C A4 1F 90 1A FC 21 D4 17 90 1A 6C 20 52 1C 20 1C CE</anyType>
+          <anyType xsi:type="xsd:string">07 0B 95 8E 00 00 35</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>35768</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M018</Key>
+      <Value xsi:type="Motion">
+        <Number>17</Number>
+        <Name>HLO018_Safty Step(Left, 5 steps)</Name>
+        <Date>2012-01-26T16:41:39.03125+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">08 00 02 57 04 00 05 6A</anyType>
+          <anyType xsi:type="xsd:string">0B 12 00 00 03 00 00 01 7F 7F 1F</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 64 19 58 1B 40 1F 14 1E 84 1C 64 19 34 21 B0 1D B0 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F E2 1D E2 1D BF</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 64 19 58 1B 40 1F A4 1F 84 1C 64 19 34 21 78 1E E8 1C 6C 20 58 1B 54 24 64 19 32 19 72 1F 40 1F 4C 1D 6A</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 64 19 58 1B 40 1F A4 1F 84 1C 64 19 34 21 78 1E 84 1C A4 1F 58 1B FC 21 64 19 C2 1A 72 1F DC 1E 84 1C 41</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 64 19 58 1B 40 1F A4 1F 84 1C 64 19 34 21 E8 1C 58 1B 08 20 58 1B C4 22 64 19 5E 1A 72 1F E8 1C F4 1A D2</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 64 19 58 1B 40 1F 14 1E F4 1A 64 19 34 21 1A 1D E8 1C 08 20 96 19 C4 22 18 15 2C 1A 98 21 E8 1C 20 1C 79</anyType>
+          <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+          <anyType xsi:type="xsd:string">07 0B B8 94 00 05 63</anyType>
+          <anyType xsi:type="xsd:string">07 0B CB 93 00 00 70</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 E8 1C 4C 1D 40 1F F4 1A 34 21 9C 18 26 1B D6 1F E8 1C 84 1C 5A</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D C1</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 97</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>37816</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M019</Key>
+      <Value xsi:type="Motion">
+        <Number>18</Number>
+        <Name>HLO019_Safty Step(Right, 5 steps)</Name>
+        <Date>2012-01-26T16:41:51.6875+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">08 00 02 57 04 00 05 6A</anyType>
+          <anyType xsi:type="xsd:string">0B 12 00 00 03 00 00 01 7F 7F 1F</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 34 21 58 1B 40 1F 14 1E 84 1C 64 19 34 21 E8 1C E8 1C 40 1F 58 1B 34 21 64 19 26 1B 72 1F B6 1C B6 1C AB</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 34 21 58 1B 40 1F 14 1E F4 1A 64 19 34 21 B0 1D 20 1C 40 1F 2C 1A 34 21 44 16 26 1B 66 21 4C 1D 58 1B EE</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 34 21 58 1B 40 1F 14 1E F4 1A 64 19 34 21 14 1E 20 1C 40 1F F4 1A 34 21 9C 18 26 1B D6 1F 14 1E BC 1B 0C</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 34 21 58 1B 40 1F 14 1E F4 1A 64 19 34 21 40 1F B0 1D 40 1F 90 1A 34 21 D4 17 26 1B 3A 20 A4 1F B0 1D 97</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 34 21 58 1B 40 1F A4 1F 84 1C 64 19 34 21 B0 1D 7E 1D 02 21 90 1A 80 25 D4 17 00 19 3A 20 78 1E B0 1D AB</anyType>
+          <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+          <anyType xsi:type="xsd:string">07 0B B8 9C 00 05 6B</anyType>
+          <anyType xsi:type="xsd:string">07 0B CB 9B 00 00 78</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C C8 19 34 21 4C 1D B0 1D A4 1F 58 1B FC 21 64 19 C2 1A 72 1F 14 1E B0 1D 73</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D C1</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 97</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>39864</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M020</Key>
+      <Value xsi:type="Motion">
+        <Number>19</Number>
+        <Name>HLO020_Fast Turn A(Left, 5 times)</Name>
+        <Date>2012-01-26T16:42:00.375+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">08 00 02 57 04 00 05 6A</anyType>
+          <anyType xsi:type="xsd:string">13 12 00 F0 3F 00 00 01 7F 7F 50 50 7F 7F 50 50 3C 3C 09</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0F 4C 1D 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 4C 1D 4C 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D B2</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 4C 1D 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 4C 1D 4C 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D AD</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 02 64 19 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 B0 1D E8 1C 14 1E 2C 1A 34 21 64 19 FA 19 46 1E B0 1D E8 1C 02</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 64 19 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 B0 1D E8 1C 14 1E 2C 1A 34 21 64 19 FA 19 46 1E 46 1E 52 1C 09</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 64 19 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 E8 1C B0 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D C0</anyType>
+          <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+          <anyType xsi:type="xsd:string">07 0B C0 A4 00 05 7B</anyType>
+          <anyType xsi:type="xsd:string">07 0B 29 A4 00 00 DF</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 05 4C 1D 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 4C 1D 4C 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D A8</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 97</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 19 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D BC</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>41912</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M021</Key>
+      <Value xsi:type="Motion">
+        <Number>20</Number>
+        <Name>HLO021_Fast Tuen A(Right 5 times)</Name>
+        <Date>2012-01-26T16:42:09.296875+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">08 00 02 57 04 00 05 6A</anyType>
+          <anyType xsi:type="xsd:string">13 12 00 F0 3F 00 00 01 7F 7F 50 50 7F 7F 50 50 3C 3C 09</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0F 4C 1D 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 4C 1D 4C 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D B2</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 4C 1D 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 4C 1D 4C 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D AD</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 02 34 21 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 B0 1D E8 1C 6C 20 84 1C 34 21 64 19 52 1C 9E 20 B0 1D E8 1C 43</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 34 21 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 B0 1D E8 1C 6C 20 84 1C 34 21 64 19 52 1C 9E 20 46 1E 52 1C 4A</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 34 21 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 E8 1C B0 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D 98</anyType>
+          <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+          <anyType xsi:type="xsd:string">07 0B C0 AC 00 05 83</anyType>
+          <anyType xsi:type="xsd:string">07 0B 29 AC 00 00 E7</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 05 4C 1D 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 4C 1D 4C 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D A8</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 97</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 19 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D BC</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>43960</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M022</Key>
+      <Value xsi:type="Motion">
+        <Number>21</Number>
+        <Name>HLO022_Walk A(Forward, 5 steps)</Name>
+        <Date>2012-01-26T16:42:25.65625+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">08 00 02 57 04 00 05 6A</anyType>
+          <anyType xsi:type="xsd:string">13 12 00 F0 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 1E 1E 71</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 1A 1D 7E 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D B7</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 09 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 E8 1C E8 1C 40 1F 58 1B 34 21 64 19 C2 1A D6 1F E8 1C B6 1C E5</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 09 4C 1D BC 1B FC 21 14 1E 84 1C 7C 15 1C 25 B6 1C 84 1C 40 1F 0C 17 34 21 7C 15 C2 1A 40 1F B6 1C 84 1C 3B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 09 4C 1D BC 1B FC 21 14 1E 84 1C 7C 15 1C 25 4C 1D B0 1D 4C 1D C8 19 6C 20 64 19 C8 19 DC 1E E2 1D B0 1D E4</anyType>
+          <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+          <anyType xsi:type="xsd:string">07 0B 74 B6 00 05 41</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 B0 1D B0 1D A4 1F 58 1B F0 23 64 19 38 18 08 20 14 1E B0 1D 68</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 9C 18 DC 1E 14 1E 84 1C 7C 15 1C 25 B0 1D B0 1D 8C 23 20 1C E4 25 64 19 F4 1A 6C 20 B0 1D B0 1D AA</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 9C 18 DC 1E 14 1E 84 1C 7C 15 1C 25 E8 1C 4C 1D 34 21 4C 1D 34 21 2C 1A 20 1C D0 20 E8 1C 1A 1D 98</anyType>
+          <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+          <anyType xsi:type="xsd:string">07 0B A6 B5 00 05 72</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 E8 1C E8 1C 40 1F F4 1A 34 21 A8 16 90 1A 60 22 E8 1C 84 1C E9</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D BC 1B FC 21 14 1E 84 1C 7C 15 1C 25 E8 1C E8 1C 78 1E 0C 17 34 21 B4 14 2C 1A A4 1F E8 1C E8 1C A0</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D BC 1B FC 21 14 1E 84 1C 7C 15 1C 25 4C 1D B0 1D 4C 1D 64 19 6C 20 64 19 C8 19 78 1E 4C 1D B0 1D 83</anyType>
+          <anyType xsi:type="xsd:string">07 0B 7F B4 00 00 45</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 E8 1C E8 1C 40 1F F4 1A 34 21 A8 16 58 1B 98 21 E8 1C 84 1C E9</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 1A 1D 7E 1D 08 20 90 1A C4 22 D4 17 C2 1A D6 1F 4C 1D 4C 1D A9</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 1A 1D 7E 1D 08 20 90 1A C4 22 D4 17 C2 1A D6 1F 4C 1D 4C 1D A7</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 19 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D BC</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 97</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 B0 1D B0 1D A4 1F 58 1B F0 23 64 19 00 19 40 1F 14 1E B0 1D 68</anyType>
+          <anyType xsi:type="xsd:string">07 0B D1 B5 00 00 98</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>46008</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M023</Key>
+      <Value xsi:type="Motion">
+        <Number>22</Number>
+        <Name>HLO023_Walk A(Backward, 5 steps)</Name>
+        <Date>2012-01-26T16:42:39.671875+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">08 00 02 57 04 00 05 6A</anyType>
+          <anyType xsi:type="xsd:string">13 12 00 F0 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 1E 1E 71</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 1A 1D 7E 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D B7</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 09 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 E8 1C E8 1C 40 1F 58 1B 34 21 64 19 58 1B 40 1F E8 1C B6 1C E6</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 09 4C 1D 9C 18 DC 1E 14 1E 84 1C 7C 15 1C 25 B6 1C 84 1C 40 1F 8A 1B 34 21 7C 15 58 1B 28 23 B6 1C 84 1C FA</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 09 4C 1D 9C 18 DC 1E 14 1E 84 1C 7C 15 1C 25 4C 1D B0 1D D0 20 20 1C 34 21 64 19 84 1C 6C 20 E2 1D B0 1D 9A</anyType>
+          <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+          <anyType xsi:type="xsd:string">07 0B 74 BE 00 05 49</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 B0 1D B0 1D 98 21 58 1B 1C 25 64 19 C8 19 40 1F 14 1E B0 1D 54</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D BC 1B FC 21 14 1E 84 1C 7C 15 1C 25 B0 1D B0 1D 78 1E 90 1A 54 24 64 19 38 18 DC 1E B0 1D B0 1D 64</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D BC 1B FC 21 14 1E 84 1C 7C 15 1C 25 E8 1C 4C 1D 4C 1D 64 19 D0 20 C8 19 C8 19 4C 1D E8 1C 1A 1D 5A</anyType>
+          <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+          <anyType xsi:type="xsd:string">07 0B A6 BD 00 05 7A</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 E8 1C E8 1C 40 1F 00 19 34 21 7C 15 58 1B D0 20 E8 1C 84 1C FE</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 9C 18 DC 1E 14 1E 84 1C 7C 15 1C 25 E8 1C E8 1C 08 20 20 1C 34 21 44 16 BC 1B 60 22 E8 1C E8 1C E7</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 9C 18 DC 1E 14 1E 84 1C 7C 15 1C 25 4C 1D B0 1D 34 21 4C 1D D0 20 C8 19 4C 1D D0 20 4C 1D B0 1D BF</anyType>
+          <anyType xsi:type="xsd:string">07 0B 7F BC 00 00 4D</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 E8 1C E8 1C 40 1F 00 19 34 21 A8 16 F4 1A A4 1F E8 1C 84 1C 99</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 1A 1D 7E 1D 08 20 90 1A C4 22 D4 17 2C 1A 6C 20 4C 1D 4C 1D AA</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 1A 1D 7E 1D 08 20 90 1A C4 22 D4 17 2C 1A 6C 20 4C 1D 4C 1D A8</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 19 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D BC</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 97</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 B0 1D B0 1D 98 21 58 1B F0 23 64 19 F4 1A A4 1F 14 1E B0 1D B7</anyType>
+          <anyType xsi:type="xsd:string">07 0B D1 BD 00 00 A0</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>48056</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M024</Key>
+      <Value xsi:type="Motion">
+        <Number>23</Number>
+        <Name>HLO024_Side Step A(Left, 5 steps)</Name>
+        <Date>2012-01-26T16:42:46.046875+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">08 00 02 57 04 00 05 6A</anyType>
+          <anyType xsi:type="xsd:string">13 12 00 F0 3F 00 00 01 3C 3C 50 50 7F 7F 3C 3C 3C 3C 5B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 B0 1D B0 1D 98 21 00 19 1C 25 7C 15 32 19 66 21 14 1E E2 1D DE</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0C 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 40 1F 84 1C C4 22 00 19 74 27 7C 15 06 18 66 21 DC 1E E8 1C 62</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 E2 1D 26 1B 98 21 64 19 1C 25 44 16 32 19 02 21 E2 1D C2 1A E9</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 E8 1C 20 1C 98 21 D4 17 1C 25 24 13 32 19 92 22 4C 1D 84 1C F3</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 03 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 E8 1C 20 1C 98 21 00 19 1C 25 7C 15 32 19 66 21 B0 1D E8 1C 13</anyType>
+          <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+          <anyType xsi:type="xsd:string">07 0B EB C4 00 05 C6</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 40 1F 84 1C C4 22 00 19 74 27 7C 15 06 18 66 21 DC 1E E8 1C 5C</anyType>
+          <anyType xsi:type="xsd:string">07 0B 29 C4 00 00 FF</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 4C 1D 14 1E 98 21 00 19 1C 25 7C 15 32 19 66 21 4C 1D 20 1C 49</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 97</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 19 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D BC</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>50104</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M025</Key>
+      <Value xsi:type="Motion">
+        <Number>24</Number>
+        <Name>HLO025_Side Step A(Right, 5 steps)</Name>
+        <Date>2012-01-26T16:42:51.796875+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">08 00 02 57 04 00 05 6A</anyType>
+          <anyType xsi:type="xsd:string">13 12 00 F0 3F 00 00 01 3C 3C 50 50 7F 7F 3C 3C 3C 3C 5B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 4C 1D E8 1C 98 21 00 19 1C 25 7C 15 32 19 66 21 4C 1D 84 1C 89</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0C 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 14 1E 58 1B 98 21 D4 17 1C 25 24 13 32 19 92 22 B0 1D BC 1B F9</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 72 1F B6 1C 34 21 00 19 54 24 7C 15 96 19 66 21 D6 1F B6 1C 66</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 78 1E B0 1D C4 22 00 19 74 27 7C 15 06 18 66 21 14 1E 4C 1D 5D</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 03 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 78 1E B0 1D 98 21 00 19 1C 25 7C 15 32 19 66 21 B0 1D E8 1C 36</anyType>
+          <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+          <anyType xsi:type="xsd:string">07 0B EB CC 00 05 CE</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 14 1E 58 1B 98 21 D4 17 1C 25 24 13 32 19 92 22 B0 1D BC 1B F3</anyType>
+          <anyType xsi:type="xsd:string">07 0B 29 CC 00 00 07</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 4C 1D 14 1E 98 21 00 19 1C 25 7C 15 32 19 66 21 4C 1D 20 1C 49</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 97</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 19 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D BC</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>52152</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M026</Key>
+      <Value xsi:type="Motion">
+        <Number>25</Number>
+        <Name>HLO026_Kick Forward(Left Leg)</Name>
+        <Date>2012-01-26T16:42:58.90625+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">13 12 00 F0 3F 00 00 01 7F 7F 7F 7F 7F 7F 7F 3C 3C 3C 82</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0E 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D B1</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 84 1C 84 1C 40 1F 58 1B 34 21 64 19 26 1B 72 1F 78 1E B0 1D AC</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 4C 1D 4C 1D 28 23 14 1E 90 1A 7C 15 1C 25 BC 1B BC 1B 4C 1D 58 1B 34 21 64 19 90 1A 72 1F B0 1D B0 1D B0</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 03 4C 1D 4C 1D 28 23 14 1E 90 1A 7C 15 1C 25 BC 1B BC 1B 4C 1D 58 1B 34 21 64 19 90 1A 72 1F B0 1D B0 1D A9</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 05 4C 1D 70 17 4C 1D 14 1E 90 1A 7C 15 1C 25 BC 1B BC 1B 1C 25 58 1B 4C 1D 64 19 DC 1E 72 1F B0 1D E2 1D 55</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 04 4C 1D 70 17 4C 1D 14 1E 90 1A 7C 15 1C 25 BC 1B BC 1B 48 26 58 1B 4C 1D 64 19 DC 1E 72 1F E2 1D E2 1D B3</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 97</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0E 4C 1D 58 1B 40 1F 14 1E 90 1A 64 19 34 21 52 1C BC 1B 34 21 58 1B 8C 23 64 19 5E 1A 40 1F 78 1E E2 1D 46</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D B7</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D CB</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>54200</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M027</Key>
+      <Value xsi:type="Motion">
+        <Number>26</Number>
+        <Name>HLO027_Kick Forward(Right Leg)</Name>
+        <Date>2012-01-26T16:43:04.15625+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">11 12 00 F0 0F 00 00 01 7F 7F 7F 7F 7F 7F 3C 7F D8</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0E 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D B1</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 14 1E 14 1E 40 1F 58 1B 34 21 64 19 26 1B 72 1F E8 1C 20 1C AD</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 4C 1D 70 17 4C 1D 08 20 84 1C 7C 15 1C 25 DC 1E DC 1E 40 1F 4C 1D 34 21 64 19 26 1B 08 20 E8 1C E8 1C A6</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 03 4C 1D 70 17 4C 1D 08 20 84 1C 7C 15 1C 25 DC 1E DC 1E 40 1F 4C 1D 34 21 64 19 26 1B 08 20 E8 1C E8 1C 9F</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 05 4C 1D 4C 1D 28 23 08 20 84 1C 7C 15 1C 25 DC 1E DC 1E 40 1F 7C 15 34 21 4C 1D 26 1B BC 1B B6 1C B0 1D BF</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 04 4C 1D 4C 1D 28 23 08 20 84 1C 7C 15 1C 25 DC 1E DC 1E 40 1F 50 14 34 21 4C 1D 26 1B BC 1B B6 1C E8 1C C8</anyType>
+          <anyType xsi:type="xsd:string">0F 12 00 C0 0F 00 00 01 3C 3C 3C 3C 3C 3C 59</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0E 4C 1D 58 1B 40 1F 08 20 84 1C 64 19 34 21 DC 1E 46 1E 40 1F 64 19 34 21 0C 17 58 1B 3A 20 B6 1C 20 1C 1A</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D B7</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D CB</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>56248</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M028</Key>
+      <Value xsi:type="Motion">
+        <Number>27</Number>
+        <Name>HLO028_Side Kick(Left Leg)</Name>
+        <Date>2012-01-26T16:43:13.796875+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">0D 12 00 30 30 00 00 01 7F 7F 7F 7F 7C</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0F 70 17 4C 1D 4C 1D 14 1E 84 1C 4C 1D 4C 1D 84 1C E8 1C 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 14 1E 14 1E 34</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 70 17 4C 1D 4C 1D 14 1E 84 1C 4C 1D 4C 1D 84 1C E8 1C DC 1E 4C 1D 6C 20 4C 1D BC 1B 4C 1D 4C 1D 14 1E 88</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 03 70 17 4C 1D 4C 1D 08 20 9C 18 4C 1D 4C 1D 9E 20 E8 1C 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 6C 20 78 1E 0E</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 03 70 17 4C 1D 4C 1D 08 20 9C 18 4C 1D 4C 1D 9E 20 84 1C 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 6C 20 14 1E 46</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 70 17 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D B0 1D 14 1E DC 1E 4C 1D 6C 20 4C 1D BC 1B 4C 1D 46 1E 14 1E E8</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 97</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 19 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D BC</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>58296</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M029</Key>
+      <Value xsi:type="Motion">
+        <Number>28</Number>
+        <Name>HLO029_Side Kick(Right Leg)</Name>
+        <Date>2012-01-26T16:43:20.59375+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">0D 12 00 30 30 00 00 01 7F 7F 7F 7F 7C</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0F 28 23 4C 1D 4C 1D 14 1E 58 1B 4C 1D 4C 1D B0 1D 14 1E 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 84 1C 84 1C 02</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 05 28 23 4C 1D 4C 1D 14 1E 58 1B 4C 1D 4C 1D B0 1D 14 1E 4C 1D BC 1B 4C 1D 2C 1A 4C 1D DC 1E 84 1C 4C 1D 9D</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 03 28 23 4C 1D 4C 1D FC 21 58 1B 4C 1D 4C 1D B0 1D FA 19 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 20 1C 2C 1A 04</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 03 28 23 4C 1D 4C 1D FC 21 58 1B 4C 1D 4C 1D 14 1E FA 19 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 84 1C 2C 1A CD</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 28 23 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 84 1C E8 1C 4C 1D BC 1B 4C 1D 2C 1A 4C 1D DC 1E 84 1C 52 1C 83</anyType>
+          <anyType xsi:type="xsd:string">0D 12 00 30 30 00 00 01 3C 3C 3C 3C 70</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 19 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D BC</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>60344</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M030</Key>
+      <Value xsi:type="Motion">
+        <Number>29</Number>
+        <Name>HLO030_Kick Backward(Left Leg)</Name>
+        <Date>2012-01-26T16:43:27.59375+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 7F 7F 7F 7F 7F 7F 7F 3C 3C 3C 6C</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0E 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D B1</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0E 70 17 58 1B 40 1F 14 1E 84 1C 64 19 34 21 84 1C 84 1C 40 1F 58 1B 34 21 64 19 26 1B 72 1F 78 1E B0 1D CE</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 70 17 64 19 58 1B 14 1E 84 1C 7C 15 F8 2A 20 1C 20 1C 6C 20 58 1B 34 21 64 19 BC 1B 72 1F 78 1E 14 1E 29</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 03 70 17 64 19 58 1B 14 1E 84 1C 7C 15 F8 2A 20 1C 20 1C 6C 20 58 1B 34 21 64 19 BC 1B 72 1F E2 1D 14 1E 8B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 05 70 17 4C 1D 28 23 14 1E 84 1C 7C 15 F8 2A 20 1C 20 1C 38 18 58 1B 54 24 64 19 2C 1A A4 1F E2 1D 14 1E D9</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 04 70 17 4C 1D 28 23 14 1E 84 1C 7C 15 F8 2A 20 1C 20 1C 70 17 58 1B 54 24 64 19 2C 1A A4 1F E2 1D 14 1E 0F</anyType>
+          <anyType xsi:type="xsd:string">1D 12 FF FF 0F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C ED</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0E 70 17 58 1B 40 1F 14 1E 84 1C 64 19 34 21 20 1C 20 1C 08 20 F4 1A 8C 23 64 19 C8 19 72 1F 78 1E 14 1E C9</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D A4 1F F4 1A 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D B6</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D CB</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>62392</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M031</Key>
+      <Value xsi:type="Motion">
+        <Number>30</Number>
+        <Name>HLO031_Kick Backward(Right Leg)</Name>
+        <Date>2012-01-26T16:43:51.90625+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 7F 7F 7F 7F 7F 7F 3C 7F 3C 3C 6C</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0E 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D B1</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0E 28 23 58 1B 40 1F 14 1E 84 1C 64 19 34 21 78 1E 78 1E 40 1F 58 1B 34 21 64 19 26 1B 72 1F E8 1C 20 1C 5B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 28 23 40 1F 34 21 14 1E 84 1C A0 0F 1C 25 78 1E 78 1E 40 1F 2C 1A 34 21 64 19 26 1B DC 1E 84 1C 20 1C 2F</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 03 28 23 40 1F 34 21 14 1E 84 1C A0 0F 1C 25 78 1E 78 1E 40 1F 2C 1A 34 21 64 19 26 1B DC 1E 84 1C B6 1C BE</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 05 28 23 70 17 4C 1D 14 1E 84 1C A0 0F 1C 25 78 1E 78 1E 40 1F 60 22 34 21 44 16 F4 1A 6C 20 84 1C B6 1C 74</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 04 28 23 70 17 4C 1D 14 1E 84 1C A0 0F 1C 25 78 1E 78 1E 40 1F 28 23 34 21 44 16 F4 1A 6C 20 84 1C B6 1C 3C</anyType>
+          <anyType xsi:type="xsd:string">1D 12 FF FF 0F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C ED</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0E 28 23 58 1B 40 1F 14 1E 84 1C 64 19 34 21 78 1E 78 1E A4 1F 90 1A 34 21 0C 17 26 1B D0 20 84 1C 20 1C 97</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D A4 1F F4 1A 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D B6</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D CB</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>64440</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M032</Key>
+      <Value xsi:type="Motion">
+        <Number>31</Number>
+        <Name>HLO036_Lay On The Stomack</Name>
+        <Date>2012-01-26T16:44:00.28125+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 15 4C 1D 1C 25 7C 15 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 28 23 70 17 4C 1D 4C 1D A4 1F F4 1A 4C 1D 4C 1D B7</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 15 4C 1D 04 29 94 11 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D CC 29 CC 10 4C 1D 4C 1D FC 21 9C 18 4C 1D 4C 1D B6</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1C 4C 1D 04 29 94 11 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D CC 29 CC 10 4C 1D 4C 1D 40 1F 58 1B 4C 1D 4C 1D BE</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 2A 4C 1D 10 27 88 13 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D E8 1C B0 1D 4C 1D 4C 1D 7C 15 1C 25 4C 1D 4C 1D CC</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 31 4C 1D 28 23 70 17 4C 1D 4C 1D 9C 18 FC 21 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 40 1F 58 1B 4C 1D 4C 1D D3</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 31 4C 1D 0C 19 A0 21 C0 1D B4 1C C8 10 CF 2B 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 40 1F 58 1B 4C 1D 4C 1D C3</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 32 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D D5</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>66488</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M033</Key>
+      <Value xsi:type="Motion">
+        <Number>32</Number>
+        <Name>HLO037_Lay On The Back</Name>
+        <Date>2012-01-26T16:44:06.375+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 32 4C 1D 2C 1A 6C 20 34 21 64 19 A0 0F F8 2A 4C 1D 4C 1D F8 2A A0 0F 9C 18 FC 21 AC 26 EC 13 4C 1D 4C 1D D1</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 32 4C 1D 84 1C 14 1E 14 1E 84 1C 58 1B 40 1F 4C 1D 4C 1D F8 2A A0 0F 9C 18 FC 21 F8 2A A0 0F 4C 1D 4C 1D D2</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 46 4C 1D 88 13 10 27 14 1E 84 1C 88 13 10 27 4C 1D 4C 1D 1C 25 7C 15 4C 1D 4C 1D 04 29 94 11 4C 1D 4C 1D E9</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 3C 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D DF</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>68536</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M034</Key>
+      <Value xsi:type="Motion">
+        <Number>33</Number>
+        <Name>HLO038_Side Punch A(Left)</Name>
+        <Date>2012-01-26T16:44:11.296875+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">14 12 FD 30 03 00 00 01 1E 3C 3C 7F 1E 1E 1E 50 50 50 50 06</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 70 17 4C 1D 4C 1D 4C 1D 58 1B 4C 1D 4C 1D E8 1C E8 1C 40 1F 58 1B 34 21 64 19 26 1B 72 1F E8 1C B6 1C 0B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 70 17 4C 1D 4C 1D 40 1F 7C 15 4C 1D 4C 1D 9E 20 B0 1D FC 21 F4 1A AC 26 9C 18 6A 18 D6 1F DC 1E 58 1B EF</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 05 70 17 4C 1D 4C 1D E0 2E 7C 15 4C 1D 4C 1D 9E 20 B0 1D FC 21 F4 1A AC 26 9C 18 6A 18 D6 1F DC 1E 58 1B 99</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 70 17 4C 1D 4C 1D E0 2E 7C 15 4C 1D 4C 1D 9E 20 B0 1D FC 21 F4 1A AC 26 9C 18 6A 18 D6 1F DC 1E 58 1B B2</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 1E 3C 3C 3C 1E 1E 1E 1E 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 01</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 70 17 4C 1D 4C 1D E0 2E 7C 15 4C 1D 4C 1D 9E 20 B0 1D FC 21 F4 1A AC 26 9C 18 6A 18 D6 1F DC 1E 58 1B A8</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 70 17 4C 1D 4C 1D 40 1F 58 1B 4C 1D 4C 1D 20 1C B6 1C FC 21 38 18 AC 26 24 13 6A 18 92 22 52 1C BC 1B C4</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 70 17 4C 1D 4C 1D 40 1F 58 1B 4C 1D 4C 1D 20 1C B6 1C FC 21 38 18 AC 26 24 13 6A 18 92 22 52 1C BC 1B B0</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 97</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 3C 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D DF</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>70584</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M035</Key>
+      <Value xsi:type="Motion">
+        <Number>34</Number>
+        <Name>HLO039_Side Punch A(Right)</Name>
+        <Date>2012-01-26T16:44:17+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">14 12 FD 30 03 00 00 01 1E 3C 3C 1E 7F 1E 1E 50 50 50 50 06</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 28 23 4C 1D 4C 1D 4C 1D 58 1B 4C 1D 4C 1D B0 1D B0 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F E2 1D B0 1D 57</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 28 23 4C 1D 4C 1D 1C 25 58 1B 4C 1D 4C 1D E8 1C FA 19 A4 1F 9C 18 FC 21 EC 13 C2 1A 2E 22 40 1F BC 1B 63</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 05 28 23 4C 1D 4C 1D 1C 25 B8 0B 4C 1D 4C 1D E8 1C FA 19 A4 1F 9C 18 FC 21 EC 13 C2 1A 2E 22 40 1F BC 1B AE</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 28 23 4C 1D 4C 1D 1C 25 B8 0B 4C 1D 4C 1D E8 1C FA 19 A4 1F 9C 18 FC 21 EC 13 C2 1A 2E 22 40 1F BC 1B C7</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 1E 3C 3C 3C 1E 1E 1E 1E 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 01</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 28 23 4C 1D 4C 1D 1C 25 B8 0B 4C 1D 4C 1D E8 1C FA 19 A4 1F 9C 18 FC 21 EC 13 C2 1A 2E 22 40 1F BC 1B BD</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 28 23 4C 1D 4C 1D 40 1F 58 1B 4C 1D 4C 1D E2 1D 78 1E 60 22 9C 18 74 27 EC 13 06 18 2E 22 DC 1E 46 1E BA</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 28 23 4C 1D 4C 1D 40 1F 58 1B 4C 1D 4C 1D E2 1D 78 1E 60 22 9C 18 74 27 EC 13 06 18 2E 22 DC 1E 46 1E A6</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 97</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 3C 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D DF</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>72632</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M036</Key>
+      <Value xsi:type="Motion">
+        <Number>35</Number>
+        <Name>M036</Name>
+        <Date>2009-09-03T15:34:55.234375+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>74680</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M037</Key>
+      <Value xsi:type="Motion">
+        <Number>36</Number>
+        <Name>M037</Name>
+        <Date>2009-09-03T15:35:44.546875+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>76728</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M038</Key>
+      <Value xsi:type="Motion">
+        <Number>37</Number>
+        <Name>M038</Name>
+        <Date>2009-07-10T10:38:52.421875+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>78776</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M039</Key>
+      <Value xsi:type="Motion">
+        <Number>38</Number>
+        <Name>M039</Name>
+        <Date>2009-07-10T10:38:52.421875+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>80824</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M040</Key>
+      <Value xsi:type="Motion">
+        <Number>39</Number>
+        <Name>HLO007_Clapping(Build M40)</Name>
+        <Date>2012-01-26T16:44:43.1875+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 03 4C 1D E4 25 B4 14 5E 1A 3A 20 64 19 34 21 4C 1D 4C 1D DC 1E BC 1B 6C 20 2C 1A EE 1B AA 1E 4C 1D 4C 1D A3</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 04 4C 1D E4 25 B4 14 5E 1A 3A 20 64 19 34 21 4C 1D 4C 1D DC 1E BC 1B 6C 20 2C 1A EE 1B AA 1E 4C 1D 4C 1D A4</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 48 26 18 15 58 1B 14 1E 00 19 D0 20 4C 1D 4C 1D 78 1E 20 1C A4 1F F4 1A 52 1C 46 1E 4C 1D 4C 1D 7B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 03 4C 1D 48 26 18 15 58 1B 14 1E 00 19 D0 20 4C 1D 4C 1D 78 1E 20 1C A4 1F F4 1A 52 1C 46 1E 4C 1D 4C 1D 78</anyType>
+          <anyType xsi:type="xsd:string">08 07 02 57 04 00 01 6D</anyType>
+          <anyType xsi:type="xsd:string">07 0B 7A 44 01 05 D6</anyType>
+          <anyType xsi:type="xsd:string">07 0B B8 43 01 00 0E</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 17 4C 1D 48 26 18 15 58 1B 14 1E 00 19 D0 20 4C 1D 4C 1D 78 1E 20 1C A4 1F F4 1A 52 1C 46 1E 4C 1D 4C 1D 8C</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>82872</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M041</Key>
+      <Value xsi:type="Motion">
+        <Number>40</Number>
+        <Name>HLO016RC_Safty Walk(Forward)Wireless</Name>
+        <Date>2012-01-26T16:44:58.359375+09:00</Date>
+        <ButtonData>1</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0F 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D B2</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 E2 1D E2 1D 40 1F 58 1B 34 21 64 19 C2 1A D6 1F E2 1D E2 1D 0E</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 07 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 46 1E 46 1E D0 20 58 1B 54 24 64 19 64 19 D6 1F AA 1E 78 1E 80</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0C 4C 1D 64 19 4C 1D 14 1E 84 1C 64 19 34 21 DC 1E 46 1E 28 23 F4 1A E4 25 9C 18 2C 1A 3A 20 0E 1F 46 1E 4E</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 64 19 4C 1D 14 1E 84 1C 64 19 34 21 DC 1E 46 1E FC 21 F4 1A FC 21 9C 18 B6 1C 08 20 0E 1F 46 1E 8A</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 11 4C 1D 64 19 4C 1D 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D D0 20 58 1B FC 21 9C 18 8A 1B D0 20 4C 1D E8 1C B6</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 64 19 4C 1D 14 1E 84 1C 64 19 34 21 E8 1C 1A 1D 40 1F 46 1E FC 21 90 1A 2C 1A D0 20 84 1C 84 1C EC</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 52 1C 52 1C A4 1F 20 1C FC 21 A8 16 90 1A 34 21 20 1C 20 1C CA</anyType>
+          <anyType xsi:type="xsd:string">09 07 82 50 03 00 00 00 E5</anyType>
+          <anyType xsi:type="xsd:string">07 0B CF 4D 01 04 33</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0F 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 52 1C 52 1C A4 1F C8 19 FC 21 18 15 90 1A 60 22 20 1C 20 1C 06</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 52 1C 52 1C A4 1F 90 1A FC 21 D4 17 90 1A 6C 20 52 1C 20 1C CE</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D A4 1F F4 1A FC 21 9C 18 C2 1A D6 1F 4C 1D 4C 1D C8</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D C1</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0C 4C 1D 4C 1D 34 21 14 1E 84 1C 64 19 34 21 52 1C BC 1B A4 1F 70 17 FC 21 B4 14 90 1A 6C 20 52 1C 8A 1B 3E</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 4C 1D 34 21 14 1E 84 1C 64 19 34 21 52 1C BC 1B A4 1F 9C 18 FC 21 9C 18 90 1A E2 1D 52 1C 8A 1B C6</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 11 4C 1D 4C 1D 34 21 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D 40 1F C8 19 FC 21 9C 18 C8 19 0E 1F B0 1D 4C 1D AD</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 4C 1D 34 21 14 1E 84 1C 64 19 34 21 7E 1D B0 1D 52 1C 58 1B 08 20 9C 18 C8 19 6C 20 14 1E 14 1E 7F</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 46 1E 46 1E 78 1E F4 1A F0 23 9C 18 64 19 08 20 78 1E 78 1E A1</anyType>
+          <anyType xsi:type="xsd:string">09 07 82 50 03 00 00 00 E5</anyType>
+          <anyType xsi:type="xsd:string">07 0B 13 4F 01 04 79</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0F 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 46 1E 46 1E D0 20 F4 1A 80 25 9C 18 38 18 08 20 78 1E 78 1E 5B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 46 1E 46 1E 08 20 F4 1A C4 22 9C 18 2C 1A 08 20 78 1E 46 1E 9D</anyType>
+          <anyType xsi:type="xsd:string">07 0B 76 4D 01 00 D6</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0C 4C 1D 64 19 4C 1D 14 1E 84 1C 64 19 34 21 DC 1E 46 1E 28 23 F4 1A E4 25 9C 18 2C 1A 08 20 0E 1F 46 1E 1C</anyType>
+          <anyType xsi:type="xsd:string">07 0B 64 4C 01 00 C3</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>84920</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M042</Key>
+      <Value xsi:type="Motion">
+        <Number>41</Number>
+        <Name>HLO017RC_Safty Walk(Backward)Wireless</Name>
+        <Date>2012-01-26T16:45:07.140625+09:00</Date>
+        <ButtonData>2</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0F 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D B2</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 E2 1D E2 1D 40 1F 58 1B 34 21 64 19 58 1B 40 1F E2 1D E2 1D 0F</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 07 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 46 1E 46 1E 34 21 58 1B 1C 25 64 19 2C 1A 72 1F AA 1E 78 1E 13</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0C 4C 1D 4C 1D 34 21 14 1E 84 1C 64 19 34 21 DC 1E 46 1E 6C 20 F4 1A 48 26 9C 18 9C 18 D6 1F 0E 1F 46 1E D5</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 4C 1D 34 21 14 1E 84 1C 64 19 34 21 DC 1E 46 1E 4C 1D F4 1A 60 22 9C 18 00 19 D6 1F 0E 1F 46 1E 27</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 11 4C 1D 4C 1D 34 21 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D 14 1E C8 19 FC 21 9C 18 64 19 DC 1E 4C 1D E8 1C 20</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 4C 1D 34 21 14 1E 84 1C 64 19 34 21 E8 1C 1A 1D 40 1F C8 19 FC 21 90 1A 90 1A B6 1C 84 1C 84 1C 87</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 52 1C 52 1C 40 1F 9C 18 FC 21 A8 16 90 1A 4C 1D 20 1C 20 1C F2</anyType>
+          <anyType xsi:type="xsd:string">09 07 82 50 03 00 00 00 E5</anyType>
+          <anyType xsi:type="xsd:string">07 0B CF 55 01 04 3B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0F 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 52 1C 52 1C A4 1F C8 19 FC 21 18 15 90 1A 60 22 20 1C 20 1C 06</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 52 1C 52 1C A4 1F 90 1A FC 21 D4 17 90 1A 6C 20 52 1C 20 1C CE</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 28 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D A4 1F F4 1A FC 21 9C 18 C2 1A D6 1F 4C 1D 4C 1D C8</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D C1</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0C 4C 1D 64 19 4C 1D 14 1E 84 1C 64 19 34 21 52 1C BC 1B A4 1F 2C 1A FC 21 50 14 C2 1A FC 21 52 1C 8A 1B 84</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 64 19 4C 1D 14 1E 84 1C 64 19 34 21 52 1C BC 1B A4 1F 4C 1D FC 21 38 18 C2 1A 98 21 52 1C 8A 1B 2B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 11 4C 1D 64 19 4C 1D 14 1E 84 1C 64 19 34 21 4C 1D 4C 1D D0 20 84 1C FC 21 9C 18 BC 1B 34 21 B0 1D 4C 1D 43</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 64 19 4C 1D 14 1E 84 1C 64 19 34 21 7E 1D B0 1D D0 20 58 1B 08 20 9C 18 E2 1D 08 20 14 1E 14 1E E3</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 46 1E 46 1E FC 21 58 1B F0 23 9C 18 4C 1D 08 20 78 1E 78 1E 79</anyType>
+          <anyType xsi:type="xsd:string">09 07 82 50 03 00 00 00 E5</anyType>
+          <anyType xsi:type="xsd:string">07 0B 13 57 01 04 81</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0F 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 46 1E 46 1E D0 20 F4 1A 80 25 9C 18 38 18 08 20 78 1E 78 1E 5B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 46 1E 46 1E 08 20 F4 1A C4 22 9C 18 2C 1A 08 20 78 1E 46 1E 9D</anyType>
+          <anyType xsi:type="xsd:string">07 0B 76 55 01 00 DE</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0C 4C 1D 4C 1D 34 21 14 1E 84 1C 64 19 34 21 DC 1E 46 1E 6C 20 F4 1A 48 26 9C 18 9C 18 D6 1F 0E 1F 46 1E D5</anyType>
+          <anyType xsi:type="xsd:string">07 0B 64 54 01 00 CB</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>86968</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M043</Key>
+      <Value xsi:type="Motion">
+        <Number>42</Number>
+        <Name>HLO018RC_Safty Side Step(Left)Wireless</Name>
+        <Date>2012-01-26T16:45:12.21875+09:00</Date>
+        <ButtonData>8</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">0B 12 00 00 03 00 00 01 7F 7F 1F</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 64 19 58 1B 40 1F 14 1E 84 1C 64 19 34 21 B0 1D B0 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F E2 1D E2 1D BF</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 64 19 58 1B 40 1F A4 1F 84 1C 64 19 34 21 78 1E E8 1C 6C 20 58 1B 54 24 64 19 32 19 72 1F 40 1F 4C 1D 6A</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 64 19 58 1B 40 1F A4 1F 84 1C 64 19 34 21 78 1E 84 1C A4 1F 58 1B FC 21 64 19 C2 1A 72 1F DC 1E 84 1C 41</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 64 19 58 1B 40 1F A4 1F 84 1C 64 19 34 21 E8 1C 58 1B 08 20 58 1B C4 22 64 19 5E 1A 72 1F E8 1C F4 1A D2</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 64 19 58 1B 40 1F 14 1E F4 1A 64 19 34 21 1A 1D E8 1C 08 20 96 19 C4 22 18 15 2C 1A 98 21 E8 1C 20 1C 79</anyType>
+          <anyType xsi:type="xsd:string">09 07 82 50 03 00 00 00 E5</anyType>
+          <anyType xsi:type="xsd:string">07 0B C3 5B 01 04 35</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C 64 19 34 21 E8 1C 4C 1D 40 1F F4 1A 34 21 9C 18 26 1B D6 1F E8 1C 84 1C 5A</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D C1</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 97</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">07 0B C3 5B 01 00 31</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>89016</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M044</Key>
+      <Value xsi:type="Motion">
+        <Number>43</Number>
+        <Name>HLO019RC_Safty Side Step(Right)Wireless</Name>
+        <Date>2012-01-26T16:45:17.484375+09:00</Date>
+        <ButtonData>4</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">0B 12 00 00 03 00 00 01 7F 7F 1F</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 34 21 58 1B 40 1F 14 1E 84 1C 64 19 34 21 E8 1C E8 1C 40 1F 58 1B 34 21 64 19 26 1B 72 1F B6 1C B6 1C AB</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 34 21 58 1B 40 1F 14 1E F4 1A 64 19 34 21 B0 1D 20 1C 40 1F 2C 1A 34 21 44 16 26 1B 66 21 4C 1D 58 1B EE</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 34 21 58 1B 40 1F 14 1E F4 1A 64 19 34 21 14 1E 20 1C 40 1F F4 1A 34 21 9C 18 26 1B D6 1F 14 1E BC 1B 0C</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 34 21 58 1B 40 1F 14 1E F4 1A 64 19 34 21 40 1F B0 1D 40 1F 90 1A 34 21 D4 17 26 1B 3A 20 A4 1F B0 1D 97</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 34 21 58 1B 40 1F A4 1F 84 1C 64 19 34 21 B0 1D 7E 1D 02 21 90 1A 80 25 D4 17 00 19 3A 20 78 1E B0 1D AB</anyType>
+          <anyType xsi:type="xsd:string">09 07 82 50 03 00 00 00 E5</anyType>
+          <anyType xsi:type="xsd:string">07 0B C3 63 01 04 3D</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 58 1B 40 1F 14 1E 84 1C C8 19 34 21 4C 1D B0 1D A4 1F 58 1B FC 21 64 19 C2 1A 72 1F 14 1E B0 1D 73</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 1E 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D C1</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 97</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">07 0B C3 63 01 00 39</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>91064</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M045</Key>
+      <Value xsi:type="Motion">
+        <Number>44</Number>
+        <Name>HLO020RC_Fast Turn A(Left)Wireless</Name>
+        <Date>2012-01-26T16:45:28.328125+09:00</Date>
+        <ButtonData>1024</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">13 12 00 F0 3F 00 00 01 7F 7F 50 50 7F 7F 50 50 3C 3C 09</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0F 4C 1D 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 4C 1D 4C 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D B2</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 4C 1D 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 4C 1D 4C 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D AD</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 02 64 19 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 B0 1D E8 1C 14 1E 2C 1A 34 21 64 19 FA 19 46 1E B0 1D E8 1C 02</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 64 19 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 B0 1D E8 1C 14 1E 2C 1A 34 21 64 19 FA 19 46 1E 46 1E 52 1C 09</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 64 19 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 E8 1C B0 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D C0</anyType>
+          <anyType xsi:type="xsd:string">09 07 82 50 03 00 00 00 E5</anyType>
+          <anyType xsi:type="xsd:string">07 0B 21 6C 01 04 A4</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 05 4C 1D 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 4C 1D 4C 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D A8</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 97</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 19 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D BC</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">07 0B 21 6C 01 00 A0</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>93112</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M046</Key>
+      <Value xsi:type="Motion">
+        <Number>45</Number>
+        <Name>HLO021RC_Fast Tuen A(Right)Wireless</Name>
+        <Date>2012-01-26T16:45:46.84375+09:00</Date>
+        <ButtonData>4096</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">13 12 00 F0 3F 00 00 01 7F 7F 50 50 7F 7F 50 50 3C 3C 09</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0F 4C 1D 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 4C 1D 4C 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D B2</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 4C 1D 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 4C 1D 4C 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D AD</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 02 34 21 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 B0 1D E8 1C 6C 20 84 1C 34 21 64 19 52 1C 9E 20 B0 1D E8 1C 43</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 34 21 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 B0 1D E8 1C 6C 20 84 1C 34 21 64 19 52 1C 9E 20 46 1E 52 1C 4A</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 34 21 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 E8 1C B0 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D 98</anyType>
+          <anyType xsi:type="xsd:string">09 07 82 50 03 00 00 00 E5</anyType>
+          <anyType xsi:type="xsd:string">07 0B 21 74 01 04 AC</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 05 4C 1D 2C 1A 6C 20 14 1E 84 1C 70 17 28 23 4C 1D 4C 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D A8</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 97</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 19 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D BC</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">07 0B 21 74 01 00 A8</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>95160</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M047</Key>
+      <Value xsi:type="Motion">
+        <Number>46</Number>
+        <Name>HLO032RC_Walk B(Forward)Wireless</Name>
+        <Date>2012-01-26T16:46:08.21875+09:00</Date>
+        <ButtonData>513</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">15 12 0C F0 3F 00 00 01 2D 2D 3C 3C 3C 3C 4B 4B 2D 2D 1E 1E D9</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 1A 1D 7E 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D B7</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 09 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 E8 1C E8 1C 40 1F 58 1B 34 21 64 19 C2 1A D6 1F E8 1C B6 1C E5</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 09 4C 1D BC 1B FC 21 14 1E 84 1C 7C 15 1C 25 B6 1C 84 1C 40 1F 0C 17 34 21 7C 15 C2 1A 40 1F B6 1C 84 1C 3B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 09 4C 1D BC 1B FC 21 14 1E 84 1C 7C 15 1C 25 4C 1D B0 1D 4C 1D C8 19 6C 20 64 19 C8 19 DC 1E E2 1D B0 1D E4</anyType>
+          <anyType xsi:type="xsd:string">09 07 82 50 03 00 00 00 E5</anyType>
+          <anyType xsi:type="xsd:string">07 0B 57 7D 01 04 EB</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 B0 1D B0 1D A4 1F 58 1B F0 23 64 19 00 19 40 1F 14 1E B0 1D 68</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 1A 1D 7E 1D 08 20 90 1A C4 22 D4 17 90 1A 08 20 4C 1D 4C 1D AA</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 1A 1D 7E 1D 08 20 90 1A C4 22 D4 17 90 1A 08 20 4C 1D 4C 1D A8</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 19 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D BC</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 97</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 B0 1D B0 1D A4 1F 58 1B F0 23 64 19 38 18 08 20 14 1E B0 1D 66</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 70 17 DC 1E 14 1E 84 1C 7C 15 1C 25 B0 1D B0 1D 8C 23 20 1C 1C 25 64 19 BC 1B 6C 20 B0 1D B0 1D 7E</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 05 4C 1D 70 17 DC 1E 14 1E 84 1C 7C 15 1C 25 E8 1C 4C 1D 34 21 4C 1D 34 21 2C 1A 20 1C D0 20 E8 1C 4C 1D 9C</anyType>
+          <anyType xsi:type="xsd:string">09 07 82 50 03 00 00 00 E5</anyType>
+          <anyType xsi:type="xsd:string">07 0B 1A 7E 01 04 AF</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 E8 1C E8 1C 40 1F F4 1A 34 21 A8 16 58 1B 98 21 E8 1C 84 1C E9</anyType>
+          <anyType xsi:type="xsd:string">07 0B B4 7C 01 00 43</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 E8 1C E8 1C 40 1F F4 1A 34 21 A8 16 90 1A 60 22 E8 1C 84 1C E7</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D BC 1B 28 23 14 1E 84 1C 7C 15 1C 25 E8 1C E8 1C 78 1E 0C 17 34 21 7C 15 2C 1A DC 1E E8 1C E8 1C CE</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 05 4C 1D BC 1B 28 23 14 1E 84 1C 7C 15 1C 25 4C 1D B0 1D 4C 1D 64 19 6C 20 64 19 C8 19 78 1E 4C 1D B0 1D B0</anyType>
+          <anyType xsi:type="xsd:string">07 0B 79 7C 01 00 08</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>97208</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M048</Key>
+      <Value xsi:type="Motion">
+        <Number>47</Number>
+        <Name>HLO033RC_Walk B(Backward)Wireless</Name>
+        <Date>2012-01-26T16:46:19.921875+09:00</Date>
+        <ButtonData>514</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">15 12 0C F0 3F 00 00 01 2D 2D 3C 3C 2D 2D 4B 4B 3C 3C 1E 1E D9</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 1A 1D 7E 1D 40 1F 58 1B 34 21 64 19 26 1B 72 1F 4C 1D 4C 1D B7</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 09 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 E8 1C E8 1C 40 1F 58 1B 34 21 64 19 58 1B 40 1F E8 1C B6 1C E6</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 09 4C 1D 70 17 DC 1E 14 1E 84 1C 7C 15 1C 25 E8 1C E8 1C 08 20 20 1C 34 21 44 16 8A 1B 92 22 E8 1C E8 1C BD</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 09 4C 1D 70 17 DC 1E 14 1E 84 1C 7C 15 1C 25 4C 1D B0 1D 34 21 20 1C 6C 20 64 19 B0 1D 6C 20 7E 1D B0 1D D2</anyType>
+          <anyType xsi:type="xsd:string">09 07 82 50 03 00 00 00 E5</anyType>
+          <anyType xsi:type="xsd:string">07 0B 57 85 01 04 F3</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 B0 1D B0 1D D0 20 58 1B 54 24 64 19 C8 19 A4 1F 14 1E B0 1D 26</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 1A 1D 7E 1D 08 20 90 1A C4 22 D4 17 90 1A 08 20 4C 1D 4C 1D AA</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 1A 1D 7E 1D 08 20 90 1A C4 22 D4 17 90 1A 08 20 4C 1D 4C 1D A8</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 19 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D BC</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 97</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 B0 1D B0 1D 98 21 58 1B 1C 25 64 19 96 19 72 1F 14 1E B0 1D 52</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D BC 1B 28 23 14 1E 84 1C 7C 15 1C 25 B0 1D B0 1D 78 1E 90 1A 54 24 64 19 06 18 0E 1F B0 1D B0 1D 93</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 05 4C 1D BC 1B 28 23 14 1E 84 1C 7C 15 1C 25 E8 1C 4C 1D 78 1E 64 19 34 21 2C 1A 2C 1A E8 1C E8 1C 1A 1D 7E</anyType>
+          <anyType xsi:type="xsd:string">09 07 82 50 03 00 00 00 E5</anyType>
+          <anyType xsi:type="xsd:string">07 0B 1A 86 01 04 B7</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 08 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 E8 1C E8 1C 40 1F C8 19 34 21 A8 16 F4 1A D0 20 E8 1C 84 1C 8E</anyType>
+          <anyType xsi:type="xsd:string">07 0B B4 84 01 00 4B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 E8 1C E8 1C 40 1F 00 19 34 21 7C 15 26 1B 02 21 E8 1C 84 1C FD</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 70 17 DC 1E 14 1E 84 1C 7C 15 1C 25 E8 1C E8 1C 08 20 20 1C 34 21 44 16 8A 1B 92 22 E8 1C E8 1C BA</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 05 4C 1D 70 17 DC 1E 14 1E 84 1C 7C 15 1C 25 4C 1D B0 1D 34 21 20 1C 6C 20 64 19 B0 1D 6C 20 7E 1D B0 1D CE</anyType>
+          <anyType xsi:type="xsd:string">07 0B 79 84 01 00 10</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>99256</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M049</Key>
+      <Value xsi:type="Motion">
+        <Number>48</Number>
+        <Name>HLO034RC_Side Step B(Left)Wireless</Name>
+        <Date>2012-01-26T16:46:26.953125+09:00</Date>
+        <ButtonData>520</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">13 12 00 F0 3F 00 00 01 3C 3C 50 50 7F 7F 3C 3C 3C 3C 5B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 B0 1D B0 1D 98 21 00 19 1C 25 7C 15 32 19 66 21 14 1E E2 1D DE</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 B0 1D 4C 1D 28 23 00 19 3C 28 7C 15 A2 17 66 21 14 1E 4C 1D F9</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 40 1F 52 1C C4 22 00 19 74 27 7C 15 06 18 66 21 DC 1E 20 1C 62</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 78 1E BC 1B 98 21 64 19 1C 25 44 16 32 19 02 21 E2 1D 26 1B 7B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 4C 1D B6 1C 98 21 D4 17 1C 25 24 13 32 19 92 22 B0 1D B6 1C 84</anyType>
+          <anyType xsi:type="xsd:string">09 07 82 50 03 00 00 00 E5</anyType>
+          <anyType xsi:type="xsd:string">07 0B 21 8C 01 04 C4</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 4C 1D 14 1E 98 21 00 19 1C 25 7C 15 32 19 66 21 4C 1D 20 1C 49</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 97</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 19 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D BC</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">07 0B 21 8C 01 00 C0</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>101304</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M050</Key>
+      <Value xsi:type="Motion">
+        <Number>49</Number>
+        <Name>HLO035RC_Side Step B(Right)Wireless</Name>
+        <Date>2012-01-26T16:46:31.984375+09:00</Date>
+        <ButtonData>516</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData>
+          <anyType xsi:type="xsd:string">13 12 00 F0 3F 00 00 01 3C 3C 50 50 7F 7F 3C 3C 3C 3C 5B</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 14 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 E8 1C E8 1C 98 21 00 19 1C 25 7C 15 32 19 66 21 B6 1C 84 1C 8D</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 4C 1D E8 1C 98 21 70 17 1C 25 5C 12 32 19 F6 22 4C 1D 84 1C 57</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 46 1E 58 1B 98 21 D4 17 1C 25 24 13 32 19 92 22 78 1E BC 1B EE</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 DC 1E 20 1C 34 21 00 19 54 24 7C 15 96 19 66 21 72 1F B6 1C D5</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 06 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 E2 1D 4C 1D C4 22 00 19 74 27 7C 15 06 18 66 21 E2 1D E8 1C CA</anyType>
+          <anyType xsi:type="xsd:string">09 07 82 50 03 00 00 00 E5</anyType>
+          <anyType xsi:type="xsd:string">07 0B 21 94 01 04 CC</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 0A 4C 1D 2C 1A 6C 20 14 1E 84 1C 7C 15 1C 25 84 1C 4C 1D 98 21 00 19 1C 25 7C 15 32 19 66 21 78 1E 4C 1D 11</anyType>
+          <anyType xsi:type="xsd:string">1F 12 FF FF 3F 00 00 01 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 3C 97</anyType>
+          <anyType xsi:type="xsd:string">2B 10 3D F3 3F 00 00 19 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D 4C 1D BC</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10</anyType>
+          <anyType xsi:type="xsd:string">07 0B 21 94 01 00 C8</anyType>
+          <anyType xsi:type="xsd:string">03 0D 10 FF</anyType>
+        </MotionData>
+        <Address>103352</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M051</Key>
+      <Value xsi:type="Motion">
+        <Number>50</Number>
+        <Name>M051</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>105400</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M052</Key>
+      <Value xsi:type="Motion">
+        <Number>51</Number>
+        <Name>M052</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>107448</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M053</Key>
+      <Value xsi:type="Motion">
+        <Number>52</Number>
+        <Name>M053</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>109496</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M054</Key>
+      <Value xsi:type="Motion">
+        <Number>53</Number>
+        <Name>M054</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>111544</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M055</Key>
+      <Value xsi:type="Motion">
+        <Number>54</Number>
+        <Name>M055</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>113592</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M056</Key>
+      <Value xsi:type="Motion">
+        <Number>55</Number>
+        <Name>M056</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>115640</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M057</Key>
+      <Value xsi:type="Motion">
+        <Number>56</Number>
+        <Name>M057</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>117688</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M058</Key>
+      <Value xsi:type="Motion">
+        <Number>57</Number>
+        <Name>M058</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>119736</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M059</Key>
+      <Value xsi:type="Motion">
+        <Number>58</Number>
+        <Name>M059</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>121784</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M060</Key>
+      <Value xsi:type="Motion">
+        <Number>59</Number>
+        <Name>M060</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>123832</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M061</Key>
+      <Value xsi:type="Motion">
+        <Number>60</Number>
+        <Name>M061</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>125880</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M062</Key>
+      <Value xsi:type="Motion">
+        <Number>61</Number>
+        <Name>M062</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>127928</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M063</Key>
+      <Value xsi:type="Motion">
+        <Number>62</Number>
+        <Name>M063</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>129976</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M064</Key>
+      <Value xsi:type="Motion">
+        <Number>63</Number>
+        <Name>M064</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>132024</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M065</Key>
+      <Value xsi:type="Motion">
+        <Number>64</Number>
+        <Name>M065</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>134072</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M066</Key>
+      <Value xsi:type="Motion">
+        <Number>65</Number>
+        <Name>M066</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>136120</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M067</Key>
+      <Value xsi:type="Motion">
+        <Number>66</Number>
+        <Name>M067</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>138168</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M068</Key>
+      <Value xsi:type="Motion">
+        <Number>67</Number>
+        <Name>M068</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>140216</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M069</Key>
+      <Value xsi:type="Motion">
+        <Number>68</Number>
+        <Name>M069</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>142264</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M070</Key>
+      <Value xsi:type="Motion">
+        <Number>69</Number>
+        <Name>M070</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>144312</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M071</Key>
+      <Value xsi:type="Motion">
+        <Number>70</Number>
+        <Name>M071</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>146360</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M072</Key>
+      <Value xsi:type="Motion">
+        <Number>71</Number>
+        <Name>M072</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>148408</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M073</Key>
+      <Value xsi:type="Motion">
+        <Number>72</Number>
+        <Name>M073</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>150456</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M074</Key>
+      <Value xsi:type="Motion">
+        <Number>73</Number>
+        <Name>M074</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>152504</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M075</Key>
+      <Value xsi:type="Motion">
+        <Number>74</Number>
+        <Name>M075</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>154552</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M076</Key>
+      <Value xsi:type="Motion">
+        <Number>75</Number>
+        <Name>M076</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>156600</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M077</Key>
+      <Value xsi:type="Motion">
+        <Number>76</Number>
+        <Name>M077</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>158648</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M078</Key>
+      <Value xsi:type="Motion">
+        <Number>77</Number>
+        <Name>M078</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>160696</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M079</Key>
+      <Value xsi:type="Motion">
+        <Number>78</Number>
+        <Name>M079</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>162744</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M080</Key>
+      <Value xsi:type="Motion">
+        <Number>79</Number>
+        <Name>M080</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>164792</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M081</Key>
+      <Value xsi:type="Motion">
+        <Number>80</Number>
+        <Name>M081</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>166840</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M082</Key>
+      <Value xsi:type="Motion">
+        <Number>81</Number>
+        <Name>M082</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>168888</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M083</Key>
+      <Value xsi:type="Motion">
+        <Number>82</Number>
+        <Name>M083</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>170936</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M084</Key>
+      <Value xsi:type="Motion">
+        <Number>83</Number>
+        <Name>M084</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>172984</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M085</Key>
+      <Value xsi:type="Motion">
+        <Number>84</Number>
+        <Name>M085</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>175032</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M086</Key>
+      <Value xsi:type="Motion">
+        <Number>85</Number>
+        <Name>M086</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>177080</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M087</Key>
+      <Value xsi:type="Motion">
+        <Number>86</Number>
+        <Name>M087</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>179128</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M088</Key>
+      <Value xsi:type="Motion">
+        <Number>87</Number>
+        <Name>M088</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>181176</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M089</Key>
+      <Value xsi:type="Motion">
+        <Number>88</Number>
+        <Name>M089</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>183224</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M090</Key>
+      <Value xsi:type="Motion">
+        <Number>89</Number>
+        <Name>M090</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>185272</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M091</Key>
+      <Value xsi:type="Motion">
+        <Number>90</Number>
+        <Name>M091</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>187320</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M092</Key>
+      <Value xsi:type="Motion">
+        <Number>91</Number>
+        <Name>M092</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>189368</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M093</Key>
+      <Value xsi:type="Motion">
+        <Number>92</Number>
+        <Name>M093</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>191416</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M094</Key>
+      <Value xsi:type="Motion">
+        <Number>93</Number>
+        <Name>M094</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>193464</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M095</Key>
+      <Value xsi:type="Motion">
+        <Number>94</Number>
+        <Name>M095</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>195512</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M096</Key>
+      <Value xsi:type="Motion">
+        <Number>95</Number>
+        <Name>M096</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>197560</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M097</Key>
+      <Value xsi:type="Motion">
+        <Number>96</Number>
+        <Name>M097</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>199608</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M098</Key>
+      <Value xsi:type="Motion">
+        <Number>97</Number>
+        <Name>M098</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>201656</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M099</Key>
+      <Value xsi:type="Motion">
+        <Number>98</Number>
+        <Name>M099</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>203704</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M100</Key>
+      <Value xsi:type="Motion">
+        <Number>99</Number>
+        <Name>M100</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>205752</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M101</Key>
+      <Value xsi:type="Motion">
+        <Number>100</Number>
+        <Name>M101</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>207800</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M102</Key>
+      <Value xsi:type="Motion">
+        <Number>101</Number>
+        <Name>M102</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>209848</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M103</Key>
+      <Value xsi:type="Motion">
+        <Number>102</Number>
+        <Name>M103</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>211896</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M104</Key>
+      <Value xsi:type="Motion">
+        <Number>103</Number>
+        <Name>M104</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>213944</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M105</Key>
+      <Value xsi:type="Motion">
+        <Number>104</Number>
+        <Name>M105</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>215992</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M106</Key>
+      <Value xsi:type="Motion">
+        <Number>105</Number>
+        <Name>M106</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>218040</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M107</Key>
+      <Value xsi:type="Motion">
+        <Number>106</Number>
+        <Name>M107</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>220088</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M108</Key>
+      <Value xsi:type="Motion">
+        <Number>107</Number>
+        <Name>M108</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>222136</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M109</Key>
+      <Value xsi:type="Motion">
+        <Number>108</Number>
+        <Name>M109</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>224184</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M110</Key>
+      <Value xsi:type="Motion">
+        <Number>109</Number>
+        <Name>M110</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>226232</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M111</Key>
+      <Value xsi:type="Motion">
+        <Number>110</Number>
+        <Name>M111</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>228280</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M112</Key>
+      <Value xsi:type="Motion">
+        <Number>111</Number>
+        <Name>M112</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>230328</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M113</Key>
+      <Value xsi:type="Motion">
+        <Number>112</Number>
+        <Name>M113</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>232376</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M114</Key>
+      <Value xsi:type="Motion">
+        <Number>113</Number>
+        <Name>M114</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>234424</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M115</Key>
+      <Value xsi:type="Motion">
+        <Number>114</Number>
+        <Name>M115</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>236472</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M116</Key>
+      <Value xsi:type="Motion">
+        <Number>115</Number>
+        <Name>M116</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>238520</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M117</Key>
+      <Value xsi:type="Motion">
+        <Number>116</Number>
+        <Name>M117</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>240568</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M118</Key>
+      <Value xsi:type="Motion">
+        <Number>117</Number>
+        <Name>M118</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>242616</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M119</Key>
+      <Value xsi:type="Motion">
+        <Number>118</Number>
+        <Name>M119</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>244664</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">M120</Key>
+      <Value xsi:type="Motion">
+        <Number>119</Number>
+        <Name>M120</Name>
+        <Date>2011-10-19T09:27:10.2980987+09:00</Date>
+        <ButtonData>0</ButtonData>
+        <CompareType>Equals</CompareType>
+        <MotionData />
+        <Address>246712</Address>
+        <KeyCode>None</KeyCode>
+      </Value>
+    </DictionaryEntry>
+  </MotionDataCollection>
+  <ServoConfigParams>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Head(Yaw)</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Head(Yaw)</Name>
+        <Count>20</Count>
+        <RomAddress>1574</RomAddress>
+        <RamAddress>144</RamAddress>
+        <Mode>Normal</Mode>
+        <Port>SIO1</Port>
+        <DeviceNumber>0</DeviceNumber>
+        <Code>0</Code>
+        <ID>0</ID>
+        <Trim>0</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>224</X>
+          <Y>8</Y>
+        </Location>
+        <Group>Body</Group>
+        <ForeColor>buttontext</ForeColor>
+        <BackColor>#FFA6A6</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Waist(Yaw)</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Waist(Yaw)</Name>
+        <Count>20</Count>
+        <RomAddress>1594</RomAddress>
+        <RamAddress>164</RamAddress>
+        <Mode>None</Mode>
+        <Port>SIO2</Port>
+        <DeviceNumber>1</DeviceNumber>
+        <Code>0</Code>
+        <ID>0</ID>
+        <Trim>0</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>0</X>
+          <Y>0</Y>
+        </Location>
+        <Group>Body</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>buttonface</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Left Shoulder(Pitch)</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Left Shoulder(Pitch)</Name>
+        <Count>20</Count>
+        <RomAddress>1614</RomAddress>
+        <RamAddress>184</RamAddress>
+        <Mode>Normal</Mode>
+        <Port>SIO1</Port>
+        <DeviceNumber>2</DeviceNumber>
+        <Code>0</Code>
+        <ID>1</ID>
+        <Trim>-1350</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>296</X>
+          <Y>80</Y>
+        </Location>
+        <Group>Arm</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>#FFA6A6</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Right Shoulder(Pitch)</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Right Shoulder(Pitch)</Name>
+        <Count>20</Count>
+        <RomAddress>1634</RomAddress>
+        <RamAddress>204</RamAddress>
+        <Mode>Normal</Mode>
+        <Port>SIO2</Port>
+        <DeviceNumber>3</DeviceNumber>
+        <Code>0</Code>
+        <ID>1</ID>
+        <Trim>1350</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>152</X>
+          <Y>80</Y>
+        </Location>
+        <Group>Arm</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>#80FFFF</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Left Shoulder(Roll)</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Left Shoulder(Roll)</Name>
+        <Count>20</Count>
+        <RomAddress>1654</RomAddress>
+        <RamAddress>224</RamAddress>
+        <Mode>Normal</Mode>
+        <Port>SIO1</Port>
+        <DeviceNumber>4</DeviceNumber>
+        <Code>0</Code>
+        <ID>2</ID>
+        <Trim>-2650</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>440</X>
+          <Y>80</Y>
+        </Location>
+        <Group>Arm</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>#FFA6A6</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Right Shoulder(Roll)</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Right Shoulder(Roll)</Name>
+        <Count>20</Count>
+        <RomAddress>1674</RomAddress>
+        <RamAddress>244</RamAddress>
+        <Mode>Normal</Mode>
+        <Port>SIO2</Port>
+        <DeviceNumber>5</DeviceNumber>
+        <Code>0</Code>
+        <ID>2</ID>
+        <Trim>2650</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>8</X>
+          <Y>80</Y>
+        </Location>
+        <Group>Arm</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>#80FFFF</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Left Shoulder(Yaw)</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Left Shoulder(Yaw)</Name>
+        <Count>20</Count>
+        <RomAddress>1694</RomAddress>
+        <RamAddress>264</RamAddress>
+        <Mode>None</Mode>
+        <Port>SIO1</Port>
+        <DeviceNumber>6</DeviceNumber>
+        <Code>0</Code>
+        <ID>3</ID>
+        <Trim>0</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>0</X>
+          <Y>0</Y>
+        </Location>
+        <Group>Arm</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>buttonface</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Right Shoulder(Yaw)</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Right Shoulder(Yaw)</Name>
+        <Count>20</Count>
+        <RomAddress>1714</RomAddress>
+        <RamAddress>284</RamAddress>
+        <Mode>None</Mode>
+        <Port>SIO2</Port>
+        <DeviceNumber>7</DeviceNumber>
+        <Code>0</Code>
+        <ID>3</ID>
+        <Trim>0</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>0</X>
+          <Y>0</Y>
+        </Location>
+        <Group>Arm</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>buttonface</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Left Elbow</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Left Elbow</Name>
+        <Count>20</Count>
+        <RomAddress>1734</RomAddress>
+        <RamAddress>304</RamAddress>
+        <Mode>Normal</Mode>
+        <Port>SIO1</Port>
+        <DeviceNumber>8</DeviceNumber>
+        <Code>0</Code>
+        <ID>4</ID>
+        <Trim>2650</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>440</X>
+          <Y>128</Y>
+        </Location>
+        <Group>Arm</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>#FFA6A6</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Right Elbow</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Right Elbow</Name>
+        <Count>20</Count>
+        <RomAddress>1754</RomAddress>
+        <RamAddress>324</RamAddress>
+        <Mode>Normal</Mode>
+        <Port>SIO2</Port>
+        <DeviceNumber>9</DeviceNumber>
+        <Code>0</Code>
+        <ID>4</ID>
+        <Trim>-2650</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>8</X>
+          <Y>128</Y>
+        </Location>
+        <Group>Arm</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>#80FFFF</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Left Hip(Yaw)</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Left Hip(Yaw)</Name>
+        <Count>20</Count>
+        <RomAddress>1774</RomAddress>
+        <RamAddress>344</RamAddress>
+        <Mode>None</Mode>
+        <Port>SIO1</Port>
+        <DeviceNumber>10</DeviceNumber>
+        <Code>0</Code>
+        <ID>5</ID>
+        <Trim>0</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>0</X>
+          <Y>0</Y>
+        </Location>
+        <Group>Leg</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>buttonface</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Right Hip(Yaw)</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Right Hip(Yaw)</Name>
+        <Count>20</Count>
+        <RomAddress>1794</RomAddress>
+        <RamAddress>364</RamAddress>
+        <Mode>None</Mode>
+        <Port>SIO2</Port>
+        <DeviceNumber>11</DeviceNumber>
+        <Code>0</Code>
+        <ID>5</ID>
+        <Trim>0</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>0</X>
+          <Y>0</Y>
+        </Location>
+        <Group>Leg</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>buttonface</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Left Hip(Roll)</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Left Hip(Roll)</Name>
+        <Count>20</Count>
+        <RomAddress>1814</RomAddress>
+        <RamAddress>384</RamAddress>
+        <Mode>Normal</Mode>
+        <Port>SIO1</Port>
+        <DeviceNumber>12</DeviceNumber>
+        <Code>0</Code>
+        <ID>6</ID>
+        <Trim>20</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>360</X>
+          <Y>192</Y>
+        </Location>
+        <Group>Leg</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>#FFFF80</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Right Hip(Roll)</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Right Hip(Roll)</Name>
+        <Count>20</Count>
+        <RomAddress>1834</RomAddress>
+        <RamAddress>404</RamAddress>
+        <Mode>Normal</Mode>
+        <Port>SIO2</Port>
+        <DeviceNumber>13</DeviceNumber>
+        <Code>0</Code>
+        <ID>6</ID>
+        <Trim>-20</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>80</X>
+          <Y>192</Y>
+        </Location>
+        <Group>Leg</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>#80FF80</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Left Hip(Pitch)</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Left Hip(Pitch)</Name>
+        <Count>20</Count>
+        <RomAddress>1854</RomAddress>
+        <RamAddress>424</RamAddress>
+        <Mode>Normal</Mode>
+        <Port>SIO1</Port>
+        <DeviceNumber>14</DeviceNumber>
+        <Code>0</Code>
+        <ID>7</ID>
+        <Trim>30</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>328</X>
+          <Y>256</Y>
+        </Location>
+        <Group>Leg</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>#FFFF80</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Right Hip(Pitch)</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Right Hip(Pitch)</Name>
+        <Count>20</Count>
+        <RomAddress>1874</RomAddress>
+        <RamAddress>444</RamAddress>
+        <Mode>Normal</Mode>
+        <Port>SIO2</Port>
+        <DeviceNumber>15</DeviceNumber>
+        <Code>0</Code>
+        <ID>7</ID>
+        <Trim>30</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>120</X>
+          <Y>256</Y>
+        </Location>
+        <Group>Leg</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>#80FF80</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Left Knee</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Left Knee</Name>
+        <Count>20</Count>
+        <RomAddress>1894</RomAddress>
+        <RamAddress>464</RamAddress>
+        <Mode>Normal</Mode>
+        <Port>SIO1</Port>
+        <DeviceNumber>16</DeviceNumber>
+        <Code>0</Code>
+        <ID>8</ID>
+        <Trim>-1780</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>328</X>
+          <Y>320</Y>
+        </Location>
+        <Group>Leg</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>#FFFF80</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Right Knee</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Right Knee</Name>
+        <Count>20</Count>
+        <RomAddress>1914</RomAddress>
+        <RamAddress>484</RamAddress>
+        <Mode>Normal</Mode>
+        <Port>SIO2</Port>
+        <DeviceNumber>17</DeviceNumber>
+        <Code>0</Code>
+        <ID>8</ID>
+        <Trim>1780</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>120</X>
+          <Y>320</Y>
+        </Location>
+        <Group>Leg</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>#80FF80</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Left Ankle(Pitch)</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Left Ankle(Pitch)</Name>
+        <Count>20</Count>
+        <RomAddress>1934</RomAddress>
+        <RamAddress>504</RamAddress>
+        <Mode>Normal</Mode>
+        <Port>SIO1</Port>
+        <DeviceNumber>18</DeviceNumber>
+        <Code>0</Code>
+        <ID>9</ID>
+        <Trim>-600</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>328</X>
+          <Y>376</Y>
+        </Location>
+        <Group>Leg</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>#FFFF80</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Right Ankle(Pitch)</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Right Ankle(Pitch)</Name>
+        <Count>20</Count>
+        <RomAddress>1954</RomAddress>
+        <RamAddress>524</RamAddress>
+        <Mode>Normal</Mode>
+        <Port>SIO2</Port>
+        <DeviceNumber>19</DeviceNumber>
+        <Code>0</Code>
+        <ID>9</ID>
+        <Trim>600</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>120</X>
+          <Y>376</Y>
+        </Location>
+        <Group>Leg</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>#80FF80</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Left Ankle(Roll)</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Left Ankle(Roll)</Name>
+        <Count>20</Count>
+        <RomAddress>1974</RomAddress>
+        <RamAddress>544</RamAddress>
+        <Mode>Normal</Mode>
+        <Port>SIO1</Port>
+        <DeviceNumber>20</DeviceNumber>
+        <Code>0</Code>
+        <ID>10</ID>
+        <Trim>30</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>344</X>
+          <Y>440</Y>
+        </Location>
+        <Group>Leg</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>#FFFF80</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Right Ankle(Roll)</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Right Ankle(Roll)</Name>
+        <Count>20</Count>
+        <RomAddress>1994</RomAddress>
+        <RamAddress>564</RamAddress>
+        <Mode>Normal</Mode>
+        <Port>SIO2</Port>
+        <DeviceNumber>21</DeviceNumber>
+        <Code>0</Code>
+        <ID>10</ID>
+        <Trim>-30</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>96</X>
+          <Y>440</Y>
+        </Location>
+        <Group>Leg</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>#80FF80</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Left Ext1</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Left Ext1</Name>
+        <Count>20</Count>
+        <RomAddress>2014</RomAddress>
+        <RamAddress>584</RamAddress>
+        <Mode>None</Mode>
+        <Port>SIO1</Port>
+        <DeviceNumber>22</DeviceNumber>
+        <Code>0</Code>
+        <ID>11</ID>
+        <Trim>0</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>0</X>
+          <Y>0</Y>
+        </Location>
+        <Group>Ext</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>buttonface</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Right Ext1</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Right Ext1</Name>
+        <Count>20</Count>
+        <RomAddress>2034</RomAddress>
+        <RamAddress>604</RamAddress>
+        <Mode>None</Mode>
+        <Port>SIO2</Port>
+        <DeviceNumber>23</DeviceNumber>
+        <Code>0</Code>
+        <ID>11</ID>
+        <Trim>0</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>0</X>
+          <Y>0</Y>
+        </Location>
+        <Group>Ext</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>buttonface</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Left Ext2</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Left Ext2</Name>
+        <Count>20</Count>
+        <RomAddress>2054</RomAddress>
+        <RamAddress>624</RamAddress>
+        <Mode>None</Mode>
+        <Port>SIO1</Port>
+        <DeviceNumber>24</DeviceNumber>
+        <Code>0</Code>
+        <ID>12</ID>
+        <Trim>0</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>0</X>
+          <Y>0</Y>
+        </Location>
+        <Group>Ext</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>buttonface</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Right Ext2</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Right Ext2</Name>
+        <Count>20</Count>
+        <RomAddress>2074</RomAddress>
+        <RamAddress>644</RamAddress>
+        <Mode>None</Mode>
+        <Port>SIO2</Port>
+        <DeviceNumber>25</DeviceNumber>
+        <Code>0</Code>
+        <ID>12</ID>
+        <Trim>0</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>0</X>
+          <Y>0</Y>
+        </Location>
+        <Group>Ext</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>buttonface</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Left Ext3</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Left Ext3</Name>
+        <Count>20</Count>
+        <RomAddress>2094</RomAddress>
+        <RamAddress>664</RamAddress>
+        <Mode>None</Mode>
+        <Port>SIO1</Port>
+        <DeviceNumber>26</DeviceNumber>
+        <Code>0</Code>
+        <ID>13</ID>
+        <Trim>0</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>0</X>
+          <Y>0</Y>
+        </Location>
+        <Group>Ext</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>buttonface</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Right Ext3</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Right Ext3</Name>
+        <Count>20</Count>
+        <RomAddress>2114</RomAddress>
+        <RamAddress>684</RamAddress>
+        <Mode>None</Mode>
+        <Port>SIO2</Port>
+        <DeviceNumber>27</DeviceNumber>
+        <Code>0</Code>
+        <ID>13</ID>
+        <Trim>0</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>0</X>
+          <Y>0</Y>
+        </Location>
+        <Group>Ext</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>buttonface</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Left Ext4</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Left Ext4</Name>
+        <Count>20</Count>
+        <RomAddress>2134</RomAddress>
+        <RamAddress>704</RamAddress>
+        <Mode>None</Mode>
+        <Port>SIO1</Port>
+        <DeviceNumber>28</DeviceNumber>
+        <Code>0</Code>
+        <ID>14</ID>
+        <Trim>0</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>0</X>
+          <Y>0</Y>
+        </Location>
+        <Group>Ext</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>buttonface</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Right Ext4</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Right Ext4</Name>
+        <Count>20</Count>
+        <RomAddress>2154</RomAddress>
+        <RamAddress>724</RamAddress>
+        <Mode>None</Mode>
+        <Port>SIO2</Port>
+        <DeviceNumber>29</DeviceNumber>
+        <Code>0</Code>
+        <ID>14</ID>
+        <Trim>0</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>0</X>
+          <Y>0</Y>
+        </Location>
+        <Group>Ext</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>buttonface</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Left Ext5</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Left Ext5</Name>
+        <Count>20</Count>
+        <RomAddress>2174</RomAddress>
+        <RamAddress>744</RamAddress>
+        <Mode>None</Mode>
+        <Port>SIO1</Port>
+        <DeviceNumber>30</DeviceNumber>
+        <Code>0</Code>
+        <ID>15</ID>
+        <Trim>0</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>0</X>
+          <Y>0</Y>
+        </Location>
+        <Group>Ext</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>buttonface</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Right Ext5</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Right Ext5</Name>
+        <Count>20</Count>
+        <RomAddress>2194</RomAddress>
+        <RamAddress>764</RamAddress>
+        <Mode>None</Mode>
+        <Port>SIO2</Port>
+        <DeviceNumber>31</DeviceNumber>
+        <Code>0</Code>
+        <ID>15</ID>
+        <Trim>0</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>0</X>
+          <Y>0</Y>
+        </Location>
+        <Group>Ext</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>buttonface</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Left Ext6</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Left Ext6</Name>
+        <Count>20</Count>
+        <RomAddress>2214</RomAddress>
+        <RamAddress>784</RamAddress>
+        <Mode>None</Mode>
+        <Port>SIO1</Port>
+        <DeviceNumber>32</DeviceNumber>
+        <Code>0</Code>
+        <ID>16</ID>
+        <Trim>0</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>0</X>
+          <Y>0</Y>
+        </Location>
+        <Group>Ext</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>buttonface</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Right Ext6</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Right Ext6</Name>
+        <Count>20</Count>
+        <RomAddress>2234</RomAddress>
+        <RamAddress>804</RamAddress>
+        <Mode>None</Mode>
+        <Port>SIO2</Port>
+        <DeviceNumber>33</DeviceNumber>
+        <Code>0</Code>
+        <ID>16</ID>
+        <Trim>0</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>0</X>
+          <Y>0</Y>
+        </Location>
+        <Group>Ext</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>buttonface</BackColor>
+      </Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">Left Ext7</Key>
+      <Value xsi:type="ServoItem">
+        <Name>Left Ext7</Name>
+        <Count>20</Count>
+        <RomAddress>2254</RomAddress>
+        <RamAddress>824</RamAddress>
+        <Mode>None</Mode>
+        <Port>SIO1</Port>
+        <DeviceNumber>34</DeviceNumber>
+        <Code>0</Code>
+        <ID>17</ID>
+        <Trim>0</Trim>
+        <Position>7500</Position>
+        <Mixing1Address>65535</Mixing1Address>
+        <Mixing1Rate>1</Mixing1Rate>
+        <Mixing2Address>65535</Mixing2Address>
+        <Mixing2Rate>1</Mixing2Rate>
+        <DisplayRate>1.0</DisplayRate>
+        <Location>
+          <X>0</X>
+          <Y>0</Y>
+        </Location>
+        <Group>Ext</Group>
+        <ForeColor>Black</ForeColor>
+        <BackColor>buttonface</BackColor>
+      </Value>
+    </DictionaryEntry>
+  </ServoConfigParams>
+  <StartupMotionAddress>3000</StartupMotionAddress>
+  <LowPowerMotionAddress>-1</LowPowerMotionAddress>
+  <LowPowerValue>0</LowPowerValue>
+  <PriorityMotionCollection>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">0</Key>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">1</Key>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">2</Key>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">3</Key>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">4</Key>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">5</Key>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">6</Key>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">7</Key>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">8</Key>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">9</Key>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">10</Key>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">11</Key>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xsi:type="xsd:string">12</Key>
+    </DictionaryEntry>
+  </PriorityMotionCollection>
+  <PictureFileName />
+  <LinkFileList />
+  <ConvertFileList />
+  <ProjectTitle />
+  <FileName>D:\HeartToHeart4\Projects\Hello_KHR3(V2.0)_English\Hello_KHR3(V2.0)_English.h4p</FileName>
+  <Path>D:\HeartToHeart4\Projects\Hello_KHR3(V2.0)_English</Path>
+  <Name>Hello_KHR3(V2.0)_English</Name>
+  <Anchors />
+  <SoundDeviceNumber>-1</SoundDeviceNumber>
+</Rcb4>

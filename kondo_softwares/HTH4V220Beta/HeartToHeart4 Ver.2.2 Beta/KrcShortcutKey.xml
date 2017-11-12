@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ShortcutKeys xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Up>NumPad8</Up>
+  <Down>NumPad2</Down>
+  <Left>NumPad4</Left>
+  <Right>NumPad6</Right>
+  <UpperLeft>NumPad7</UpperLeft>
+  <LowerLeft>NumPad1</LowerLeft>
+  <UpperRight>NumPad9</UpperRight>
+  <LowerRight>NumPad3</LowerRight>
+  <Triangle>None</Triangle>
+  <Cross>None</Cross>
+  <Square>None</Square>
+  <Circle>None</Circle>
+  <A>LButton A Shift Control Alt</A>
+  <B>B</B>
+  <C>C</C>
+  <D>D</D>
+  <Shift1>D1</Shift1>
+  <Shift2>D2</Shift2>
+  <Shift3>D3</Shift3>
+  <Shift4>D4</Shift4>
+</ShortcutKeys>

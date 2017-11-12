@@ -1,0 +1,732 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Extensions</name>
+    </assembly>
+    <members>
+        <member name="T:Extensions.Collections.NameObjectCollection">
+            <summary>
+            関連付けられた String キーおよび Object 値のコレクションにキーまたはインデックスのいずれかを使用してアクセスできます
+            名前空間はありません
+            </summary>
+        </member>
+        <member name="M:Extensions.Collections.NameObjectCollection.#ctor">
+            <summary>
+            インスタンスコンストラクタ
+            </summary>
+        </member>
+        <member name="M:Extensions.Collections.NameObjectCollection.#ctor(Extensions.Collections.NameObjectCollection)">
+            <summary>
+            コピーコンストラクタ
+            </summary>
+            <param name="collection">指定されたコレクションで初期化します</param>
+        </member>
+        <member name="M:Extensions.Collections.NameObjectCollection.#ctor(System.Collections.IDictionary,System.Boolean)">
+            <summary>
+            コレクションにIDictionaryインターフェイスから要素を追加します
+            </summary>
+            <param name="d">IDictionanryインターフェイス</param>
+            <param name="bReadOnly">読み込み専用フラグ</param>
+        </member>
+        <member name="M:Extensions.Collections.NameObjectCollection.Add(System.String,System.Object)">
+            <summary>
+            コレクションに追加します
+            </summary>
+            <param name="key">キー文字列</param>
+            <param name="value">Keyに対応するオブジェクト</param>
+        </member>
+        <member name="M:Extensions.Collections.NameObjectCollection.Add(System.Collections.DictionaryEntry)">
+            <summary>
+            IEnumeratableを実装するためのコレクション追加関数
+            </summary>
+            <param name="entry">辞書キー、値のペア</param>
+        </member>
+        <member name="M:Extensions.Collections.NameObjectCollection.Remove(System.String)">
+            <summary>
+            コレクションからkeyに対応する要素を削除します
+            </summary>
+            <param name="key">キー文字列</param>
+        </member>
+        <member name="M:Extensions.Collections.NameObjectCollection.Remove(System.Int32)">
+            <summary>
+            インデックス番号に対応する要素をコレクションから削除します
+            </summary>
+            <param name="index">要素番号</param>
+        </member>
+        <member name="M:Extensions.Collections.NameObjectCollection.Clear">
+            <summary>
+            全てのコレクション要素を削除します
+            </summary>
+        </member>
+        <member name="M:Extensions.Collections.NameObjectCollection.Contains(System.String)">
+            <summary>
+            keyで指定された文字列をコレクションが含むか調べる
+            </summary>
+            <param name="key">検索文字列</param>
+            <returns>同じ文字列を持つエントリーが存在する場合はtrue</returns>
+            <example>キーの中から重複を探し出す
+            <code>
+            if (nameObjectCollection.Contains ("Key") == true)
+            {
+              // キーが重複したときの処理
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Extensions.Collections.NameObjectCollection.IndexOf(System.String)">
+            <summary>
+            キーからインデックス番号を取得します
+            </summary>
+            <param name="key">キー</param>
+            <returns>キーが存在する場合はそのインデックス番号、それ以外は-1を返します</returns>
+        </member>
+        <member name="M:Extensions.Collections.NameObjectCollection.AddRange(Extensions.Collections.NameObjectCollection)">
+            <summary>
+            まとまったコレクションを追加します
+            </summary>
+            <param name="values">NameObjectCollectionコレクション</param>
+        </member>
+        <member name="M:Extensions.Collections.NameObjectCollection.Insert(System.Int32,System.Collections.DictionaryEntry)">
+            <summary>
+            コレクションに挿入します
+            </summary>
+            <param name="index">valueを挿入する位置の０から始まるインデックス番号</param>
+            <param name="value">Collectionに挿入するObject</param>
+        </member>
+        <member name="M:Extensions.Collections.NameObjectCollection.RemoveAt(System.Int32)">
+            <summary>
+            コレクションから削除します
+            </summary>
+            <param name="index">valueを削除する位置の０から始まるインデックス番号</param>
+        </member>
+        <member name="M:Extensions.Collections.NameObjectCollection.Swap(System.Int32,System.Collections.DictionaryEntry)">
+            <summary>
+            indexで指定された位置のオブジェクトを、valueで取り替えます
+            </summary>
+            <param name="index">valueを交換する位置の０から始まるインデックス番号</param>
+            <param name="value">入れ替えたい値</param>
+        </member>
+        <member name="M:Extensions.Collections.NameObjectCollection.Swap(System.String,System.Collections.DictionaryEntry)">
+            <summary>
+            keyで指定されたオブジェクトをvalueで取り替えます
+            </summary>
+            <param name="key">コレクションのキー文字列</param>
+            <param name="value">入れ替えたい値</param>
+        </member>
+        <member name="M:Extensions.Collections.NameObjectCollection.Swap(System.Int32,System.Int32)">
+            <summary>
+            indexで指定された位置のエントリーを入れ替えます
+            </summary>
+            <param name="src">入れ替える前のindex</param>
+            <param name="dest">入れ替え先のindex</param>
+        </member>
+        <member name="M:Extensions.Collections.NameObjectCollection.Swap(System.String,System.String)">
+            <summary>
+            keyで指定された位置のエントリーを入れ替えます
+            </summary>
+            <param name="src">入れ替える前のkey</param>
+            <param name="dest">入れ替え先のkey</param>
+        </member>
+        <member name="M:Extensions.Collections.NameObjectCollection.ToLast(System.Int32)">
+            <summary>
+            indexで指定されたオブジェクトをコレクションの最終位置へ移動します
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:Extensions.Collections.NameObjectCollection.ToLast(System.String)">
+            <summary>
+            srcで指定されたオブジェクトをコレクションの最終位置へ移動します
+            </summary>
+            <param name="src"></param>
+        </member>
+        <member name="M:Extensions.Collections.NameObjectCollection.ToFirst(System.Int32)">
+            <summary>
+            indexで指定されたオブジェクトをコレクションの先頭位置へ移動します
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:Extensions.Collections.NameObjectCollection.ToFirst(System.String)">
+            <summary>
+            srcで指定されたオブジェクトをコレクションの先頭位置へ移動します
+            </summary>
+            <param name="src"></param>
+        </member>
+        <member name="M:Extensions.Collections.NameObjectCollection.SwapKey(System.String,System.String)">
+            <summary>
+            コレクションのキーを入れ替えます
+            </summary>
+            <param name="src">コレクションにあるソースキー</param>
+            <param name="dest">入れ替えたいキー</param>
+        </member>
+        <member name="P:Extensions.Collections.NameObjectCollection.Item(System.Int32)">
+            <summary>
+            インデックスを参照してコレクションアイテムを抜き出します
+            </summary>
+            <param name="index">コレクションのインデックス</param>
+            <returns>コレクションのアイテム</returns>
+        </member>
+        <member name="P:Extensions.Collections.NameObjectCollection.Item(System.String)">
+            <summary>
+            keyに対応するオブジェクトを返します
+            </summary>
+            <param name="key">検索用のKeyデータ</param>
+            <returns>対応するオブジェクト</returns>
+        </member>
+        <member name="P:Extensions.Collections.NameObjectCollection.AllKeys">
+            <summary>
+            全てのキーを返します
+            </summary>
+        </member>
+        <member name="P:Extensions.Collections.NameObjectCollection.InvertedAllKeys">
+            <summary>
+            全てのキーを逆向きに返します
+            </summary>
+        </member>
+        <member name="P:Extensions.Collections.NameObjectCollection.AllValues">
+            <summary>
+            全てのオブジェクトを返します
+            </summary>
+        </member>
+        <member name="P:Extensions.Collections.NameObjectCollection.AllStringValues">
+            <summary>
+            全てのオブジェクトを文字列として返します
+            </summary>
+        </member>
+        <member name="P:Extensions.Collections.NameObjectCollection.HasKeys">
+            <summary>
+            nullオブジェクトではないKeyを含むコレクションの値を返します
+            </summary>
+        </member>
+        <member name="T:Extensions.Collections.StringList">
+            <summary>
+            CommaTextが使用可能な文字列専用ArrayList
+            </summary>
+        </member>
+        <member name="F:Extensions.Collections.StringList.allowEmptyEntry">
+            <summary>
+            CommaTextを使うときに、String.Emptyを許可するか決めます
+            </summary>
+        </member>
+        <member name="F:Extensions.Collections.StringList.quote">
+            <summary>
+            保存の際にクォーテーションで括る
+            </summary>
+        </member>
+        <member name="M:Extensions.Collections.StringList.ToStringArray">
+            <summary> 
+            リストを文字列配列へ変換します
+            </summary>
+            <returns>変換後の文字列配列</returns>
+        </member>
+        <member name="M:Extensions.Collections.StringList.ToStringReverseArray">
+            <summary>
+            リストを逆順にして文字列配列へ変換します
+            </summary>
+            <returns>逆順に変換した文字列データ</returns>
+        </member>
+        <member name="M:Extensions.Collections.StringList.UniqueItemStrings">
+            <summary>
+            コレクションから重複を除いた文字列配列を返す
+            </summary>
+            <returns>重複が除かれた結果のリスト</returns>
+        </member>
+        <member name="M:Extensions.Collections.StringList.Dump(System.String[])">
+            <summary>
+            文字列配列を連結して、ダンプリストを生成する
+            </summary>
+            <param name="list">文字列配列</param>
+            <returns>ダンプリスト</returns>
+        </member>
+        <member name="M:Extensions.Collections.StringList.Dump">
+            <summary>
+            自身のアイテムの文字列のダンプリストを生成する
+            </summary>
+            <returns>ダンプリスト</returns>
+        </member>
+        <member name="M:Extensions.Collections.StringList.UniqueObjects(System.Object[])">
+            <summary>
+            オブジェクトリストから重複を削除
+            [どう書く？org]http://ja.doukaku.org/comment/470/]
+            </summary>
+            <param name="array">元のリスト</param>
+            <returns>重複を取り除いたリスト</returns>
+        </member>
+        <member name="M:Extensions.Collections.StringList.UniqueStrings(System.Collections.Generic.List{System.String})">
+            <summary>
+            文字列リストから重複を削除
+            </summary>
+            <param name="array">元のリスト</param>
+            <returns>重複を取り除いた文字列配列</returns>
+        </member>
+        <member name="M:Extensions.Collections.StringList.UniqueStrings(System.String[])">
+            <summary>
+            文字列コレクションから重複しないものを選択します
+            </summary>
+            <param name="array">入力文字列コレクション</param>
+            <returns>検索結果の文字列コレクション</returns>
+        </member>
+        <member name="M:Extensions.Collections.StringList.RemoveDuplication">
+            <summary>
+            自身のコレクションから重複を削除
+            </summary>
+        </member>
+        <member name="M:Extensions.Collections.StringList.HasString(System.String,System.String)">
+            <summary>
+            指定された文字列が、ターゲット文字列に含まれているか判断します
+            </summary>
+            <param name="target">ターゲット文字列</param>
+            <param name="word">検索文字列</param>
+            <returns>含まれている場合はTRUEを返す</returns>
+        </member>
+        <member name="M:Extensions.Collections.StringList.PartialMatch(System.String[],System.String)">
+            <summary>
+            リストないに指定された文字列が含まれているか判断します
+            </summary>
+            <param name="slist">検索対象の文字列リスト</param>
+            <param name="word">検索文字列</param>
+            <returns>文字列がマッチした場合はリストの番号を返し、そうでない場合は-1を返す</returns>
+        </member>
+        <member name="M:Extensions.Collections.StringList.PartialMatch(Extensions.Collections.StringList,System.String)">
+            <summary>
+            リストないに指定された文字列が含まれているか判断します
+            </summary>
+            <param name="slist">検索対象の文字列リスト</param>
+            <param name="word">検索文字列</param>
+            <returns>文字列がマッチした場合はリストの番号を返し、そうでない場合は-1を返す</returns>
+        </member>
+        <member name="P:Extensions.Collections.StringList.AllowEmptyEntry">
+            <summary>
+            CommaTextを使うときに、String.Emptyを許可するか決めます。許可するとデリミターで区切られたnull文字も扱います
+            </summary>
+        </member>
+        <member name="P:Extensions.Collections.StringList.Quote">
+            <summary>
+            保存の際にクォーテーションで括る
+            </summary>
+        </member>
+        <member name="P:Extensions.Collections.StringList.Delimiter">
+            <summary>
+            区切り文字列を指定する
+            </summary>
+        </member>
+        <member name="P:Extensions.Collections.StringList.CommaText">
+            <summary>
+            カンマ区切りの文字列を代入すると、リストとして登録します。
+            リストをカンマ区切りの文字列として読み出すことができます。
+            </summary>
+        </member>
+        <member name="T:Extensions.Collections.QuickSort`1">
+            <summary>
+            Quicksort algorithm by MaheshBabu.ap, United States
+            </summary>
+            <typeparam name="T">Generic</typeparam>
+            <remarks>http://www.codeproject.com/KB/recipes/QuickSort_gen.aspx</remarks>
+            <example>QuickSortを使う
+            <code>
+            QuickSort&lt;int&gt; qSort = new QuickSort&lt;int&gt; (new int[] {8,10,5,0,3,1});
+            qSort.Sort (); // qSort.Outputに結果が保存されている
+            </code>
+            </example>
+        </member>
+        <member name="M:Extensions.Collections.QuickSort`1.#ctor(`0[])">
+            <summary>
+            インスタンスコンストラクタ
+            </summary>
+            <param name="values">ソートする配列</param>
+        </member>
+        <member name="M:Extensions.Collections.QuickSort`1.Sort">
+            <summary>
+            ソート関数の実行
+            </summary>
+        </member>
+        <member name="M:Extensions.Collections.QuickSort`1.getPivotPoint(System.Int32,System.Int32)">
+            <summary>
+            ピボットを探す
+            </summary>
+            <param name="begPoint"></param>
+            <param name="endPoint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Extensions.Collections.QuickSort`1.Sorting(System.Int32,System.Int32)">
+            <summary>
+            ソート計算
+            </summary>
+            <param name="beg"></param>
+            <param name="end"></param>
+        </member>
+        <member name="P:Extensions.Collections.QuickSort`1.Output">
+            <summary>
+            出力結果
+            </summary>
+        </member>
+        <member name="T:Extensions.Converter.StringConverter">
+            <summary>
+            文字列変換クラス
+            </summary>
+        </member>
+        <member name="M:Extensions.Converter.StringConverter.StrToInt(System.String)">
+            <summary>
+            文字列をint型変数に変換して返します
+            </summary>
+            <param name="value">変換前の文字列</param>
+            <returns>変換後の値</returns>
+        </member>
+        <member name="M:Extensions.Converter.StringConverter.StrToIntDef(System.String,System.Int32)">
+            <summary>
+            文字列をint型変数に変換して返します
+            変換エラーが発生した場合は、デフォルト値を返します
+            </summary>
+            <param name="value">変換前の文字列</param>
+            <param name="a">変換に失敗したときの値</param>
+            <returns>変換後の値</returns>
+        </member>
+        <member name="T:Extensions.IO.FileEx">
+            <summary>
+            ファイル読み込み拡張クラス
+            </summary>
+        </member>
+        <member name="M:Extensions.IO.FileEx.CopyDirectory(System.String,System.String)">
+            <summary>
+            ディレクトリを再帰的にコピーする
+            </summary>
+            <param name="srcDir">コピーするディレクトリ</param>
+            <param name="destDir">コピー先のディレクトリ</param>
+        </member>
+        <member name="F:Extensions.IO.FileEx.fileList">
+            <summary>
+            再帰呼び出しで使用するファイルのリスト
+            </summary>
+        </member>
+        <member name="M:Extensions.IO.FileEx.RecursiveGetFileList(System.String,System.String)">
+            <summary>
+            指定されたパスに含まれるファイルを再帰的に探し出します
+            </summary>
+            <param name="path">検索パス</param>
+            <param name="filepattern">検索ファイル名（ワイルドカード可）</param>
+            <example>指定したディレクトリに存在する"*.cs"ファイルをリスト化します。
+            <code>
+            Extensions.IO.FileEx.RecursiveGetFileList (@"c:\program files\", "*.cs");
+            // 結果はExtensions.IO.FileEx.FileListに追加されます
+            </code>
+            </example>
+        </member>
+        <member name="M:Extensions.IO.FileEx.GetFileList(System.String,System.String)">
+            <summary>
+            指定されたパスに含まれる、指定ファイルを再帰的に探し出します
+            </summary>
+            <param name="path">検索パス</param>
+            <param name="filepattern">検索ファイル名（ワイルドカード可）</param>
+            <returns>ファイルのリスト</returns>
+        </member>
+        <member name="M:Extensions.IO.FileEx.GetFileList(System.String)">
+            <summary>
+            指定されたパスに含まれる、全てのファイルを再帰的に探し出します
+            </summary>
+            <param name="path">検索パス</param>
+            <returns>ファイルのリスト</returns>
+        </member>
+        <member name="M:Extensions.IO.FileEx.GetLastFileName(System.String)">
+            <summary>
+            最終ファイル名またはフォルダ名のみを取得します
+            </summary>
+            <param name="path">パス</param>
+            <returns>最終ファイル名またはフォルダ名</returns>
+        </member>
+        <member name="M:Extensions.IO.FileEx.IsValidFileName(System.String)">
+            <summary>
+            ファイル名やフォルダ名の正しさを確認する
+            </summary>
+            <param name="s">確認する名前</param>
+            <returns>不正なキャラクタが使われている場合は-1、Nothing=0, 正しい場合は1</returns>
+        </member>
+        <member name="P:Extensions.IO.FileEx.FileList">
+            <summary>
+            再帰呼び出しで使用するファイルのリスト
+            </summary>
+        </member>
+        <member name="T:Extensions.Collections.ByteList">
+            <summary>
+            文字列とバイトデータの相互変換クラス
+            </summary>
+        </member>
+        <member name="M:Extensions.Collections.ByteList.#ctor">
+            <summary>
+            インスタンスコンストラクタ
+            </summary>
+        </member>
+        <member name="M:Extensions.Collections.ByteList.#ctor(Extensions.Collections.ByteList)">
+            <summary>
+            コピーコンストラクタ
+            </summary>
+            <param name="baseByteList">同じクラスを複製する</param>
+        </member>
+        <member name="M:Extensions.Collections.ByteList.#ctor(System.Byte[])">
+            <summary>
+            コピーコンストラクタ
+            </summary>
+            <param name="byteArray">Byte型配列を引数にする</param>
+        </member>
+        <member name="M:Extensions.Collections.ByteList.#ctor(System.String)">
+            <summary>
+            コピーコンストラクタ
+            </summary>
+            <param name="s">SPACE区切りの文字列を引数にする</param>
+        </member>
+        <member name="M:Extensions.Collections.ByteList.Append(System.String[])">
+            <summary>
+            データを連結します
+            </summary>
+            <param name="str">連結するデータ列</param>
+        </member>
+        <member name="M:Extensions.Collections.ByteList.Append(System.Byte[])">
+            <summary>
+            バイト列を追加する
+            </summary>
+            <param name="b">クラス内部変数に追加するバイト変数配列</param>
+        </member>
+        <member name="M:Extensions.Collections.ByteList.HexDump(System.Int32)">
+            <summary>
+            保持しているバイトデータをHEXダンプ出力する
+            </summary>
+            <param name="column">１行あたりの文字列数</param>
+            <returns>変換されたダンプリスト</returns>
+        </member>
+        <member name="M:Extensions.Collections.ByteList.HexDump">
+            <summary>
+            引数なしのHEXダンプリスト表示
+            </summary>
+            <returns>変換されたダンプリスト</returns>
+        </member>
+        <member name="M:Extensions.Collections.ByteList.HexCodes(System.Int32)">
+            <summary>
+            保持しているバイトデータをHEXダンプ出力する
+            </summary>
+            <param name="column">１行あたりの文字列数</param>
+            <returns>変換されたダンプリスト</returns>
+        </member>
+        <member name="M:Extensions.Collections.ByteList.ToString">
+            <summary>
+            リストを文字列データとして送ります。
+            データフォーマットは０でつめた２文字をデリミターを挟み、文字列とします。
+            </summary>
+            <returns>文字列</returns>
+        </member>
+        <member name="M:Extensions.Collections.ByteList.ToStringArray">
+            <summary>
+            バイトデータ配列を文字列配列に変換します
+            </summary>
+            <returns>変換後の文字列</returns>
+        </member>
+        <member name="M:Extensions.Collections.ByteList.ToByteArray">
+            <summary>
+            リストをバイト配列にして返す
+            </summary>
+            <returns>バイトデータ配列</returns>
+        </member>
+        <member name="M:Extensions.Collections.ByteList.ByteArrayToString(System.Byte[])">
+            <summary>
+            バイト列データを文字列に変換します
+            </summary>
+            <param name="data">バイトデータ列</param>
+            <returns>変換された文字列」</returns>
+        </member>
+        <member name="M:Extensions.Collections.ByteList.GetMax">
+            <summary>
+            リストから最大値を返します
+            </summary>
+            <returns>リストの最大値</returns>
+        </member>
+        <member name="M:Extensions.Collections.ByteList.SortIndex(Extensions.Collections.ByteList.SortType,System.Byte[])">
+            <summary>
+            バイト列を指定した形式で並べ替えたときの、インデックス列を返す
+            </summary>
+            <param name="t">並べ替えの方向</param>
+            <param name="b">並べ替えるバイト列</param>
+            <returns>結果のインデックスバイト列</returns>
+        </member>
+        <member name="M:Extensions.Collections.ByteList.SortArray(Extensions.Collections.ByteList.SortType,System.Byte[])">
+            <summary>
+            データをソートする
+            </summary>
+            <param name="t">並べ替え順序</param>
+            <param name="b">並べ替えを行うデータ</param>
+            <returns>インデックス番号列</returns>
+        </member>
+        <member name="M:Extensions.Collections.ByteList.Sort(Extensions.Collections.ByteList.SortType)">
+            <summary>
+            並べ替えを行う
+            </summary>
+            <param name="t">並べ替え順序</param>
+        </member>
+        <member name="M:Extensions.Collections.ByteList.Invert">
+            <summary>
+            逆順に並べ替える
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Extensions.Collections.ByteList.Contains(System.Byte)">
+            <summary>
+            クラス内に指定されるデータが含まれるか調査する
+            </summary>
+            <param name="data">調べるデータ</param>
+            <returns>含まれている場合はTrueを返す</returns>
+        </member>
+        <member name="P:Extensions.Collections.ByteList.Delimiter">
+            <summary>
+            区切り文字列を指定する
+            </summary>
+            <example>区切り文字の設定
+            <code>
+            byteList.Delimiter = ":";
+            </code>
+            </example>
+        </member>
+        <member name="P:Extensions.Collections.ByteList.Bytes">
+            <summary>
+            Byte型の内部配列を直接扱う
+            </summary>
+            <example>バイトデータを直接クラスに代入する
+            <code>
+            byte[] data = new byte[5] { 1, 2, 3, 4, 5 };
+            byteList.Bytes = data;
+            </code>
+            </example>
+        </member>
+        <member name="P:Extensions.Collections.ByteList.Item(System.Int32,System.Int32)">
+            <summary>
+            アドレスを選択し、指定した数だけデータを返す
+            </summary>
+            <param name="i">エリア開始位置</param>
+            <param name="j">取得データ個数</param>
+            <returns>範囲指定したデータ</returns>
+            <example>エリアを指定してデータを抜き出す
+            <code>
+            byte[] data = byteList[3, 5];
+            </code>
+            </example>
+        </member>
+        <member name="P:Extensions.Collections.ByteList.CommaText">
+            <summary>
+            区切りのある文字列を代入すると、リストとして登録します。
+            リストをカンマ区切りの文字列として読み出すことができます。
+            </summary>
+            <example>CommaTextを抜き出す
+            <code>
+            ByteList byteList = new ByteList ();
+            byte[] data = new byte[5] { 1, 2, 3, 4, 5 };
+            
+            byteList.Bytes = data;
+            byteList.Delimiter = ":";
+            Console.WriteLine (byteList.CommaText); // 結果は 1:2:3:4:5
+            </code>
+            </example>
+        </member>
+        <member name="P:Extensions.Collections.ByteList.CheckSum">
+            <summary>
+            チェックサムを返す
+            </summary>
+        </member>
+        <member name="T:Extensions.Collections.ByteList.SortType">
+            <summary>
+            ソートタイプ
+            </summary>
+        </member>
+        <member name="F:Extensions.Collections.ByteList.SortType.Descending">
+            <summary>
+            降順
+            </summary>
+        </member>
+        <member name="F:Extensions.Collections.ByteList.SortType.Ascending">
+            <summary>
+            昇順
+            </summary>
+        </member>
+        <member name="T:Extensions.Converter.ByteConverter">
+            <summary>
+            符号付きByteデータを補数表現に変換する
+            </summary>
+        </member>
+        <member name="M:Extensions.Converter.ByteConverter.SByteToByte(System.SByte)">
+            <summary>
+            符号付きByteデータを符号無しByteデータに変換する
+            </summary>
+            <param name="sb">符号付きByteデータ</param>
+            <returns>符号付きByteデータの補数表現</returns>
+        </member>
+        <member name="M:Extensions.Converter.ByteConverter.ByteToSByte(System.Byte)">
+            <summary>
+            符号無しByteデータ（補数表現）を符号付きバイトデータへ変換する
+            </summary>
+            <param name="b">変換前のバイトデータ</param>
+            <returns>変換後のバイトデータ</returns>
+        </member>
+        <member name="M:Extensions.Converter.ByteConverter.IntToByteArray(System.Int32)">
+            <summary>
+            int型変数を４バイトのバイトデータ配列に変換します
+            </summary>
+            <param name="value">32ビット型変数</param>
+            <returns>バイトデータ配列</returns>
+        </member>
+        <member name="M:Extensions.Converter.ByteConverter.Int64ToByteArray(System.Int64)">
+            <summary>
+            int型変数を４バイトのバイトデータ配列に変換します
+            </summary>
+            <param name="value">32ビット型変数</param>
+            <returns>バイトデータ配列</returns>
+        </member>
+        <member name="M:Extensions.Converter.ByteConverter.Int32ToByteArray(System.Int32)">
+            <summary>
+            int型変数を４バイトのバイトデータ配列に変換します
+            </summary>
+            <param name="value">32ビット型変数</param>
+            <returns>バイトデータ配列</returns>
+        </member>
+        <member name="M:Extensions.Converter.ByteConverter.Int16ToByteArray(System.Int32)">
+            <summary>
+            int型変数を２バイトのバイトデータ配列に変換します
+            </summary>
+            <param name="value">32ビット型変数</param>
+            <returns>バイトデータ配列</returns>
+        </member>
+        <member name="M:Extensions.Converter.ByteConverter.ByteArrayToInt(System.Byte[])">
+            <summary>
+            バイトデータ配列をInt32型変数に変換して返します
+            </summary>
+            <param name="value">バイトデータ配列</param>
+            <returns>変換後の値</returns>
+        </member>
+        <member name="M:Extensions.Converter.ByteConverter.ByteArrayToInt16(System.Byte[])">
+            <summary>
+            バイトデータ配列をInt16型変数に変換して返します
+            </summary>
+            <param name="value">バイトデータ配列</param>
+            <returns>変換後の値</returns>
+        </member>
+        <member name="M:Extensions.Converter.ByteConverter.ByteArrayToInt32(System.Byte[])">
+            <summary>
+            バイトデータ配列をInt32型変数に変換して返します
+            </summary>
+            <param name="value">バイトデータ配列</param>
+            <returns>変換後の値</returns>
+        </member>
+        <member name="M:Extensions.Converter.ByteConverter.ByteArrayToInt64(System.Byte[])">
+            <summary>
+            バイトデータ配列をInt64型変数に変換して返します
+            </summary>
+            <param name="value">バイトデータ配列</param>
+            <returns>変換後の値</returns>
+        </member>
+        <member name="M:Extensions.Converter.ByteConverter.InvertArray(System.Byte[])">
+            <summary>
+            バイト列の順番を逆順に並べ替える
+            </summary>
+            <param name="b">逆順に並べ替えたいバイト列データ</param>
+            <returns>並べ替えられたバイト列データ</returns>
+        </member>
+        <member name="T:Extensions.Converter.ByteConverter.Union64">
+            <summary>
+            Unionを生成する
+            </summary>
+        </member>
+    </members>
+</doc>
