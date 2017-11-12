@@ -40,7 +40,7 @@ int kondo::kondo_set_angle( UINT jointIndex, double angleInDegree, double fracti
 int kondo::kondo_set_angles(std::vector<UINT> jointIndices, std::vector<double> anglesInDegree, double fractionMaxSpeed)
 {
     assert(&ki);
-    int ret;
+    //int ret;
 
     // send command for multiple servo move with same speed
     ki.swap[1] = RCB4_CMD_ICS; // ICS command
@@ -116,7 +116,7 @@ int kondo::kondo_set_angles(std::vector<UINT> jointIndices, std::vector<double> 
  */
 int kondo::kondo_init()
 {
-    return kondo_init_custom( RCB4_BAUD, RCB4_USB_VID, RCB4_USB_PID,
+    return kondo_init_custom(RCB4_BAUD, RCB4_USB_VID, RCB4_USB_PID,
             INTERFACE_A);
 }
 
@@ -131,7 +131,7 @@ int kondo::kondo_init()
  *   INTERFACE_ANY, INTERFACE_A, INTERFACE_B, INTERFACE_C, INTERFACE_D
  * Returns 0 if successful, error code otherwise.
  */
-int kondo::kondo_init_custom( int baud, int vid, int pid, int interface)
+int kondo::kondo_init_custom(int baud, int vid, int pid, int interface)
 {
     assert(&ki);
     int i;
@@ -457,7 +457,7 @@ int kondo::kondo_get_options()
  * Returns < 0: Error
  * Returns 0: All good
  */
-int kondo::kondo_play_motion( UINT num, long timeout)
+/*int kondo::kondo_play_motion( UINT num, long timeout)
 {
     assert(&ki);
     int i;
@@ -576,7 +576,7 @@ int kondo::kondo_play_motion( UINT num, long timeout)
     }
 
     return 0;
-}
+}*/
 
 
 int kondo::kondo_move( UINT num)
@@ -612,7 +612,7 @@ int kondo::kondo_move( UINT num)
 
     assert(ki);
     int i;
-    UCHAR chk;
+    //UCHAR chk;
 
     // (2) call motion script -------------------------------------------------
     // You have to compute the motion address (base + num * size) and call it.
@@ -662,7 +662,7 @@ int kondo::kondo_stop_motion()
     ki.swap[5] = 0; // addr H
     ki.swap[6] = 0x19; // ram L
     ki.swap[7] = 0x80; // ram M
-    ki.swap[9] = kondo_checksum( 8); // checksum
+    ki.swap[9] = kondo_checksum(8); // checksum
 
     // send 9, expect 4 in response
     if ((i = kondo_trx( 9, 4)) < 0)
@@ -726,7 +726,8 @@ int kondo::kondo_read_analog( int * result, UINT num)
     int i;
 
     // check port number range
-    if (num < 0 || num > 10)
+    //if (num < 0 || num > 10)
+    if (num > 10)
         kondo_error(ki, "Invalid analog port number");
 
     // the memory locations of the requested analog values
@@ -953,12 +954,13 @@ int kondo::kondo_write_pio( UINT bitfield)
  * val: the value to set the counter to
  * Returns: 0 if successful, < 0 if error.
  */
-int kondo::kondo_set_counter( UINT num, UCHAR val)
+int kondo::kondo_set_counter(UINT num, UCHAR val)
 {
     assert(&ki);
     int i;
 
-    if (num < 0 || num > 10)
+    //if (num < 0 || num > 10)
+    if (num > 10)
         kondo_error(ki, "Invalid counter number");
 
     UINT dest_addr = RCB4_ADDR_COUNTER_BASE + num;
@@ -991,13 +993,14 @@ int kondo::kondo_set_counter( UINT num, UCHAR val)
  * Side effect: The counter value is read into 'result'.
  * Returns: 0 if successful, < 0 if error.
  */
-int kondo::kondo_get_counter( UCHAR * result, UINT num)
+int kondo::kondo_get_counter(UCHAR * result, UINT num)
 {
     assert(&ki);
     int i;
 
     // check counter number range
-    if (num < 0 || num > 10)
+    //if (num < 0 || num > 10)
+    if (num > 10)
         kondo_error(ki, "Invalid counter number");
 
     UINT addr = RCB4_ADDR_COUNTER_BASE + num;
@@ -1089,8 +1092,6 @@ int kondo::kondo_get_servo_pos( UINT servo_idx)
     return kondo_get_servo_data( servo_idx, RCB4_SERVO_POS_OFFSET);
 }
 
-
-
 /*-----------------------------------------------------------------------------
  * Get the ID of the selected servo
  * Returns: < 0 if error, or pos >= 0;
@@ -1122,17 +1123,19 @@ int kondo::kondo_get_servo_trim( UINT servo_idx)
  * Get the given 2-byte field of data from a servo
  * Returns: < 0 if error, or pos >= 0;
  */
-int kondo::kondo_get_servo_data( UINT servo_idx, UINT offset)
+int kondo::kondo_get_servo_data(UINT servo_idx, UINT offset)
 {
     assert(&ki);
     int i;
 
     // check port number range
-    if (servo_idx < 0 || servo_idx > RCB4_NUM_SERVOS)
+    //if (servo_idx < 0 || servo_idx > RCB4_NUM_SERVOS)
+    if (servo_idx > RCB4_NUM_SERVOS)
         kondo_error(ki, "Invalid servo index");
 
     // check field
-    if (offset < 0 || offset >= 58)
+    //if (offset < 0 || offset >= 58)
+    if (offset >= 58)
         kondo_error(ki, "Invalid servo field");
 
     UINT ram_addr = RCB4_ADDR_SERVO + (RCB4_SERVO_DATA_SIZE * servo_idx)
@@ -1164,7 +1167,6 @@ int kondo::kondo_get_servo_data( UINT servo_idx, UINT offset)
     return result;
 }
 
-
 void kondo::kondo_error(KondoInstance ki,const char *err)
 {
     snprintf(ki.error, 128, "ERROR: %s: %s\n", __func__, err);
@@ -1177,4 +1179,113 @@ void kondo::kondo_ftdi_error(KondoInstance ki)
     snprintf(ki.error, 128, "ERROR: %s: %s\n", __func__,ftdi_get_error_string(&ki.ftdic));
     std::cout << "ERROR: " << __func__ << " " << ftdi_get_error_string(&ki.ftdic) << std::endl;
 //    exit(EXIT_FAILURE);
+}
+
+/** FROM HERE EVERYTHING IS NEW **/
+
+/*-----------------------------------------------------------------------------
+ * Free the selected servo
+ * Returns: < 0 if error, 0 if OK
+ */
+int kondo::kondo_free_servo(UINT servo_idx) {
+    assert(&ki);
+    int ret;
+
+    long unsigned int s = 0x0100000000;
+    int shift = (8*4)-2*4*(servo_idx/4);
+    s = (s>>shift)<<(2*(servo_idx%4));
+
+    // command
+    ki.swap[0] = 11; // number of bytes (0x0B)
+    ki.swap[1] = RCB4_CMD_ICS; // ICS frame command (0x10)
+    ki.swap[2] = s>>0; // servo ID
+    ki.swap[3] = s>>8; // servo ID
+    ki.swap[4] = s>>16; // servo ID
+    ki.swap[5] = s>>24; // servo ID
+    ki.swap[6] = s>>32; // servo ID
+    ki.swap[7] = 0x01; // RCB4 device
+    ki.swap[8] = 0x00; // command to free
+    ki.swap[9] = 0x80; // command to free
+    ki.swap[10] = kondo_checksum(10); // checksum
+
+    // send 11, expect 4 in response
+    if ((ret = kondo_trx(11, 4)) < 0)
+        return ret;
+
+    // verify response
+    // response should be 0x04 0x10 0x06 0x1A
+    // 0x04 is the number of bytes
+    // 0x04 is the ICS command
+    // 0x06 is RCB4_ACK_BYTE
+    // 0x1A is the checksum
+    if (ret != 4 || ki.swap[1] != RCB4_CMD_ICS)
+        kondo_error(ki, "Response was not valid.");
+
+    return 0;
+}
+
+int kondo::kondo_free_servos(std::vector<UINT> servo_indices) {
+    int ret;
+    for(UINT servo_idx : servo_indices) {
+        ret = kondo_free_servo(servo_idx);
+        if (ret < 0) {
+            std::cout << "Error when trying to free servo with id " << servo_idx << std::endl;
+            kondo_error(ki, "Error when trying to free servo.");
+        }
+    }
+    return 0;
+}
+
+/*-----------------------------------------------------------------------------
+ * Hold the selected servo
+ * Returns: < 0 if error, 0 if OK
+ */
+
+int kondo::kondo_hold_servo(UINT servo_idx) {
+    assert(&ki);
+    int ret;
+
+    long unsigned int s = 0x0100000000;
+    int shift = (8*4)-2*4*(servo_idx/4);
+    s = (s>>shift)<<(2*(servo_idx%4));
+
+    // command
+    ki.swap[0] = 11; // number of bytes (0x0B)
+    ki.swap[1] = RCB4_CMD_ICS; // ICS frame command (0x10)
+    ki.swap[2] = s>>0; // servo ID
+    ki.swap[3] = s>>8; // servo ID
+    ki.swap[4] = s>>16; // servo ID
+    ki.swap[5] = s>>24; // servo ID
+    ki.swap[6] = s>>32; // servo ID
+    ki.swap[7] = 0x01; // RCB4 device
+    ki.swap[8] = 0xFF; // command to hold
+    ki.swap[9] = 0x7F; // command to hold
+    ki.swap[10] = kondo_checksum(10); // checksum
+
+    // send 11, expect 4 in response
+    if ((ret = kondo_trx(11, 4)) < 0)
+        return ret;
+
+    // verify response
+    // response should be 0x04 0x10 0x06 0x1A
+    // 0x04 is the number of bytes
+    // 0x04 is the ICS command
+    // 0x06 is RCB4_ACK_BYTE
+    // 0x1A is the checksum
+    if (ret != 4 || ki.swap[1] != RCB4_CMD_ICS)
+        kondo_error(ki, "Response was not valid.");
+
+    return 0;
+}
+
+int kondo::kondo_hold_servos(std::vector<UINT> servo_indices) {
+    int ret;
+    for(UINT servo_idx : servo_indices) {
+        ret = kondo_hold_servo(servo_idx);
+        if (ret < 0) {
+            std::cout << "Error when trying to hold servo with id " << servo_idx << std::endl;
+            kondo_error(ki, "Error when trying to hold servo.");
+        }
+    }
+    return 0;
 }

@@ -34,7 +34,7 @@
 #define RCB4_15MS 15000
 #define RCB4_50MS 50000
 
-// communcation ---------------------------------------------------------------
+// communication ---------------------------------------------------------------
 #define RCB4_USB_VID 0x165c
 #define RCB4_USB_PID 0x0008 //0x0007
 //#define RCB4_USB_VID 0x0403 // FTDI Ltd. Devices
@@ -85,19 +85,23 @@
 #define RCB4_OPT_EEPROM    (1 << 1) // EEPROM on/off
 #define RCB4_OPT_RESP      (1 << 2) // Servo response on/off
 #define RCB4_OPT_VEC       (1 << 3) // Vector jump flag
-#define RCB4_OPT_FRAME_10MS (0x0 << 4) // Frame interval
-#define RCB4_OPT_FRAME_20MS (0x1 << 4)
-#define RCB4_OPT_FRAME_15MS (0x2 << 4)
-#define RCB4_OPT_FRAME_25MS (0x3 << 4)
-#define RCB4_OPT_COM_BAUD_125200  (0x0 << 6) // COM Baud Rates
-#define RCB4_OPT_COM_BAUD_625000  (0x2 << 6)
-#define RCB4_OPT_COM_BAUD_1250000 (0x1 << 6)
+#define RCB4_OPT_FRAME_10MS (0x00 << 4) // Frame interval
+#define RCB4_OPT_FRAME_20MS (0x01 << 4)
+#define RCB4_OPT_FRAME_15MS (0x02 << 4)
+#define RCB4_OPT_FRAME_25MS (0x03 << 4)
+#define RCB4_OPT_COM_BAUD_115200  (0x00 << 6) // COM Baud Rates
+//#define RCB4_OPT_COM_BAUD_625000  (0x02 << 6)
+//#define RCB4_OPT_COM_BAUD_1250000 (0x01 << 6)
+#define RCB4_OPT_COM_BAUD_625000  (0x01 << 6)
+#define RCB4_OPT_COM_BAUD_1250000 (0x02 << 6)
 #define RCB4_OPT_ZERO      (1 << 8)  // zero flag
 #define RCB4_OPT_CARRY     (1 << 9)  // carry flag
 #define RCB4_OPT_ERROR     (1 << 10) // program error
-#define RCB4_OPT_ICS_BAUD_125200  (0x0 << 13) // ICS Baud Rates
-#define RCB4_OPT_ICS_BAUD_625000  (0x2 << 13)
-#define RCB4_OPT_ICS_BAUD_1250000 (0x1 << 13)
+#define RCB4_OPT_ICS_BAUD_115200  (0x00 << 13) // ICS Baud Rates
+//#define RCB4_OPT_ICS_BAUD_625000  (0x02 << 13)
+//#define RCB4_OPT_ICS_BAUD_1250000 (0x01 << 13)
+#define RCB4_OPT_ICS_BAUD_625000  (0x01 << 13)
+#define RCB4_OPT_ICS_BAUD_1250000 (0x02 << 13)
 #define RCB4_OPT_GREEN_LED (1 << 15) // Green LED
 // hard-coded option bytes
 #define RCB4_OPT_LOW  0x11   // hard-coded option bytes
@@ -174,6 +178,7 @@ class kondo
 {
 private:
     KondoInstance ki;
+    UINT system_config;
 
 public:
     // self defined
@@ -223,7 +228,12 @@ public:
     void kondo_error(KondoInstance ki,const char *err);
     void kondo_ftdi_error(KondoInstance ki);
 
+    // From here, everything is new
 
+    int kondo_free_servo(UINT servo_idx);
+    int kondo_hold_servo(UINT servo_idx);
+    int kondo_free_servos(std::vector<UINT> servo_indices);
+    int kondo_hold_servos(std::vector<UINT> servo_indices);
 
 
 };

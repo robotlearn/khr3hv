@@ -60,6 +60,11 @@ cdef extern from "kondo.h":
         int kondo_get_servo_pos(UINT)
         int kondo_get_servo_id(UINT)
 
+        int kondo_free_servo(UINT)
+        int kondo_free_servos(vector[UINT])
+        int kondo_hold_servo(UINT)
+        int kondo_hold_servos(vector[UINT])
+
         ## utility
         UCHAR kondo_checksum(int)
         int kondo_verify_checksum(int)
@@ -402,6 +407,33 @@ cdef class Kondo:
         Returns: < 0 if error, or pos >= 0.
         """
         return self.C_Kondo.kondo_get_servo_id(servo_idx)
+
+    def free_servo(self, UINT servo_idx):
+        """
+        Free the specified servo.
+        You can now move the servo with your hand.
+        """
+        return self.C_Kondo.kondo_free_servo(servo_idx)
+
+    def free_servos(self, servo_indices):
+        """
+        Free the list of specified servos.
+        """
+        return self.C_Kondo.kondo_free_servos(servo_indices)
+
+    def hold_servo(self, UINT servo_idx):
+        """
+        Hold the specified servo.
+        You can not move the servo with your hand anymore.
+        If you force to move it, you will break it.
+        """
+        return self.C_Kondo.kondo_hold_servo(servo_idx)
+
+    def hold_servos(self, servo_indices):
+        """
+        Hold the list of specified servos.
+        """
+        return self.C_Kondo.kondo_hold_servos(servo_indices)
 
     
     ## basic communication
