@@ -21,32 +21,42 @@
 
 import sys
 from pykondo import Kondo
+import time
 
 def main():
-	
-	# initialize
-	print("Initializing...")
-	kondo = Kondo()
-	ret = kondo.init()
-	if ret < 0:
-		#sys.exit(ki.error)
-		print("Error during init...")
-		sys.exit()
-		
-	print('move')
-	ret = kondo.move(0)
-	if ret < 0:
-		#sys.exit(ki.error)
-		print("Error while playing the motion...")
-		sys.exit()
-	
-	print("Closing...")
-	# clean up
-	ret = kondo.close()
-	if ret < 0:
-		#sys.exit(ki.error)
-		print("Error while closing...")
-		sys.exit()
+
+    # initialize
+    print("Initializing...")
+    kondo = Kondo()
+    ret = kondo.init()
+    if ret < 0:
+        #sys.exit(ki.error)
+        print("Error during init...")
+        sys.exit()
+
+    print("Current pos: ", kondo.get_servo_pos(0))
+    print("Set pos: ", kondo.get_servo_setpos(0))
+    print('move')
+    ret = kondo.move(0)
+    if ret < 0:
+        #sys.exit(ki.error)
+        print("Error while playing the motion...")
+        sys.exit()
+
+    print("Current pos: ", kondo.get_servo_pos(0))
+    print("Set pos: ", kondo.get_servo_setpos(0))
+    print("Sleeping for 5sec...")
+    time.sleep(5)
+    print("Current pos: ", kondo.get_servo_pos(0))
+    print("Set pos: ", kondo.get_servo_setpos(0))
+
+    print("Closing...")
+    # clean up
+    ret = kondo.close()
+    if ret < 0:
+        #sys.exit(ki.error)
+        print("Error while closing...")
+        sys.exit()
 
 if __name__ == "__main__":
-	main()
+    main()
