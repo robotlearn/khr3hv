@@ -7,9 +7,12 @@ In this repo, we extend the previous work by including/providing:
 * Documentations (how to assemble the Kondo KHR-3HV robot, joint IDs, joint limits,...)
 * Python wrappers (using Cython)
 * Sample codes to run different motions
-* ROS nodes
+* ROS nodes (todo)
 * Code that interfaces with sensors (such as camera, IMU, microphone,...) that are connected with the Raspi 3
-* URDF for the Kondo KHR-3HV robot (the original repo for the URDF can be found [here](https://github.com/ponta-mkii/roboticsAC))
+
+Here is a youtube video showing predefined motions that can be run on the Kondo KHR-3HV robot using the Python code: [video](https://www.youtube.com/watch?v=r_C1O69VVXw)
+
+Here is another video showing the possibility to run the Python code on a Raspi3 and controlling the servo-motors of the Kondo KHR-3HV robot: [video](https://www.youtube.com/watch?v=m9CK85_m3Pk)
 
 
 ## Prerequisites
@@ -68,11 +71,8 @@ You have to use `sudo` when running the code.
 
 ## TODO
 
-* URDF
-    * write a node that broadcast the tf transforms
-    * add an <inertia> element within each link in the urdf (see [Using a URDF in Gazebo](http://gazebosim.org/tutorials/?tut=ros_urdf))
-* ROS node
-* (Py)KDL or RBDL: load urdf, FK and IK, etc.
-* compute CoM
+* add URDF file for kondo KHR-3HV (probably will have to translate the proto file from webots)
+* add ROS nodes to publish sensory and joint informations, and advertise topics.
+* use kinematics and dynamics library
 * write Python wrapper for the IMU
-* (C++/Python) code to use the camera, IMU, microphone,... on the Raspi 3
+* (C++/Python) code to use the camera, IMU, microphone,... on the Raspi 3 or Jetson Nano
